@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_date_and_time"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_date_and_time"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <com.ekek.viewmodule.common.FocusedTextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_date_time_setting_title_set_date"
+                android:id="@+id/title_set_date"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                />
+
+            <com.ekek.viewmodule.common.FocusedTextView
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="55dp"
+                android:id="@+id/tv_set_date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textAlignment="viewEnd"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_date_time_setting_title_set_time"
+                android:id="@+id/title_set_time"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="55dp"
+                android:id="@+id/tv_set_time"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_date_time_setting_title_24_format"
+                android:id="@+id/title_use_24_hore_format"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="55dp"
+                android:id="@+id/sw_24_format"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left|center"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:text="@string/settingmodule_fragment_date_time_setting_title_alarm_settings"
+            android:id="@+id/tv_alarm_setting"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

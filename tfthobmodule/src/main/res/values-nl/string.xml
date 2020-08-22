@@ -1,0 +1,1173 @@
+<resources>
+    <string name="tfthobmodule_app_name">CataTFTProject</string>
+
+    <string name="tfthobmodule_temperature_unit">°</string>
+    <string name="tfthobmodule_timer_symbol">:</string>
+    <string name="tfthobmodule_demo">DEMO</string>
+
+    <string name="tfthobmodule_food_type_cooking_table">Kooktabellen\n\n</string>
+    <string name="tfthobmodule_food_type_personalize">Mijn recepten\n\n</string>
+
+    <string name="tfthobmodule_cooking_tables_type_meat">Vlees</string>
+    <string name="tfthobmodule_cooking_tables_type_legumes_and_cereals">Groenten &amp; granen</string>
+    <string name="tfthobmodule_cooking_tables_type_fruit">Fruit</string>
+    <string name="tfthobmodule_cooking_tables_type_shellfish">Schaal- en schelpdieren</string>
+    <string name="tfthobmodule_cooking_tables_type_vegetables">Groenten</string>
+    <string name="tfthobmodule_cooking_tables_type_fish">Vis</string>
+
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_with_a_conit_of_wild_mushrooms">Vegetables with a conit\nof wild mushrooms</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_1">Vegetables 1</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_2">Vegetables 2</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_3">Vegetables 3</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_4">Vegetables 4</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_5">Vegetables 5</string>
+    <string name="tfthobmodule_recipes_subclass_title_red_mullet">Red Mullet With Citrus Fruits</string>
+    <string name="tfthobmodule_recipes_subclass_title_difficulty">DIFFICULTY:</string>
+    <string name="tfthobmodule_recipes_subclass_title_low">Low</string>
+    <string name="tfthobmodule_recipes_subclass_title_total_preparation">TOTAL PREPARATION:</string>
+    <string name="tfthobmodule_recipes_subclass_title_30min">30min</string>
+    <string name="tfthobmodule_recipes_subclass_title_type">TYPE:</string>
+    <string name="tfthobmodule_recipes_subclass_title_fish">Vis</string>
+    <string name="tfthobmodule_recipes_subclass_title_introduction">INTRODUCTION:</string>
+    <string name="tfthobmodule_recipes_subclass_message">Cooking in a microwave oven can be a good way of gently cooking food even though it is not a totally precise method. In this recipe we propose some magnificent red mullet protected by lemon leaves that will lend the dish a fresh citrus aroma. We will use low power in order to respect the food’s point of doneness.\nINGREDIENTS:
+4 pieces red mullet
+4 lemon leaves (or similar
+1 lemon
+1 French onion (shallot)
+70 g butter (10 for sautéing and 60 for the lemon sauce)
+Chervil
+12 saffron threads
+50g sunflower oil
+1 l brine (1 l water per 100 g salt)
+Salt and pepper
+
+WHAT YOU NEED: Microwave oven, Steam case
+
+GENERAL INFORMATION: Microwave oven 400w | 1min
+
+Step 1
+Peel the onion and cut it brunoise-style. Fry in the butter (10 g) on a gentle heat for 5 minutes. Add the juice of one lemon and leave to reduce.
+
+Step 2
+Leave to cool and whip with butter (60 g) by gradually adding cubes of butter (this preparation is similar to so-called beurre blanc). Add salt and pepper, mix and set to one side.
+
+Step 3
+For the saffron oil, put the saffron on a tray and dry in the oven for 20 seconds at 180 degrees. Next, mix with the sunflower oil and the salt.
+
+Step 4
+Soak the red mullet pieces in brine with 10% salt for 5 minutes.
+
+Step 5
+Dry the fish and cover it with the lemon leaves. Cook in the microwave for between 1 and 1’30 minutes depending on the thickness of the fish.
+
+Step 6
+To serve, make a base of sauce in each dish, add the red mullet (without the lemon leaves), dress mildly with the saffron oil and decorate with the chervil.
+</string>
+
+
+    <string name="tfthobmodule_recipes_food_detail_title_cooking_method">Cooking method:\nImmersed in liqid</string>
+
+    <!--fragment relate recipes-->
+    <string name="tfthobmodule_fragment_relate_recipes_title">Related Recipes</string>
+    <!--fragment my recipes-->
+    <string name="tfthobmodule_fragment_my_recipes_title">Mijn recepten</string>
+    <string name="tfthobmodule_fragment_my_recipes_title_new">Nieuw</string>
+    <string name="tfthobmodule_fragment_my_recipes_confirm_delete_recipe">Bevestig dat u het recept wilt verwijderen</string>
+
+    <!--fragment my recipes edit-->
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_name">Naam</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_power">Vermogen</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_temp">Temperatuur</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_time">Tijd</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_description">Beschrijving</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_save">Opslaan</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_cook">Koken</string>
+
+    <string name="tfthobmodule_cooker_setting_panel_tips_message">Use the scroll to set the power level.</string>
+    <string name="tfthobmodule_tips_message_search_and_connect_temp_sensor">Search and connect temperature sensor.</string>
+
+    <string name="tfthobmodule_title_boost">BOOST</string>
+    <string name="tfthobmodule_title_precise">Precies</string>
+    <string name="tfthobmodule_title_fast">Snel</string>
+    <string name="tfthobmodule_title_back">Terug</string>
+
+    <string name="tfthobmodule_title_boiling">Koken</string>
+    <string name="tfthobmodule_title_simering">Sudderen</string>
+    <string name="tfthobmodule_title_slow_cook">Langzaam koken</string>
+    <string name="tfthobmodule_title_keep_warm">Warm houden</string>
+    <string name="tfthobmodule_title_melting">Smelten</string>
+
+    <string name="tfthobmodule_title_destination_software">Destination version: %1$s Total Size: %2$d bytes</string>
+    <string name="tfthobmodule_msg_downloading_apk">Downloading the apk file &#8230;&#8230;&#8230;</string>
+    <string name="tfthobmodule_msg_download_complete">Downloading process completed successfully</string>
+
+    <string name="tfthobmodule_err_er03_title">Verwijder het water of kookgerei van het glas over het scherm.</string>
+
+    <string name="tfthobmodule_err_e1">E1E Thermische uitschakeling. Schakel de inductiekookplaat opnieuw in nadat deze is afgekoeld.</string>
+    <string name="tfthobmodule_err_e2">E2E Thermische uitschakeling. Schakel de inductiekookplaat opnieuw in nadat deze is afgekoeld.</string>
+    <string name="tfthobmodule_err_e3">E3E Voedingsspanning buiten bereik.</string>
+    <string name="tfthobmodule_err_e4">E4E Voedingsspanning buiten bereik.</string>
+    <string name="tfthobmodule_err_e5">E5E Fout in een kookzone. Bel de technische dienst</string>
+    <string name="tfthobmodule_err_f1">F1E Fout in een kookzone. Bel de technische dienst</string>
+    <string name="tfthobmodule_err_f3">F3E Fout in een kookzone. Bel de technische dienst</string>
+    <string name="tfthobmodule_err_f4">F4E Fout in een kookzone. Bel de technische dienst</string>
+
+    <string name="tfthobmodule_err_r1e">R1E Het batterijniveau van de externe sensor is te laag voor het gevraagde bereidingsproces. Laad de batterij op.</string>
+    <string name="tfthobmodule_err_r2e">R2E Het batterijniveau van de externe sensor is te laag voor het gevraagde bereidingsproces. Laad de batterij op.</string>
+    <string name="tfthobmodule_err_r3e">R3E Batterij volledig ontladen, sluit deze aan op een externe voeding en verbind de batterij opnieuw.</string>
+    <string name="tfthobmodule_err_r4e">R4E De sensorverbinding werd onderbroken. Controleer de batterij of neem contact op met de fabrikant.</string>
+    <string name="tfthobmodule_err_r5e">R5E Storing in externe sensor. Controleer de sensorpositie, en neem contact op met de fabrikant als de storing blijft optreden.</string>
+    <string name="tfthobmodule_err_r6e">R6E Storing in externe sensor. Controleer de sensorpositie, en neem contact op met de fabrikant als de storing blijft optreden.</string>
+    <string name="tfthobmodule_err_r7e">R7E Storing in externe sensor. Controleer de sensorpositie, en neem contact op met de fabrikant als de storing blijft optreden.</string>
+
+    <!--dialog message -->
+    <string name="tfthobmodule_dialog_message_sensor_connect_successfully">Externe sensor succesvol aangesloten.</string>
+    <string name="tfthobmodule_dialog_message_sensor_disconnect">External sensor disconnected.</string>
+    <string name="tfthobmodule_dialog_message_complete_recipe">Voltooi eerst het recept</string>
+
+    <string name="tfthobmodule_hob_setting_fragment_toast_content">Om in Precieze modus te koken, verbindt u de externe temperatuursensor door deze in te schakelen.\nVergeet niet de batterij van de sensor op te laden of de sensor te verbinden met de externe voeding.</string>
+    <string name="tfthobmodule_my_recipes_edit_fragment_toast_content">Voer het recept in. Klik vervolgens op opslaan.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_name">Voer de naam van het recept in.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_temp">Selecteer de temperatuur.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_time">Selecteer de tijd.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_desc">Beschrijf het recept.</string>
+    <string name="tfthobmodule_hob_cooking_table_detail_fragment_toast_content">Selecteer het bereidingsproces door te klikken op het symbool afspelen. Verbind een externe sensor voor een betere controle van de temperatuur, en stel de modus in op precies.</string>
+
+    <string name="tfthobmodule_cooking_table_json">
+[\n
+      {\n
+        \"type\": \"Meat\",\n
+        \"description\": \"Vlees.50°C - 80°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Kip suprême\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Eendenborst\",\n
+            \"weight\": \"200g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Entrecote / T -bonesteak\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Scharrelkip suprême\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lamslende (kotelet)\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkenslende\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Poularde suprême\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Runderlendestuk - medium-rood\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"22\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Runderlendestuk – rood\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"18\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kuiken suprême\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"62\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Runder- / kalfswangen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kippendijen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kippenvleugels\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Eendenbouten\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Scharrelkippendijen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lamsnek\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mulard-eendenbouten\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkensoren / -snuit\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1080\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkenspoten\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkenswangen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkenskoteletten / Geheel ribstuk\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkenskaak\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Varkensschenkel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Gebraad van geitenschouder\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lamsschouder\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Speenvarken\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kalfsbil plakken / kluif / schenkel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"960\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hhele kwartel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Legumes and Cereals\",\n
+        \"description\": \"Groenten &amp; granen.90°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Gerst\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Bonen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"210\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Boekweit\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kikkererwten\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"240\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Linzen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Haver\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Quinoa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Tarwe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fruit\",\n
+        \"description\": \"Fruit.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Appel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Appel - gecontroleerd aanbranden\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Banaan\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kers\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Perzik\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Peer\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ananas\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pruim\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Rode bessen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Aardbeien\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Aardbeien - gecontroleerd aanbranden\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Shellfish\",\n
+        \"description\": \"Schaal- en schelpdieren.55°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Oesters\",\n
+            \"weight\": \"Middelgroot\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kokkels\",\n
+            \"weight\": \"Middelgroot\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"2\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Inktvis\",\n
+            \"weight\": \"Klein\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mosselen\",\n
+            \"weight\": \"Middelgroot\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"90\",\n
+                \"cookTime\": \"3\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Octopus\",\n
+            \"weight\": \"4kg\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Rotsmosselen\",\n
+            \"weight\": \"Klein\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pijlinktvis\",\n
+            \"weight\": \"Klein\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Vegetables\",\n
+        \"description\": \"Groenten.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Artisjok\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Baby-wortel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Baby-courgette\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zwarte raap\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kool (bladeren)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"12\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kool (stengels)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kardoenen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Wortel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Bloemkool\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"40\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Knolselderie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Snijbiet\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Courgette\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"In blokjes gesneden rode biet\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Andijvie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Venkel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"50\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Verse look\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Diepgevroren tuinbonen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Diepgevroren erwten\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Groene asperges\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Champignons\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Pastinaken\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Pechay (Napakool)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"6\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Witte kwaliteitsasperges\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Pompoen\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Schorseneer\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"In schijfjes gesneden aardappel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Spinazie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zoete aardappel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Raap\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Witte asperge\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Gehele rode biet\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Gehele geschilde aardappel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fish\",\n
+        \"description\": \"Vis.50°C - 60°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Kabeljauw\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Heek\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Makreel\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"8\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Rog\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zeebarbeel\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zalm\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zeebaars\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Tongfilets\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zwaardvis\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Tonijn\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ventresca-tonijnfilets\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"10\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Volledige tong\",\n
+            \"weight\": \"300g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zeeduivel\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      }\n
+    ]
+    </string>
+</resources>

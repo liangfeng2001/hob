@@ -1,0 +1,1173 @@
+<resources>
+    <string name="tfthobmodule_app_name">CataTFTProject</string>
+
+    <string name="tfthobmodule_temperature_unit">°</string>
+    <string name="tfthobmodule_timer_symbol">:</string>
+    <string name="tfthobmodule_demo">DEMO</string>
+
+    <string name="tfthobmodule_food_type_cooking_table">조리 테이블\n\n</string>
+    <string name="tfthobmodule_food_type_personalize">내 레시피\n\n</string>
+
+    <string name="tfthobmodule_cooking_tables_type_meat">육류</string>
+    <string name="tfthobmodule_cooking_tables_type_legumes_and_cereals">콩, 곡류</string>
+    <string name="tfthobmodule_cooking_tables_type_fruit">과일류</string>
+    <string name="tfthobmodule_cooking_tables_type_shellfish">어패류</string>
+    <string name="tfthobmodule_cooking_tables_type_vegetables">채소류</string>
+    <string name="tfthobmodule_cooking_tables_type_fish">생선류</string>
+
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_with_a_conit_of_wild_mushrooms">Vegetables with a conit\nof wild mushrooms</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_1">Vegetables 1</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_2">Vegetables 2</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_3">Vegetables 3</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_4">Vegetables 4</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_5">Vegetables 5</string>
+    <string name="tfthobmodule_recipes_subclass_title_red_mullet">Red Mullet With Citrus Fruits</string>
+    <string name="tfthobmodule_recipes_subclass_title_difficulty">DIFFICULTY:</string>
+    <string name="tfthobmodule_recipes_subclass_title_low">Low</string>
+    <string name="tfthobmodule_recipes_subclass_title_total_preparation">TOTAL PREPARATION:</string>
+    <string name="tfthobmodule_recipes_subclass_title_30min">30min</string>
+    <string name="tfthobmodule_recipes_subclass_title_type">TYPE:</string>
+    <string name="tfthobmodule_recipes_subclass_title_fish">생선류</string>
+    <string name="tfthobmodule_recipes_subclass_title_introduction">INTRODUCTION:</string>
+    <string name="tfthobmodule_recipes_subclass_message">Cooking in a microwave oven can be a good way of gently cooking food even though it is not a totally precise method. In this recipe we propose some magnificent red mullet protected by lemon leaves that will lend the dish a fresh citrus aroma. We will use low power in order to respect the food’s point of doneness.\nINGREDIENTS:
+4 pieces red mullet
+4 lemon leaves (or similar
+1 lemon
+1 French onion (shallot)
+70 g butter (10 for sautéing and 60 for the lemon sauce)
+Chervil
+12 saffron threads
+50g sunflower oil
+1 l brine (1 l water per 100 g salt)
+Salt and pepper
+
+WHAT YOU NEED: Microwave oven, Steam case
+
+GENERAL INFORMATION: Microwave oven 400w | 1min
+
+Step 1
+Peel the onion and cut it brunoise-style. Fry in the butter (10 g) on a gentle heat for 5 minutes. Add the juice of one lemon and leave to reduce.
+
+Step 2
+Leave to cool and whip with butter (60 g) by gradually adding cubes of butter (this preparation is similar to so-called beurre blanc). Add salt and pepper, mix and set to one side.
+
+Step 3
+For the saffron oil, put the saffron on a tray and dry in the oven for 20 seconds at 180 degrees. Next, mix with the sunflower oil and the salt.
+
+Step 4
+Soak the red mullet pieces in brine with 10% salt for 5 minutes.
+
+Step 5
+Dry the fish and cover it with the lemon leaves. Cook in the microwave for between 1 and 1’30 minutes depending on the thickness of the fish.
+
+Step 6
+To serve, make a base of sauce in each dish, add the red mullet (without the lemon leaves), dress mildly with the saffron oil and decorate with the chervil.
+</string>
+
+
+    <string name="tfthobmodule_recipes_food_detail_title_cooking_method">Cooking method:\nImmersed in liqid</string>
+
+    <!--fragment relate recipes-->
+    <string name="tfthobmodule_fragment_relate_recipes_title">Related Recipes</string>
+    <!--fragment my recipes-->
+    <string name="tfthobmodule_fragment_my_recipes_title">내 레시피</string>
+    <string name="tfthobmodule_fragment_my_recipes_title_new">신규</string>
+    <string name="tfthobmodule_fragment_my_recipes_confirm_delete_recipe">레시피 삭제를 원하시는지 확인하십시오.</string>
+
+    <!--fragment my recipes edit-->
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_name">이름</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_power">전력</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_temp">온도</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_time">시간</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_description">설명</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_save">저장</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_cook">조리시작</string>
+
+    <string name="tfthobmodule_cooker_setting_panel_tips_message">Use the scroll to set the power level.</string>
+    <string name="tfthobmodule_tips_message_search_and_connect_temp_sensor">Search and connect temperature sensor.</string>
+
+    <string name="tfthobmodule_title_boost">BOOST</string>
+    <string name="tfthobmodule_title_precise">정확</string>
+    <string name="tfthobmodule_title_fast">패스트</string>
+    <string name="tfthobmodule_title_back">뒤로</string>
+
+    <string name="tfthobmodule_title_boiling">끓이기</string>
+    <string name="tfthobmodule_title_simering">약한 불로 끓이기</string>
+    <string name="tfthobmodule_title_slow_cook">약한 불로 조리하기</string>
+    <string name="tfthobmodule_title_keep_warm">따뜻하게 유지하기</string>
+    <string name="tfthobmodule_title_melting">녹이기</string>
+
+    <string name="tfthobmodule_title_destination_software">Destination version: %1$s Total Size: %2$d bytes</string>
+    <string name="tfthobmodule_msg_downloading_apk">Downloading the apk file &#8230;&#8230;&#8230;</string>
+    <string name="tfthobmodule_msg_download_complete">Downloading process completed successfully</string>
+
+    <string name="tfthobmodule_err_er03_title">화면의 유리에서 물이나 조리 기구를 제거해 주세요.</string>
+
+    <string name="tfthobmodule_err_e1">E1E 과열 셧다운. 인덕션 플레이트가 식은 다음 다시 작동시키십시오.</string>
+    <string name="tfthobmodule_err_e2">E2E 과열 셧다운. 인덕션 플레이트가 식은 다음 다시 작동시키십시오.</string>
+    <string name="tfthobmodule_err_e3">E3E 공급 전압이 범위를 벗어났습니다.</string>
+    <string name="tfthobmodule_err_e4">E4E 공급 전압이 범위를 벗어났습니다.</string>
+    <string name="tfthobmodule_err_e5">E5E 조리 영역 에러. 기술 서비스팀에 문의하십시오.</string>
+    <string name="tfthobmodule_err_f1">F1E 조리 영역 에러. 기술 서비스팀에 문의하십시오.</string>
+    <string name="tfthobmodule_err_f3">F3E 조리 영역 에러. 기술 서비스팀에 문의하십시오.</string>
+    <string name="tfthobmodule_err_f4">F4E 조리 영역 에러. 기술 서비스팀에 문의하십시오.</string>
+
+    <string name="tfthobmodule_err_r1e">R1E 외부 센서의 배터리 수준이 요청된 조리 과정을 진행하기에 매우 낮습니다. 배터리를 충전하십시오.</string>
+    <string name="tfthobmodule_err_r2e">R2E 외부 센서의 배터리 수준이 요청된 조리 과정을 진행하기에 매우 낮습니다. 배터리를 충전하십시오.</string>
+    <string name="tfthobmodule_err_r3e">R3E 배터리 방전. 외부 전원 공급 장치를 연결한 후 다시 접속하십시오.</string>
+    <string name="tfthobmodule_err_r4e">R4E 센서 연결이 끊어졌습니다. 배터리를 확인하거나 제조사에 문의하십시오.</string>
+    <string name="tfthobmodule_err_r5e">R5E 외부 센서 오류. 센서 위치를 확인하시고 문제가 지속될 시 제조사에 문의하십시오.</string>
+    <string name="tfthobmodule_err_r6e">R6E 외부 센서 오류. 센서 위치를 확인하시고 문제가 지속될 시 제조사에 문의하십시오.</string>
+    <string name="tfthobmodule_err_r7e">R7E 외부 센서 오류. 센서 위치를 확인하시고 문제가 지속될 시 제조사에 문의하십시오.</string>
+
+    <!--dialog message -->
+    <string name="tfthobmodule_dialog_message_sensor_connect_successfully">외부 센서가 정상적으로 연결되었습니다.</string>
+    <string name="tfthobmodule_dialog_message_sensor_disconnect">External sensor disconnected.</string>
+    <string name="tfthobmodule_dialog_message_complete_recipe">레시피를 먼저 완료하십시오.</string>
+
+    <string name="tfthobmodule_hob_setting_fragment_toast_content">정확 모드로 조리하기 위해서는 외부 온도 센서를 켜서 이를 연결하십시오.\n센서의 배터리를 충전하거나 센서를 전원에 연결해야 한다는 사실을 잊지 마십시오.</string>
+    <string name="tfthobmodule_my_recipes_edit_fragment_toast_content">레시피를 입력하십시오. 그런 다음 저장을 클릭하십시오.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_name">레시피의 이름을 입력하십시오.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_temp">온도를 선택하십시오.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_time">시간을 선택하십시오.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_desc">레시피에 대한 설명을 적어 주세요.</string>
+    <string name="tfthobmodule_hob_cooking_table_detail_fragment_toast_content">조리 과정을 선택하기 위해서는 시작 아이콘을 클릭하십시오. 온도를 더욱 정확하게 제어하기 위해서는 외부 센서를 연결하고 정확 모드로 설정하십시오.</string>
+
+    <string name="tfthobmodule_cooking_table_json">
+[\n
+      {\n
+        \"type\": \"Meat\",\n
+        \"description\": \"육류.50°C - 80°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"프리미엄 닭고기\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"오리 가슴살\",\n
+            \"weight\": \"200g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"스테이크용 갈빗살 / 티본 스테이크\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"프리미엄 방목하여 기른 닭\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"어린 양 허릿살(갈비)\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 등심\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"프리미엄 살찐 암탉 영계\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"미디엄 구이 등심\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"22\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"레어 구이 등심\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"18\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"프리미엄 새끼 비둘기\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"62\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"소 / 송아지 턱살\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"닭 다리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"닭 날개\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"오리 다리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"방목하여 기른 닭 다리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"어린 양 목\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"무라드 오리 다리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 귀 / 주둥이\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1080\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 족\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 턱살\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 갈비 / 등갈비\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 턱 밑 살\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"돼지 다리 관절\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"어린 염소 앞다리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"어린 양 뒷다리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"새끼 돼지\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"송아지 넓적다리 / 다리 관절 / 정강이 살\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"960\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"통 메추리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Legumes and Cereals\",\n
+        \"description\": \"콩, 곡류.90°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"보리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"강낭콩\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"210\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"메밀\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"병아리콩\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"240\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"렌틸콩\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"귀리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"퀴노아\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"밀\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fruit\",\n
+        \"description\": \"과일류.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"사과\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"사과 (의도적으로 많이 익힌 상태)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"바나나\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"체리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"복숭아\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"배\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"파인애플\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"자두\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"딸기류 열매들\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"딸기\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"딸기 (의도적으로 많이 익힌 상태)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Shellfish\",\n
+        \"description\": \"어패류.55°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"조개\",\n
+            \"weight\": \"중간 사이즈\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"꼬막\",\n
+            \"weight\": \"중간 사이즈\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"2\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"갑오징어\",\n
+            \"weight\": \"작은 사이즈\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"홍합\",\n
+            \"weight\": \"중간 사이즈\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"90\",\n
+                \"cookTime\": \"3\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"문어\",\n
+            \"weight\": \"4kg\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"지중해 홍합\",\n
+            \"weight\": \"작은 사이즈\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"오징어\",\n
+            \"weight\": \"작은 사이즈\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Vegetables\",\n
+        \"description\": \"채소류.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"아티초크\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"미니 당근\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"미니 애호박\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"흑무\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"양배추 (잎)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"12\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"양배추 (줄기)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"엉겅퀴\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"당근\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"콜리플라워\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"40\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"큰 뿌리 셀러리\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"근대\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"애호박\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"깍뚝썬 사탕무\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"꽃상추\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"회향\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"50\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"생 마늘\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"냉동 잠두\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"냉동 완두콩\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"녹색 아스파라거스\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"양송이 버섯\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"파스닙\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"배추\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"6\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"프리미엄 흰색 아스파라거스\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"호박\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"서양 우엉\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"슬라이스된 감자\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"시금치\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"고구마\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"무\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"흰색 아스파라거스\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"통 사탕무\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"깐 통 감자\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fish\",\n
+        \"description\": \"생선류.50°C - 60°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"대구\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"헤이크\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"고등어\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"8\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"가오리\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"노랑촉수\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"연어\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"농어\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"혀가자미 살\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"황새치\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"참치\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"뼈를 발라낸 참치 뱃살\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"10\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"통 혀가자미\",\n
+            \"weight\": \"300g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"아귀\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      }\n
+    ]
+    </string>
+</resources>

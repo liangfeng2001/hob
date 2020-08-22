@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion build_versions.compile_sdk_version
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode build_versions.version_code
+        versionName build_versions.version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resourcePrefix "tfthoodmodule_"
+        ndk {
+            // 加了其他的文件夹（比如 armeabi-v7a，x86等）可能会出问题
+            //abiFilters "armeabi-v7a"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = ['src/main/jni']
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':commonmodule')
+    implementation project(':viewmodule')
+    annotationProcessor deps.butterknife_compiler
+}

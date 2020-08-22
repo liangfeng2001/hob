@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tfthobmodule_foodtype_names">
+        <item>@string/tfthobmodule_food_type_cooking_table</item>
+        <item>@string/tfthobmodule_food_type_personalize</item>
+        <item>@string/viewmodule_food_recipe_tostada</item>
+        <item>@string/viewmodule_food_recipe_esparragos</item>
+        <item>@string/viewmodule_food_recipe_quinoa</item>
+        <item>@string/viewmodule_food_recipe_setas</item>
+        <item>@string/viewmodule_food_recipe_alcachofas</item>
+        <item>@string/viewmodule_food_recipe_huevos</item>
+        <item>@string/viewmodule_food_recipe_sopa_de</item>
+        <item>@string/viewmodule_food_recipe_salmon</item>
+        <item>@string/viewmodule_food_recipe_lubina</item>
+        <item>@string/viewmodule_food_recipe_bacalao</item>
+        <item>@string/viewmodule_food_recipe_merluza</item>
+
+        <item>@string/viewmodule_food_recipe_pechuga</item>
+        <item>@string/viewmodule_food_recipe_solomillo</item>
+        <item>@string/viewmodule_food_recipe_entrecotte</item>
+        <item>@string/viewmodule_food_recipe_panceta</item>
+        <item>@string/viewmodule_food_recipe_coastillar</item>
+        <item>@string/viewmodule_food_recipe_parada</item>
+        <item>@string/viewmodule_food_recipe_gelee</item>
+        <item>@string/viewmodule_food_recipe_flan_de</item>
+    </string-array>
+
+    <!-- 此处不允许有重复项，因为其他部分代码会根据这里的 Image Resource Id 来判断该调出何种食谱或分类 -->
+    <integer-array name="tfthobmodule_foodtype_images">
+        <item>@mipmap/food_type_cooking_table</item>
+        <item>@mipmap/food_type_personalize</item>
+        <item>@mipmap/food_recipe_tostada</item>
+        <item>@mipmap/food_recipe_esparragos</item>
+        <item>@mipmap/food_recipe_quinoa</item>
+        <item>@mipmap/food_recipe_setas</item>
+        <item>@mipmap/food_recipe_alcachofas</item>
+        <item>@mipmap/food_recipe_huevos</item>
+        <item>@mipmap/food_recipe_sopa_de</item>
+        <item>@mipmap/food_recipe_salmon_coliflor</item>
+        <item>@mipmap/food_recipe_lubina</item>
+        <item>@mipmap/food_recipe_bacalao</item>
+        <item>@mipmap/food_recipe_merluza</item>
+
+        <item>@mipmap/food_recipe_pechuga</item>
+        <item>@mipmap/food_recipe_solomillo</item>
+        <item>@mipmap/food_recipe_entrecotte</item>
+        <item>@mipmap/food_recipe_panceta</item>
+        <item>@mipmap/food_recipe_coastillar</item>
+        <item>@mipmap/food_recipe_parada</item>
+        <item>@mipmap/food_recipe_gelee</item>
+        <item>@mipmap/food_recipe_flan_de</item>
+    </integer-array>
+
+    <string-array name="tfthobmodule_food_vegetables">
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_with_a_conit_of_wild_mushrooms</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_1</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_2</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_3</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_4</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_5</item>
+
+    </string-array>
+
+    <integer-array name="tfthobmodule_food_vegetables_images">
+        <item>@mipmap/image_vegetable0</item>
+        <item>@mipmap/image_vegetable1</item>
+        <item>@mipmap/image_vegetable2</item>
+        <item>@mipmap/image_vegetable3</item>
+        <item>@mipmap/image_vegetable4</item>
+        <item>@mipmap/image_vegetable5</item>
+
+    </integer-array>
+
+    <string-array name="tfthobmodule_food_vegetables_relate">
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_1</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_2</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_3</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_4</item>
+        <item>@string/tfthobmodule_recipes_subclass_title_vegetables_5</item>
+
+    </string-array>
+
+    <integer-array name="tfthobmodule_food_vegetables_relate_images">
+        <item>@mipmap/image_relate_recipes0</item>
+        <item>@mipmap/image_relate_recipes1</item>
+        <item>@mipmap/image_relate_recipes2</item>
+        <item>@mipmap/image_relate_recipes3</item>
+        <item>@mipmap/image_relate_recipes4</item>
+
+    </integer-array>
+
+    <string-array name="tfthobmodule_preference_values">
+        <item>Twitter</item>
+        <item>Google</item>
+        <item>Instagram</item>
+        <item>Facebook</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_display"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_display"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingmodule_fragment_setting_display_title_brightness"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:id="@+id/title_brightness"
+            />
+    <!--    <SeekBar
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/settingmodule_brightness_seekbar_background"
+            android:thumb="@mipmap/brightness_thumb"
+            android:thumbOffset="0dip"
+            android:maxHeight="54dp"
+            android:minHeight="54dp"
+            android:id="@+id/sb_brightness"
+            />-->
+        <SeekBar
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/settingmodule_brightness_seekbar_background"
+            android:thumb="@mipmap/brightness_thumb"
+            android:thumbOffset="0dip"
+            android:minHeight="8dp"
+            android:maxHeight="8dp"
+            android:id="@+id/sb_brightness"
+            android:paddingLeft="0dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/settingmodule_fragment_setting_display_title_wallpaper"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:id="@+id/title_wallpaper"
+            android:visibility="invisible"
+            />
+        <GridView
+            android:id="@+id/gv_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:columnWidth="120px"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+</RelativeLayout>

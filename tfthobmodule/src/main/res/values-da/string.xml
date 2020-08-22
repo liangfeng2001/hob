@@ -1,0 +1,1173 @@
+<resources>
+    <string name="tfthobmodule_app_name">CataTFTProject</string>
+
+    <string name="tfthobmodule_temperature_unit">°</string>
+    <string name="tfthobmodule_timer_symbol">:</string>
+    <string name="tfthobmodule_demo">DEMO</string>
+
+    <string name="tfthobmodule_food_type_cooking_table">Kogeoversigt\n\n</string>
+    <string name="tfthobmodule_food_type_personalize">Mine opskrifter\n\n</string>
+
+    <string name="tfthobmodule_cooking_tables_type_meat">Kød</string>
+    <string name="tfthobmodule_cooking_tables_type_legumes_and_cereals">Bælgfrugter &amp; korn</string>
+    <string name="tfthobmodule_cooking_tables_type_fruit">Frugt</string>
+    <string name="tfthobmodule_cooking_tables_type_shellfish">Skaldyr</string>
+    <string name="tfthobmodule_cooking_tables_type_vegetables">Grøntsager</string>
+    <string name="tfthobmodule_cooking_tables_type_fish">Fisk</string>
+
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_with_a_conit_of_wild_mushrooms">Vegetables with a conit\nof wild mushrooms</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_1">Vegetables 1</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_2">Vegetables 2</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_3">Vegetables 3</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_4">Vegetables 4</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_5">Vegetables 5</string>
+    <string name="tfthobmodule_recipes_subclass_title_red_mullet">Red Mullet With Citrus Fruits</string>
+    <string name="tfthobmodule_recipes_subclass_title_difficulty">DIFFICULTY:</string>
+    <string name="tfthobmodule_recipes_subclass_title_low">Low</string>
+    <string name="tfthobmodule_recipes_subclass_title_total_preparation">TOTAL PREPARATION:</string>
+    <string name="tfthobmodule_recipes_subclass_title_30min">30min</string>
+    <string name="tfthobmodule_recipes_subclass_title_type">TYPE:</string>
+    <string name="tfthobmodule_recipes_subclass_title_fish">Fisk</string>
+    <string name="tfthobmodule_recipes_subclass_title_introduction">INTRODUCTION:</string>
+    <string name="tfthobmodule_recipes_subclass_message">Cooking in a microwave oven can be a good way of gently cooking food even though it is not a totally precise method. In this recipe we propose some magnificent red mullet protected by lemon leaves that will lend the dish a fresh citrus aroma. We will use low power in order to respect the food’s point of doneness.\nINGREDIENTS:
+4 pieces red mullet
+4 lemon leaves (or similar
+1 lemon
+1 French onion (shallot)
+70 g butter (10 for sautéing and 60 for the lemon sauce)
+Chervil
+12 saffron threads
+50g sunflower oil
+1 l brine (1 l water per 100 g salt)
+Salt and pepper
+
+WHAT YOU NEED: Microwave oven, Steam case
+
+GENERAL INFORMATION: Microwave oven 400w | 1min
+
+Step 1
+Peel the onion and cut it brunoise-style. Fry in the butter (10 g) on a gentle heat for 5 minutes. Add the juice of one lemon and leave to reduce.
+
+Step 2
+Leave to cool and whip with butter (60 g) by gradually adding cubes of butter (this preparation is similar to so-called beurre blanc). Add salt and pepper, mix and set to one side.
+
+Step 3
+For the saffron oil, put the saffron on a tray and dry in the oven for 20 seconds at 180 degrees. Next, mix with the sunflower oil and the salt.
+
+Step 4
+Soak the red mullet pieces in brine with 10% salt for 5 minutes.
+
+Step 5
+Dry the fish and cover it with the lemon leaves. Cook in the microwave for between 1 and 1’30 minutes depending on the thickness of the fish.
+
+Step 6
+To serve, make a base of sauce in each dish, add the red mullet (without the lemon leaves), dress mildly with the saffron oil and decorate with the chervil.
+</string>
+
+
+    <string name="tfthobmodule_recipes_food_detail_title_cooking_method">Cooking method:\nImmersed in liqid</string>
+
+    <!--fragment relate recipes-->
+    <string name="tfthobmodule_fragment_relate_recipes_title">Related Recipes</string>
+    <!--fragment my recipes-->
+    <string name="tfthobmodule_fragment_my_recipes_title">Mine opskrifter</string>
+    <string name="tfthobmodule_fragment_my_recipes_title_new">Ny</string>
+    <string name="tfthobmodule_fragment_my_recipes_confirm_delete_recipe">Bekræft, at du vil slette opskriften</string>
+
+    <!--fragment my recipes edit-->
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_name">Navn</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_power">Effekt</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_temp">Temperatur</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_time">Tid</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_description">Beskrivelse</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_save">Gem</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_cook">Madlavning</string>
+
+    <string name="tfthobmodule_cooker_setting_panel_tips_message">Use the scroll to set the power level.</string>
+    <string name="tfthobmodule_tips_message_search_and_connect_temp_sensor">Search and connect temperature sensor.</string>
+
+    <string name="tfthobmodule_title_boost">BOOST</string>
+    <string name="tfthobmodule_title_precise">Præcis</string>
+    <string name="tfthobmodule_title_fast">Hurtig</string>
+    <string name="tfthobmodule_title_back">Tilbage</string>
+
+    <string name="tfthobmodule_title_boiling">Koge</string>
+    <string name="tfthobmodule_title_simering">Simre</string>
+    <string name="tfthobmodule_title_slow_cook">Langsom tilberedning</string>
+    <string name="tfthobmodule_title_keep_warm">Hold varm</string>
+    <string name="tfthobmodule_title_melting">Smelte</string>
+
+    <string name="tfthobmodule_title_destination_software">Destination version: %1$s Total Size: %2$d bytes</string>
+    <string name="tfthobmodule_msg_downloading_apk">Downloading the apk file &#8230;&#8230;&#8230;</string>
+    <string name="tfthobmodule_msg_download_complete">Downloading process completed successfully</string>
+
+    <string name="tfthobmodule_err_er03_title">Fjern vand eller køkkentøj fra glasset over skærmen.</string>
+
+    <string name="tfthobmodule_err_e1">E1E Termisk nedlukning. Tænd igen efter induktionskomfuret er kølet ned.</string>
+    <string name="tfthobmodule_err_e2">E2E Termisk nedlukning. Tænd igen efter induktionskomfuret er kølet ned.</string>
+    <string name="tfthobmodule_err_e3">E3E Forsyningsspænding er forkert.</string>
+    <string name="tfthobmodule_err_e4">E4E Forsyningsspænding er forkert.</string>
+    <string name="tfthobmodule_err_e5">E5E Fejl på en kogezone. Kontakt teknisk service</string>
+    <string name="tfthobmodule_err_f1">F1E Fejl på en kogezone. Kontakt teknisk service</string>
+    <string name="tfthobmodule_err_f3">F3E Fejl på en kogezone. Kontakt teknisk service</string>
+    <string name="tfthobmodule_err_f4">F4E Fejl på en kogezone. Kontakt teknisk service</string>
+
+    <string name="tfthobmodule_err_r1e">R1E Batteriniveauet for den eksterne sensor er for lavt til den anmodede madlavningsproces. Udskift batteriet.</string>
+    <string name="tfthobmodule_err_r2e">R2E Batteriniveauet for den eksterne sensor er for lavt til den anmodede madlavningsproces. Udskift batteriet.</string>
+    <string name="tfthobmodule_err_r3e">R3E Batteriet er helt afladet, slut den til en ekstern strømforsyning og forbind igen.</string>
+    <string name="tfthobmodule_err_r4e">R4E Forbindelsen til sensoren blev afbrudt. Kontroller batteriet eller kontakten med producenten.</string>
+    <string name="tfthobmodule_err_r5e">R5E-fejl på ekstern sensor. Kontroller sensorens placering - hvis fejlen fortsætter, kontakt da producenten.</string>
+    <string name="tfthobmodule_err_r6e">R6E-fejl på ekstern sensor. Kontroller sensorens placering - hvis fejlen fortsætter, kontakt da producenten.</string>
+    <string name="tfthobmodule_err_r7e">R7E-fejl på ekstern sensor. Kontroller sensorens placering - hvis fejlen fortsætter, kontakt da producenten.</string>
+
+  <!--dialog message -->
+    <string name="tfthobmodule_dialog_message_sensor_connect_successfully">Ekstern sensor blev tilsluttet.</string>
+    <string name="tfthobmodule_dialog_message_sensor_disconnect">External sensor disconnected.</string>
+    <string name="tfthobmodule_dialog_message_complete_recipe">Gør venligst opskriften færdig først</string>
+
+    <string name="tfthobmodule_hob_setting_fragment_toast_content">Madlavning i tilstanden Præcis forbinder komfuret til en ekstern temperatursensor, og tænder den.\nHusk at oplade sensorens batteri, eller slut den til en ekstern strømforsyning.</string>
+    <string name="tfthobmodule_my_recipes_edit_fragment_toast_content">Indtast din opskrift. Klik derefter for at gemme.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_name">Indtast navnet på opskriften.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_temp">Vælg temperatur.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_time">Vælg tid.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_desc">Beskriv opskriften.</string>
+    <string name="tfthobmodule_hob_cooking_table_detail_fragment_toast_content">Vælg madlavningsforløb ved at klikke på startikonet. For at få en bedre temperaturkontrol, slut da komfuret til en ekstern sensor og indstil tilstanden til Præcis.</string>
+
+    <string name="tfthobmodule_cooking_table_json">
+[\n
+      {\n
+        \"type\": \"Meat\",\n
+        \"description\": \"Kød.50°C - 80°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Kyllingebryst\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Andebryst\",\n
+            \"weight\": \"200g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Entrecôte / T-bone steak\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kyllingebryst fra fritgående kyllinger\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lammeryg (koteletter)\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Svinemørbrad\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Poulardbryst\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mørbradbøf - medium-rød\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"22\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mørbradbøf - rød\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"18\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Duebryst\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"62\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Okse- / kalvekæbe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kyllingelår\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kyllingevinger\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Andelår\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kyllingelår fra fritgående kyllinger\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lammehals\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mulard-andelår\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Griseører / tryne\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1080\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Grisetæer\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Svinekæber\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Svinekoteletter / svinekam\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Svinebovsnitte\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Svineskank\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Stegt gedeskulder\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lammeskulder\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pattegris\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kalveculotte / skinke / skank\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"960\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hele vagtler\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Legumes and Cereals\",\n
+        \"description\": \"Bælgfrugter &amp; korn.90°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Byg\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Bønner\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"210\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Boghvede\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kikærter\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"240\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Linser\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Havre\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Quinoa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hvede\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fruit\",\n
+        \"description\": \"Frugt.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Æble\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Æble - kontrolleret udkogning\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Banan\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kirsebær\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Fersken\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pære\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ananas\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Blomme\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Røde bær\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Jordbær\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Jordbær - kontrolleret udkogning\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Shellfish\",\n
+        \"description\": \"Skaldyr.55°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Knivmuslinger\",\n
+            \"weight\": \"Medium størrelse\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hjertemuslinger\",\n
+            \"weight\": \"Medium størrelse\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"2\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Blæksprutte\",\n
+            \"weight\": \"Lille\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kammuslinger\",\n
+            \"weight\": \"Medium størrelse\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"90\",\n
+                \"cookTime\": \"3\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ottearmet blæksprutte\",\n
+            \"weight\": \"4kg\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Blåmuslinger\",\n
+            \"weight\": \"Lille\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Tiarmet blæksprutte\",\n
+            \"weight\": \"Lille\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Vegetables\",\n
+        \"description\": \"Grøntsager.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Artiskok\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Babygulerod\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Minicourgetter\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Sort majroe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kål (blade)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"12\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kål (stilk)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kardoner\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Gulerod\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Blomkål\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"40\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Selleri\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Bladbede\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Courgette\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Rødbede i tern\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Endivie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Fennikel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"50\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Frisk hvidløg\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Frosne hestebønner\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Frosne ærter\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Grønne asparges\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Svampe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Pastinak\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kinakål\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"6\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Hvide asparges af god kvalitet\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Græskar\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Skorzoner\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kartoffelskiver\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Spinat\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Sød kartoffel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Majroe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Hvide asparges\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Hel rødbede\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Hel skrællet kartoffel\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fish\",\n
+        \"description\": \"Fisk.50°C - 60°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Torsk\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kulmule\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Makrel\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"8\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Rokke\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Rød mulle\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Laks\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Havbars\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Søtungefilet\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Sværdfisk\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Tun\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ventresca tunfiletter\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"10\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Hel søtunge\",\n
+            \"weight\": \"300g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Havtaske\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      }\n
+    ]
+    </string>
+</resources>

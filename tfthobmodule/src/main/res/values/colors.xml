@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tfthobmodule_colorPrimary">#3F51B5</color>
+    <color name="tfthobmodule_colorPrimaryDark">#303F9F</color>
+    <color name="tfthobmodule_colorAccent">#FF4081</color>
+    <color name="tfthobmodule_colorSettingBackground">#343433</color>
+    <color name="tfthobmodule_colorCookTime">#94C11E</color>
+    <color name="tfthobmodule_error_text">#757575</color>
+
+    <color name="tfthobmodule_debug_info_1">#1593d2</color>
+    <color name="tfthobmodule_debug_info_2">#23b875</color>
+</resources>

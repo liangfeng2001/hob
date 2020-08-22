@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="62dp"
+    android:layout_marginRight="180dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_full_screen">
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:soundEffectsEnabled="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="40dp"
+        android:scaleType="matrix"
+        android:background="@null"
+        android:src="@mipmap/ic_setting_back"
+        android:id="@+id/ib_back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ib_back"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_settings"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_setting"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:id="@+id/tv_title"
+        android:visibility="invisible"
+        android:layout_marginLeft="130dp"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ic_info"
+        android:src="@mipmap/ic_info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/ib_back"
+        android:id="@+id/ll_container"
+        ></LinearLayout>
+    <TextView
+        android:background="@drawable/bg_up_toast"
+        android:id="@+id/tv_up_toast"
+        android:textSize="@dimen/settingmodule_info_banner_text_size"
+        android:visibility="invisible"
+        android:text=" Here you can customize your hob. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="62dp"/>
+</RelativeLayout>

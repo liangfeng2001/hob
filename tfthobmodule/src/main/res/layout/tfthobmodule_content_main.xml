@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_main"
+    android:padding="@dimen/tfthobmodule_spaceBetweenViewAndEdge"
+    android:clickable="true"
+    tools:context=".MainActivity">
+
+    <!--android:layout_below="@id/scv"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/ll_container"
+        ></LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/slide_menu"
+        android:layout_gravity="right"
+        android:id="@+id/iv_menu"
+        android:visibility="invisible"
+        />
+
+    <com.ekek.viewmodule.time.StatusBarClockTimerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:id="@+id/sbctv"
+        />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_info"
+        android:id="@+id/ib_up_info"
+        android:layout_marginRight="150dp"
+        android:layout_gravity="top|right"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:background="@drawable/bg_up_toast"
+        android:id="@+id/tv_up_toast"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="180dp"
+        android:textSize="@dimen/tfthobmodule_info_banner_text_size"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_gravity="top|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:background="@android:color/holo_blue_bright"
+        android:src="@mipmap/ic_hood"
+        android:id="@+id/ib_hood"
+        android:layout_marginRight="120dp"
+        android:layout_gravity="bottom|right"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_marginTop="30dp"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_back"
+        android:drawablePadding="10dp"
+        android:text="Back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:id="@+id/tv_back"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/ic_handle"
+        android:layout_gravity="center|right"
+        android:visibility="invisible"
+        android:id="@+id/ib_menu_handle"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center|top"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_temp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_ntc_temp"
+            />
+    </LinearLayout>
+
+ <!--   <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_preheat_sample_samll"
+        android:layout_gravity="center|bottom"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>-->
+
+
+
+    <com.ekek.viewmodule.common.BatteryIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/biv_bluetooth"
+        android:layout_gravity="bottom|left"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_debug_info"
+        android:layout_width="920dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:visibility="invisible"
+        android:textColor="@color/tfthobmodule_debug_info_1"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tv_debug_info_bottom"
+        android:layout_width="920dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:textColor="@color/tfthobmodule_debug_info_2"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="167dp"
+        android:id="@+id/right_back"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="50dp"
+        android:src="@mipmap/right_back"
+        android:layout_marginTop="75dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:visibility="invisible"/>
+</FrameLayout>

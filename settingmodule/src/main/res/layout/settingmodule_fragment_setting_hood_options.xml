@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_hood_options"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_hood_options"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tv_title"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_setting_hood_options_title_stablish_connection"
+                android:id="@+id/title_stabishi_connection"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                android:id="@+id/sw_stablish_connection"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_setting_hood_options_title_auto_mode"
+                android:id="@+id/title_auto_mode"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                android:id="@+id/sw_auto_mode"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+        <CheckedTextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/ct_mode_intense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:textSize="@dimen/viewmodule_setting_content_size"
+            android:textColor="@android:color/white"
+            android:text="@string/settingmodule_fragment_setting_hood_options_title_mode_intense"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:clickable="true"
+            android:focusable="true"
+            ></CheckedTextView>
+
+        <CheckedTextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/ct_mode_ecologic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:textSize="@dimen/viewmodule_setting_content_size"
+            android:textColor="@android:color/white"
+            android:text="@string/settingmodule_fragment_setting_hood_options_title_mode_ecologic"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:clickable="true"
+            android:focusable="true"
+            ></CheckedTextView>
+
+    </LinearLayout>
+</RelativeLayout>

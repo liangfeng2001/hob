@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tvDestVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/viewmodule_padding_normal"
+        android:layout_marginEnd="@dimen/viewmodule_padding_normal"
+        android:textSize="@dimen/tfthobmodule_error_text_size"
+        android:textColor="@color/viewmodule_white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/viewmodule_padding_normal"
+        android:layout_marginBottom="@dimen/viewmodule_padding_xxxlarge"
+        android:background="@color/viewmodule_white"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/viewmodule_padding_xxxlarge"
+        android:paddingEnd="@dimen/viewmodule_padding_xxxlarge"
+        android:textSize="@dimen/tfthobmodule_error_text_size"
+        android:textColor="@color/viewmodule_white"/>
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewmodule_padding_normal"
+        android:paddingStart="@dimen/viewmodule_padding_xxxlarge"
+        android:paddingEnd="@dimen/viewmodule_padding_xxxlarge"
+        android:max="100" />
+</LinearLayout>

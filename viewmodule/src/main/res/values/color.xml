@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--档位字体颜色-->
+    <color name="viewmodule_gear_white">#FFFFFF</color>
+    <color name="viewmodule_error_red">@android:color/holo_red_dark</color>
+    <color name="viewmodule_color_menu_bar">#343433</color>
+    <color name="viewmodule_white">#FFFF</color>
+    <color name="viewmodule_pomegranate">#f4511e</color>
+    <color name="viewmodule_colorCircleProgress">#ba2431</color>
+
+</resources>

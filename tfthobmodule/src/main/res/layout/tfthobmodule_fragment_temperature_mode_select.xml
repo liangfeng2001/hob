@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iv_temp_mode"
+            android:layout_width="640dp"
+            android:layout_height="640dp"
+            android:scaleType="center"
+            android:src="@mipmap/bg_cooker_setting_fire_gear_mode"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tv_precise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:text="@string/tfthobmodule_title_precise"
+            android:textColor="@color/viewmodule_white"
+            android:textSize="60sp"/>
+
+        <TextView
+            android:id="@+id/tv_fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/tfthobmodule_title_fast"
+            android:textColor="@color/viewmodule_white"
+            android:textSize="60sp"/>
+    </FrameLayout>
+
+</RelativeLayout>

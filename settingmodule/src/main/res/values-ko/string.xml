@@ -1,0 +1,222 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">설정</string>
+    <string name="settingmodule_setting_title_display">화면</string>
+    <string name="settingmodule_setting_title_language">언어</string>
+    <string name="settingmodule_setting_title_sound">소리</string>
+    <string name="settingmodule_setting_title_security">보안</string>
+    <string name="settingmodule_setting_title_conectivity">연결성</string>
+    <string name="settingmodule_setting_title_hood_options">후드 옵션</string>
+    <string name="settingmodule_setting_title_power_limit">전력 제한</string>
+    <string name="settingmodule_setting_title_default_settings">기본값 설정</string>
+    <string name="settingmodule_setting_title_date_and_time">날짜와 시각</string>
+    <string name="settingmodule_setting_title_information">정보</string>
+    <string name="settingmodule_setting_title_energy_settings">전원 설정</string>
+    <string name="settingmodule_setting_title_test_cookware">조리 기구 테스트</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">밝기</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">배경 화면</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">소리</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">세기</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">클릭 소리</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">후드 연결성</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">자동 모드</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">모드 강도</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">모드 생태</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">후드의 사용 설명서에 따라 후드 연결성을 활성화하십시오.\n플레이트와 후드가 연결되어 있는지 확인하십시오. </string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">기본값 설정 복원하기 </string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">제조사의 설정을 복원하시겠습니까?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">아니오</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">네</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">기본값 설정이 정상적으로 복원되었습니다. </string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">전력 제한 사용</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">화면 잠금</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">비밀 번호</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">패턴</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">2초간 누르기</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">화면 잠금 확인</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">화면 잠금 설정</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">화면 잠금 설정</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">화면 잠금 확인</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">블루투스 장치.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">연결되지 않은 장치들에게도 보이기</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">이름</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">연결된 장치</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">온도 센서</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">스마트폰/태블릿PC</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">날짜 설정</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">시각 설정</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">24시간 형식 사용</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">알람 설정</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">아이콘 설명</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">소프트웨어 버전</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">데모 모드</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">업데이트</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">로고</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">잠금</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">타이머 끄기</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">정보</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">정지</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">닫기</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">후드 옵션</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">레시피</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">전력</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">타이머</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">알람</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">온도 센서</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">설정</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">온도</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">새 테스트 시작</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">조리 영역을 선택하십시오.</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">조리 기구에 물 약 200 ml를 담고 조리 영역에서 해당 기구 바닥의 지름에 가장 잘 들어 맞는 위치를 찾아 올바르게 놓으십시오.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">귀하의 조리 기구는 이 플레이트와 호환이 가능합니다.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">귀하의 조리 기구는 이 플레이트와 호환되지 않습니다.</string>
+    <!--months-->
+    <string name="settingmodule_months_january">1월</string>
+    <string name="settingmodule_months_february">2월</string>
+    <string name="settingmodule_months_march">3월</string>
+    <string name="settingmodule_months_april">4월</string>
+    <string name="settingmodule_months_may">5월</string>
+    <string name="settingmodule_months_june">6월</string>
+    <string name="settingmodule_months_july">7월</string>
+    <string name="settingmodule_months_august">8월</string>
+    <string name="settingmodule_months_september">9월</string>
+    <string name="settingmodule_months_october">10월</string>
+    <string name="settingmodule_months_november">11월</string>
+    <string name="settingmodule_months_december">12월</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">소리 크기</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">알람 지속 시간</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">알람 다시 울림</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">스크롤을 이용해 알람(시/분)을 설정하십시오.\n오직 소리로 알려주는 기능만 있으며 조리 과정을 중단하지는 않습니다.\n카운트다운은 시각 가까이에 보여집니다.</string>
+    <string name="settingmodule_fragment_display_toast_content">화면 밝기를 선택하십시오.</string>
+    <string name="settingmodule_fragment_sound_toast_content">모든 소리와 세기 설정 활성화 / 비활성화\n클릭 소리만 활성화 / 비활성화</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">블루투스를 이용해 장치를 연결하십시오.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">전력 제한을 선택하십시오.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">현재 날짜와 시각을 설정하십시오.\n원하시는 형식을 선택하십시오.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">알람 설정을 선택하십시오.</string>
+    <string name="settingmodule_fragment_language_toast_content">언어를 선택하십시오.</string>
+    <string name="settingmodule_fragment_security_toast_content">잠금 모드를 설정하십시오.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">4자리 비밀 번호를 선택하십시오.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">선택한 비밀 번호를 다시 입력하십시오.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">최소 4개의 점으로 연결된 패턴을 선택하십시오.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">패턴을 확인하십시오.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">후드 제어를 설정하십시오.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">패턴이 잠금 화면의 패턴과 동일합니다.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">비밀 번호가 잠금 화면의 비밀 번호와 동일합니다.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">초기 설정을 복원합니다.</string>
+    <string name="settingmodule_fragment_information_toast_content">귀하의 장치와 작동 방식에 대한 유용한 정보를 보실 수 있습니다.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">귀하의 장치와 작동 방식에 대한 유용한 정보를 보실 수 있습니다.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">您可以在交互式教程和演示视频之间进行选择。</string>
+    <string name="settingmodule_fragment_updates_toast_content">等待更新过程完成。</string>
+    <string name="settingmodule_fragment_energy_toast_content">귀하의 장치의 효율성을 높이려면 절전 모드와 대기 모드를 설정하십시오.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">조리 기구에 물 약 200 ml를 담고 조리 영역에서 해당 기구 바닥의 지름에 가장 잘 들어 맞는 위치를 찾아 올바르게 놓으십시오.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">조리 영역에 조리 기구가 올바르게 놓여 있는지 확인하십시오.\n설명서에 있는 적합한 조리 기구 리스트를 확인하시기 바랍니다.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">이 조리 기구는 플레이트를 정상적으로 작동하도록 합니다.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">테스트를 진행하기 위해 지시 사항을 따르십시오.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">적절한 조리 기구를 선택함으로써 플레이트가 최적의 상태로 작동하게 하고 오작동을 방지할 수 있습니다.</string>
+    <string name="settingmodule_fragment_main_toast_content">귀하의 장치를 맞춤 설정할 수 있습니다.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">절전 모드 화면 형식을 설정하십시오.\n일정 시간 동안 장치와의 상호 작용이 없는 상태가 지속된 이후 나타납니다.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">教程</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <!-- Have not been used yet -->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">절전 모드</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">활성화 시간</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">완전 종료</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">완전 종료 시간</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">절전 형식</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">시각 형식</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">디지털</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">아날로그</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">날짜</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">메시지</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">닫기</string>
+
+    <string name="settingmodule_no_external_sensor_detected">외부 조리 센서를 감지하지 못했습니다. 정확한 온도 감지에 영향이 있을 수 있습니다. </string>
+    <string name="settingmodule_external_sensor_disconnected">외부 조리 센서를 감지하지 못했습니다.</string>
+</resources>

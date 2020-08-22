@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:paddingTop="@dimen/tfthobmodule_padding_normal"
+        android:paddingBottom="@dimen/tfthobmodule_padding_normal"
+        android:paddingStart="@dimen/tfthobmodule_padding_normal"
+        android:paddingEnd="@dimen/tfthobmodule_padding_right_back"
+        android:layout_marginTop="24dp"
+        android:textSize="@dimen/tfthobmodule_back_button_text_size"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:drawableStart="@mipmap/ic_back"
+        android:drawablePadding="10dp"
+        android:text="@string/tfthobmodule_title_back"
+        android:visibility="visible"
+        android:id="@+id/tv_back"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_food_type"
+        android:overScrollMode="never" />
+
+</LinearLayout>

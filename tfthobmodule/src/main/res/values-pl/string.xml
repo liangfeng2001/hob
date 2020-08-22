@@ -1,0 +1,1173 @@
+<resources>
+    <string name="tfthobmodule_app_name">CataTFTProject</string>
+
+    <string name="tfthobmodule_temperature_unit">°</string>
+    <string name="tfthobmodule_timer_symbol">:</string>
+    <string name="tfthobmodule_demo">DEMO</string>
+
+    <string name="tfthobmodule_food_type_cooking_table">Tabele gotowania\n\n</string>
+    <string name="tfthobmodule_food_type_personalize">Moje przepisy\n\n</string>
+
+    <string name="tfthobmodule_cooking_tables_type_meat">Mięso</string>
+    <string name="tfthobmodule_cooking_tables_type_legumes_and_cereals">Warzywa strączkowe i zboża</string>
+    <string name="tfthobmodule_cooking_tables_type_fruit">Owoce</string>
+    <string name="tfthobmodule_cooking_tables_type_shellfish">Owoce morza</string>
+    <string name="tfthobmodule_cooking_tables_type_vegetables">Warzywa</string>
+    <string name="tfthobmodule_cooking_tables_type_fish">Ryby</string>
+
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_with_a_conit_of_wild_mushrooms">Vegetables with a conit\nof wild mushrooms</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_1">Vegetables 1</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_2">Vegetables 2</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_3">Vegetables 3</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_4">Vegetables 4</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_5">Vegetables 5</string>
+    <string name="tfthobmodule_recipes_subclass_title_red_mullet">Red Mullet With Citrus Fruits</string>
+    <string name="tfthobmodule_recipes_subclass_title_difficulty">DIFFICULTY:</string>
+    <string name="tfthobmodule_recipes_subclass_title_low">Low</string>
+    <string name="tfthobmodule_recipes_subclass_title_total_preparation">TOTAL PREPARATION:</string>
+    <string name="tfthobmodule_recipes_subclass_title_30min">30min</string>
+    <string name="tfthobmodule_recipes_subclass_title_type">TYPE:</string>
+    <string name="tfthobmodule_recipes_subclass_title_fish">Ryby</string>
+    <string name="tfthobmodule_recipes_subclass_title_introduction">INTRODUCTION:</string>
+    <string name="tfthobmodule_recipes_subclass_message">Cooking in a microwave oven can be a good way of gently cooking food even though it is not a totally precise method. In this recipe we propose some magnificent red mullet protected by lemon leaves that will lend the dish a fresh citrus aroma. We will use low power in order to respect the food’s point of doneness.\nINGREDIENTS:
+4 pieces red mullet
+4 lemon leaves (or similar
+1 lemon
+1 French onion (shallot)
+70 g butter (10 for sautéing and 60 for the lemon sauce)
+Chervil
+12 saffron threads
+50g sunflower oil
+1 l brine (1 l water per 100 g salt)
+Salt and pepper
+
+WHAT YOU NEED: Microwave oven, Steam case
+
+GENERAL INFORMATION: Microwave oven 400w | 1min
+
+Step 1
+Peel the onion and cut it brunoise-style. Fry in the butter (10 g) on a gentle heat for 5 minutes. Add the juice of one lemon and leave to reduce.
+
+Step 2
+Leave to cool and whip with butter (60 g) by gradually adding cubes of butter (this preparation is similar to so-called beurre blanc). Add salt and pepper, mix and set to one side.
+
+Step 3
+For the saffron oil, put the saffron on a tray and dry in the oven for 20 seconds at 180 degrees. Next, mix with the sunflower oil and the salt.
+
+Step 4
+Soak the red mullet pieces in brine with 10% salt for 5 minutes.
+
+Step 5
+Dry the fish and cover it with the lemon leaves. Cook in the microwave for between 1 and 1’30 minutes depending on the thickness of the fish.
+
+Step 6
+To serve, make a base of sauce in each dish, add the red mullet (without the lemon leaves), dress mildly with the saffron oil and decorate with the chervil.
+</string>
+
+
+    <string name="tfthobmodule_recipes_food_detail_title_cooking_method">Cooking method:\nImmersed in liqid</string>
+
+    <!--fragment relate recipes-->
+    <string name="tfthobmodule_fragment_relate_recipes_title">Related Recipes</string>
+    <!--fragment my recipes-->
+    <string name="tfthobmodule_fragment_my_recipes_title">Moje przepisy</string>
+    <string name="tfthobmodule_fragment_my_recipes_title_new">Nowe</string>
+    <string name="tfthobmodule_fragment_my_recipes_confirm_delete_recipe">Potwierdź, że chcesz usunąć przepis</string>
+
+    <!--fragment my recipes edit-->
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_name">Nazwa</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_power">Moc</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_temp">Temperatura</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_time">Czas</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_description">Opis</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_save">Zapisz</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_cook">Gotować</string>
+
+    <string name="tfthobmodule_cooker_setting_panel_tips_message">Use the scroll to set the power level.</string>
+    <string name="tfthobmodule_tips_message_search_and_connect_temp_sensor">Search and connect temperature sensor.</string>
+
+    <string name="tfthobmodule_title_boost">BOOST</string>
+    <string name="tfthobmodule_title_precise">Precyzyjny</string>
+    <string name="tfthobmodule_title_fast">Szybki</string>
+    <string name="tfthobmodule_title_back">Wróć</string>
+
+    <string name="tfthobmodule_title_boiling">Wrzenie</string>
+    <string name="tfthobmodule_title_simering">Gotowanie na wolnym ogniu</string>
+    <string name="tfthobmodule_title_slow_cook">Wolne gotowanie</string>
+    <string name="tfthobmodule_title_keep_warm">Ogrzewaj</string>
+    <string name="tfthobmodule_title_melting">Topienie</string>
+
+    <string name="tfthobmodule_title_destination_software">Destination version: %1$s Total Size: %2$d bytes</string>
+    <string name="tfthobmodule_msg_downloading_apk">Downloading the apk file &#8230;&#8230;&#8230;</string>
+    <string name="tfthobmodule_msg_download_complete">Downloading process completed successfully</string>
+
+    <string name="tfthobmodule_err_er03_title">Proszę usunąć wodę lub naczynie kuchenne ze szkła nad ekranem.</string>
+
+    <string name="tfthobmodule_err_e1">E1E Wyłącznik termiczny. Proszę uruchomić ponownie po schłodzeniu indukcyjnej płyty grzejnej.</string>
+    <string name="tfthobmodule_err_e2">E2E Wyłącznik termiczny. Proszę uruchomić ponownie po schłodzeniu indukcyjnej płyty grzejnej.</string>
+    <string name="tfthobmodule_err_e3">E3E Napięcie zasilania poza zakresem.</string>
+    <string name="tfthobmodule_err_e4">E4E Napięcie zasilania poza zakresem.</string>
+    <string name="tfthobmodule_err_e5">E5E Błąd w strefie gotowania. Wezwij pomoc techniczną</string>
+    <string name="tfthobmodule_err_f1">F1E Błąd w strefie gotowania. Wezwij pomoc techniczną</string>
+    <string name="tfthobmodule_err_f3">F3E Błąd w strefie gotowania. Wezwij pomoc techniczną</string>
+    <string name="tfthobmodule_err_f4">F4E Błąd w strefie gotowania. Wezwij pomoc techniczną</string>
+
+    <string name="tfthobmodule_err_r1e">R1E Poziom baterii czujnika zewnętrznego jest zbyt niski dla wybranego procesu gotowania. Proszę naładować baterię.</string>
+    <string name="tfthobmodule_err_r2e">R2E Poziom baterii czujnika zewnętrznego jest zbyt niski dla wybranego procesu gotowania. Proszę naładować baterię.</string>
+    <string name="tfthobmodule_err_r3e">R3E Bateria całkowicie rozładowana, podłącz ją do zewnętrznego źródła zasilania i podłącz ponownie.</string>
+    <string name="tfthobmodule_err_r4e">R4E Połączenie z czujnikiem zostało przerwane. Proszę sprawdzić baterię lub skontaktować się z producentem.</string>
+    <string name="tfthobmodule_err_r5e">R5E Błąd czujnika zewnętrznego. Sprawdź położenie czujnika; jeśli problem się utrzymuje, skontaktuj się z producentem.</string>
+    <string name="tfthobmodule_err_r6e">R6E Błąd czujnika zewnętrznego. Sprawdź położenie czujnika; jeśli problem się utrzymuje, skontaktuj się z producentem.</string>
+    <string name="tfthobmodule_err_r7e">R7E Błąd czujnika zewnętrznego. Sprawdź położenie czujnika; jeśli problem się utrzymuje, skontaktuj się z producentem.</string>
+
+    <!--dialog message -->
+    <string name="tfthobmodule_dialog_message_sensor_connect_successfully">Czujnik zewnętrzny prawidłowo podłączony.</string>
+    <string name="tfthobmodule_dialog_message_sensor_disconnect">External sensor disconnected.</string>
+    <string name="tfthobmodule_dialog_message_complete_recipe">Proszę najpierw uzupełnić przepis</string>
+
+    <string name="tfthobmodule_hob_setting_fragment_toast_content">Aby gotować w trybie Precyzyjnym, należy nawiązać połączenie z zewnętrznym czujnikiem temperatury, uruchamiając go.\nNależy pamiętać o wymianie baterii czujnika lub podłączeniu jej do zasilania zewnętrznego.</string>
+    <string name="tfthobmodule_my_recipes_edit_fragment_toast_content">Wprowadź przepis. Następnie kliknij, aby zapisać.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_name">Wybierz nazwę przepisu.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_temp">Wybierz temperaturę.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_time">Wybierz czas.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_desc">Podaj opis przepisu.</string>
+    <string name="tfthobmodule_hob_cooking_table_detail_fragment_toast_content">Wybierz proces gotowania, klikając ikonę rozpoczęcia. Aby zapewnić wyższy poziom kontroli temperatury, należy podłączyć czujnik zewnętrzny, a następnie uruchomić tryb precyzyjny.</string>
+
+    <string name="tfthobmodule_cooking_table_json">
+[\n
+      {\n
+        \"type\": \"Meat\",\n
+        \"description\": \"Mięso.50°C - 80°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Kurczak Supreme\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pierś z kaczki\",\n
+            \"weight\": \"200g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Stek z antrykotu / T-bone\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kurczak Supreme z chowu na wolnym wybiegu\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Comber jagnięcy (krojony)\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Polędwica wieprzowa\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Poulard supreme\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Stek z polędwicy - średnio krwisty\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"22\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Stek z polędwicy – krwisty\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"18\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mięso z młodego gołębia Supreme\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"62\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Policzki wołowe / cielęce\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Udka z kurczaka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Skrzydełka z kurczaka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Udka z kaczki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Udka z kurczaka z chowu na wolnym wybiegu\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Karczek jagnięcy\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Udka z kaczki Moulard\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Uszy wieprzowe / łeb wieprzowy\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1080\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Racice wieprzowe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Policzki wieprzowe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kotlety wieprzowe / schab z żebrami\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Podgardle wieprzowe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Golonka wieprzowa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Młoda łopatka pieczona\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Łopatka jagnięca\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pieczone prosię\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Szynka cielęca / golonka / udziec\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"960\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Przepiórka w całości\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Legumes and Cereals\",\n
+        \"description\": \"Warzywa strączkowe i zboża.90°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Jęczmień\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Fasola\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"210\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Gryka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ciecierzyca\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"240\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Soczewica\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Owies\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Komosa ryżowa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Pszenica\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fruit\",\n
+        \"description\": \"Owoce.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Jabłka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Jabłka - dobrze rozgotowane\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Banany\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Wiśnie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Brzoskwinie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Gruszki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ananas\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Śliwki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Czerwone jagody\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Truskawki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Truskawki - dobrze rozgotowane\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Shellfish\",\n
+        \"description\": \"Owoce morza.55°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Omułki\",\n
+            \"weight\": \"Średni rozmiar\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sercówki\",\n
+            \"weight\": \"Średni rozmiar\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"2\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Mątwy\",\n
+            \"weight\": \"Mały rozmiar\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Małże\",\n
+            \"weight\": \"Średni rozmiar\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"90\",\n
+                \"cookTime\": \"3\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ośmiornica\",\n
+            \"weight\": \"4kg\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Małże Rock mussels\",\n
+            \"weight\": \"Mały rozmiar\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kalmar\",\n
+            \"weight\": \"Mały rozmiar\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Vegetables\",\n
+        \"description\": \"Warzywa.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Karczochy\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Mini marchewki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Mini cukinie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Czarna rzepa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kapusta (liście)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"12\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kapusta (łodygi)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Karczoch hiszpański\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Marchewki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kalafior\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"40\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Seler\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Botwina\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Cukinia\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Buraki krojone w kostkę\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Endywie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Koper włoski\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"50\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Świeży czosnek\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Mrożony bób\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Mrożony groszek\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Szparagi zielone\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Grzyby\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Pasternaki\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kapusta pekińska\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"6\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Szparagi białe Premium\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Dynia\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Salsefia\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ziemniaki krojone\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Szpinak\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ziemniaki słodkie\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Rzepa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Szparagi białe\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Buraki w całości\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ziemniaki obrane w całości\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fish\",\n
+        \"description\": \"Ryby.50°C - 60°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Dorsz\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Morszczuk\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Makrela\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"8\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Raja\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Barwena\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Łosoś\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Okoń morski\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Filety z soli\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Włócznik\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Tuńczyk\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Filety z tuńczyka Ventresca\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"10\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Sola w całości\",\n
+            \"weight\": \"300g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Żabnica\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      }\n
+    ]
+    </string>
+</resources>

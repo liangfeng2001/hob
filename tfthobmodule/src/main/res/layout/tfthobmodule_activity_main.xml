@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekek.viewmodule.common.CataDrawLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end"
+    android:background="@mipmap/wallpaper"
+    skin:enable="true"
+    >
+    <!--android:background="@mipmap/wallpaper"-->
+    <!--android:fitsSystemWindows="true"  drawlayout不要加这个,要不底部有黑边-->
+
+    <include
+        layout="@layout/tfthobmodule_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include
+        layout="@layout/tfthobmodule_layout_menu_bar"
+        android:layout_width="@dimen/tfthobmodule_menuBarWidth"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        android:layout_marginLeft="30dp"
+        />
+
+
+</com.ekek.viewmodule.common.CataDrawLayout>

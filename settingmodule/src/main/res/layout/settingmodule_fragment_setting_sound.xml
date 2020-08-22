@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_sound"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_sound"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_setting_sound_title_sound"
+                android:id="@+id/title_sound"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                android:id="@+id/sw_sound"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_sound"
+            >
+          <!--  intensity-->
+            <TextView
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_setting_sound_title_intensity"
+                android:id="@+id/title_intensity"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/sound_seekbar_background"/>
+
+               <!-- <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:src="@mipmap/sound_seekbar_background"
+                    />-->
+                <SeekBar
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="@dimen/viewmodule_padding_xxxlarge"
+                    android:paddingBottom="@dimen/viewmodule_padding_xxxlarge"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/settingmodule_brightness_seekbar_background"
+                    android:thumb="@mipmap/sound_thumb"
+                    android:thumbOffset="0dip"
+                    android:maxHeight="8dp"
+                    android:minHeight="8dp"
+                    android:id="@+id/sb_sound"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="40sp"
+                    android:text="@string/settingmodule_fragment_setting_sound_title_sound_mode"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="150dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="35sp"
+                    android:text="@string/settingmodule_fragment_setting_sound_mode_mode_one"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_setting_sound_title_click_sound"
+                    android:id="@+id/title_click_sound"
+                    />
+
+                <com.ekek.viewmodule.common.NoTextSwitch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/sw_click_sound"
+                    android:switchMinWidth="93dp"
+                    android:thumb="@android:color/transparent"
+                    android:track="@drawable/settingmodule_sound_switch_selector"
+                    />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

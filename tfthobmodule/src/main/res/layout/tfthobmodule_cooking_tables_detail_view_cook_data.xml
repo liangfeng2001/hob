@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="300dp"
+    android:gravity="center|left"
+    android:layout_height="wrap_content"
+    android:background="@null">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tfthobmodule_cooking_table_temp_text_size"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_temp"
+        android:layout_alignParentLeft="true"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv_temp"
+        android:layout_toStartOf="@+id/tv_time"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_gap"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/viewmodule_padding_normal"
+            android:layout_marginRight="@dimen/viewmodule_padding_normal"
+            android:id="@+id/im_gap"
+            />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tfthobmodule_cooking_table_time_text_size"
+        android:textColor="@color/tfthobmodule_colorCookTime"
+        android:id="@+id/tv_time"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>

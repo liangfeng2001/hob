@@ -1,0 +1,222 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">设置</string>
+    <string name="settingmodule_setting_title_display">显示</string>
+    <string name="settingmodule_setting_title_language">语言</string>
+    <string name="settingmodule_setting_title_sound">声音</string>
+    <string name="settingmodule_setting_title_security">安全</string>
+    <string name="settingmodule_setting_title_conectivity">连接设置</string>
+    <string name="settingmodule_setting_title_hood_options">设备外罩选项</string>
+    <string name="settingmodule_setting_title_power_limit">功率极限</string>
+    <string name="settingmodule_setting_title_default_settings">默认设置</string>
+    <string name="settingmodule_setting_title_date_and_time">日期和时间</string>
+    <string name="settingmodule_setting_title_information">信息</string>
+    <string name="settingmodule_setting_title_energy_settings">能量设定</string>
+    <string name="settingmodule_setting_title_test_cookware">测试炊具</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">亮度</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">背景图片</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">声音</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">强度</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">点击声音</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">设备外罩选项</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">自动模式</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">强力模式</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">经济模式</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">根据设备外罩说明手册启用设备外罩的连接。\n确认线圈和设备外罩已连接。</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">恢复到默认设置。</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">您确定要返回出厂设置吗？</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">否</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">是</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">默认设置已成功还原。</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">使用功率限制</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">锁定屏幕</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">图案</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">按住2秒钟</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">确认锁定屏幕</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">设置锁定屏幕</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">设置锁定屏幕</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">确认锁定屏幕</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">蓝牙设备。</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">对未配对的设备可见</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">名字</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">已配对设备</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">温度传感器</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">智能手机/平板电脑</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">设定日期</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">设定时间</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">使用24小时格式</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">警报设置</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">图标快捷键</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">软件版本</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">固件版本</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">演示模式</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">更新</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">标识</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">调试模式</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">锁</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">关闭计时器</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">信息</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">暂停</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">关闭</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">设备外罩选项</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">食谱</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">功率</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">定时器</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">警告</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">温度传感器</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">设置</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">温度</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">开始新的测试</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">选择烹饪区</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">将炊具和大约 200 毫升水正确放置在最适合的容器底部直径的烹饪区内。</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">你的炊具与这个铁架兼容</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">你的炊具与这个铁架不兼容</string>
+    <!--months-->
+    <string name="settingmodule_months_january">一月</string>
+    <string name="settingmodule_months_february">二月</string>
+    <string name="settingmodule_months_march">三月</string>
+    <string name="settingmodule_months_april">四月</string>
+    <string name="settingmodule_months_may">五月</string>
+    <string name="settingmodule_months_june">六月</string>
+    <string name="settingmodule_months_july">七月</string>
+    <string name="settingmodule_months_august">八月</string>
+    <string name="settingmodule_months_september">九月</string>
+    <string name="settingmodule_months_october">十月</string>
+    <string name="settingmodule_months_november">十一月</string>
+    <string name="settingmodule_months_december">十二月</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">音量</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">报警持续时间</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">延期期限</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">滚动以设置警报（小时/分钟）。\n它只是声音提示，不会停止任何烹饪过程。\n倒计时将在靠近小时的位置显示。</string>
+    <string name="settingmodule_fragment_display_toast_content">选择屏幕亮度。</string>
+    <string name="settingmodule_fragment_sound_toast_content">激活 / 停用普通声音并调整强度。\n仅激活 / 停用点击声音。</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">通过蓝牙连接设备。</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">选择功率限制。</string>
+    <string name="settingmodule_fragment_date_time_toast_content">设置当前日期和时间。选择所需的格式。</string>
+    <string name="settingmodule_fragment_alarm_toast_content">选择警报设置。</string>
+    <string name="settingmodule_fragment_language_toast_content">选择语言。</string>
+    <string name="settingmodule_fragment_security_toast_content">设置锁定图案。</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">选择四位数的PIN码。</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">重复您之前设置的PIN码。</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">通过连接至少四个点来选择一种图案。</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">确认图案。</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">设置设备外罩控制。</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">图案与锁定屏幕相同。</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">PIN码与锁定屏幕相同。</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">恢复初始配置。</string>
+    <string name="settingmodule_fragment_information_toast_content">这里有关于你的设备及其工作原理的有用信息。</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">这里有关于你的设备及其工作原理的有用信息。</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">您可以在交互式教程和演示视频之间进行选择。</string>
+    <string name="settingmodule_fragment_updates_toast_content">等待更新过程完成。</string>
+    <string name="settingmodule_fragment_energy_toast_content">设置休眠模式和待机模式时间，以提高设备的效率。</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">将炊具和大约 200 毫升水正确放置在最适合的容器底部直径的烹饪区内。</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">确保你的炊具正确放置在烹饪区。\n检查手册中合适的炊具列表。</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">本炊具让你可以发挥出铁架最佳性能。</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">按照说明继续测试。</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">通过选择正确的炊具，可以实现最佳滚刀性能，并避免可能出现的故障。</string>
+    <string name="settingmodule_fragment_main_toast_content">在这里你可以定制你的设备。</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">设置休眠屏幕的格式。\n它将在不与设备交互的一段时间后出现。</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">教程</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <!-- Have not been used yet -->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">休眠模式</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">激活时间</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">完全关闭</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">总关闭时间</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">休眠格式</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">小时格式</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">数字</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">模拟</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">日期</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">消息</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">关闭</string>
+
+    <string name="settingmodule_no_external_sensor_detected">未检测到外部烹饪传感器。这将影响温度的精度。</string>
+    <string name="settingmodule_external_sensor_disconnected">未检测到外部烹饪传感器。</string>
+</resources>

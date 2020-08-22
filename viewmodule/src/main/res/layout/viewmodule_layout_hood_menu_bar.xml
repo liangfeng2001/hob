@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/viewmodule_padding_xlarge"
+    android:layout_marginBottom="@dimen/viewmodule_padding_xlarge"
+    android:layout_marginStart="@dimen/viewmodule_padding_none"
+    android:layout_marginEnd="@dimen/viewmodule_padding_xlarge">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_handle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/viewmodule_color_menu_bar"
+        >
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_cyclic"
+                android:background="@null"
+                android:id="@+id/ib_menu_cyclic"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_menu_arrow"
+                android:layout_gravity="center|right"
+                android:id="@+id/iv_cyclic_arrow"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_pause"
+            android:background="@null"
+            android:id="@+id/ib_menu_pause"
+            />
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_timer"
+                android:background="@null"
+                android:id="@+id/ib_menu_timer"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_menu_arrow"
+                android:layout_gravity="center|right"
+                android:id="@+id/iv_timer_arrow"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_schedule"
+                android:background="@null"
+                android:id="@+id/ib_menu_schedule"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_menu_arrow"
+                android:layout_gravity="center|right"
+                android:id="@+id/iv_schedule_arrow"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_setting"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:id="@+id/ib_menu_setting"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_menu_arrow"
+                android:layout_gravity="center|right"
+                android:id="@+id/iv_setting_arrow"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

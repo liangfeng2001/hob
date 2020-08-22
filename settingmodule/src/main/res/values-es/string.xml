@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Ajustes</string>
+    <string name="settingmodule_setting_title_display">Pantalla</string>
+    <string name="settingmodule_setting_title_language">Idioma</string>
+    <string name="settingmodule_setting_title_sound">Sonido</string>
+    <string name="settingmodule_setting_title_security">Seguridad</string>
+    <string name="settingmodule_setting_title_conectivity">Conectividad</string>
+    <string name="settingmodule_setting_title_hood_options">Opciones de campana</string>
+    <string name="settingmodule_setting_title_power_limit">Límite de potencia</string>
+    <string name="settingmodule_setting_title_default_settings">Ajustes predeterminados</string>
+    <string name="settingmodule_setting_title_date_and_time">Fecha y hora</string>
+    <string name="settingmodule_setting_title_information">Información</string>
+    <string name="settingmodule_setting_title_energy_settings">Ajustes de energía</string>
+    <string name="settingmodule_setting_title_test_cookware">Probar recipiente</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Brillo</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Fondo</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Sonido</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Intensidad</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Sonido del clic</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Conectividad de la campana</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Modo Automático</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Modo Intenso</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Modo Eco</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Active la conectividad de la campana siguiendo el manual de instrucciones de la misma.\nConfirme que la placa y la campana estén conectadas.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Restablecer los ajustes predeterminados.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">¿Está seguro de que desea restablecer los ajustes de fábrica?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">NO</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">SÍ</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Configuración predeterminada restaurada correctamente.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Utilizar límite de potencia</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Bloqueo de la pantalla</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Patrón</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Pulsar 2 segundos</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Confirmar bloqueo de pantalla</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Establecer bloqueo de pantalla</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Establecer bloqueo de pantalla</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Confirmar bloqueo de pantalla</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Dispositivos Bluetooth.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Hacer visible para dispositivos sin vincular</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Nombre</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Dispositivos vinculados</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Sensor de temperatura</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Smartphone/Tableta</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Establecer fecha</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Establecer hora</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">Utilizar el formato de 24 horas</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Ajustes de alarma</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Leyenda de iconos</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Versión de software</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Modo de Demostración</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Actualizaciones</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Logotipo</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Bloquear</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Cancelar temporizador</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Información</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Pausa</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Cerrar</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Opciones de campana</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Recetas</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Potencia</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Temporizador</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Alarma</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Sensor de temperatura</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Ajustes</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Temperatura</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Iniciar una nueva prueba</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Seleccione la zona de cocción</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Coloque el recipiente con, aproximadamente, 200 ml de agua, correctamente posicionado en la zona de cocción que mejor se adapte al diámetro de la base del mismo.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Su recipiente es compatible con esta placa</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Su recipiente no es compatible con esta placa</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Enero</string>
+    <string name="settingmodule_months_february">Febrero</string>
+    <string name="settingmodule_months_march">Marzo</string>
+    <string name="settingmodule_months_april">Abril</string>
+    <string name="settingmodule_months_may">Mayo</string>
+    <string name="settingmodule_months_june">Junio</string>
+    <string name="settingmodule_months_july">Julio</string>
+    <string name="settingmodule_months_august">Agosto</string>
+    <string name="settingmodule_months_september">Septiembre</string>
+    <string name="settingmodule_months_october">Octubre</string>
+    <string name="settingmodule_months_november">Noviembre</string>
+    <string name="settingmodule_months_december">Diciembre</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Volumen</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Duración de la alarma</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Posponer duración</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Utilice el menú desplegable para establecer la alarma (horas/minutos).\nEsta solo es acústica y no detendrá el proceso de cocción.\nLa cuenta atrás se mostrará junto a la hora.</string>
+    <string name="settingmodule_fragment_display_toast_content">Seleccione el brillo de la pantalla.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Active / desactive el sonido general y ajuste la intensidad.\nActive / desactive solo el sonido del clic.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Conecte los dispositivos mediante Bluetooth.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Seleccione la limitación de potencia.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Establezca la fecha y la hora actuales.\nSeleccione el formato que desee.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Elija los ajustes de la alarma.</string>
+    <string name="settingmodule_fragment_language_toast_content">Elija el idioma.</string>
+    <string name="settingmodule_fragment_security_toast_content">Establezca el modo de bloqueo.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Elija un código PIN de cuatro dígitos.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Repita el código PIN que ha establecido.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Elija un patrón con, al menos, cuatro puntos.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Confirme el patrón.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Establezca el control de la campana.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">El patrón es el mismo que el de la pantalla de bloqueo.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">El código PIN es el mismo que el de la pantalla de bloqueo.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Restablece la configuración inicial.</string>
+    <string name="settingmodule_fragment_information_toast_content">Aquí podrá encontrar información útil sobre el dispositivo y su funcionamiento.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Aquí podrá encontrar información útil sobre el dispositivo y su funcionamiento.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">Puede elegir entre un tutorial interactivo o un vídeo de demostración.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Espere hasta que haya finalizado el proceso de actualización.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Para mejorar la eficiencia de su dispositivo, establezca la hora de modo Hibernación y de modo Apagado.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Coloque el recipiente con, aproximadamente, 200 ml de agua, correctamente posicionado en la zona de cocción que mejor se adapte al diámetro de la base del mismo.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Asegúrese de que la posición del recipiente en la zona de cocción es la correcta.\nConsulte la lista de recipientes adecuados en el manual.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Este recipiente le permite cocinar con un rendimiento óptimo de la placa.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Siga las instrucciones para realizar la prueba.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Al elegir el recipiente adecuado, se puede conseguir un rendimiento óptimo de la placa y se evitan posibles fallos de funcionamiento.</string>
+    <string name="settingmodule_fragment_main_toast_content">Aquí puede personalizar su dispositivo.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Configure el formato de la pantalla de hibernación.\nAparecerá después de que el dispositivo haya estado un tiempo sin utilizarse.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Tutorial</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Modo de Hibernación</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Tiempo de activación</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Apagado total</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Tiempo de apagado total</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Formato de hibernación</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Formato de hora</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Digital</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Analógico</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Fecha</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Mensaje</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">Apagar</string>
+
+    <string name="settingmodule_no_external_sensor_detected">No se ha detectado ningún sensor de cocción externo. Esto afectará a la precisión de la temperatura.</string>
+    <string name="settingmodule_external_sensor_disconnected">No se ha detectado ningún sensor de cocción externo.</string>
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_fragment_energy_settings_title_hibernation_format"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_energy_settings"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+        >
+        <TextView
+            android:id="@+id/ct_hour_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:textColor="@android:color/white"
+            android:text="@string/settingmodule_fragment_hibernation_format_title_hour_format"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:gravity="center|left"
+            ></TextView>
+
+        <CheckedTextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+            android:drawablePadding="20dp"
+            android:id="@+id/ct_hour_digital"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:textSize="@dimen/viewmodule_setting_content_size"
+            android:textColor="@android:color/white"
+            android:text="@string/settingmodule_fragment_hibernation_format_title_hour_digital"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:clickable="true"
+            android:focusable="true"
+            android:checked="true"
+            ></CheckedTextView>
+
+        <CheckedTextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+            android:drawablePadding="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ct_hour_analogic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:textSize="@dimen/viewmodule_setting_content_size"
+            android:textColor="@android:color/white"
+            android:text="@string/settingmodule_fragment_hibernation_format_title_hour_analogic"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:clickable="true"
+            android:focusable="true"
+            android:checked="false"
+            ></CheckedTextView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_hibernation_format_title_hour_date"
+                android:id="@+id/title_date"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                android:id="@+id/sw_date"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <CheckedTextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="20dp"
+            android:id="@+id/ct_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/settingmodule_fragment_hibernation_format_title_message"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:focusable="true"
+            android:checked="false"
+            android:visibility="gone"
+            ></CheckedTextView>
+
+        <CheckedTextView
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="20dp"
+            android:id="@+id/ct_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/settingmodule_fragment_hibernation_format_title_off"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:gravity="center|left"
+            android:clickable="false"
+            android:focusable="true"
+            android:checked="false"
+            android:visibility="gone"
+            ></CheckedTextView>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_information_setting_title_logo"
+                android:id="@+id/title_logo"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+
+                android:id="@+id/sw_logo"
+                android:switchMinWidth="93dp"
+                android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewmodule_padding_none">0dp</dimen>
+    <dimen name="viewmodule_padding_tiny">8dp</dimen>
+    <dimen name="viewmodule_padding_small">12dp</dimen>
+    <dimen name="viewmodule_padding_normal">16dp</dimen>
+    <dimen name="viewmodule_padding_large">20dp</dimen>
+    <dimen name="viewmodule_padding_xlarge">24dp</dimen>
+    <dimen name="viewmodule_padding_xxlarge">30dp</dimen>
+    <dimen name="viewmodule_padding_xxxlarge">36dp</dimen>
+
+    <dimen name="viewmodule_WheelItemTextSize">24sp</dimen>
+    <dimen name="viewmodule_WheelItemSpace">12dp</dimen>
+    <dimen name="viewmodule_WheelIndicatorSize">2dp</dimen>
+    <dimen name="viewmodule_WheelMargins">8dp</dimen>
+    <dimen name="viewmodule_pattern_lock_path_width">3dp</dimen>
+    <dimen name="viewmodule_pattern_lock_dot_size">10dp</dimen>
+    <dimen name="viewmodule_pattern_lock_dot_selected_size">24dp</dimen>
+    <dimen name="viewmodule_setting_title_title_size">20pt</dimen>
+    <dimen name="viewmodule_setting_title_size">18pt</dimen>
+    <dimen name="viewmodule_setting_select_size">19pt</dimen>
+    <dimen name="viewmodule_setting_content_size">13pt</dimen>
+    <dimen name="viewmodule_setting_title_distance">95dp</dimen>
+    <dimen name="viewmodule_setting_switch_distance">55dp</dimen>
+    <dimen name="viewmodule_setting_switch_distance_50">60dp</dimen>
+    <dimen name="viewmodule_setting_time_dot">60dp</dimen>
+    <dimen name="viewmodule_setting_key_icons">44sp</dimen>
+    <dimen name="viewmodule_setting_key_icons_first_row">10dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_second_row">280dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_third_row">630dp</dimen>
+
+    <dimen name="viewmodule_setting_key_icons_first_line">90dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_second_line">190dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_third_line">280dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_fourth_line">380dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_fifth_line">480dp</dimen>
+
+    <dimen name="viewmodule_setting_key_icons_first_col_width">276dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_second_col_width">340dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_second_col_width_long">640dp</dimen>
+    <dimen name="viewmodule_setting_key_icons_third_col_width">300dp</dimen>
+</resources>

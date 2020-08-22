@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_fragment_date_time_setting_title_alarm_settings"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_date_and_time"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        android:background="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:gravity="top|left"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text=""
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="55dp"
+                android:id="@+id/sw_increase_volume"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:gravity="center|left"
+            android:id="@+id/ll_volume_adjust"
+            >
+            <TextView
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_alarm_setting_title_volume"
+                android:id="@+id/volume"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/sound_seekbar_background"
+                >
+
+                <SeekBar
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/settingmodule_brightness_seekbar_background"
+                    android:thumb="@mipmap/sound_thumb"
+                    android:thumbOffset="0dip"
+                    android:maxHeight="8dp"
+                    android:minHeight="8dp"
+                    android:id="@+id/sb_volume"
+                    />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration"
+            android:id="@+id/alarm_duration"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/ll_alarm_duration"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration_options_30"
+                android:id="@+id/tv_alarm_duration_options_30"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration_options_1"
+                android:id="@+id/tv_alarm_duration_options_1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/white"
+                android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration_options_2"
+                android:id="@+id/tv_alarm_duration_options_2"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration_options_3"
+                android:id="@+id/tv_alarm_duration_options_3"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration_options_4"
+                android:id="@+id/tv_alarm_duration_options_4"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_alarm_duration_options_5"
+                android:id="@+id/tv_alarm_duration_options_5"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration"
+            android:id="@+id/postpon_duration"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/ll_postpone_duration"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration_options_1"
+                android:id="@+id/tv_postpone_duration_options_1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration_options_2"
+                android:id="@+id/tv_postpone_duration_options_2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration_options_5"
+                android:id="@+id/tv_postpone_duration_options_5"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/white"
+                android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration_options_10"
+                android:id="@+id/tv_postpone_duration_options_10"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration_options_15"
+                android:id="@+id/tv_postpone_duration_options_15"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_alarm_setting_postpone_duration_options_20"
+                android:id="@+id/tv_postpone_duration_options_20"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

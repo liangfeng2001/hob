@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="tfthobmodule_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tfthobmodule_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/tfthobmodule_colorPrimaryDark</item>
+        <item name="colorAccent">@color/tfthobmodule_colorAccent</item>
+    </style>
+
+    <style name="tfthobmodule_AppTheme.NoBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/bg_logo_haier</item>
+    </style>
+
+    <style name="tfthobmodule_AnimationRightFade">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowEnterAnimation">@anim/tfthobmodule_menu_show</item>
+        <item name="android:windowExitAnimation">@anim/tfthobmodule_menu_hide</item>
+    </style>
+</resources>

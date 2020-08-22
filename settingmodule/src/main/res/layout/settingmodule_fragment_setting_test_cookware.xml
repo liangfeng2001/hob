@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <com.ekek.viewmodule.common.FocusedTextView
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_test_cookware"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_test_cookware"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingmodule_fragment_test_cookware_title_start_new_test"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:textColor="@color/settingmodule_textview_setting_selector"
+            android:id="@+id/tv_start_new_test"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="18pt"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/settingmodule_fragment_test_cookware_conten_place_the_cookware"
+        android:id="@+id/tv_content"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="90dp"
+        android:src="@mipmap/test_cookware_next"
+        android:id="@+id/iv_next_button"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/test_cookware_ok"
+        android:id="@+id/iv_compatible_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="480dp"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="17pt"
+        android:text="Your cookware"
+        android:id="@+id/tv_show_test_result"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="30pt"
+        android:text="Testing..."
+        android:id="@+id/tv_testing"/>
+<!--60-->
+    <com.ekek.viewmodule.hob.Hob60BigCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        app:viewmodule_cooker_id="3"
+        android:id="@+id/hbcc_c"
+        />
+
+    <com.ekek.viewmodule.hob.Hob60SmallCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:viewmodule_cooker_id="2"
+        android:id="@+id/hbcc_b"
+        />
+
+    <com.ekek.viewmodule.hob.Hob60SmallCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        app:viewmodule_cooker_id="1"
+        android:id="@+id/hbcc_a"
+        android:background="@null"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/test_cookware_1"
+        android:id="@+id/iv_test_cookware_1"
+        android:visibility="invisible"/>
+
+ <!--   90-->
+    <com.ekek.viewmodule.hob.Hob80RectangleCookerNew
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:viewmodule_retangle_cooker_id="1|2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/hrc90_a"
+        />
+
+
+    <com.ekek.viewmodule.hob.Hob90CircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:viewmodule_cooker_id="3"
+        android:id="@+id/hbc90_b"
+        android:visibility="visible"
+        />
+
+    <com.ekek.viewmodule.hob.Hob80RectangleCookerNew
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignRight="@id/hbc90_b"
+        app:viewmodule_retangle_cooker_id="6|5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/hrc90_c"
+        />
+
+<!--80-->
+    <com.ekek.viewmodule.hob.Hob80RectangleCookerNew
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        app:viewmodule_retangle_cooker_id="1|2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/hrc80_a"
+        />
+
+    <com.ekek.viewmodule.hob.Hob80BigCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="285dp"
+        android:layout_alignParentTop="true"
+
+        android:visibility="visible"
+        app:viewmodule_cooker_id="3"
+        android:id="@+id/hbc80_b"
+        />
+
+    <com.ekek.viewmodule.hob.Hob80SmallCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:viewmodule_cooker_id="4"
+        android:id="@+id/hbc80_c"
+        android:visibility="visible"
+        android:layout_marginLeft="690dp"
+
+        />
+
+</RelativeLayout>

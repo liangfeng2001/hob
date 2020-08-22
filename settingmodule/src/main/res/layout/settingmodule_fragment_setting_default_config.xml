@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_default_settings"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_default_setting"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingmodule_fragment_setting_default_config_btn_restore"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:typeface="serif"
+            android:textStyle="normal"
+            android:textColor="@color/settingmodule_textview_setting_selector"
+            android:id="@+id/tv_restore"
+            />
+
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+    android:text="@string/settingmodule_fragment_setting_default_config_message_restore_question"
+    android:textSize="@dimen/viewmodule_setting_title_size"
+    android:typeface="serif"
+    android:textStyle="normal"
+    android:textColor="@android:color/white"
+    android:id="@+id/tv_restore_question"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="300dp"
+        android:text="@string/settingmodule_fragment_setting_default_config_message_restore_yes"
+        android:textSize="@dimen/viewmodule_setting_select_size"
+        android:typeface="serif"
+        android:textStyle="normal"
+        android:textColor="@color/settingmodule_textview_setting_selector"
+        android:id="@+id/tv_question_yes"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="550dp"
+        android:text="@string/settingmodule_fragment_setting_default_config_message_restore_no"
+        android:textSize="@dimen/viewmodule_setting_select_size"
+        android:typeface="serif"
+        android:textStyle="normal"
+        android:textColor="@color/settingmodule_textview_setting_selector"
+        android:id="@+id/tv_question_no"
+        />
+
+    <com.ekek.viewmodule.passwordview.PatternLockView
+        android:id="@+id/pattern_lock_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:viewmodule_pathWidth="10dp"
+        app:viewmodule_dotNormalSize="24dp"
+
+        />
+
+    <com.ekek.viewmodule.passwordview.PinPasswordView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ppv"
+        ></com.ekek.viewmodule.passwordview.PinPasswordView>
+
+
+</RelativeLayout>

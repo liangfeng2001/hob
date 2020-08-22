@@ -1,0 +1,1173 @@
+<resources>
+    <string name="tfthobmodule_app_name">CataTFTProject</string>
+
+    <string name="tfthobmodule_temperature_unit">°</string>
+    <string name="tfthobmodule_timer_symbol">:</string>
+    <string name="tfthobmodule_demo">DEMO</string>
+
+    <string name="tfthobmodule_food_type_cooking_table">Táblázatok\nfőzéshez\n</string>
+    <string name="tfthobmodule_food_type_personalize">Receptjeim\n\n</string>
+
+    <string name="tfthobmodule_cooking_tables_type_meat">Hús</string>
+    <string name="tfthobmodule_cooking_tables_type_legumes_and_cereals">Hüvelyesek és gabonák</string>
+    <string name="tfthobmodule_cooking_tables_type_fruit">Gyümölcsök</string>
+    <string name="tfthobmodule_cooking_tables_type_shellfish">Kagylófélék</string>
+    <string name="tfthobmodule_cooking_tables_type_vegetables">Zöldségek</string>
+    <string name="tfthobmodule_cooking_tables_type_fish">Hal</string>
+
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_with_a_conit_of_wild_mushrooms">Vegetables with a conit\nof wild mushrooms</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_1">Vegetables 1</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_2">Vegetables 2</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_3">Vegetables 3</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_4">Vegetables 4</string>
+    <string name="tfthobmodule_recipes_subclass_title_vegetables_5">Vegetables 5</string>
+    <string name="tfthobmodule_recipes_subclass_title_red_mullet">Red Mullet With Citrus Fruits</string>
+    <string name="tfthobmodule_recipes_subclass_title_difficulty">DIFFICULTY:</string>
+    <string name="tfthobmodule_recipes_subclass_title_low">Low</string>
+    <string name="tfthobmodule_recipes_subclass_title_total_preparation">TOTAL PREPARATION:</string>
+    <string name="tfthobmodule_recipes_subclass_title_30min">30min</string>
+    <string name="tfthobmodule_recipes_subclass_title_type">TYPE:</string>
+    <string name="tfthobmodule_recipes_subclass_title_fish">Hal</string>
+    <string name="tfthobmodule_recipes_subclass_title_introduction">INTRODUCTION:</string>
+    <string name="tfthobmodule_recipes_subclass_message">Cooking in a microwave oven can be a good way of gently cooking food even though it is not a totally precise method. In this recipe we propose some magnificent red mullet protected by lemon leaves that will lend the dish a fresh citrus aroma. We will use low power in order to respect the food’s point of doneness.\nINGREDIENTS:
+4 pieces red mullet
+4 lemon leaves (or similar
+1 lemon
+1 French onion (shallot)
+70 g butter (10 for sautéing and 60 for the lemon sauce)
+Chervil
+12 saffron threads
+50g sunflower oil
+1 l brine (1 l water per 100 g salt)
+Salt and pepper
+
+WHAT YOU NEED: Microwave oven, Steam case
+
+GENERAL INFORMATION: Microwave oven 400w | 1min
+
+Step 1
+Peel the onion and cut it brunoise-style. Fry in the butter (10 g) on a gentle heat for 5 minutes. Add the juice of one lemon and leave to reduce.
+
+Step 2
+Leave to cool and whip with butter (60 g) by gradually adding cubes of butter (this preparation is similar to so-called beurre blanc). Add salt and pepper, mix and set to one side.
+
+Step 3
+For the saffron oil, put the saffron on a tray and dry in the oven for 20 seconds at 180 degrees. Next, mix with the sunflower oil and the salt.
+
+Step 4
+Soak the red mullet pieces in brine with 10% salt for 5 minutes.
+
+Step 5
+Dry the fish and cover it with the lemon leaves. Cook in the microwave for between 1 and 1’30 minutes depending on the thickness of the fish.
+
+Step 6
+To serve, make a base of sauce in each dish, add the red mullet (without the lemon leaves), dress mildly with the saffron oil and decorate with the chervil.
+</string>
+
+
+    <string name="tfthobmodule_recipes_food_detail_title_cooking_method">Cooking method:\nImmersed in liqid</string>
+
+    <!--fragment relate recipes-->
+    <string name="tfthobmodule_fragment_relate_recipes_title">Related Recipes</string>
+    <!--fragment my recipes-->
+    <string name="tfthobmodule_fragment_my_recipes_title">Receptjeim</string>
+    <string name="tfthobmodule_fragment_my_recipes_title_new">Új</string>
+    <string name="tfthobmodule_fragment_my_recipes_confirm_delete_recipe">Erősítse meg, hogy törölni akarja a receptet</string>
+
+    <!--fragment my recipes edit-->
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_name">Név</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_power">Teljesítmény</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_temp">Hőmérséklet</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_time">Idő</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_description">Leírás</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_save">Mentés</string>
+    <string name="tfthobmodule_fragment_my_recipes_edit_title_cook">Főz</string>
+
+    <string name="tfthobmodule_cooker_setting_panel_tips_message">Use the scroll to set the power level.</string>
+    <string name="tfthobmodule_tips_message_search_and_connect_temp_sensor">Search and connect temperature sensor.</string>
+
+    <string name="tfthobmodule_title_boost">BOOST</string>
+    <string name="tfthobmodule_title_precise">Precíz</string>
+    <string name="tfthobmodule_title_fast">Gyors</string>
+    <string name="tfthobmodule_title_back">Vissza</string>
+
+    <string name="tfthobmodule_title_boiling">Forralás</string>
+    <string name="tfthobmodule_title_simering">Alacsony lángon főzés</string>
+    <string name="tfthobmodule_title_slow_cook">Lassú főzés</string>
+    <string name="tfthobmodule_title_keep_warm">Melegen tartás</string>
+    <string name="tfthobmodule_title_melting">Olvasztás</string>
+
+    <string name="tfthobmodule_title_destination_software">Destination version: %1$s Total Size: %2$d bytes</string>
+    <string name="tfthobmodule_msg_downloading_apk">Downloading the apk file &#8230;&#8230;&#8230;</string>
+    <string name="tfthobmodule_msg_download_complete">Downloading process completed successfully</string>
+
+    <string name="tfthobmodule_err_er03_title">Távolítsa el a vizet vagy az edényt a képernyő fölötti üvegfelületről.</string>
+
+    <string name="tfthobmodule_err_e1">E1E Túlmelegedés. Várja meg, amíg az indukciós főzőlap lehűl, majd indítsa újra.</string>
+    <string name="tfthobmodule_err_e2">E2E Túlmelegedés. Várja meg, amíg az indukciós főzőlap lehűl, majd indítsa újra.</string>
+    <string name="tfthobmodule_err_e3">E3E A tápegység feszültsége nem megfelelő.</string>
+    <string name="tfthobmodule_err_e4">E4E A tápegység feszültsége nem megfelelő.</string>
+    <string name="tfthobmodule_err_e5">E5E Főzési zóna hiba. Hívjon szervizt</string>
+    <string name="tfthobmodule_err_f1">F1E Főzési zóna hiba. Hívjon szervizt</string>
+    <string name="tfthobmodule_err_f3">F3E Főzési zóna hiba. Hívjon szervizt</string>
+    <string name="tfthobmodule_err_f4">F4E Főzési zóna hiba. Hívjon szervizt</string>
+
+    <string name="tfthobmodule_err_r1e">R1E A külső érzékelő akkumulátora túlságosan le van merülve a kért főzési folyamathoz. Kérjük, töltse fel az akkumulátort.</string>
+    <string name="tfthobmodule_err_r2e">R2E A külső érzékelő akkumulátora túlságosan le van merülve a kért főzési folyamathoz. Kérjük, töltse fel az akkumulátort.</string>
+    <string name="tfthobmodule_err_r3e">R3E Az akkumulátor lemerült, csatlakoztassa az érzékelőt egy külső áramforráshoz, és kapcsolja vissza.</string>
+    <string name="tfthobmodule_err_r4e">R4E Az érzékelő kapcsolata megszakadt. Ellenőrizze az akkumulátort töltöttségét, vagy lépjen kapcsolatba a gyártóval.</string>
+    <string name="tfthobmodule_err_r5e">R5E A külső érzékelő meghibásodott. Ellenőrizze az érzékelő elhelyezkedését, ha a hiba nem szűnik meg, lépjen kapcsolatba a gyártóval.</string>
+    <string name="tfthobmodule_err_r6e">R6E A külső érzékelő meghibásodott. Ellenőrizze az érzékelő elhelyezkedését, ha a hiba nem szűnik meg, lépjen kapcsolatba a gyártóval.</string>
+    <string name="tfthobmodule_err_r7e">R7E A külső érzékelő meghibásodott. Ellenőrizze az érzékelő elhelyezkedését, ha a hiba nem szűnik meg, lépjen kapcsolatba a gyártóval.</string>
+
+    <!--dialog message -->
+    <string name="tfthobmodule_dialog_message_sensor_connect_successfully">Külső érzékelő sikeresen csatlakoztatva.</string>
+    <string name="tfthobmodule_dialog_message_sensor_disconnect">External sensor disconnected.</string>
+    <string name="tfthobmodule_dialog_message_complete_recipe">Először fejezze be a receptet</string>
+
+    <string name="tfthobmodule_hob_setting_fragment_toast_content">A Precíz üzemmód használatához kapcsolja be a külső hőérzékelőt.\nNe felejtse el feltölteni az érzékelő akkumulátorát, vagy csatlakoztassa azt egy külső áramforráshoz.</string>
+    <string name="tfthobmodule_my_recipes_edit_fragment_toast_content">Írja be a receptet. Nyomja meg a mentés gombot.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_name">Írja be a recept nevét.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_temp">Állítsa be a hőmérsékletet.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_time">Állítsa be a főzési időt.</string>
+    <string name="tfthobmodule_hob_recipes_edit_fragment_toast_content_desc">Adja meg a recept leírását.</string>
+    <string name="tfthobmodule_hob_cooking_table_detail_fragment_toast_content">Állítsa be a kívánt főzési üzemmódot. A hőmérséklet pontosabb szabályozásához kapcsolja be a külső hőérzékelőt, és állítsa be a precíz üzemmódot.</string>
+
+    <string name="tfthobmodule_cooking_table_json">
+[\n
+      {\n
+        \"type\": \"Meat\",\n
+        \"description\": \"Hús.50°C - 80°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Csirkemellfilé\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kacsamell\",\n
+            \"weight\": \"200g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Tarja / T-bone steak\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Szabad tartású csirkemellfilé\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Báránykaraj (bárányszelet)\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertés rövidkaraj\",\n
+            \"weight\": \"400g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Jércemell\",\n
+            \"weight\": \"220g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hátszín steak - közepes\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"22\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hátszín steak - véres\",\n
+            \"weight\": \"180g\",\n
+            \"cookDetail\": [\n
+              \n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"18\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Galambmell\",\n
+            \"weight\": \"160g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"62\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Marha / borjú pofa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Csirkecomb\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Csirkeszárny\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kacsacomb\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Szabad tartású csirkecomb\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Báránynyak\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Moulard kacsacomb\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertés fül / orr\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1080\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertésláb\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"1440\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertéspofa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertésszelet / Sertésborda\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertéstoka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sertéscsülök\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sült kecskelapocka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"480\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Báránylapocka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"600\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Szopós malac\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"720\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Borjúcomb / csülök / lábszár\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"960\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Egész fürj\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"65\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Legumes and Cereals\",\n
+        \"description\": \"Hüvelyesek és gabonák.90°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Árpa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Bab\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"210\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Hajdina\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Csicseriborsó\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"240\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Lencse\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Zab\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Quinoa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Búza\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fruit\",\n
+        \"description\": \"Gyümölcsök.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Alma\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Alma - szabályozott túlfőzés\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Banán\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Cseresznye\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Barack\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Körte\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Ananász\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Szilva\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Piros bogyós gyümölcsök\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Eper\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Eper - szabályozott túlfőzés\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Shellfish\",\n
+        \"description\": \"Kagylófélék.55°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\": \"Kagyló\",\n
+            \"weight\": \"Közepes méret\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Szívkagyló\",\n
+            \"weight\": \"Közepes méret\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"2\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Tintahalfélék\",\n
+            \"weight\": \"Kis méret\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Kék kagyló\",\n
+            \"weight\": \"Közepes méret\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"90\",\n
+                \"cookTime\": \"3\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Polip\",\n
+            \"weight\": \"4kg\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"60\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Sziklakagyló\",\n
+            \"weight\": \"Kis méret\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"80\",\n
+                \"cookTime\": \"4\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\": \"Tintahal\",\n
+            \"weight\": \"Kis méret\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"7\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Vegetables\",\n
+        \"description\": \"Zöldségek.85°C - 100°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Articsóka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Bébirépa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Bébi cukkini\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Fekete retek\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Káposzta (levél)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"100\",\n
+                \"cookTime\": \"12\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Káposzta (szár)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"35\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Szúrós articsóka\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Répa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Karfiol\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"40\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zeller\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Mángold\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Cukkini\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Aprított cékla\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"75\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Endívia\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"180\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Édeskömény\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"50\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Friss fokhagyma\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Fagyasztott lóbab\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Fagyasztott borsó\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Zöld spárga\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Gomba\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"16\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Paszternák\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"20\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kínai kel (Napa káposzta)\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"6\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Prémium fehér spárga\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Sütőtök\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Feketegyökér\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"120\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Szeletelt burgonya\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"25\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Spenót\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"24\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Édesburgonya\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Fehérrépa\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Fehér spárga\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"30\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Egész cékla\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"150\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Egész, hámozott burgonya\",\n
+            \"weight\": \"\",\n
+            \"cookDetail\": [\n
+             {\n
+                \"cookTemp\": \"85\",\n
+                \"cookTime\": \"45\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      },\n
+      {\n
+        \"type\": \"Fish\",\n
+        \"description\": \"Hal.50°C - 60°C\",\n
+        \"item\": [\n
+          {\n
+            \"name\":\"Tőkehal\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Hekk\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Makréla\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"8\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Rája\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Íjhal\",\n
+            \"weight\": \"90g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Lazac\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Tengeri sügér\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Nyelvhalfilé\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"5\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Kardhal\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Tonhal\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ventresca tonhalfilé\",\n
+            \"weight\": \"120g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"50\",\n
+                \"cookTime\": \"10\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Egész nyelvhal\",\n
+            \"weight\": \"300g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"55\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          },\n
+          {\n
+            \"name\":\"Ördöghal\",\n
+            \"weight\": \"150g\",\n
+            \"cookDetail\": [\n
+              {\n
+                \"cookTemp\": \"60\",\n
+                \"cookTime\": \"15\"\n
+              }\n
+            ]\n
+          }\n
+        ]\n
+      }\n
+    ]
+    </string>
+</resources>

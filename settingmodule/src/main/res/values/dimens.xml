@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settingmodule_error_text_size">35sp</dimen>
+    <dimen name="settingmodule_back_button_text_size">44sp</dimen>
+    <dimen name="settingmodule_info_banner_text_size">40sp</dimen>
+
+    <string-array name="settingmodule_b30_turbo_silent">
+        <item>@string/viewmodule_hood_panel_turbo</item>
+        <item>@string/viewmodule_hood_panel_4</item>
+        <item>@string/viewmodule_hood_panel_3</item>
+        <item>@string/viewmodule_hood_panel_2</item>
+        <item>@string/viewmodule_hood_panel_1</item>
+        <item>@string/viewmodule_hood_panel_silent</item>
+    </string-array>
+</resources>

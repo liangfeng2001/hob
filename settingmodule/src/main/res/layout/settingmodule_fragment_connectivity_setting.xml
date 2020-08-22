@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_conectivity"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_connectivity"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tv_title"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_connectivity_setting_title_bluetooth"
+                android:id="@+id/title_bluetooth"
+                />
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="55dp"
+                android:id="@+id/sw_bluetooth"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+            <CheckedTextView
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/ct_temperature_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:textColor="@android:color/white"
+                android:text="@string/settingmodule_fragment_connectivity_setting_temperature_sensor"
+                android:typeface="serif"
+                android:textStyle="normal"
+                android:gravity="center|left"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+            <CheckedTextView
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/settingmodule_checkbox_language_selector"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="30dp"
+
+                android:id="@+id/ct_smart_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:textColor="@android:color/white"
+                android:text="@string/settingmodule_fragment_connectivity_setting_smart_phone"
+                android:typeface="serif"
+                android:textStyle="normal"
+                android:gravity="center|left"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_bluetooth_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/viewmodule_padding_xxxlarge"
+            android:text="00:22:33:xx:yy:aa"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left|center"
+            android:textColor="@android:color/white"
+            android:textStyle="normal"
+            android:typeface="serif"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:text="@string/settingmodule_fragment_connectivity_setting_title_paried_devices"
+           android:id="@+id/title_paired_devices"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

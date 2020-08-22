@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Instellingen</string>
+    <string name="settingmodule_setting_title_display">Display</string>
+    <string name="settingmodule_setting_title_language">Taal</string>
+    <string name="settingmodule_setting_title_sound">Geluid</string>
+    <string name="settingmodule_setting_title_security">Beveiliging</string>
+    <string name="settingmodule_setting_title_conectivity">Connectiviteit</string>
+    <string name="settingmodule_setting_title_hood_options">Opties afzuigkap</string>
+    <string name="settingmodule_setting_title_power_limit">Vermogenslimiet</string>
+    <string name="settingmodule_setting_title_default_settings">Standaardinstellingen</string>
+    <string name="settingmodule_setting_title_date_and_time">Datum en tijd</string>
+    <string name="settingmodule_setting_title_information">Informatie</string>
+    <string name="settingmodule_setting_title_energy_settings">Energie-instelling</string>
+    <string name="settingmodule_setting_title_test_cookware">Kookgerei testen</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Helderheid</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Achtergrond</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Geluid</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Geluidssterkte</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Klikgeluid</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Connectiviteit afzuigkap</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Automatische modus</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Intensieve modus</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Eco-modus</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Schakel de verbinding van de afzuigkap in volgens de gebruiksaanwijzing van de afzuigkap.\nBevestig dat kookplaat en afzuigkap aangesloten zijn.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Terugzetten naar standaardinstellingen.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Weet u zeker dat u de fabrieksinstellingen wilt terugzetten?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">NEE</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">JA</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Standaardinstellingen succesvol hersteld.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Vermogenslimiet gebruiken</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Vergrendelscherm</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Patroon</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">2 seconden drukken</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Vergrendelscherm bevestigen</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Vergrendelscherm instellen</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Vergrendelscherm instellen</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Vergrendelscherm bevestigen</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Bluetooth apparaten.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Zichtbaar maken voor niet-gekoppelde apparaten</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Naam</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Gekoppelde apparaten</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Temperatuursensor</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Smartphone/Tablet</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Datum instellen</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Tijd instellen</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">24-uurs indeling</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Alarminstellingen</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Verklaring van symbolen</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Softwareversie</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Demonstratiemodus</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Updates</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Logo</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Vergrendelen</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Timer sluiten</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Informatie</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Pauze</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Sluiten</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Opties afzuigkap</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Recepten</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Vermogen</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Timer</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Alarm</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Temperatuursensor</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Instellingen</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Temperatuur</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Een nieuwe test starten</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Selecteer de kookzone</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Plaats het kookgerei met ongeveer 200 ml water correct op de kookzone die het meest geschikt is voor de diameter van de bodem van het gerei.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Uw kookgerei is compatibel met deze kookplaat</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Uw kookgerei is niet compatibel met deze kookplaat</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Januari</string>
+    <string name="settingmodule_months_february">Februari</string>
+    <string name="settingmodule_months_march">Maart</string>
+    <string name="settingmodule_months_april">April</string>
+    <string name="settingmodule_months_may">Mei</string>
+    <string name="settingmodule_months_june">Juni</string>
+    <string name="settingmodule_months_july">Juli</string>
+    <string name="settingmodule_months_august">Augustus</string>
+    <string name="settingmodule_months_september">September</string>
+    <string name="settingmodule_months_october">Oktober</string>
+    <string name="settingmodule_months_november">November</string>
+    <string name="settingmodule_months_december">December</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Volume</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Duur van alarm</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Duur verlengen</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Gebruik de scrollfunctie om het alarm in te stellen (uren/minuten).\nHet is alleen akoestisch en onderbreekt geen bereidingsproces.\nDe aftelling wordt weergegeven nabij het uur.</string>
+    <string name="settingmodule_fragment_display_toast_content">Selecteer de helderheid van het scherm.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Schakel het algemene geluid in / uit en regel de geluidssterkte.\nSchakel alleen het klikgeluid in / uit.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Sluit apparaten aan via Bluetooth.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Selecteer de vermogensbegrenzing.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Stel de huidige datum en tijd in.\nSelecteer de gewenste indeling.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Kies de alarminstellingen.</string>
+    <string name="settingmodule_fragment_language_toast_content">Kies de taal.</string>
+    <string name="settingmodule_fragment_security_toast_content">Stel de vergrendelmodus in.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Kies een pincode van vier cijfers.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Herhaal de pincode die u heeft ingesteld.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Kies een patroon door minstens vier punten te verbinden.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Bevestig het patroon.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Stel de bediening van de afzuigkap in.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">Het patroon is hetzelfde als dat van het vergrendelscherm.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">De pincode is dezelfde als die van het vergrendelscherm.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Stelt opnieuw de oorspronkelijke configuratie in.</string>
+    <string name="settingmodule_fragment_information_toast_content">Hier vindt u nuttige informatie over uw apparaat en over de werking ervan.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Hier vindt u nuttige informatie over uw apparaat en over de werking ervan.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">U kunt kiezen tussen een interactieve handleiding en een demonstratievideo.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Wacht tot het updateproces is voltooid.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Stel de Slaapmodus en de Stand-bymodus in om de efficiëntie van uw apparaat te verbeteren.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Plaats het kookgerei met ongeveer 200 ml water correct op de kookzone die het meest geschikt is voor de diameter van de bodem van het gerei.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Controleer of het kookgerei correct op de kookzone is geplaatst.\nRaadpleeg de handleiding voor een lijst van geschikt kookgerei.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Met dit kookgerei levert de kookplaat optimale prestaties bij het koken.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Volg de instructies om over te gaan tot de test.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Als het juiste kookgerei wordt gebruikt, kan de kookplaat optimaal presteren en worden eventuele storingen vermeden.</string>
+    <string name="settingmodule_fragment_main_toast_content">Hier kunt u uw apparaat aanpassen.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Stel de indeling van het slaapscherm in.\nDit scherm verschijnt na een periode zonder interactie met het apparaat.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Handleiding</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Slaapmodus</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Inschakeltijd</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Totale uitschakeling</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Totale uitschakeltijd</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Indeling slaapmodus</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Uurindeling</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Digitaal</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Analoog</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Datum</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Bericht</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">UIT</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Geen externe kooksensor gedetecteerd. Dit zal de precisie van de temperatuur beïnvloeden.</string>
+    <string name="settingmodule_external_sensor_disconnected">Geen externe kooksensor gedetecteerd.</string>
+</resources>

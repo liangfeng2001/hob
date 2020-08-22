@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:textSize="@dimen/tfthobmodule_back_button_text_size"
+            android:gravity="center|left"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/ic_back"
+            android:drawablePadding="10dp"
+            android:text="@string/tfthobmodule_title_back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:id="@+id/tv_back"
+            android:layout_weight="1"
+
+            />
+        <!--ok button-->
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_save"
+            android:textSize="48sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="@string/viewmodule_c31_c33_c34_ok"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="130dp"
+            android:gravity="center_vertical"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="130dp"
+            android:background="@null">
+
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_info"
+            android:layout_gravity="right|center"
+            android:id="@+id/iv_information"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:textSize="45sp"
+            android:gravity="center|left"
+            android:textColor="@android:color/white"
+            android:text=""
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"
+            android:id="@+id/tv_title"
+
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_edit_name"
+                android:visibility="invisible"
+                >
+                <!--   name-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textCursorDrawable="@null"
+                    android:id="@+id/et_name"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp"
+                    android:maxLength="25"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/white"/>
+            </LinearLayout>
+
+            <!--   decription-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:textCursorDrawable="@null"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:id="@+id/et_decription"
+                android:gravity="top|left"
+                android:textColor="@android:color/white"
+                android:textSize="40dp"
+                android:background="@mipmap/bg_recipes_edit_decription"
+                android:visibility="invisible"
+                android:scrollbars="vertical"
+                android:maxLines="3"
+                android:fadeScrollbars="false"
+                android:inputType="text"
+                />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/fl_temp"
+                android:visibility="invisible"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_cooker_setting_operate_area"
+                    android:layout_width="640dp"
+                    android:layout_height="640dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/bg_cooker_setting_fire_gear_mode"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/tv_precise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-40dp"
+                    android:text="@string/tfthobmodule_title_precise"
+                    android:textColor="@color/viewmodule_white"
+                    android:textSize="60sp"/>
+
+                <TextView
+                    android:id="@+id/tv_fast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/tfthobmodule_title_fast"
+                    android:textColor="@color/viewmodule_white"
+                    android:textSize="60sp"/>
+            </FrameLayout>
+
+            <com.ekek.viewmodule.common.NumberPickerView
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:paddingStart="160dp"
+                android:paddingEnd="80dp"
+                android:visibility="visible"
+                app:npv_ShowCount="3"
+                app:npv_ShowDivider="false"
+                app:npv_TextSizeNormal="60sp"
+                app:npv_TextSizeSelected="180sp"
+                app:npv_TextColorSelected="@android:color/white"
+                app:npv_TextColorNormal="#55ffffff"
+                app:npv_WrapSelectorWheel="false"
+                app:npv_RespondChangeOnDetached="false"
+                android:id="@+id/npv_fast_temp_gear"
+                />
+            <com.ekek.viewmodule.common.NumberPickerView
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:paddingStart="160dp"
+                android:paddingEnd="80dp"
+                android:visibility="invisible"
+                app:npv_ShowCount="3"
+                app:npv_ShowDivider="false"
+                app:npv_TextSizeNormal="60sp"
+                app:npv_TextSizeSelected="180sp"
+                app:npv_TextColorSelected="@android:color/white"
+                app:npv_TextColorNormal="#55ffffff"
+                app:npv_WrapSelectorWheel="false"
+                app:npv_RespondChangeOnDetached="false"
+                android:id="@+id/npv_precise_temp_gear"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:paddingTop="10dp"
+                android:paddingStart="70dp"
+                android:paddingEnd="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/ll_timer"
+                >
+                <com.ekek.viewmodule.common.NumberPickerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:npv_ShowCount="3"
+                    app:npv_ShowDivider="false"
+                    app:npv_TextSizeNormal="60sp"
+                    app:npv_TextSizeSelected="140sp"
+                    app:npv_TextColorSelected="@android:color/white"
+                    app:npv_TextColorNormal="#55ffffff"
+                    app:npv_WrapSelectorWheel="true"
+                    app:npv_RespondChangeOnDetached="false"
+                    android:id="@+id/npv_timer_hour"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tfthobmodule_timer_symbol"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textColor="@android:color/white"
+                    android:textSize="140sp"
+                    android:id="@+id/tv_dot"
+                    />
+                <com.ekek.viewmodule.common.NumberPickerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="450dp"
+                    app:npv_ShowCount="3"
+                    app:npv_ShowDivider="false"
+                    app:npv_TextSizeNormal="60sp"
+                    app:npv_TextSizeSelected="140sp"
+                    app:npv_TextColorSelected="@android:color/white"
+                    app:npv_TextColorNormal="#55ffffff"
+                    app:npv_WrapSelectorWheel="true"
+                    app:npv_RespondChangeOnDetached="false"
+                    android:id="@+id/npv_timer_minute"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_timer_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="400dp"
+                android:paddingTop="16dp"
+                android:src="@mipmap/ic_cooker_setting_timer_disp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ic_info"
+                android:src="@mipmap/ic_info"
+                android:layout_gravity="left|bottom"
+                android:layout_marginLeft="975dp"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:background="@mipmap/bg_up_toast_short"
+                android:id="@+id/tv_up_toast"
+                android:textSize="@dimen/tfthobmodule_info_banner_text_size"
+                android:visibility="invisible"
+                android:text=" Type the name of the recipe. "
+                android:layout_gravity="left|bottom"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="615dp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

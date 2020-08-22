@@ -1,0 +1,72 @@
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+apply plugin: 'org.greenrobot.greendao'
+android {
+    compileSdkVersion build_versions.compile_sdk_version
+    greendao{
+        schemaVersion 2
+        targetGenDir 'src/main/java'
+    }
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode build_versions.version_code
+        versionName build_versions.version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resourcePrefix "tfthobmodule_"
+        multiDexEnabled true
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            }else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+                java{
+                    exclude 'debug/**'
+                }
+
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':commonmodule')
+    implementation project(':viewmodule')
+    implementation project(':tfthoodmodule')
+    implementation project(':settingmodule')
+    implementation project(':hardwaremodule')
+    implementation project(':intromodule')
+    annotationProcessor deps.butterknife_compiler
+    implementation deps.bluetooth
+    //implementation deps.mpandroidchart
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.tencent.bugly:crashreport:3.0.1'
+
+
+
+    //compile project(path: ':hardwaremodule')
+}

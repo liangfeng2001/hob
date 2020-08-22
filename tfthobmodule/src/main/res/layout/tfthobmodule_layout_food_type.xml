@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <com.ekek.viewmodule.common.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/food_type_personalize"
+        android:id="@+id/iv_food_type"
+        android:clickable="true"
+        app:viewmodule_x_radius = "0.0"
+        app:viewmodule_y_radius = "0.0"
+        app:viewmodule_stroke_width="0.0"
+        app:viewmodule_stroke_color="@android:color/white"
+        />
+
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="@dimen/tfthobmodule_padding_large"
+        android:paddingEnd="0dp"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:lineSpacingExtra="6dp"
+        android:id="@+id/tv_food_type"
+        />
+
+</FrameLayout>

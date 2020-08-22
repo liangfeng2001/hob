@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Beállítások</string>
+    <string name="settingmodule_setting_title_display">Kijelző</string>
+    <string name="settingmodule_setting_title_language">Nyelv</string>
+    <string name="settingmodule_setting_title_sound">Hang</string>
+    <string name="settingmodule_setting_title_security">Biztonság</string>
+    <string name="settingmodule_setting_title_conectivity">Csatlakoztatás</string>
+    <string name="settingmodule_setting_title_hood_options">Elszívó beállításai</string>
+    <string name="settingmodule_setting_title_power_limit">Megengedett teljesítmény</string>
+    <string name="settingmodule_setting_title_default_settings">Alapértelmezett beállítások</string>
+    <string name="settingmodule_setting_title_date_and_time">Dátum és idő</string>
+    <string name="settingmodule_setting_title_information">Információ</string>
+    <string name="settingmodule_setting_title_energy_settings">Teljesítmény beállítása</string>
+    <string name="settingmodule_setting_title_test_cookware">Főzőedények tesztelése</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Fényerő</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Háttér</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Hang</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Hangerő</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Kattintás hangja</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Páraelszívó kapcsolódása</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Automata üzemmód</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Intenzív üzemmód</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">ECO üzemmód</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Engedélyezze a páraelszívó kapcsolódását a páraelszívó útmutatója alapján.\nEllenőrizze, hogy a főzőlap és a páraelszívó kapcsolódik-e.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Alapértelmezett beállítások visszaállítása.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Biztosan visszaállítja a gyári beállításokat?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">NEM</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">IGEN</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Az alapértékek sikeresen visszaállítva.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Teljesítmény korlátozása</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Zár képernyő</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN kód</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Minta</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Tartsa nyomva 2 másodpercig</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Zár képernyő jóváhagyása</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Zár képernyő beállítása</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Zár képernyő beállítása</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Zár képernyő jóváhagyása</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Bluetooth eszközök.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Megjelenítés nem párosított eszközökön</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Név</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Párosított eszközök</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Hőmérséklet-érzékelő</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Okostelefon/tablet</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Dátum beállítása</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Idő beállítása</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">24 órás formátum használata</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Riasztási beállítások</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Ikonok jelmagyarázata</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Szoftver verziója</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Demó üzemmód</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Frissítések</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Logó</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Zár</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Időzítő bezárása</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Információ</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Szünet</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Bezárás</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Elszívó beállításai</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Receptek</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Teljesítmény</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Időzítő</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Riasztás</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Hőmérséklet-érzékelő</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Beállítások</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Hőmérséklet</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Új teszt indítása</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Válassza ki a főzési zónát</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Helyezzen egy kb. 200 ml vízzel feltöltött főzőedényt a főzőlap megfelelő átmérőjű zónájára.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">A főzőedény kompatibilis a főzőlappal</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">A főzőedény nem kompatibilis a főzőlappal</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Január</string>
+    <string name="settingmodule_months_february">Február</string>
+    <string name="settingmodule_months_march">Március</string>
+    <string name="settingmodule_months_april">Április</string>
+    <string name="settingmodule_months_may">Május</string>
+    <string name="settingmodule_months_june">Június</string>
+    <string name="settingmodule_months_july">Július</string>
+    <string name="settingmodule_months_august">Augusztus</string>
+    <string name="settingmodule_months_september">Szeptember</string>
+    <string name="settingmodule_months_october">Október</string>
+    <string name="settingmodule_months_november">November</string>
+    <string name="settingmodule_months_december">December</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Hangerő</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Riasztás időtartama</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Elhalasztás időtartama</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">A görgő segítségével állítsa be az időzítőt (óra/perc).\nAz időzítő csak hangjelzést ad, és nem állítja le a sütést.\nA visszaszámlálás megjelenik az óra közelében.</string>
+    <string name="settingmodule_fragment_display_toast_content">Válassza ki a kijelző fényerejét.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Kapcsolja be / ki a hangjelzéseket és állítsa be a hangerőt.\nKapcsolja be / vagy ki a kattintás hanghatását.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Csatlakoztassa az eszközöket Bluetooth-on keresztül.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Állítsa be a megengedett teljesítményt.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Állítsa be a dátumot és időt. Válassza ki a kívánt formátumot.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Állítsa be az időzítőt.</string>
+    <string name="settingmodule_fragment_language_toast_content">Állítsa be a nyelvet.</string>
+    <string name="settingmodule_fragment_security_toast_content">Állítsa be a zár üzemmódot.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Állítson be egy négy számjegyű PIN kódot.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Adja meg újra a beállított PIN kódot.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Kössön össze legalább négy pontot a kioldási minta beállításához.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Hagyja jóvá a kioldási mintát.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Állítsa be az elszívó vezérlését.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">A minta azonos a zár képernyővel.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">A PIN kód azonos a zár képernyővel.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Az alapbeállítások visszaállítása.</string>
+    <string name="settingmodule_fragment_information_toast_content">Ebben a menüben hasznos információkat talál az eszközről és annak működéséről.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Ebben a menüben hasznos információkat talál az eszközről és annak működéséről.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">Választhat egy interaktív bemutató vagy egy bemutató videó közül.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Várja meg, hogy a frissítés befejeződjön.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Állítsa be a hibernálás és a készenléti üzemmód időzítőjét, hogy a készülék kevesebb áramot fogyasszon.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Helyezzen egy kb. 200 ml vízzel feltöltött főzőedényt a főzőlap megfelelő átmérőjű zónájára.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Ellenőrizze, hogy megfelelően helyezte el a főzőedényt a főzőlapon.\nA használható főzőedények listáját lásd a kézikönyvben.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Ez a főzőedény megfelelő teljesítményt nyújt a főzőlapon.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">A teszt elvégzéséhez kövesse az alábbi utasításokat.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">A megfelelő edények használata biztosítja a sütő maximális teljesítményét, és segít elkerülni a meghibásodásokat.</string>
+    <string name="settingmodule_fragment_main_toast_content">Itt szabhatja személyre az eszköz beállításait.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Állítsa be a hibernálási képernyőt.\nEz a képernyő akkor jelenik meg, ha nem használja a készüléket.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Bemutató</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Hibernálás üzemmód</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Aktiválási idő</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Teljes kikapcsolás</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Teljes kikapcsolási idő</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Hibernálási formátum</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Idő formátuma</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Digitális</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Analóg</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Dátum</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Üzenet</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">KI</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Nincs észlelhető külső főzési érzékelő. Ez hatással lesz a hőmérséklet pontosságára.</string>
+    <string name="settingmodule_external_sensor_disconnected">Nincs észlelhető külső főzési érzékelő.</string>
+</resources>

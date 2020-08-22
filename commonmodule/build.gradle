@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+android {
+
+    compileSdkVersion build_versions.compile_sdk_version
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode build_versions.version_code
+        versionName build_versions.version_name
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resourcePrefix "commonmodule_"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api deps.constraint_layout
+    api deps.support.app_compat
+    api deps.support.design
+    testImplementation deps.test.junit
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso
+    api deps.guava
+    api deps.event_bus
+    api deps.greendao
+    api deps.number_picker_view
+    api deps.butterknife
+    api deps.rxjava
+    api deps.rxandroid
+    api deps.recyclerview
+    api deps.gson
+    api deps.material_dialogs
+    api deps.skinlibrary
+    api deps.pickview
+    //api deps.toasty
+    //annotationProcessor deps.butterknife_compiler
+   // api deps.ripple
+
+
+}

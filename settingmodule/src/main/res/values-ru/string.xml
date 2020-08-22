@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Настройки</string>
+    <string name="settingmodule_setting_title_display">Дисплей</string>
+    <string name="settingmodule_setting_title_language">Язык</string>
+    <string name="settingmodule_setting_title_sound">Звук</string>
+    <string name="settingmodule_setting_title_security">Безопасность</string>
+    <string name="settingmodule_setting_title_conectivity">Подключение</string>
+    <string name="settingmodule_setting_title_hood_options">Варианты вытяжки</string>
+    <string name="settingmodule_setting_title_power_limit">Ограничение мощности</string>
+    <string name="settingmodule_setting_title_default_settings">Настройки по умолчанию</string>
+    <string name="settingmodule_setting_title_date_and_time">Дата и время</string>
+    <string name="settingmodule_setting_title_information">Информация</string>
+    <string name="settingmodule_setting_title_energy_settings">Настройки электропитания</string>
+    <string name="settingmodule_setting_title_test_cookware">Проверка посуды</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Яркость</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Фон</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Звук</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Громкость</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Звук нажатия</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Подключение вытяжки</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Авто режим</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Интенсивный режим</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Экологичный режим</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Подключите вытяжку в соответствии с инструкцией по эксплуатации вытяжки.\nПодтвердите, что варочная панель и вытяжка подключены.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Восстановить настройки по умолчанию.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Вы уверены, что хотите восстановить заводские настройки?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">НЕТ</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">ДА</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Настройки по умолчанию успешно восстановлены.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Использовать ограничение мощности</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Экран блокировки</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Комбинация</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Нажать в течение 2 секунд</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Подтвердить блокировку экрана</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Задать экран блокировки</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Задать экран блокировки</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Подтвердить блокировку экрана</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Устройства Bluetooth.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Сделать видимой для несопряженных устройств</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Название</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Сопряженные устройства</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Датчик температуры</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Смартфон / планшет</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Установить дату</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Задать время</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">Использовать 24-часовой формат</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Настройки будильника</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Описание значков</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Версия программного обеспечения</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Демонстрационный режим</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Обновления</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Логотип</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Блокировка</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Закрыть таймер</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Информация</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Пауза</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Закрыть</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Варианты вытяжки</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Рецепты</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Мощность</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Таймер</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Будильник</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Датчик температуры</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Настройки</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Температура</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Начать новую проверку</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Выбрать зону приготовления пищи</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Налейте в кухонную посуду приблизительно 200 мл воды, правильно разместите посуду на зоне приготовления пищи, которая наилучшим образом соответствует диаметру посуды.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Ваша посуда совместима с данной варочной панелью</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Ваша посуда несовместима с данной варочной панелью</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Январь</string>
+    <string name="settingmodule_months_february">Февраль</string>
+    <string name="settingmodule_months_march">Март</string>
+    <string name="settingmodule_months_april">Апрель</string>
+    <string name="settingmodule_months_may">Май</string>
+    <string name="settingmodule_months_june">Июнь</string>
+    <string name="settingmodule_months_july">Июль</string>
+    <string name="settingmodule_months_august">Август</string>
+    <string name="settingmodule_months_september">Сентябрь</string>
+    <string name="settingmodule_months_october">Октябрь</string>
+    <string name="settingmodule_months_november">Ноябрь</string>
+    <string name="settingmodule_months_december">Декабрь</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Громкость</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Длительность будильника</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Длительность задержки</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Прокруткой значений установите будильник (часы / минуты).\nОн издает только звуковой сигнал и не прерывает процесс приготовления пищи.\nОбратный отсчет отображается рядом с индикатором текущего времени.</string>
+    <string name="settingmodule_fragment_display_toast_content">Выберите яркость экрана.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Включите / выключите общую звуковую схему и настройте громкость звука.\nВключите / выключите только звук нажатия.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Подсоедините устройства через Bluetooth.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Задайте ограничение мощности.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Установите текущую дату и время.\nВыберите нужный формат.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Выберите настройки будильника.</string>
+    <string name="settingmodule_fragment_language_toast_content">Выберите язык.</string>
+    <string name="settingmodule_fragment_security_toast_content">Установите режим блокировки.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Выберите PIN-код из четырех цифр.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Повторите введенный ранее PIN-код.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Выберите комбинацию, соединив не менее четырех точек.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Подтвердите комбинацию.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Настройте управление вытяжкой.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">Шаблон такой же, как и экран блокировки.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">PIN-код такой же, как и экран блокировки.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Восстанавливает начальную конфигурацию.</string>
+    <string name="settingmodule_fragment_information_toast_content">Здесь находится полезная информация о вашем устройстве и том, как оно работает.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Здесь находится полезная информация о вашем устройстве и том, как оно работает.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">Вы можете выбрать между интерактивным руководством и демонстрационным видео.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Дождитесь завершения процесса обновления.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Установите режим гибернации и режим ожидания, чтобы повысить эффективность вашего устройства.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Налейте в кухонную посуду приблизительно 200 мл воды, правильно разместите посуду на зоне приготовления пищи, которая наилучшим образом соответствует диаметру посуды.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Убедитесь в том, что ваша посуда правильно расположена на зоне приготовления пищи.\nСверьтесь со списком подходящей кухонной посуды в данном руководстве.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Эта кухонная посуда позволит вам оптимально использовать возможности варочной поверхности.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Следуйте инструкциям, чтобы продолжить тест.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Выбор правильной посуды для приготовления пищи позволяет обеспечить оптимальную работу варочной панели и избежать возможных неполадок.</string>
+    <string name="settingmodule_fragment_main_toast_content">Здесь вы можете индивидуально настроить ваше устройство.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Установите формат экрана гибернации.\nОн появляется спустя некоторое время при отсутствии взаимодействия с устройством.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Руководство</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Режим гибернации</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Время активации</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Полное выключение</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Время полного выключения</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Формат гибернации</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Формат отображения времени</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Цифровой</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Аналоговый</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Дата</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Сообщение</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">ВЫКЛ</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Внешний датчик приготовления не обнаружен. Это негативно отразится на точности определения температуры.</string>
+    <string name="settingmodule_external_sensor_disconnected">Внешний датчик приготовления не обнаружен.</string>
+</resources>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:textSize="@dimen/tfthobmodule_back_button_text_size"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@mipmap/ic_back"
+                android:drawablePadding="10dp"
+                android:text="@string/tfthobmodule_fragment_my_recipes_title"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:visibility="visible"
+                android:id="@+id/tv_back"
+                />
+            <!-- 信息提示 button-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/ic_info"
+                android:src="@mipmap/ic_info"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="96dp"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <com.ekek.viewmodule.common.RoundedImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/food_type_my_recipe"
+            app:viewmodule_x_radius = "30.0"
+            app:viewmodule_y_radius = "30.0"
+            app:viewmodule_stroke_width="10.0"
+            app:viewmodule_stroke_color="@android:color/white"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
+                android:gravity="left|top"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    >
+                    <!--name-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/tfthobmodule_padding_large"
+                        android:gravity="center|left"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text="@string/tfthobmodule_fragment_my_recipes_edit_title_name"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_name"
+                        />
+                    <!--name  content -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text=""
+                        android:id="@+id/tv_name_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/tfthobmodule_padding_myrecipe_item"
+                    android:gravity="center|left"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/tfthobmodule_padding_large"
+                        android:gravity="center|left"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text="@string/tfthobmodule_fragment_my_recipes_edit_title_temp"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_power"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text=""
+                        android:drawableStart="@mipmap/ic_food_detail_temp"
+                        android:drawablePadding="@dimen/tfthobmodule_padding_normal"
+                        android:id="@+id/tv_power_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/tfthobmodule_padding_myrecipe_item"
+                    android:gravity="center|left"
+                    >
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="@dimen/tfthobmodule_padding_large"
+                        android:gravity="center|left"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text="@string/tfthobmodule_fragment_my_recipes_edit_title_time"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_time"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text=""
+                        android:drawableStart="@mipmap/ic_food_detail_timer"
+                        android:drawablePadding="@dimen/tfthobmodule_padding_normal"
+                        android:id="@+id/tv_time_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/tfthobmodule_padding_myrecipe_item"
+                    android:gravity="center|left"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:textColor="@android:color/white"
+                        android:textSize="48sp"
+                        android:text="@string/tfthobmodule_fragment_my_recipes_edit_title_description"
+                        android:textStyle="bold"
+                        android:id="@+id/tv_decription"
+                        />
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="200dp"
+                        android:fadeScrollbars="false">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|left"
+                            android:textColor="@android:color/white"
+                            android:textSize="36sp"
+                            android:text=""
+                            android:id="@+id/tv_decription_content"
+                            />
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tfthobmodule_padding_large"
+                android:layout_marginBottom="@dimen/tfthobmodule_padding_xxxlarge"
+                android:background="@mipmap/ic_save"
+                android:text="@string/tfthobmodule_fragment_my_recipes_edit_title_save"
+                android:textSize="48sp"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:layout_gravity="bottom|right"/>
+
+            <TextView
+                android:background="@mipmap/bg_up_toast_short"
+                android:id="@+id/tv_up_toast"
+                android:textSize="@dimen/tfthobmodule_info_banner_text_size"
+                android:visibility="invisible"
+                android:text="Introduce your recipe. "
+                android:layout_gravity="top|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="50dp"
+
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

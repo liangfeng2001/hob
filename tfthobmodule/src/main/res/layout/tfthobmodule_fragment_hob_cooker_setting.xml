@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_cooker_setting_temp"
+        android:id="@+id/ib_cooker_setting_mode"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="80dp"
+        />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_cooker_setting_menu"
+        android:id="@+id/ib_cooker_setting_menu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="30dp"
+        />
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_cooker_setting_timer"
+        android:id="@+id/ib_cooker_setting_timer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="20dp"
+        />
+
+  <!--  <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bg_cooker_setting_timer_mode"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        />-->
+
+    <FrameLayout
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="210dp">
+
+        <ImageView
+            android:id="@+id/iv_cooker_setting_operate_area"
+            android:layout_width="640dp"
+            android:layout_height="640dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@mipmap/bg_cooker_setting_fire_gear_mode"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tv_precise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:text="@string/tfthobmodule_title_precise"
+            android:textColor="@color/viewmodule_white"
+            android:textSize="60sp"/>
+
+        <TextView
+            android:id="@+id/tv_fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/tfthobmodule_title_fast"
+            android:textColor="@color/viewmodule_white"
+            android:textSize="60sp"/>
+
+        <com.ekek.viewmodule.common.ArcuateTextView
+            android:id="@+id/tv_fast_or_precise"
+            android:layout_width="680dp"
+            android:layout_height="680dp"
+            android:layout_gravity="center"
+            app:viewmodule_text="@string/tfthobmodule_title_fast"
+            app:viewmodule_font_size="60sp"
+            app:viewmodule_font_color="#FFFFFF" />
+    </FrameLayout>
+
+    <!--火力-->
+    <com.ekek.viewmodule.common.NumberPickerView
+        android:layout_width="540dp"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="290dp"
+        android:visibility="invisible"
+        app:npv_ShowCount="3"
+        app:npv_ShowDivider="false"
+        app:npv_TextSizeNormal="60sp"
+        app:npv_TextSizeSelected="240sp"
+        app:npv_TextColorSelected="@android:color/white"
+        app:npv_TextColorNormal="#55ffffff"
+        app:npv_WrapSelectorWheel="false"
+        app:npv_RespondChangeOnDetached="false"
+        android:id="@+id/npv_fire_gear"
+        android:background="@null"
+        />
+    <!--温度 快速-->
+    <com.ekek.viewmodule.common.NumberPickerView
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="400dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="70dp"
+        android:visibility="invisible"
+        app:npv_ShowCount="3"
+        app:npv_ShowDivider="false"
+        app:npv_TextSizeNormal="60sp"
+        app:npv_TextSizeSelected="180sp"
+        app:npv_TextColorSelected="@android:color/white"
+        app:npv_TextColorNormal="#55ffffff"
+        app:npv_WrapSelectorWheel="false"
+        app:npv_RespondChangeOnDetached="false"
+        android:id="@+id/npv_fast_temp_gear"
+        />
+    <!--温度 精准-->
+    <com.ekek.viewmodule.common.NumberPickerView
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="400dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="70dp"
+        android:visibility="invisible"
+        app:npv_ShowCount="3"
+        app:npv_ShowDivider="false"
+        app:npv_TextSizeNormal="60sp"
+        app:npv_TextSizeSelected="180sp"
+        app:npv_TextColorSelected="@android:color/white"
+        app:npv_TextColorNormal="#55ffffff"
+        app:npv_WrapSelectorWheel="false"
+        app:npv_RespondChangeOnDetached="false"
+        android:id="@+id/npv_precise_temp_gear"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_centerVertical="true"
+        android:paddingStart="100dp"
+        android:paddingEnd="0dp"
+        android:layout_marginStart="290dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/ll_timer"
+        android:background="@null"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <!-- 冒号 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignEnd="@+id/npv_timer_hour"
+                android:text="@string/tfthobmodule_timer_symbol"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="@android:color/white"
+                android:textSize="140sp"
+                android:id="@+id/tfthobmodule_timer_symbol"
+                android:paddingTop="4dp"
+                android:paddingStart="@dimen/viewmodule_padding_normal"
+                android:paddingEnd="@dimen/viewmodule_padding_normal"
+                />
+
+            <!--小时-->
+            <com.ekek.viewmodule.common.NumberPickerView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="50dp"
+                android:paddingEnd="0dp"
+                app:npv_ShowCount="3"
+                app:npv_ShowDivider="false"
+                app:npv_TextSizeNormal="60sp"
+                app:npv_TextSizeSelected="140sp"
+                app:npv_TextColorSelected="@android:color/white"
+                app:npv_TextColorNormal="#55ffffff"
+                app:npv_WrapSelectorWheel="true"
+                app:npv_RespondChangeOnDetached="false"
+                android:id="@+id/npv_timer_hour"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+
+
+       <!-- 分钟-->
+        <com.ekek.viewmodule.common.NumberPickerView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="0dp"
+            android:paddingEnd="50dp"
+            app:npv_ShowCount="3"
+            app:npv_ShowDivider="false"
+            app:npv_TextSizeNormal="60sp"
+            app:npv_TextSizeSelected="140sp"
+            app:npv_TextColorSelected="@android:color/white"
+            app:npv_TextColorNormal="#55ffffff"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_RespondChangeOnDetached="false"
+            android:id="@+id/npv_timer_minute"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_timer_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="350dp"
+        android:paddingTop="16dp"
+        android:src="@mipmap/ic_cooker_setting_timer_disp"/>
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:paddingRight="50dp"
+        android:background="@null"
+        android:src="@mipmap/ic_cooker_setting_timer_cancel"
+        android:id="@+id/ib_timer_cancel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="250dp"
+        android:visibility="invisible"
+        />
+
+<!--与温度关联的提示图标-->
+
+    <LinearLayout
+        android:id="@+id/ll_temp_identification"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="196dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_temp_identification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/temp_identification_simmering" />
+
+        <com.ekek.viewmodule.common.FocusedTextView
+            android:id="@+id/tv_temp_identification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/viewmodule_padding_small"
+            android:text=""
+            android:textColor="@color/viewmodule_white"
+            android:textSize="32sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tfthobmodule_title_boost"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:id="@+id/iv_boost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="200dp"
+        android:visibility="visible"
+        />
+
+    <!--小面板-->
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="180dp"
+        android:id="@+id/fl_cooker_setting_confirm"
+        android:clickable="true"
+        >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:id="@+id/ib_cooker_setting_confirm"
+            android:src="@mipmap/cooker_setting_confirm_all"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:clickable="false"
+            />
+
+        <com.ekek.viewmodule.hob.Hob90SettingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:id="@+id/h9siv"
+            android:clickable="false"
+            ></com.ekek.viewmodule.hob.Hob90SettingIndicatorView>
+
+        <com.ekek.viewmodule.hob.Hob80SettingIndicatorView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:id="@+id/h8siv"
+            android:clickable="false"
+            ></com.ekek.viewmodule.hob.Hob80SettingIndicatorView>
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivAMask"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="50dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivBMask"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="51dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivCMask"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="28dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivAMask90"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="62dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivBMask90"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="62dp"
+            android:src="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/ivABMask90"
+            android:layout_width="36dp"
+            android:layout_height="79dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="60dp"
+            android:src="@android:color/black"/>
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivCMask90"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivEMask90"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="62dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivFMask90"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="62dp"
+            android:src="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/ivEFMask90"
+            android:layout_width="36dp"
+            android:layout_height="79dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="60dp"
+            android:src="@android:color/black"/>
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivAMask80"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="62dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivBMask80"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="60dp"
+            android:src="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/ivABMask80"
+            android:layout_width="36dp"
+            android:layout_height="79dp"
+            android:visibility="invisible"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="60dp"
+            android:src="@android:color/black"/>
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivCMask80"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginTop="-11dp"
+            android:layout_marginStart="4dp"
+            android:src="@android:color/black" />
+
+        <com.ekek.viewmodule.common.OvalImageView
+            android:id="@+id/ivDMask80"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:visibility="invisible"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="21dp"
+            android:src="@android:color/black" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_info"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/ic_alarm_setting_info"
+        android:layout_marginEnd="210dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

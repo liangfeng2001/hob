@@ -1,0 +1,70 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.support = "26.1.0"
+versions.constraint_layout = "1.1.2"
+versions.event_bus = "3.1.1"
+versions.greendao = "3.2.0"
+versions.number_picker_view = "1.1.1"
+versions.test_runner = "1.0.2"
+versions.espresso = "3.0.2"
+versions.junit = "4.12"
+versions.butterknife = "8.8.1"
+versions.skinlibrary = "2.0.0-beta8"
+versions.toasty = "1.1.2"
+versions.material_dialogs = "0.9.4.5"
+versions.guava = "18.0"
+versions.ripple = "1.3"
+versions.rxjava = "2.1.16"
+versions.rxandroid = "2.0.2"
+versions.gson = "2.8.5"
+versions.pickerview = "4.1.5"
+versions.bluetooth = "1.4.0"
+versions.mpandroidchart = "v2.1.6"
+versions.bugly = "latest.release"
+
+
+def deps = [:]
+
+def support = [:]
+support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+deps.support = support
+
+def test = [:]
+test.runner = "com.android.support.test:runner:$versions.test_runner"
+test.espresso = "com.android.support.test.espresso:espresso-core:$versions.espresso"
+test.junit = "junit:junit:$versions.junit"
+deps.test = test
+
+deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
+deps.event_bus = "org.greenrobot:eventbus:$versions.event_bus"
+deps.greendao = "org.greenrobot:greendao:$versions.greendao"
+deps.number_picker_view = "cn.carbswang.android:NumberPickerView:$versions.number_picker_view"
+deps.butterknife = "com.jakewharton:butterknife:$versions.butterknife"
+deps.butterknife_compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
+deps.skinlibrary = "com.solid.skin:skinlibrary:$versions.skinlibrary"
+deps.toasty = "com.github.GrenderG:Toasty:$versions.toasty"
+deps.material_dialogs = "com.afollestad.material-dialogs:commons:$versions.material_dialogs"
+deps.guava = "com.google.guava:guava:$versions.guava"
+deps.ripple = "com.github.traex.rippleeffect:library:$versions.ripple"
+deps.rxjava = "io.reactivex.rxjava2:rxjava:$versions.rxjava"
+deps.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+deps.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
+deps.gson = "com.google.code.gson:gson:$versions.gson"
+deps.pickview = "com.contrarywind:Android-PickerView:$versions.pickerview"
+deps.bluetooth = "com.inuker.bluetooth:library:$versions.bluetooth"
+deps.mpandroidchart = "com.github.PhilJay:MPAndroidChart:$versions.mpandroidchart"
+
+
+
+ext.deps = deps
+
+def build_versions = [:]
+build_versions.application_id = "com.ekek.catatftproject"
+build_versions.compile_sdk_version = 26
+build_versions.min_sdk = 19
+build_versions.target_sdk = 26
+build_versions.version_code = 134
+build_versions.version_name = "1.0.3"
+ext.build_versions = build_versions

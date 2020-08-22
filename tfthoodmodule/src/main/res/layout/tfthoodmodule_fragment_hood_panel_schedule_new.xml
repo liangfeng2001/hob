@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp">
+    <!--大的圈圈-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/big_cycle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:visibility="visible" >
+
+        <com.ekek.tfthoodmodule.view.MyBigCycle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/big_MyBigCycle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/hood_timer_button_big"
+            android:layout_gravity="center|top"
+            android:id="@+id/iv_timer"
+            android:layout_marginTop="90dp"
+            />
+        <!--文字 5 min-->
+        <TextView
+            android:id="@+id/dynamic_5_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="20pt"
+            android:textStyle="bold"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="100dp"
+            android:text="5 min" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@mipmap/hood_cancle"
+            android:id="@+id/iv_cancel"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/testdot"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <com.ekek.viewmodule.hob.Hob90SettingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h9siv"
+        android:clickable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        ></com.ekek.viewmodule.hob.Hob90SettingIndicatorView>
+
+    <com.ekek.viewmodule.hob.Hob80SettingIndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h8siv"
+        android:clickable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        ></com.ekek.viewmodule.hob.Hob80SettingIndicatorView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_go_back_to_main_screen"
+        android:src="@mipmap/ic_none"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_small_a_cooker_open"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_small_a_cooker_open_2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_small_b_cooker_open"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_small_b_cooker_open_2"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_small_c_cooker_open"
+        android:visibility="invisible"
+        android:src="@mipmap/ic_small_c_cooker_open_2"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/high_temp_a"
+        android:src="@mipmap/ic_high_temp_a_2"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/high_temp_b"
+        android:src="@mipmap/ic_high_temp_b_2"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/high_temp_c"
+        android:src="@mipmap/ic_high_temp_c_2"
+        android:visibility="invisible"/>
+
+
+
+
+</RelativeLayout>

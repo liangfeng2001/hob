@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="475dp"
+        android:layout_height="475dp"
+        android:src="@drawable/viewmodule_dialog_timer_is_up_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@mipmap/bg_dialog_timer_is_up"
+        />
+
+    <TextView
+        android:id="@+id/tv_add10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/viewmodule_white"
+        android:textSize="68sp"
+        app:layout_constraintTop_toTopOf="@+id/iv_timer"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_timer"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/iv_timer"
+        app:layout_constraintEnd_toEndOf="@+id/iv_timer"
+        android:text="+ 10 min"/>
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/viewmodule_white"
+        android:textSize="68sp"
+        app:layout_constraintTop_toTopOf="@+id/iv_timer"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_timer"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/iv_timer"
+        app:layout_constraintEnd_toEndOf="@+id/iv_timer"
+        android:text="@string/settingmodule_fragment_information_key_to_icon_close"/>
+</android.support.constraint.ConstraintLayout>

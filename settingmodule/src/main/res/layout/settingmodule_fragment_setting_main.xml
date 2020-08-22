@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_settings"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_setting"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:id="@+id/tv_title"
+        android:layout_marginLeft="12dp"
+        />
+
+
+    <GridView
+        android:id="@+id/gv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tv_title"
+        android:layout_gravity="center"
+        android:numColumns="2"
+        android:verticalSpacing="35dp"
+        android:horizontalSpacing="70dp"
+        android:overScrollMode="never"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:layout_marginLeft="45dp" />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:background="@null"
+        android:src="@mipmap/ic_setting_down"
+        android:id="@+id/ib_down"
+        />
+
+
+
+</RelativeLayout>

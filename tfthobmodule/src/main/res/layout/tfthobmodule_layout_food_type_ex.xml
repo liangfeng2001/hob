@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <com.ekek.viewmodule.common.RoundedImageView
+            android:id="@+id/iv_food_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@mipmap/food_type_my_recipes"
+            android:clickable="true"
+            app:viewmodule_x_radius = "30.0"
+            app:viewmodule_y_radius = "30.0"
+            app:viewmodule_stroke_width="10.0"
+            app:viewmodule_stroke_color="@android:color/white"
+            />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/iv_food_type"
+            app:layout_constraintEnd_toEndOf="@id/iv_food_type"
+            android:padding="@dimen/tfthobmodule_padding_small"
+            android:src="@mipmap/btn_food_type_close"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <com.ekek.viewmodule.common.FocusedTextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="220dp"
+        android:paddingStart="@dimen/tfthobmodule_padding_xlarge"
+        android:paddingEnd="0dp"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:id="@+id/tv_food_type"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="130dp"
+        android:paddingStart="@dimen/tfthobmodule_padding_xlarge"
+        android:paddingEnd="0dp"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:drawableStart="@mipmap/ic_food_detail_temp"
+        android:drawablePadding="@dimen/tfthobmodule_padding_normal"
+        android:id="@+id/tv_food_temp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:paddingStart="@dimen/tfthobmodule_padding_xlarge"
+        android:paddingEnd="0dp"
+        android:textColor="@android:color/white"
+        android:drawableStart="@mipmap/ic_food_detail_timer"
+        android:drawablePadding="@dimen/tfthobmodule_padding_normal"
+        android:textSize="36sp"
+        android:id="@+id/tv_food_timer"
+        />
+
+</FrameLayout>

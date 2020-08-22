@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="viewmodule_DigitalClockView">
+        <attr name="viewmodule_digitalTimeTextSize" format="dimension" />
+        <attr name="viewmodule_digitalTimeTextColor" format="color" />
+        <attr name="viewmodule_digitalDateTextSize" format="dimension" />
+        <attr name="viewmodule_digitalDateTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_AnalogicClockView">
+        <attr name="viewmodule_analogicDateTextSize" format="dimension" />
+        <attr name="viewmodule_analogicDateTextColor" format="color" />
+        <attr name="viewmodule_analogic_size" >
+            <enum name="normal" value="0" />
+            <enum name="big" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_StatusBarClockView">
+        <attr name="viewmodule_timeTextSize" format="dimension" />
+        <attr name="viewmodule_timeTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_MaterialLayout">
+        <attr name="viewmodule_alpha" format="integer" />
+        <attr name="viewmodule_alpha_step" format="integer" />
+        <attr name="viewmodule_framerate" format="integer" />
+        <attr name="viewmodule_duration" format="integer" />
+        <attr name="viewmodule_color" format="color" />
+        <attr name="viewmodule_scale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_CircleCookerView">
+        <attr name="viewmodule_cooker_poweroff_background" format="reference" />
+        <attr name="viewmodule_cooker_poweron_fire_gear_with_timer_background" format="reference" />
+        <attr name="viewmodule_cooker_poweron_fire_gear_without_timer_background" format="reference" />
+        <attr name="viewmodule_cooker_poweron_without_pan" format="reference" />
+        <attr name="viewmodule_cooker_high_temp" format="reference" />
+        <attr name="viewmodule_cooker_poweroff_button" format="reference" />
+        <attr name="viewmodule_cooker_poweron_temp_gear_word_with_timer_background" format="reference" />
+        <attr name="viewmodule_cooker_poweron_temp_gear_word_without_timer_background" format="reference" />
+        <attr name="viewmodule_cooker_poweron_temp_gear_picture_with_timer_background" format="reference" />
+        <attr name="viewmodule_cooker_poweron_temp_gear_picture_without_timer_background" format="reference" />
+        <attr name="viewmodule_cooker_keep_warm_tips_dark_background" format="reference" />
+        <attr name="viewmodule_cooker_keep_warm_tips_light_background" format="reference" />
+        <attr name="viewmodule_cooker_prepare_to_cook_background" format="reference" />
+        <attr name="viewmodule_cooker_prepare_to_cook_with_picture_background" format="reference" />
+        <attr name="viewmodule_cooker_ready_to_cook_background" format="reference" />
+        <attr name="viewmodule_cooker_error_ocurr_background" format="reference" />
+        <attr name="viewmodule_cooker_size" >
+            <enum name="big" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="small" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_HobCircleCookerView">
+        <attr name="viewmodule_cooker_id" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="viewmodule_HobRetangleCookerView">
+        <attr name="viewmodule_retangle_cooker_id" format="string|integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="viewmodule_NumberPickerView">
+        <!--set number of item displayed, default is 3-->
+        <attr name="viewmodule_npv_ShowCount" format="reference|integer" />
+        <!--set if show divider, default is true-->
+        <attr name="viewmodule_npv_ShowDivider" format="reference|boolean" />
+        <attr name="viewmodule_npv_DividerColor" format="reference|color" />
+        <attr name="viewmodule_npv_DividerMarginLeft" format="reference|dimension" />
+        <attr name="viewmodule_npv_DividerMarginRight" format="reference|dimension" />
+        <attr name="viewmodule_npv_DividerHeight" format="reference|dimension" />
+        <attr name="viewmodule_npv_TextColorNormal" format="reference|color" />
+        <attr name="viewmodule_npv_TextColorSelected" format="reference|color" />
+        <attr name="viewmodule_npv_TextColorHint" format="reference|color" />
+        <attr name="viewmodule_npv_TextSizeNormal" format="reference|dimension" />
+        <attr name="viewmodule_npv_TextSizeSelected" format="reference|dimension" />
+        <attr name="viewmodule_npv_TextSizeHint" format="reference|dimension" />
+        <attr name="viewmodule_npv_TextArray" format="reference" />
+        <attr name="viewmodule_npv_MinValue" format="reference|integer" />
+        <attr name="viewmodule_npv_MaxValue" format="reference|integer" />
+        <attr name="viewmodule_npv_WrapSelectorWheel" format="reference|boolean" />
+        <attr name="viewmodule_npv_RespondChangeOnDetached" format="reference|boolean" />
+        <attr name="viewmodule_npv_HintText" format="reference|string" />
+        <attr name="viewmodule_npv_EmptyItemHint" format="reference|string" />
+        <attr name="viewmodule_npv_MarginStartOfHint" format="reference|dimension" />
+        <attr name="viewmodule_npv_MarginEndOfHint" format="reference|dimension" />
+        <attr name="viewmodule_npv_ItemPaddingHorizontal" format="reference|dimension" />
+        <attr name="viewmodule_npv_ItemPaddingVertical" format="reference|dimension" />
+        <attr name="viewmodule_npv_RespondChangeInMainThread" format="reference|boolean" />
+        <attr name="viewmodule_npv_TextEllipsize" format="reference|string" />
+
+        <!--just used to measure maxWidth for wrap_content without hint,
+            the string array will never be displayed.
+            you can set this attr if you want to keep the wraped numberpickerview
+            width unchanged when alter the content list-->
+        <attr name="viewmodule_npv_AlternativeTextArrayWithMeasureHint" format="reference" />
+        <attr name="viewmodule_npv_AlternativeTextArrayWithoutMeasureHint" format="reference" />
+        <!--the max length of hint content-->
+        <attr name="viewmodule_npv_AlternativeHint" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_WheelPicker">
+        <attr name="viewmodule_wheel_data" format="reference" />
+        <attr name="viewmodule_wheel_selected_item_position" format="integer" />
+        <attr name="viewmodule_wheel_item_text_size" format="dimension" />
+        <attr name="viewmodule_wheel_item_text_color" format="color" />
+        <attr name="viewmodule_wheel_selected_item_text_color" format="color" />
+        <attr name="viewmodule_wheel_same_width" format="boolean" />
+        <attr name="viewmodule_wheel_maximum_width_text" format="string" />
+        <attr name="viewmodule_wheel_maximum_width_text_position" format="integer" />
+        <attr name="viewmodule_wheel_visible_item_count" format="integer" />
+        <attr name="viewmodule_wheel_item_space" format="dimension" />
+        <attr name="viewmodule_wheel_cyclic" format="boolean" />
+        <attr name="viewmodule_wheel_indicator" format="boolean" />
+        <attr name="viewmodule_wheel_indicator_color" format="color" />
+        <attr name="viewmodule_wheel_indicator_size" format="dimension" />
+        <attr name="viewmodule_wheel_curtain" format="boolean" />
+        <attr name="viewmodule_wheel_curtain_color" format="color" />
+        <attr name="viewmodule_wheel_atmospheric" format="boolean" />
+        <attr name="viewmodule_wheel_curved" format="boolean" />
+        <attr name="viewmodule_wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="viewmodule_wheel_font_path" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_PatternLockView">
+        <attr name="viewmodule_dotCount" format="integer"/>
+        <attr name="viewmodule_dotNormalSize" format="dimension"/>
+        <attr name="viewmodule_dotSelectedSize" format="dimension"/>
+        <attr name="viewmodule_pathWidth" format="dimension"/>
+        <attr name="viewmodule_aspectRatioEnabled" format="boolean"/>
+        <attr name="viewmodule_aspectRatio" format="enum">
+            <enum name="square" value="0"/>
+            <enum name="width_bias" value="1"/>
+            <enum name="height_bias" value="2"/>
+        </attr>
+        <attr name="viewmodule_normalStateColor" format="color"/>
+        <attr name="viewmodule_correctStateColor" format="color"/>
+        <attr name="viewmodule_wrongStateColor" format="color"/>
+        <attr name="viewmodule_dotAnimationDuration" format="integer"/>
+        <attr name="viewmodule_pathEndAnimationDuration" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_RecipeView">
+        <attr name="viewmodule_title_size" format="dimension"/>
+        <attr name="viewmodule_title_color" format="color" />
+        <attr name="viewmodule_attr_size" format="dimension"/>
+        <attr name="viewmodule_attr_color" format="color" />
+        <attr name="viewmodule_step_size" format="dimension"/>
+        <attr name="viewmodule_step_color" format="color" />
+        <attr name="viewmodule_block_padding" format="dimension"/>
+        <attr name="viewmodule_inner_padding" format="dimension"/>
+        <attr name="viewmodule_show_image" format="boolean" />
+        <attr name="viewmodule_show_title" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_RoundedImageView">
+        <attr name="viewmodule_x_radius" format="float"/>
+        <attr name="viewmodule_y_radius" format="float"/>
+        <attr name="viewmodule_stroke_width" format="float" />
+        <attr name="viewmodule_stroke_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="viewmodule_ArcuateTextView">
+        <attr name="viewmodule_text" format="reference"/>
+        <attr name="viewmodule_font_size" format="dimension"/>
+        <attr name="viewmodule_font_color" format="color" />
+    </declare-styleable>
+</resources>

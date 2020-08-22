@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_container"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:paddingTop="@dimen/tfthobmodule_padding_tiny"
+            android:paddingBottom="@dimen/tfthobmodule_padding_normal"
+            android:paddingStart="@dimen/tfthobmodule_padding_normal"
+            android:paddingEnd="@dimen/tfthobmodule_padding_right_back"
+            android:layout_marginStart="290dp"
+            android:textSize="@dimen/tfthobmodule_back_button_text_size"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableStart="@mipmap/ic_back"
+            android:drawablePadding="10dp"
+            android:text="@string/tfthobmodule_title_back"
+            android:visibility="visible"
+            android:id="@+id/tv_back" />
+
+        <com.ekek.viewmodule.recipe.RecipeView
+            android:id="@+id/rvRecipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/tfthobmodule_padding_tiny"
+            android:paddingStart="@dimen/tfthobmodule_padding_xlarge"
+            android:paddingEnd="10dp"
+            app:viewmodule_title_size="48sp"
+            app:viewmodule_title_color="@android:color/white"
+            app:viewmodule_attr_size="32sp"
+            app:viewmodule_attr_color="@android:color/white"
+            app:viewmodule_step_size="32sp"
+            app:viewmodule_step_color="@android:color/white"
+            app:viewmodule_block_padding="36dp"
+            app:viewmodule_inner_padding="10dp"
+            app:viewmodule_show_image="true"
+            app:viewmodule_show_title="false"/>
+
+    </LinearLayout>
+</LinearLayout>

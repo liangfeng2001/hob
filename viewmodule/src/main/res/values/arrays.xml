@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="viewmodule_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday </item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="viewmodule_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="viewmodule_day">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd </item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>13th</item>
+        <item>14th</item>
+        <item>15th</item>
+        <item>16th</item>
+        <item>17th</item>
+        <item>18th</item>
+        <item>19th</item>
+        <item>20th</item>
+        <item>21st</item>
+        <item>22nd</item>
+        <item>23rd</item>
+        <item>24th</item>
+        <item>25th</item>
+        <item>26th</item>
+        <item>27th</item>
+        <item>28th</item>
+        <item>29th</item>
+        <item>30th</item>
+        <item>31st</item>
+    </string-array>
+    <string-array name="viewmodule_WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </string-array>
+    <string-array name="viewmodule_WheelArrayWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+
+</resources>

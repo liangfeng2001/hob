@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ekek.viewmodule.common.FocusedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/viewmodule_setting_title_size"
+    android:gravity="center|left"
+    android:drawablePadding="20sp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:textStyle="bold"
+    android:singleLine="true"
+    android:ellipsize="marquee" >
+
+</com.ekek.viewmodule.common.FocusedTextView>

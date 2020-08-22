@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_fan"
+        android:id="@+id/ib_hood_fan"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/ib_hood_fan"
+        android:layout_toStartOf="@id/ib_hood_light"
+        android:id="@+id/fl_fan_gear"
+        android:background="@mipmap/bg_hood_gear"
+        >
+
+        <com.ekek.viewmodule.common.NumberPickerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:id="@+id/npv_fan_gear"
+            app:npv_ShowCount="3"
+            app:npv_ShowDivider="false"
+            app:npv_TextSizeNormal="50sp"
+            app:npv_TextSizeSelected="200sp"
+            app:npv_TextColorSelected="@android:color/white"
+            app:npv_TextColorNormal="#55ffffff"
+            app:npv_WrapSelectorWheel="false"
+            app:npv_RespondChangeOnDetached="false"
+            ></com.ekek.viewmodule.common.NumberPickerView>
+
+        <!--turbo-->
+        <TextView
+            android:id="@+id/ib_turbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="25pt"
+            android:textStyle="bold"
+            android:layout_gravity="top|center"
+            android:text="@string/viewmodule_hood_panel_turbo" />
+        <!--     silent-->
+        <TextView
+            android:id="@+id/ib_silent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="25pt"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|center"
+            android:text="@string/viewmodule_hood_panel_silent" />
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:src="@mipmap/ic_fan"
+            android:id="@+id/ib_hood_fan_center"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/play_p501"
+            android:background="@null"
+            android:id="@+id/ib_pause"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:background="@mipmap/bg_hood_gear"
+            android:src="@mipmap/ic_auto"
+            android:id="@+id/ib_hood_fan_auto"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:clickable="false"
+            />
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_light"
+        android:id="@+id/ib_hood_light"
+        android:layout_centerInParent="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/ib_hood_light"
+        android:layout_toStartOf="@id/ib_hood_fan_right"
+        android:id="@+id/fl_light_gear"
+        android:background="@mipmap/bg_hood_gear"
+        >
+
+        <com.ekek.viewmodule.common.NumberPickerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:id="@+id/npv_light_gear"
+            android:visibility="visible"
+            app:npv_ShowCount="3"
+            app:npv_ShowDivider="false"
+            app:npv_TextSizeNormal="50sp"
+            app:npv_TextSizeSelected="200sp"
+            app:npv_TextColorSelected="@android:color/white"
+            app:npv_TextColorNormal="#55ffffff"
+            app:npv_WrapSelectorWheel="false"
+            app:npv_RespondChangeOnDetached="false"
+            ></com.ekek.viewmodule.common.NumberPickerView>
+
+
+        <!--     max-->
+        <TextView
+            android:id="@+id/ib_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="25pt"
+            android:textStyle="bold"
+            android:layout_gravity="top|center"
+            android:text="@string/viewmodule_hood_panel_max" />
+
+
+        <!--     min-->
+        <TextView
+            android:id="@+id/ib_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textSize="25pt"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|center"
+            android:text="@string/viewmodule_hood_panel_min" />
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:src="@mipmap/ic_light"
+            android:id="@+id/ib_hood_light_center"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_fan"
+        android:id="@+id/ib_hood_fan_right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_hob_60"
+        android:id="@+id/ib_hob"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_manual_mode"
+        android:id="@+id/ib_hood_mode_manual"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:gravity="top|left"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_pause"
+
+            android:src="@mipmap/hood_pause"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_timer_when_stop_cooker"
+            android:src="@mipmap/hood_timer_button"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="bottom|left"
+            android:id="@+id/h6siv"
+            >
+
+            <com.ekek.viewmodule.hob.Hob90SettingIndicatorView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/h9siv"
+                android:clickable="false"
+                android:layout_gravity="center"
+                ></com.ekek.viewmodule.hob.Hob90SettingIndicatorView>
+
+            <com.ekek.viewmodule.hob.Hob80SettingIndicatorView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/h8siv"
+                android:clickable="false"
+                android:layout_gravity="center"
+                ></com.ekek.viewmodule.hob.Hob80SettingIndicatorView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:id="@+id/iv_go_back_to_main_screen"
+                android:src="@mipmap/ic_none"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/iv_small_a_cooker_open"
+                android:visibility="invisible"
+                android:src="@mipmap/ic_small_a_cooker_open_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/iv_small_b_cooker_open"
+                android:visibility="invisible"
+                android:src="@mipmap/ic_small_b_cooker_open_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/iv_small_c_cooker_open"
+                android:visibility="invisible"
+                android:src="@mipmap/ic_small_c_cooker_open_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/high_temp_a"
+                android:src="@mipmap/ic_high_temp_a_2"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/high_temp_b"
+                android:src="@mipmap/ic_high_temp_b_2"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/high_temp_c"
+                android:src="@mipmap/ic_high_temp_c_2"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tfthobmodule_spaceBetweenViewAndEdge">35dp</dimen>
+    <dimen name="tfthobmodule_menuBarWidth">220dp</dimen>
+    <!--180dp-->
+    <dimen name="tfthobmodule_menuBarHeight">720dp</dimen>
+
+    <dimen name="tfthobmodule_padding_none">0dp</dimen>
+    <dimen name="tfthobmodule_padding_tiny">8dp</dimen>
+    <dimen name="tfthobmodule_padding_small">12dp</dimen>
+    <dimen name="tfthobmodule_padding_normal">16dp</dimen>
+    <dimen name="tfthobmodule_padding_large">20dp</dimen>
+    <dimen name="tfthobmodule_padding_xlarge">24dp</dimen>
+    <dimen name="tfthobmodule_padding_xxlarge">30dp</dimen>
+    <dimen name="tfthobmodule_padding_xxxlarge">36dp</dimen>
+    <dimen name="tfthobmodule_padding_myrecipe_item">48dp</dimen>
+    <dimen name="tfthobmodule_recipe_margin_end_small">10dp</dimen>
+    <dimen name="tfthobmodule_recipe_margin_end_big">170dp</dimen>
+
+    <dimen name="tfthobmodule_padding_right_back">120dp</dimen>
+
+    <dimen name="tfthobmodule_error_text_size">35sp</dimen>
+    <dimen name="tfthobmodule_back_button_text_size">44sp</dimen>
+    <dimen name="tfthobmodule_info_banner_text_size">40sp</dimen>
+    <dimen name="tfthobmodule_cooking_table_title_text_size">52sp</dimen>
+    <dimen name="tfthobmodule_cooking_table_name_text_size">36sp</dimen>
+    <dimen name="tfthobmodule_cooking_table_weight_text_size">28sp</dimen>
+    <dimen name="tfthobmodule_cooking_table_temp_text_size">40sp</dimen>
+    <dimen name="tfthobmodule_cooking_table_time_text_size">40sp</dimen>
+</resources>

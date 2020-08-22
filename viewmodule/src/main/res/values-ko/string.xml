@@ -1,0 +1,1266 @@
+<resources>
+    <string name="viewmodule_app_name">viewmodule</string>
+    <string name="viewmodule_warning_message_pwd_error">Password is incorrect.</string>
+    <string name="viewmodule_warning_message_pwd_length_error">Password\'s length is four.</string>
+
+    <string name="viewmodule_lib_name">PatternLockView</string>
+    <string name="viewmodule_message_pattern_dot_added">Dot added to pattern</string>
+    <string name="viewmodule_message_pattern_started">Pattern drawing started</string>
+    <string name="viewmodule_message_pattern_detected">Pattern drawing completed</string>
+    <string name="viewmodule_message_pattern_cleared">Pattern cleared</string>
+
+    <string name="viewmodule_cooking_back">Back</string>
+    <string name="viewmodule_select_alarm_duration">Select the alarm duration</string>
+    <string name="viewmodule_alarm_will_ring_at">The alarm will ring at  %1$s :  %2$s</string>
+    <string name="viewmodule_hood_panel_turbo">터보</string>
+    <string name="viewmodule_hood_panel_silent">무음</string>
+    <string name="viewmodule_hood_panel_max">MAX</string>
+    <string name="viewmodule_hood_panel_min">MIN</string>
+    <string name="viewmodule_hood_panel_1">1</string>
+    <string name="viewmodule_hood_panel_2">2</string>
+    <string name="viewmodule_hood_panel_3">3</string>
+    <string name="viewmodule_hood_panel_4">4</string>
+    <string name="viewmodule_c31_c33_c34_ok">OK</string>
+
+    <!--cookerview-->
+    <string name="viewmodule_cooker_view_ready_to_cook">조리 준비 상태</string>
+
+    <!--BaseCircleCookerView-->
+    <string name="viewmodule_base_circle_cooker_view_keep_warm">따뜻하게 유지하기</string>
+
+    <string name="viewmodule_recipe_name_empty"> </string>
+    <string name="viewmodule_recipe_note_empty"> </string>
+    <string name="viewmodule_recipe_note_title">NOTES</string>
+
+    <!-- recipe attributes titles -->
+    <string name="viewmodule_recipe_attr_difficulty">DIFFICULTY:</string>
+    <string name="viewmodule_recipe_attr_cooking_time">COOKING TIME:</string>
+    <string name="viewmodule_recipe_attr_type">TYPE:</string>
+    <string name="viewmodule_recipe_attr_num_of_people">NUMBER OF PEOPLE:</string>
+    <string name="viewmodule_recipe_attr_allergens">ALLERGENS:</string>
+    <string name="viewmodule_recipe_attr_ingredients">INGREDIENTS:</string>
+    <string name="viewmodule_recipe_attr_what_you_need">WHAT YOU NEED:</string>
+
+    <!-- recipe step general titles -->
+    <string name="viewmodule_recipe_step_group_name_empty"> </string>
+    <string name="viewmodule_recipe_step_name_general_1">STEP1:</string>
+    <string name="viewmodule_recipe_step_name_general_1_1">STEP1.1:</string>
+    <string name="viewmodule_recipe_step_name_general_1_2">STEP1.2:</string>
+    <string name="viewmodule_recipe_step_name_general_1_3">STEP1.3:</string>
+    <string name="viewmodule_recipe_step_name_general_1_4">STEP1.4:</string>
+    <string name="viewmodule_recipe_step_name_general_1_5">STEP1.5:</string>
+    <string name="viewmodule_recipe_step_name_general_1_6">STEP1.6:</string>
+    <string name="viewmodule_recipe_step_name_general_1_7">STEP1.7:</string>
+    <string name="viewmodule_recipe_step_name_general_1_8">STEP1.8:</string>
+    <string name="viewmodule_recipe_step_name_general_1_9">STEP1.9:</string>
+    <string name="viewmodule_recipe_step_name_general_2">STEP2:</string>
+    <string name="viewmodule_recipe_step_name_general_2_1">STEP2.1:</string>
+    <string name="viewmodule_recipe_step_name_general_2_2">STEP2.2:</string>
+    <string name="viewmodule_recipe_step_name_general_2_3">STEP2.3:</string>
+    <string name="viewmodule_recipe_step_name_general_2_4">STEP2.4:</string>
+    <string name="viewmodule_recipe_step_name_general_2_5">STEP2.5:</string>
+    <string name="viewmodule_recipe_step_name_general_2_6">STEP2.6:</string>
+    <string name="viewmodule_recipe_step_name_general_2_7">STEP2.7:</string>
+    <string name="viewmodule_recipe_step_name_general_2_8">STEP2.8:</string>
+    <string name="viewmodule_recipe_step_name_general_2_9">STEP2.9:</string>
+    <string name="viewmodule_recipe_step_name_general_3">STEP3:</string>
+    <string name="viewmodule_recipe_step_name_general_3_1">STEP3.1:</string>
+    <string name="viewmodule_recipe_step_name_general_3_2">STEP3.2:</string>
+    <string name="viewmodule_recipe_step_name_general_3_3">STEP3.3:</string>
+    <string name="viewmodule_recipe_step_name_general_3_4">STEP3.4:</string>
+    <string name="viewmodule_recipe_step_name_general_3_5">STEP3.5:</string>
+    <string name="viewmodule_recipe_step_name_general_3_6">STEP3.6:</string>
+    <string name="viewmodule_recipe_step_name_general_3_7">STEP3.7:</string>
+    <string name="viewmodule_recipe_step_name_general_3_8">STEP3.8:</string>
+    <string name="viewmodule_recipe_step_name_general_3_9">STEP3.9:</string>
+    <string name="viewmodule_recipe_step_name_general_4">STEP4:</string>
+    <string name="viewmodule_recipe_step_name_general_4_1">STEP4.1:</string>
+    <string name="viewmodule_recipe_step_name_general_4_2">STEP4.2:</string>
+    <string name="viewmodule_recipe_step_name_general_4_3">STEP4.3:</string>
+    <string name="viewmodule_recipe_step_name_general_4_4">STEP4.4:</string>
+    <string name="viewmodule_recipe_step_name_general_4_5">STEP4.5:</string>
+    <string name="viewmodule_recipe_step_name_general_4_6">STEP4.6:</string>
+    <string name="viewmodule_recipe_step_name_general_4_7">STEP4.7:</string>
+    <string name="viewmodule_recipe_step_name_general_4_8">STEP4.8:</string>
+    <string name="viewmodule_recipe_step_name_general_4_9">STEP4.9:</string>
+    <string name="viewmodule_recipe_step_name_general_5">STEP5:</string>
+    <string name="viewmodule_recipe_step_name_general_5_1">STEP5.1:</string>
+    <string name="viewmodule_recipe_step_name_general_5_2">STEP5.2:</string>
+    <string name="viewmodule_recipe_step_name_general_5_3">STEP5.3:</string>
+    <string name="viewmodule_recipe_step_name_general_5_4">STEP5.4:</string>
+    <string name="viewmodule_recipe_step_name_general_5_5">STEP5.5:</string>
+    <string name="viewmodule_recipe_step_name_general_5_6">STEP5.6:</string>
+    <string name="viewmodule_recipe_step_name_general_5_7">STEP5.7:</string>
+    <string name="viewmodule_recipe_step_name_general_5_8">STEP5.8:</string>
+    <string name="viewmodule_recipe_step_name_general_5_9">STEP5.9:</string>
+    <string name="viewmodule_recipe_step_name_general_6">STEP6:</string>
+    <string name="viewmodule_recipe_step_name_general_6_1">STEP6.1:</string>
+    <string name="viewmodule_recipe_step_name_general_6_2">STEP6.2:</string>
+    <string name="viewmodule_recipe_step_name_general_6_3">STEP6.3:</string>
+    <string name="viewmodule_recipe_step_name_general_6_4">STEP6.4:</string>
+    <string name="viewmodule_recipe_step_name_general_6_5">STEP6.5:</string>
+    <string name="viewmodule_recipe_step_name_general_6_6">STEP6.6:</string>
+    <string name="viewmodule_recipe_step_name_general_6_7">STEP6.7:</string>
+    <string name="viewmodule_recipe_step_name_general_6_8">STEP6.8:</string>
+    <string name="viewmodule_recipe_step_name_general_6_9">STEP6.9:</string>
+    <string name="viewmodule_recipe_step_name_general_7">STEP7:</string>
+    <string name="viewmodule_recipe_step_name_general_7_1">STEP7.1:</string>
+    <string name="viewmodule_recipe_step_name_general_7_2">STEP7.2:</string>
+    <string name="viewmodule_recipe_step_name_general_7_3">STEP7.3:</string>
+    <string name="viewmodule_recipe_step_name_general_7_4">STEP7.4:</string>
+    <string name="viewmodule_recipe_step_name_general_7_5">STEP7.5:</string>
+    <string name="viewmodule_recipe_step_name_general_7_6">STEP7.6:</string>
+    <string name="viewmodule_recipe_step_name_general_7_7">STEP7.7:</string>
+    <string name="viewmodule_recipe_step_name_general_7_8">STEP7.8:</string>
+    <string name="viewmodule_recipe_step_name_general_7_9">STEP7.9:</string>
+    <string name="viewmodule_recipe_step_name_general_8">STEP8:</string>
+    <string name="viewmodule_recipe_step_name_general_8_1">STEP8.1:</string>
+    <string name="viewmodule_recipe_step_name_general_8_2">STEP8.2:</string>
+    <string name="viewmodule_recipe_step_name_general_8_3">STEP8.3:</string>
+    <string name="viewmodule_recipe_step_name_general_8_4">STEP8.4:</string>
+    <string name="viewmodule_recipe_step_name_general_8_5">STEP8.5:</string>
+    <string name="viewmodule_recipe_step_name_general_8_6">STEP8.6:</string>
+    <string name="viewmodule_recipe_step_name_general_8_7">STEP8.7:</string>
+    <string name="viewmodule_recipe_step_name_general_8_8">STEP8.8:</string>
+    <string name="viewmodule_recipe_step_name_general_8_9">STEP8.9:</string>
+    <string name="viewmodule_recipe_step_name_general_9">STEP9:</string>
+    <string name="viewmodule_recipe_step_name_general_9_1">STEP9.1:</string>
+    <string name="viewmodule_recipe_step_name_general_9_2">STEP9.2:</string>
+    <string name="viewmodule_recipe_step_name_general_9_3">STEP9.3:</string>
+    <string name="viewmodule_recipe_step_name_general_9_4">STEP9.4:</string>
+    <string name="viewmodule_recipe_step_name_general_9_5">STEP9.5:</string>
+    <string name="viewmodule_recipe_step_name_general_9_6">STEP9.6:</string>
+    <string name="viewmodule_recipe_step_name_general_9_7">STEP9.7:</string>
+    <string name="viewmodule_recipe_step_name_general_9_8">STEP9.8:</string>
+    <string name="viewmodule_recipe_step_name_general_9_9">STEP9.9:</string>
+
+    <!-- recipe step action general titles -->
+    <string name="viewmodule_recipe_step_action_name_general_1">Cook Step 1</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_1">Cook Step 1.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_2">Cook Step 1.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_3">Cook Step 1.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_4">Cook Step 1.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_5">Cook Step 1.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_6">Cook Step 1.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_7">Cook Step 1.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_8">Cook Step 1.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_9">Cook Step 1.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_2">Cook Step 2</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_1">Cook Step 2.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_2">Cook Step 2.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_3">Cook Step 2.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_4">Cook Step 2.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_5">Cook Step 2.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_6">Cook Step 2.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_7">Cook Step 2.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_8">Cook Step 2.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_9">Cook Step 2.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_3">Cook Step 3</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_1">Cook Step 3.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_2">Cook Step 3.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_3">Cook Step 3.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_4">Cook Step 3.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_5">Cook Step 3.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_6">Cook Step 3.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_7">Cook Step 3.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_8">Cook Step 3.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_9">Cook Step 3.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_4">Cook Step 4</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_1">Cook Step 4.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_2">Cook Step 4.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_3">Cook Step 4.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_4">Cook Step 4.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_5">Cook Step 4.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_6">Cook Step 4.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_7">Cook Step 4.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_8">Cook Step 4.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_9">Cook Step 4.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_5">Cook Step 5</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_1">Cook Step 5.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_2">Cook Step 5.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_3">Cook Step 5.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_4">Cook Step 5.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_5">Cook Step 5.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_6">Cook Step 5.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_7">Cook Step 5.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_8">Cook Step 5.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_9">Cook Step 5.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_6">Cook Step 6</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_1">Cook Step 6.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_2">Cook Step 6.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_3">Cook Step 6.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_4">Cook Step 6.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_5">Cook Step 6.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_6">Cook Step 6.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_7">Cook Step 6.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_8">Cook Step 6.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_9">Cook Step 6.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_7">Cook Step 7</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_1">Cook Step 7.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_2">Cook Step 7.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_3">Cook Step 7.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_4">Cook Step 7.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_5">Cook Step 7.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_6">Cook Step 7.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_7">Cook Step 7.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_8">Cook Step 7.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_9">Cook Step 7.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_8">Cook Step 8</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_1">Cook Step 8.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_2">Cook Step 8.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_3">Cook Step 8.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_4">Cook Step 8.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_5">Cook Step 8.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_6">Cook Step 8.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_7">Cook Step 8.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_8">Cook Step 8.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_9">Cook Step 8.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_9">Cook Step 9</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_1">Cook Step 9.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_2">Cook Step 9.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_3">Cook Step 9.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_4">Cook Step 9.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_5">Cook Step 9.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_6">Cook Step 9.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_7">Cook Step 9.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_8">Cook Step 9.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_9">Cook Step 9.9</string>
+
+    <!-- recipe tostada -->
+    <string name="viewmodule_food_recipe_tostada">Asparagus on\nToast with Egg\nCream and\nCheese</string>
+    <string name="viewmodule_recipe_tostada_title">Asparagus on Toast with Egg Cream and Cheese</string>
+    <string name="viewmodule_recipe_tostada_difficulty">Low</string>
+    <string name="viewmodule_recipe_tostada_cooking_time">1h</string>
+    <string name="viewmodule_recipe_tostada_type">Sous vide</string>
+    <string name="viewmodule_recipe_tostada_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_tostada_allergens">Egg, milk (cream, cheese spread), gluten (toast), nuts</string>
+    <string name="viewmodule_recipe_tostada_ingredients">
+        20g of nut oil (or oil with chopped nut inside, ideally hazelnut)&#060;br&#047;&#062;
+        1 bunch asparagus&#060;br&#047;&#062;
+        100 g salad rocket&#060;br&#047;&#062;
+        4 slices rustic bread toast&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the egg sauce&#060;br&#047;&#062;
+        3 eggs&#060;br&#047;&#062;
+        20 g cream (35% milk fat)&#060;br&#047;&#062;
+        1 lemon&#060;br&#047;&#062;
+        Chervil&#060;br&#047;&#062;
+        Salt&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the spiced cheese:&#060;br&#047;&#062;
+        1 g black pepper&#060;br&#047;&#062;
+        1 g white pepper&#060;br&#047;&#062;
+        1 g clove&#060;br&#047;&#062;
+        1 g cardamom&#060;br&#047;&#062;
+        1 g Sichuan pepper&#060;br&#047;&#062;
+        1 g pink pepper&#060;br&#047;&#062;
+        10 g chervil&#060;br&#047;&#062;
+        200 g cream cheese (e.g. quark)
+    </string>
+    <string name="viewmodule_recipe_tostada_what_you_need">
+        Induction cooktop with temperature control&#060;br&#047;&#062;
+        Bowl&#060;br&#047;&#062;
+        Hand whisk
+    </string>
+
+    <string name="viewmodule_recipe_step_tostada_1">
+        Using a pestle or a mill, crush the spices and mix with the cheese spread together with the chopped chervil. Put to one side.
+    </string>
+    <string name="viewmodule_recipe_step_tostada_2">
+        Cut the asparagus spears just where the colour starts changing from white to green. Vacuum wrap the green part and cook in a water bath at 85°C for 20 min (if they are very thick they may need a little more time). If not to be eaten immediately, cool them in water with ice and keep in the refrigerator.
+    </string>
+    <string name="viewmodule_recipe_step_tostada_3">
+        Meanwhile, make the egg sauce, by beating the eggs with the cream, a little salt, grated lemon peel and some drops of lemon juice. Place in a bowl and cook with a bain-marie at 85°C (if the bowl is stainless steel) for 10 minutes, stirring constantly. When it takes on a creamy texture, add the chopped chervil, mix and remove from the water bath.
+    </string>
+    <string name="viewmodule_recipe_step_tostada_4">
+        Spread the spiced cheese on the toast, place the warm asparagus on top and dress with the egg sauce. Accompany the recipe with a refreshing salad of rocket and nut oil.
+    </string>
+
+    <!-- recipe huevos -->
+    <string name="viewmodule_food_recipe_huevos">Low-Temperature\nEggs with\nButternut Squash</string>
+    <string name="viewmodule_recipe_huevos_title">Low-Temperature Eggs with Butternut Squash</string>
+    <string name="viewmodule_recipe_huevos_difficulty">Low</string>
+    <string name="viewmodule_recipe_huevos_cooking_time">1h</string>
+    <string name="viewmodule_recipe_huevos_type">Egg: Immersed in liquid // Vegetables: Sous vide</string>
+    <string name="viewmodule_recipe_huevos_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_huevos_allergens">Egg, nuts and dried fruits</string>
+    <string name="viewmodule_recipe_huevos_ingredients">
+        4 eggs&#060;br&#047;&#062;
+        500 g mashed potato&#060;br&#047;&#062;
+        45 g vegetable sofrito (onions, vegetables and seasoning, lightly fried in oil)&#060;br&#047;&#062;
+        4 baby courgettes&#060;br&#047;&#062;
+        8 green beans&#060;br&#047;&#062;
+        8 spears of green asparagus&#060;br&#047;&#062;
+        4 baby carrots&#060;br&#047;&#062;
+        1 parsnip&#060;br&#047;&#062;
+        4 shallots&#060;br&#047;&#062;
+        Chervil&#060;br&#047;&#062;
+        Chives&#060;br&#047;&#062;
+        Olive oil&#060;br&#047;&#062;
+        Salt
+    </string>
+    <string name="viewmodule_recipe_huevos_what_you_need">
+        Induction cooktop with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_huevos_1">
+        Cook the vegetables sous vide at 85°C for the right amount of time for each one.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_2">
+        Cook the egg in a water bath kept at 65°C for 30 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_3">
+        Heat up the mashed potato in a bain-marie and the sofrito in a saucepan.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_4">
+        First put the mashed potato on the plate in the shape of a volcano.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_5">
+        Then place the egg in the middle and serve the vegetables, which should have been heated in the microwave for a few seconds or briefly sautéed.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_6">
+        To finish, add a little vegetable sofrito mixed with some mild olive oil, chopped chives, chervil leaves, salt and pepper.
+    </string>
+
+    <!-- recipe salmon coliflor -->
+    <string name="viewmodule_food_recipe_salmon">Sous vide salmon\nwith creamy\ncauliflower purée</string>
+    <string name="viewmodule_recipe_salmon_coliflor_title">Sous vide salmon with creamy cauliflower purée</string>
+    <string name="viewmodule_recipe_salmon_coliflor_difficulty">Low</string>
+    <string name="viewmodule_recipe_salmon_coliflor_cooking_time">1h</string>
+    <string name="viewmodule_recipe_salmon_coliflor_type">Sous vide</string>
+    <string name="viewmodule_recipe_salmon_coliflor_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_salmon_coliflor_allergens">Fish</string>
+    <string name="viewmodule_recipe_salmon_coliflor_ingredients">
+        4 salmon supremes&#060;br&#047;&#062;
+        1 cauliflower&#060;br&#047;&#062;
+        100 g quinoa&#060;br&#047;&#062;
+        1 carrot&#060;br&#047;&#062;
+        1 leek&#060;br&#047;&#062;
+        1 purple onion&#060;br&#047;&#062;
+        Vegetable stock&#060;br&#047;&#062;
+        200 g of cold brine (10 g of salt per litre of water)&#060;br&#047;&#062;
+        Rosemary or thyme
+    </string>
+    <string name="viewmodule_recipe_salmon_coliflor_what_you_need">
+        Induction cooktop with temperature control&#060;br&#047;&#062;
+        Sous-vide cooking bags&#060;br&#047;&#062;
+        Vacuum sealing equipment&#060;br&#047;&#062;
+        Blender
+    </string>
+
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_1">&#060;u&#062;1 For the salmon&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_1_1">
+        Soak the salmon supremes in the cold brine for 15 minutes. After this time, remove and dry.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_1_2">
+        Vacuum seal the salmon in a bag and cook in a water bath at 50ºC for 15 minutes. Remove from the bag and place on a hot plate.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_2">&#060;u&#062;2 For the cauliflower purée&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_2_1">
+        Clean the cauliflower and boil in water and salt for at 85º for 45 minutes, or in boiling water for 15 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_2_2">
+        Remove from the heat and purée while still hot adding the necessary water or cream to obtain a dense, smooth texture. Keep warm.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_3">&#060;u&#062;3 For the Quinoa&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_3_1">
+        Finely cut the vegetables brunoise-style and sauté for 5 minutes. Season,then put to one side.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_3_2">
+        Cook the quinoa in the boiling vegetable stock for between 20 and 30 minutes. To cook the quinoa in a glass jar, immerse in a water bath at 100ºC for 30 minutes, then cool after cooking and heat again when required for use.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_3_3">
+        Mix the boiled quinoa with the cooked vegetables
+    </string>
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_4">&#060;u&#062;4 Finish and serve&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_4_1">
+        Complement the salmon with the cauliflower purée and the quinoa and vegetable mix then decorate withthyme or rosemary leaves.
+    </string>
+
+    <!-- recipe lubina con vinagreta -->
+    <string name="viewmodule_food_recipe_lubina">Sea Bass with\nTomato and\nSpring Onion\nVinaigrette</string>
+    <string name="viewmodule_recipe_lubina_title">Sea Bass with Tomato and Spring Onion Vinaigrette</string>
+    <string name="viewmodule_recipe_lubina_difficulty">Low</string>
+    <string name="viewmodule_recipe_lubina_cooking_time">1h</string>
+    <string name="viewmodule_recipe_lubina_type">Sous vide</string>
+    <string name="viewmodule_recipe_lubina_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_lubina_allergens">Fish</string>
+    <string name="viewmodule_recipe_lubina_ingredients">
+        2 seabass, filleted (4 large fillets) &#060;br&#047;&#062;
+        200 g ripe tomatoes&#060;br&#047;&#062;
+        2 lettuce hearts&#060;br&#047;&#062;
+        2 cloves of garlic&#060;br&#047;&#062;
+        150 g virgin olive oil&#060;br&#047;&#062;
+        20 g sherry vinegar&#060;br&#047;&#062;
+        Salt and pepper&#060;br&#047;&#062;
+        Rosemary leaves&#060;br&#047;&#062;
+        200 g of brine (100 g of salt per litre of water)
+    </string>
+    <string name="viewmodule_recipe_lubina_what_you_need">
+        Induction cooktop with temperature control&#060;br&#047;&#062;
+        Sous-vide cooking bags&#060;br&#047;&#062;
+        Vacuum sealing equipment
+    </string>
+
+    <string name="viewmodule_recipe_step_group_lubina_1">&#060;u&#062;1 Freezing of the seabass&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_lubina_1_1">
+        Put the seabass fillets into very cold brine for 10 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_1_2">
+        Dry and vacuum pack. Freeze by placing the fillets very flat in the freezer so that they freeze as quickly as possible.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_lubina_2">&#060;u&#062;2 Vinaigrette&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_lubina_2_1">
+        Separate the leaves of the lettuce hearts. Cut the garlic into thin slices.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_2_2">
+        Blanch the tomatoes with a small cross-cut on the top. Cool, peel, cut into quarters and remove the watery part. Cut the rest of the tomato into cubes.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_2_3">
+        In a frying pan, using 50 g of olive oil, fry the sliced garlic for a few minutes until golden. Add the tomato and cook on a mild heat for 3 minutes. Add 100 g of olive oil and 20 grams of sherry vinegar. Add salt and pepper to taste then put to one side.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_2_4">
+        Add some rosemary leaves.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_lubina_3">&#060;u&#062;3 Finish and serve&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_lubina_3_1">
+        Prepare a pan with water and add the frozen fish when the water has reached 60ºC and leave to cook for the 8 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_3_2">
+        In a frying pan, lightly fry the lettuce heart leaves until golden and set aside.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_3_3">
+        Optional: after cooking, open the bag and lightly fry the seabass in the frying pan on both sides with a drop of olive oil. If wished, once the seabass is removed from the frying pan, the skin can be gently removed. This step is optional.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_3_4">
+        Place the fish on a plate, drizzle the tomato vinaigrette over and accompany with the lettuce heart leaves and the rosemary.
+    </string>
+
+    <!-- recipe Quinoa con verduras -->
+    <string name="viewmodule_food_recipe_quinoa">Quinoa with\nvegetables and\ncoconut oil</string>
+    <string name="viewmodule_recipe_quinoa_title">Quinoa with vegetables and coconut oil</string>
+    <string name="viewmodule_recipe_quinoa_difficulty">Medium</string>
+    <string name="viewmodule_recipe_quinoa_cooking_time">30 min</string>
+    <string name="viewmodule_recipe_quinoa_type">Sous vide</string>
+    <string name="viewmodule_recipe_quinoa_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_quinoa_allergens">---</string>
+    <string name="viewmodule_recipe_quinoa_ingredients">
+        240 g quinoa&#060;br&#047;&#062;
+        25 g cauliflower&#060;br&#047;&#062;
+        25 g broccoli&#060;br&#047;&#062;
+        25 g carrot&#060;br&#047;&#062;
+        25 g green beans&#060;br&#047;&#062;
+        25 g spring onion&#060;br&#047;&#062;
+        240 g water or frozen vegetable stock&#060;br&#047;&#062;
+        Virgin olive oil&#060;br&#047;&#062;
+        Purple shiso leaves&#060;br&#047;&#062;
+        15 g coconut oil
+    </string>
+    <string name="viewmodule_recipe_quinoa_what_you_need">
+        Induction cooktop with temperature control&#060;br&#047;&#062;
+        Vacuum-sealable bags for cooking&#060;br&#047;&#062;
+        Vacuum sealing equipment
+    </string>
+
+    <string name="viewmodule_recipe_step_group_quinoa_1">&#060;u&#062;1 Vegetables:&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_quinoa_1_1">
+        Peel, wash and cut the vegetables in different ways (Julienne, Jardinière, florets ).
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_1_2">
+        Sauté with coconut oil quickly and cool.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_quinoa_2">&#060;u&#062;2 Quinoa:&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_quinoa_2_1">
+        Rinse the quinoa twice and leave to soak for 20 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_2">
+        Drain, dry and toast in a frying pan.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_3">
+        Vacuum-wrap the quinoa, with two parts liquid (water or stock) to one part quinoa and with the sautéed vegetables.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_4">
+       Cook in a water bath at 100º C for 20 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_5">
+        To serve, season with a few drops of olive oil and decorate with purple shiso leaves or similar.
+    </string>
+
+    <!-- recipe Gelee frutos rojos -->
+    <string name="viewmodule_food_recipe_gelee">Mixed Berry\nGelée with\nYogurt</string>
+    <string name="viewmodule_recipe_gelee_title">Mixed Berry Gelée with Yogurt</string>
+    <string name="viewmodule_recipe_gelee_difficulty">Low</string>
+    <string name="viewmodule_recipe_gelee_cooking_time">3h</string>
+    <string name="viewmodule_recipe_gelee_type">Sous vide</string>
+    <string name="viewmodule_recipe_gelee_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_gelee_allergens">Milk (yogurt), fish (fishtail gelatine)</string>
+    <string name="viewmodule_recipe_gelee_ingredients">
+        250 g very ripe strawberries &#060;br&#047;&#062;
+        125 g sugar&#060;br&#047;&#062;
+        40 raspberries&#060;br&#047;&#062;
+        40 blackberries&#060;br&#047;&#062;
+        30 g sloe berries&#060;br&#047;&#062;
+        40 wild strawberries &#060;br&#047;&#062;
+        20 g redcurrants &#060;br&#047;&#062;
+        1 sheet of leaf gelatine (2 g) &#060;br&#047;&#062;
+        400 g Greek yogurt &#060;br&#047;&#062;
+        4 sprigs of fresh mint
+    </string>
+    <string name="viewmodule_recipe_gelee_what_you_need">
+        Induction cooktop with temperature control&#060;br&#047;&#062;
+        Sous-vide cooking bags&#060;br&#047;&#062;
+        Sous-vide equipment&#060;br&#047;&#062;
+        Sieve
+    </string>
+
+    <string name="viewmodule_recipe_step_group_gelee_1">&#060;u&#062;1 Mixed Berry Gelée&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_gelee_1_1">
+        Soak the gelatine using cold water.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_2">
+        Cut the strawberries in half and vacuum-seal them in a bag with the sugar.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_3">
+        Put the bag in the water bath to cook at 65º C for 2 hours.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_4">
+        Once the cooking time is completed, sieve the liquid while hot and put the strawberries aside.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_5">
+        Dissolve the gelatine in the resulting juice.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_gelee_2">&#060;u&#062;2 Finish and serve&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_gelee_2_1">
+        Put 4 strawberries into the bottom of the glass and cover with yogurt. Repeat two or more times.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_2_2">
+        On the top, arrange the red fruits cut into halves.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_2_3">
+        Add the strawberry gelatine while still liquid and at room temperature.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_2_4">
+       Leave to rest until the gelatine sets and decorate with the sprigs of fresh mint.
+    </string>
+    <string name="viewmodule_recipe_gelee_note">
+       It is important that the strawberries are very ripe – even if they look a little bit past their best – so that they express all their sweetness and aromas. The prettiest strawberries can be reserved for decorating with the other berries. Remember that the strawberry gelatine must be cold when preparing it to serve.
+    </string>
+
+    <!-- recipe Setas a la vinagreta  -->
+    <string name="viewmodule_food_recipe_setas">Mushrooms with\nvinaigrette\n</string>
+    <string name="viewmodule_recipe_setas_title">Mushrooms with vinaigrette</string>
+    <string name="viewmodule_recipe_setas_difficulty">Low</string>
+    <string name="viewmodule_recipe_setas_cooking_time">1h</string>
+    <string name="viewmodule_recipe_setas_type">In a bag or container</string>
+    <string name="viewmodule_recipe_setas_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_setas_allergens">Sulphites</string>
+    <string name="viewmodule_recipe_setas_ingredients">
+        500 g small milk-caps&#060;br&#047;&#062;
+        200 g mild olive oil&#060;br&#047;&#062;
+        50 g sherry vinegar or similar&#060;br&#047;&#062;
+        salt and pepper
+    </string>
+    <string name="viewmodule_recipe_setas_what_you_need">
+        Induction hob with temperature control&#060;br&#047;&#062;
+        Glass jars
+    </string>
+
+    <string name="viewmodule_recipe_step_setas_1">
+        Carefully clean the mushrooms using a damp cloth, ensuring they do not lose their aroma.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_setas_2">
+        &#060;b&#062;STEP2 - Option A:&#060;b&#047;&#062; &#060;br&#047;&#062;
+        &#060;u&#062;A- To eat straight away.&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_setas_2_1">
+        Briefly blanch the mushrooms in boiling water, drain them and put them in a pot.
+    </string>
+    <string name="viewmodule_recipe_step_setas_2_2">
+        Cover with 3 parts olive oil to 1 part vinegar, salt and pepper, and cook on a low heat until they are properly confited.
+    </string>
+    <string name="viewmodule_recipe_step_setas_2_3">
+        Remove from the hob and allow to cool in the liquid. They can be served as a side dish or as a main dish with a salad.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_setas_3">
+        &#060;b&#062;STEP3 - Option B:&#060;b&#047;&#062; &#060;br&#047;&#062;
+        &#060;u&#062;B- To preserve.&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_1">
+        Briefly blanch the mushrooms in boiling water, drain them and allow them to cool on a baking tray.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_2">
+        Prepare a mixture of 100 g olive oil and 25 g sherry vinegar or similar, and season with salt and pepper, as well as different herbs and spices if you wish.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_3">
+        Sterilise some glass jars with boiling water, fill with mushrooms and cover with the olive oil and vinegar mixture.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_4">
+        Close the jars and put them in boiling water for 30 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_5">
+        Leave to cool in the water.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_6">
+        Put them in a cool place or in the fridge and wait 2 weeks before opening.
+    </string>
+
+    <!-- recipe Alcachofa con jamón ibérico.  -->
+    <string name="viewmodule_food_recipe_alcachofas">Artichokes with\nibérico ham\n</string>
+    <string name="viewmodule_recipe_alcachofa_title">Artichokes with ibérico ham</string>
+    <string name="viewmodule_recipe_alcachofa_difficulty">Medium</string>
+    <string name="viewmodule_recipe_alcachofa_cooking_time">3h 30min</string>
+    <string name="viewmodule_recipe_alcachofa_type">Sous vide</string>
+    <string name="viewmodule_recipe_alcachofa_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_alcachofa_allergens">---</string>
+    <string name="viewmodule_recipe_alcachofa_ingredients">
+        16 artichokes&#060;br&#047;&#062;
+        80 g Ibérico ham&#060;br&#047;&#062;
+        100 g olive oil&#060;br&#047;&#062;
+        50 g flour&#060;br&#047;&#062;
+        Salt and pepper
+    </string>
+    <string name="viewmodule_recipe_alcachofa_what_you_need">
+        Blender&#060;br&#047;&#062;
+        Mandoline&#060;br&#047;&#062;
+        Skimmer&#060;br&#047;&#062;
+        Chopping board&#060;br&#047;&#062;
+        Knives&#060;br&#047;&#062;
+        Saucepan&#060;br&#047;&#062;
+        Baking tray&#060;br&#047;&#062;
+        Kitchen roll&#060;br&#047;&#062;
+        Vacuum pouches&#060;br&#047;&#062;
+        Vacuum sealer&#060;br&#047;&#062;
+        Induction hob with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_alcachofa_1">
+        Place the artichokes in iced water so that they\'re very cold, to prevent oxidation during preparation.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_2">
+        Clean and peel the artichokes until you\'re left with their hearts.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_3">
+        Cook the artichokes sous vide in two pouches - one with 6 artichokes at 85°C for 90 minutes and the other with 8 artichokes at 85°C for 2 hours. Leave to cool and set aside.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_4">
+        Cut the artichokes from the bag of 6 into quarters and then into eighths.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_5">
+        Blend the artichokes from the bag of 8 in a blender until a fine purée is achieved, and drizzle with 20g of olive oil and a pinch of salt.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_6">
+        Cut the 2 remaining artichokes into slices, toss in flour and fry in plenty of olive oil. Set them aside in a moisture-proof container.
+    </string>
+    <string name="viewmodule_recipe_alcachofa_note">
+        Put the artichoke puree on a plate.  Finish with the other 2 types of artichoke.  Add the ham. Season with virgin olive oil and a sprinkling of pepper.
+    </string>
+
+    <!-- recipe Costillar de cerdo en dos cocciones  -->
+    <string name="viewmodule_food_recipe_coastillar">Twice-cooked\nrack of pork ribs\n</string>
+    <string name="viewmodule_recipe_coastillar_title">Twice-cooked rack of pork ribs</string>
+    <string name="viewmodule_recipe_coastillar_difficulty">Medium</string>
+    <string name="viewmodule_recipe_coastillar_cooking_time">12h</string>
+    <string name="viewmodule_recipe_coastillar_type">Confit</string>
+    <string name="viewmodule_recipe_coastillar_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_coastillar_allergens">---</string>
+    <string name="viewmodule_recipe_coastillar_ingredients">
+        1 rack of pork ribs &#060;br&#047;&#062;
+        Olive oil&#060;br&#047;&#062;
+        3 garlic cloves&#060;br&#047;&#062;
+        Bouquet garni
+    </string>
+    <string name="viewmodule_recipe_coastillar_what_you_need">
+        Induction hob with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_group_coastillar_1">
+        &#060;u&#062;First stage:&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_coastillar_1">
+        Once confited in olive oil, slow-cook with the garlic and bouquet garni at 80°C for 6/8 hours (check to see if the meat is tender), remove from the hob and leave to cool.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_coastillar_2">
+        &#060;u&#062;Second stage:&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_coastillar_2">
+        First regenerate in oil or sous vide and place in a pre-heated oven at 220°C coated with some of the oil from the first stage, or finish by grilling the ribs on holm oak charcoals to add smokiness, a crispy outer layer and an intense flavour to the fat which comes into contact with the high temperature.
+    </string>
+
+    <!-- recipe Papada de cerdo ibérico en doble cocción.  -->
+    <string name="viewmodule_food_recipe_parada">Double cooked\niberian pork jowl\n</string>
+    <string name="viewmodule_recipe_parada_title">Double cooked iberian pork jowl</string>
+    <string name="viewmodule_recipe_parada_difficulty">Low</string>
+    <string name="viewmodule_recipe_parada_cooking_time">18h 30min</string>
+    <string name="viewmodule_recipe_parada_type">Sous vide</string>
+    <string name="viewmodule_recipe_parada_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_parada_allergens">Sesame (gomashio)</string>
+    <string name="viewmodule_recipe_parada_ingredients">
+        1 pork jowl (skinned)&#060;br&#047;&#062;
+        1 L brine (100 g salt per 1 L water)&#060;br&#047;&#062;
+        Mild olive oil&#060;br&#047;&#062;
+        2 bok chooy (Chinese cabbage)&#060;br&#047;&#062;
+        40 g gomashio&#060;br&#047;&#062;
+        80 g concentrated meat sauce&#060;br&#047;&#062;
+        Salt and pepper
+    </string>
+    <string name="viewmodule_recipe_parada_what_you_need">
+        Vacuum pouches&#060;br&#047;&#062;
+        Vacuum sealer&#060;br&#047;&#062;
+        Induction hob with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_group_parada_1">
+        &#060;u&#062;1 Elaboration:&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_1">
+        Immerse the jowl in brine for 1 hour. Dry and vacuum-seal.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_2">
+        Cook in a water bath at 65ºC for 18 hours. Then cool in an ice bath.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_3">
+        Slice the bok choy, vacuum-seal and cook in a water bath at 85ºC for 20 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_4">
+        Thickly slice the pork jowl.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_5">
+        Sear the pork jowl in a frying pan on medium to low heat until it turns brown, releases excess fat, and takes on a crispy texture.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_6">
+        Sear the bok choy in a frying pan at medium heat.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_parada_2">
+        &#060;u&#062;2 To finish and serve:&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_parada_2_1">
+        Pour a little hot meat sauce onto the plate and place two slices of pork jowl on top of it. Add a little fleur de sel, pepper, and olive oil.
+    </string>
+    <string name="viewmodule_recipe_step_parada_2_2">
+        Place the bok choy beside the pork jowl and sprinkle a little gomashio on top.
+    </string>
+
+    <!-- recipe Espárragos con mayonesa de cítricos. -->
+    <string name="viewmodule_food_recipe_esparragos">Asparagus with\ncitrus fruit\nmayonnaise</string>
+    <string name="viewmodule_recipe_esparragos_title">Asparagus with citrus fruit mayonnaise</string>
+    <string name="viewmodule_recipe_esparragos_difficulty">Low</string>
+    <string name="viewmodule_recipe_esparragos_cooking_time">1h</string>
+    <string name="viewmodule_recipe_esparragos_type">Sous vide</string>
+    <string name="viewmodule_recipe_esparragos_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_esparragos_allergens">Egg (mayonnaise)</string>
+    <string name="viewmodule_recipe_esparragos_ingredients">
+        For the asparagus&#060;br&#047;&#062;
+        20 medium-size white asparagus&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the citrus fruit mayonnaise&#060;br&#047;&#062;
+        300 g sunflower oil&#060;br&#047;&#062;
+        2 egg yolks&#060;br&#047;&#062;
+        Salt&#060;br&#047;&#062;
+        1 lemon&#060;br&#047;&#062;
+        1 mandarin nad/or orange and/or grapefruit&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        To garnish&#060;br&#047;&#062;
+        Segments of orange and/or mandarin and/or grapefruit&#060;br&#047;&#062;
+        Lemon balm
+    </string>
+    <string name="viewmodule_recipe_esparragos_what_you_need">
+        Induction hob with temperature control&#060;br&#047;&#062;
+        Cooking pouches
+    </string>
+
+    <string name="viewmodule_recipe_step_group_esparragos_1">
+        &#060;u&#062;1 For the citrus fruit mayonnaise&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_1_1">
+        Reduce the juice from the citrus fruit by cooking it on a very low heat until it has been reduced to a quarter of its volume (when cold, it should have a slightly dense texture). Leave to cool.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_1_2">
+        We will then make the mayonnaise with the egg yolks and the sunflower oil.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_1_3">
+        Add 3/4 parts of the reduction from the citrus fruit juice, mix with a blender and season with salt.
+    </string>
+
+
+    <string name="viewmodule_recipe_step_group_esparragos_2">
+        &#060;u&#062;2 For the asparagus&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_1">
+        Peel the asparagus with a peeler removing all the hard fibre.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_2">
+        Vacuum seal.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_3">
+        Cook in a water bath at 85ºC for 45 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_4">
+        Refresh in an ice bath and set aside.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_esparragos_3">
+        &#060;u&#062;3 To finish and serve&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_3_1">
+        Place the asparagus on a plate, cover with the mayonnaise and flambé with a blowtorch until it is slightly glazed.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_3_2">
+        Garnish with segments of mandarin orange, orange or grapefruit, lemon balm leaves and a few drops of citrus fruit reduction.
+    </string>
+
+    <!-- recipe Pechuga de pollo -->
+    <string name="viewmodule_food_recipe_pechuga">Chicken breast\nCremoso\nwith apricots\nand olives</string>
+    <string name="viewmodule_recipe_pechuga_title">Chicken breast with apricots and olives</string>
+    <string name="viewmodule_recipe_pechuga_difficulty">Low</string>
+    <string name="viewmodule_recipe_pechuga_cooking_time">1h</string>
+    <string name="viewmodule_recipe_pechuga_type">Sous vide</string>
+    <string name="viewmodule_recipe_pechuga_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_pechuga_allergens">---</string>
+    <string name="viewmodule_recipe_pechuga_ingredients">
+        For the chicken&#060;br&#047;&#062;
+        4 chicken breasts of 220 g, with their skins&#060;br&#047;&#062;
+        1 L brine (100 g salt per 1 L water)&#060;br&#047;&#062;
+        Sichuan pepper&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the olive sauce&#060;br&#047;&#062;
+        100 g black olives&#060;br&#047;&#062;
+        1 glass rancio wine&#060;br&#047;&#062;
+        750 g poultry broth&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the apricot purée&#060;br&#047;&#062;
+        200 g ripe apricots
+    </string>
+    <string name="viewmodule_recipe_pechuga_what_you_need">
+        Colander&#060;br&#047;&#062;
+        Saucepan&#060;br&#047;&#062;
+        Hand blender&#060;br&#047;&#062;
+        Vacuum pouches&#060;br&#047;&#062;
+        Vacuum sealer &#060;br&#047;&#062;
+        Induction hob with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_group_pechuga_1">
+        &#060;u&#062;1 For the chicken&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_1_1">
+        Place the chicken in the brine for 1 hour. Dry and vacuum-seal with a little Sichuan pepper.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_1_2">
+        Cook in water at 65°C for 40 minutes. Or in the oven at 120°C for 35 minutes (the aim is for the centre to reach 65°C in both cases)
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_1_3">
+        Open the bag and sear the chicken with a little oil (about 2 minutes for the skin side on low heat and 30 seconds for the meat side).
+    </string>
+
+
+    <string name="viewmodule_recipe_step_group_pechuga_2">
+        &#060;u&#062;2 For the olive sauce&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_1">
+        Boil the rancio wine and the poultry broth
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_2">
+        Reduce until a quarter remains. Strain.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_3">
+        Add the pitted black olives, blend, and pass through a conical strainer.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_4">
+        If necessary, achieve the desired texture using xanthan gum (proportion: 3g/l) and season with salt.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_pechuga_3">
+        &#060;u&#062;3 For the apricot purée&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_3_1">
+        Peel the apricots and remove their stones.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_3_2">
+        Vacuum-seal and cook at 85ºC for 20 minutes. Or in the oven at 120°C for 60 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_3_3">
+        Blend
+    </string>
+
+    <string name="viewmodule_recipe_step_group_pechuga_4">
+        &#060;u&#062;4 To finish and serve&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_4_1">
+        Arrange the apricot purée, interspersed with the thickly sliced chicken and finish with the olive sauce.
+    </string>
+
+    <!-- recipe Sopa de tomillo -->
+    <string name="viewmodule_food_recipe_sopa_de">Thyme soup with\nlow- temperature\negg</string>
+    <string name="viewmodule_recipe_sopade_title">Thyme soup with low- temperature egg</string>
+    <string name="viewmodule_recipe_sopade_difficulty">Low</string>
+    <string name="viewmodule_recipe_sopade_cooking_time">1h</string>
+    <string name="viewmodule_recipe_sopade_type">Immersed in liquid</string>
+    <string name="viewmodule_recipe_sopade_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_sopade_allergens">Egg, gluten</string>
+    <string name="viewmodule_recipe_sopade_ingredients">
+        1 bunch thyme&#060;br&#047;&#062;
+        100 g olive oil&#060;br&#047;&#062;
+        1 L of water or chicken broth&#060;br&#047;&#062;
+        8 thin slices of dry bread&#060;br&#047;&#062;
+        2 cloves garlic&#060;br&#047;&#062;
+        4 organic chicken eggs (small)&#060;br&#047;&#062;
+        Finely sliced toast&#060;br&#047;&#062;
+        Salt and pepper
+    </string>
+    <string name="viewmodule_recipe_sopade_what_you_need">
+        Saucepan&#060;br&#047;&#062;
+        Wooden utensils&#060;br&#047;&#062;
+        Knives
+    </string>
+
+    <string name="viewmodule_recipe_step_sopade_1">
+        Lightly fry the two garlic cloves in a saucepan.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_2">
+        Add the thyme, tied toghether so that it doesn\'t crumble, moisten with water or broth and cook for 10 minutes on low heat. Then remove the thyme and garlic.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_3">
+        Add the dry toasted bread and leave to cook for 6 to 8 minutes. Then blend or whisk.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_4">
+        Put the soup in a bowl and add an egg, cooking at a low temperature (65°C for between 20-40 minutes, depending on the size and desired consistency, as when cooked at a higher temperature, the yolk will be harder).
+    </string>
+    <string name="viewmodule_recipe_step_sopade_5">
+        Season with some salt, pepper and thyme flowers.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_6">
+        Decorate with olive oil and toast.
+    </string>
+
+    <!-- recipe Solomillo al whisky -->
+    <string name="viewmodule_food_recipe_solomillo">Macallan sirloin\n\n</string>
+    <string name="viewmodule_recipe_solomillo_title">Macallan sirloin</string>
+    <string name="viewmodule_recipe_solomillo_difficulty">Low</string>
+    <string name="viewmodule_recipe_solomillo_cooking_time">45min</string>
+    <string name="viewmodule_recipe_solomillo_type">Sous vide</string>
+    <string name="viewmodule_recipe_solomillo_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_solomillo_allergens">Nuts</string>
+    <string name="viewmodule_recipe_solomillo_ingredients">
+        For the sirloin&#060;br&#047;&#062;
+        0,8 Kg cleaned sirloin setak&#060;br&#047;&#062;
+        3 spoonfuls of whisky&#060;br&#047;&#062;
+        Sichuan pepper&#060;br&#047;&#062;
+        1 L brine (100 g salt per 1 L water)&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the garnish&#060;br&#047;&#062;
+        Leek&#060;br&#047;&#062;
+        Carrot&#060;br&#047;&#062;
+        Courgette&#060;br&#047;&#062;
+        Green asparagus&#060;br&#047;&#062;
+        Shallot&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the pine nut oil&#060;br&#047;&#062;
+        100 g olive oil&#060;br&#047;&#062;
+        50 g pine nuts&#060;br&#047;&#062;
+        Salt&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        To finish and serve&#060;br&#047;&#062;
+        100 g beef juice
+    </string>
+    <string name="viewmodule_recipe_solomillo_what_you_need">
+        Frying pan&#060;br&#047;&#062;
+        Vacuum pouches&#060;br&#047;&#062;
+        Vacuum sealer &#060;br&#047;&#062;
+        Induction hob with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_1">
+        &#060;u&#062;1 For the sirloin&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_1_1">
+        Place the sirloin in brine for 15 minutes. Dry.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_1_2">
+        Vacuum seal the meat in a pouch with ice cubes made from whisky. The ice cubes allow the pouch to be sealed properly.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_1_3">
+        Cook in a water bath at 65°C for 15 minutes or at 55°C for 20 minutes. Or in the oven at 70°C for 20 minutes.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_2">
+        &#060;u&#062;2 For the garnish&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_2_1">
+        Cut and blanch the vegetables, or cook them sous vide or in boiling water.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_3">
+        &#060;u&#062;3 For the pine nut oil&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_3_1">
+        Brown the halved pine nuts in olive oil over very low heat.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_3_2">
+        Once roasted and cooled, add the rest of the oil, salt and pepper.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_4">
+        &#060;u&#062;4 To finish and serve&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_1">
+        Remove the sirloin from the bag and sear quickly in a frying pan on high heat for a very short period of time to prevent it drying out.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_2">
+        Deglaze* the frying pan with the leftover juice from the pouch (*Deglaze: to add wine or a similar liquid to a frying pan or baking tray in order to obtain the fat or juice which is left over after cooking). Add the beef sauce and cook for 1 minute.  Remove and strain if necessary.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_3">
+        Sauté the vegetables
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_4">
+        Plate the sirloin with the vegetables, add the sauce and drizzle with pine nut oil.
+    </string>
+    <string name="viewmodule_recipe_solomillo_note">
+        The cooking time can be adjusted tu suit you personal taste. If fairly rare sirloin is preferred, the cooking time at 65ºC can be reduced to 12 minutes, and conversely, if well-done meat is preferred, it can be extended to 18 minutes.
+    </string>
+
+    <!-- recipe Bacalao con espinacas -->
+    <string name="viewmodule_food_recipe_bacalao">Cod with spinach,\nraisins, pine nuts\nand Idiazabal\ncheese</string>
+    <string name="viewmodule_recipe_bacalao_title">Cod with spinach, raisins, pine nuts and Idiazabal cheese</string>
+    <string name="viewmodule_recipe_bacalao_difficulty">Low</string>
+    <string name="viewmodule_recipe_bacalao_cooking_time">1h</string>
+    <string name="viewmodule_recipe_bacalao_type">Confited in olive oil</string>
+    <string name="viewmodule_recipe_bacalao_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_bacalao_allergens">Dried fruits, milk</string>
+    <string name="viewmodule_recipe_bacalao_ingredients">
+        600 g cod&#060;br&#047;&#062;
+        200 g olive oil&#060;br&#047;&#062;
+        400 g fresh spinach&#060;br&#047;&#062;
+        60 g raisins&#060;br&#047;&#062;
+        20 g pine nuts&#060;br&#047;&#062;
+        25 g Idiazabal cheese&#060;br&#047;&#062;
+        25 g liquid cream&#060;br&#047;&#062;
+        50 g Pedro Ximenez&#060;br&#047;&#062;
+        Fresh chives
+    </string>
+
+    <string name="viewmodule_recipe_step_bacalao_1">
+         Reduce the Pedro Ximenez on a low heat until you have a reduction. Remember that when it is hot, you cannot tell if it has thickened, so allow it to cool and then check to avoid it being cooked for too long or burning.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_2">
+         Melt the cheese with the cream on a low heat and set aside.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_3">
+        Chop the chives and mix with a few drops of virgin olive oil.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_4">
+        Heat the olive oil to 50°C, add the cod and cook for 15 minutes at this temperature, ensuring it remains constant. Or in the oven at 70°C for 15 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_5">
+        Sauté the pine nuts and raisins in a frying pan, add the fresh spinach leaves and sauté for a few seconds.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_6">
+        Place the spinach in the middle of the plate. Add a piece of cod confit, as well as some cheese sauce, Pedro Ximenez reduction and a few drops of olive oil.
+    </string>
+
+    <!-- recipe Enctrecotte en dos cocciones con verduras -->
+    <string name="viewmodule_food_recipe_entrecotte">Two-Stage\nEntrecote with\nVegetables</string>
+    <string name="viewmodule_recipe_entrecotte_title">Two-Stage Entrecote with Vegetables</string>
+    <string name="viewmodule_recipe_entrecotte_difficulty">Low</string>
+    <string name="viewmodule_recipe_entrecotte_cooking_time">2h</string>
+    <string name="viewmodule_recipe_entrecotte_type">Sous vide</string>
+    <string name="viewmodule_recipe_entrecotte_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_entrecotte_allergens">Milk (butter)</string>
+    <string name="viewmodule_recipe_entrecotte_ingredients">
+        4 entrecotes 400 g&#060;br&#047;&#062;
+        1 l brine (1 l water per 100 g salt)&#060;br&#047;&#062;
+        4 tender carrots&#060;br&#047;&#062;
+        50 g butter&#060;br&#047;&#062;
+        30 g sunflower oil&#060;br&#047;&#062;
+        4 sprigs of rosemary and 4 sprigs of thyme&#060;br&#047;&#062;
+        4 cloves of garlic&#060;br&#047;&#062;
+        Spinach
+    </string>
+    <string name="viewmodule_recipe_entrecotte_what_you_need">
+        Induction cooktop with temperature control &#060;br&#047;&#062;
+        Sous-vide cooking bags&#060;br&#047;&#062;
+        Vacuum equipment 
+    </string>
+
+    <string name="viewmodule_recipe_step_entrecotte_1">
+         Put the entrecôte in the brine for 1 hour.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_2">
+         Clean the carrots and potatoes and vacuum seal them in pouches. Cook at 85°C for 30 minutes. Or in the oven at 160°C for 40 minutes. Leave to cool and set aside.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_3">
+        After one hour, remove the entrecôte from the brine, dry it and quickly sear it in a frying pan with some olive oil.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_4">
+        After searing the meat, leave to cool and then vacuum seal it in a pouch with a sprig of rosemary and thyme, and a garlic clove.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_5">
+        Cook the entrecôte in a water bath at 55°C for 1 hour. Or in the oven at 65°C for 60 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_6">
+        Then remove it from the pouch and sear it in a hot frying pan with the butter and 15 g of sunflower oil.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_7">
+        Lightly sauté the carrots and potatoes, which should have been preheated in a water bath at 85°C and cut into uniform pieces, with a little butter and 15 g of sunflower oil.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_8">
+        Season the entrecôte, carrots and potatoes with salt and pepper, and serve.
+    </string>
+
+    <!-- recipe Merluza con vinagreta de ajos tiernos -->
+    <string name="viewmodule_food_recipe_merluza">Hake with garlic\nscape vinaigrette</string>
+    <string name="viewmodule_recipe_merluza_title">Hake with garlic scape vinaigrette</string>
+    <string name="viewmodule_recipe_merluza_difficulty">Low</string>
+    <string name="viewmodule_recipe_merluza_cooking_time">40min</string>
+    <string name="viewmodule_recipe_merluza_type">Sous vide</string>
+    <string name="viewmodule_recipe_merluza_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_merluza_allergens">Sulphites</string>
+    <string name="viewmodule_recipe_merluza_ingredients">
+        4 hake supremes (125 g each)&#060;br&#047;&#062;
+        2 potatoes&#060;br&#047;&#062;
+        2 onions&#060;br&#047;&#062;
+        200 g sunflower oil&#060;br&#047;&#062;
+        200 g olive oil&#060;br&#047;&#062;
+        6 garlic gloves&#060;br&#047;&#062;
+        Fresh rosemary&#060;br&#047;&#062;
+        25 g red wine vinegar or balsamic vinegar&#060;br&#047;&#062;
+        Salt&#060;br&#047;&#062;
+        Spring onion
+    </string>
+
+    <string name="viewmodule_recipe_step_merluza_1">
+         Cut the onion into julienne strips and cook slowly in a pot on a low heat until it is fully done and has a caramelised appearance.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_2">
+         Prepare the rosemary vinaigrette by frying the slices of garlic in a frying pan with some olive oil and when they begin to turn a light brown colour, add the rosemary. Remove from the hob and when the olive oil is warm, add the vinegar and season with salt and pepper.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_3">
+        Peel the potatoes, cut them into slices and confit them in the oven or on the hob on a low heat until they are soft.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_4">
+        Season the hake supremes with salt and pepper, sear both sides in a frying pan on a high heat, place on a baking tray with a spoonful of vinaigrette and cook for between 12-16 minutes at 65°C. Or in the oven at 90°C for 20 minutes. When the hake is done, it should be slightly firm when you press down on it, or be between 50-55°C in the centre when checked using a thermometer.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_5">
+        Heat up the slices of potato and onion confit.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_6">
+        Put it on a plate as a garnish, add a piece of hake, pour over the garlic and rosemary vinaigrette and decorate with slices of spring onion and fresh rosemary.
+    </string>
+
+    <!-- recipe Flan de xocolate -->
+    <string name="viewmodule_food_recipe_flan_de">Chocolate Cream\nwith Hazelnut\nPraline and\nMacadamia Nuts</string>
+    <string name="viewmodule_recipe_flande_title">Chocolate Cream with Hazelnut Praline and Macadamia Nuts</string>
+    <string name="viewmodule_recipe_flande_difficulty">Low</string>
+    <string name="viewmodule_recipe_flande_cooking_time">2h</string>
+    <string name="viewmodule_recipe_flande_type">In jars</string>
+    <string name="viewmodule_recipe_flande_num_of_people">6 servings</string>
+    <string name="viewmodule_recipe_flande_allergens">Milk, egg, nuts and dried fruits. </string>
+    <string name="viewmodule_recipe_flande_ingredients">
+        275 g milk&#060;br&#047;&#062;
+        325 g cream&#060;br&#047;&#062;
+        130 g egg yolk&#060;br&#047;&#062;
+        40 g sugar&#060;br&#047;&#062;
+        50 g chocolate topping&#060;br&#047;&#062;
+        Hazelnut praline&#060;br&#047;&#062;
+        Macadamia nuts&#060;br&#047;&#062;
+        20 g stone-ground chocolate
+    </string>
+    <string name="viewmodule_recipe_flande_what_you_need">
+        Induction cooktop with temperature control&#060;br&#047;&#062;
+        Hand-held blender&#060;br&#047;&#062;
+        Hand whisks&#060;br&#047;&#062;
+        Glass jars&#060;br&#047;&#062;
+        Sieve&#060;br&#047;&#062;
+        Grater
+    </string>
+
+    <string name="viewmodule_recipe_step_flande_1">
+         Put the milk and cream in the pan and heat to 85°C. Remove from the hob, add the chocolate and blend using an electric hand blender. Leave to cool slightly.
+    </string>
+    <string name="viewmodule_recipe_step_flande_2">
+         In a bowl, mix the sugar and egg yolks.
+    </string>
+    <string name="viewmodule_recipe_step_flande_3">
+        Strain the chocolate mixture on to the egg yolks and mix. Leave to rest until the foam has disappeared.
+    </string>
+    <string name="viewmodule_recipe_step_flande_4">
+        Fill the glass jars with the mixture up to the top, put the lids on them and cook for 60 minutes at 85°C. Or in the oven at 100°C for 60 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_flande_5">
+        Then allow to reach room temperature and, after a few minutes, cool with water and ice.
+    </string>
+    <string name="viewmodule_recipe_step_flande_6">
+        When the mixture has set, top with a little hazelnut praline, as well as the grated macadamia nuts and unrefined chocolate.
+    </string>
+
+    <!-- recipe Panceta ciabatta -->
+    <string name="viewmodule_food_recipe_panceta">Bacon\nCiabatta\n</string>
+    <string name="viewmodule_recipe_panceta_title">Bacon Ciabatta</string>
+    <string name="viewmodule_recipe_panceta_difficulty">Low</string>
+    <string name="viewmodule_recipe_panceta_cooking_time">3h</string>
+    <string name="viewmodule_recipe_panceta_type">Immersed liquid</string>
+    <string name="viewmodule_recipe_panceta_num_of_people">4 servings</string>
+    <string name="viewmodule_recipe_panceta_allergens">Gluten and Soy</string>
+    <string name="viewmodule_recipe_panceta_ingredients">
+        For the bacon&#060;br&#047;&#062;
+        400 g slab of bacon with rind &#060;br&#047;&#062;
+        400 g water&#060;br&#047;&#062;
+        125 g soy sauce&#060;br&#047;&#062;
+        75 g leek&#060;br&#047;&#062;
+        75 g onion&#060;br&#047;&#062;
+        1/2 cinnamon stick&#060;br&#047;&#062;
+        5 g ground pepper&#060;br&#047;&#062;
+        25 g brown sugar&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+        For the sandwich&#060;br&#047;&#062;
+        1/4 cucumber&#060;br&#047;&#062;
+        1/2 onion&#060;br&#047;&#062;
+        Salt&#060;br&#047;&#062;
+        4 ciabatta rolls
+    </string>
+    <string name="viewmodule_recipe_panceta_what_you_need">
+        Induction cooktop with temperature control
+    </string>
+
+    <string name="viewmodule_recipe_step_group_panceta_1">
+        &#060;u&#062;1 Bacon&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_1">
+        In a pan place the onion and the leek cut into mirepoix (large, irregular cubes).
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_2">
+        Add the water, the whole piece of slab bacon, the soy sauce and the spices.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_3">
+        Cook at 90°C for 3 h, covering it to avoid it drying out. Or in the oven at 120°C for 4h.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_4">
+        Once the cooking time is up, separate the meat from the vegetables and strain.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_5">
+        Reduce the resulting juice until a dense sauce is obtained and strain once more.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_panceta_2">
+        &#060;u&#062;2 Sandwich&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_panceta_2_1">
+        Cut the cucumber into half-moons and the onion julienne-style, mix and season to taste.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_2_2">
+        Cut the bacon slab into 1/2 cm thick slices and heat with the reduced sauce.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_2_3">
+        Assemble the sandwich arranging a layer of raw vegetables on the bread with the bacon on top. To finish, add a little more sauce.
+    </string>
+
+</resources>

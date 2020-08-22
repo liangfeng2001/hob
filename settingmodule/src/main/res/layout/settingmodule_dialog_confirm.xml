@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/fl_background"
+        android:background="@mipmap/default_settings_successfully">
+
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="180dp"
+            android:textSize="40sp" />
+
+
+        <ImageButton
+            android:id="@+id/ibOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/dialog_ok_default_setting"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="35dp"/>
+
+        <ImageButton
+            android:id="@+id/ibCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/dialog_cancel_hood_connectivity"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="180dp"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

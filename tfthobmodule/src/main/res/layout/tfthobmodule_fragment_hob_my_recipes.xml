@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="@dimen/tfthobmodule_padding_normal"
+        android:paddingStart="@dimen/tfthobmodule_padding_normal"
+        android:paddingEnd="@dimen/tfthobmodule_padding_right_back"
+        android:textSize="@dimen/tfthobmodule_back_button_text_size"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:drawableStart="@mipmap/ic_back"
+        android:drawablePadding="10dp"
+        android:text="@string/tfthobmodule_fragment_my_recipes_title"
+        android:visibility="visible"
+        android:id="@+id/tv_back"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:clickable="true"
+            android:id="@+id/ll_new_recipes"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/tfthobmodule_colorSettingBackground"
+                android:src="@mipmap/image_new_my_recipes"
+                android:id="@+id/iv_new_recipes"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_food_type"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

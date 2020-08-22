@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settingmodule_setting">
+        <item>@string/settingmodule_setting_title_display</item>
+        <item>@string/settingmodule_setting_title_security</item>
+        <item>@string/settingmodule_setting_title_sound</item>
+        <item>@string/settingmodule_setting_title_language</item>
+        <item>@string/settingmodule_setting_title_conectivity</item>
+        <item>@string/settingmodule_setting_title_information</item>
+        <item>@string/settingmodule_setting_title_date_and_time</item>
+        <item>@string/settingmodule_setting_title_energy_settings</item>
+        <item>@string/settingmodule_setting_title_default_settings</item>
+        <item>@string/settingmodule_setting_title_power_limit</item>
+        <item>@string/settingmodule_setting_title_test_cookware</item>
+        <item>@string/settingmodule_setting_title_hood_options</item>
+    </string-array>
+
+    <integer-array name="settingmodule_setting_images">
+        <item>@mipmap/ic_display</item>
+        <item>@mipmap/ic_security</item>
+        <item>@mipmap/ic_sound</item>
+        <item>@mipmap/ic_language</item>
+        <item>@mipmap/ic_connectivity</item>
+        <item>@mipmap/ic_information</item>
+        <item>@mipmap/ic_date_and_time</item>
+        <item>@mipmap/ic_energy_settings</item>
+        <item>@mipmap/ic_default_setting</item>
+        <item>@mipmap/ic_power_limit</item>
+        <item>@mipmap/ic_test_cookware</item>
+        <item>@mipmap/ic_hood_options</item>
+    </integer-array>
+
+    <integer-array name="settingmodule_setting_images_haier">
+        <item>@mipmap/ic_display_haier</item>
+        <item>@mipmap/ic_security_haier</item>
+        <item>@mipmap/ic_sound_haier</item>
+        <item>@mipmap/ic_language_haier</item>
+        <item>@mipmap/ic_connectivity_haier</item>
+        <item>@mipmap/ic_information_haier</item>
+        <item>@mipmap/ic_date_and_time_haier</item>
+        <item>@mipmap/ic_energy_settings_haier</item>
+        <item>@mipmap/ic_default_setting_haier</item>
+        <item>@mipmap/ic_power_limit_haier</item>
+        <item>@mipmap/ic_test_cookware_haier</item>
+        <item>@mipmap/ic_hood_options_haier</item>
+    </integer-array>
+
+    <integer-array name="settingmodule_wallpaper_preview">
+        <item>@mipmap/wallpaper_black_preview</item>
+      <!--  <item>@mipmap/wallpaper_gray_preview</item>
+        <item>@mipmap/wallpaper_deep_gray_preview</item>-->
+    </integer-array>
+
+    <string-array name="settingmodule_wallpaper">
+        <item>skin_black.skin</item>
+    <!--    <item>skin_gray.skin</item>
+        <item>skin_deep_gray.skin</item>-->
+    </string-array>
+
+    <string-array name="settingmodule_months">
+        <item>@string/settingmodule_months_january</item>
+        <item>@string/settingmodule_months_february</item>
+        <item>@string/settingmodule_months_march</item>
+        <item>@string/settingmodule_months_april</item>
+        <item>@string/settingmodule_months_may</item>
+        <item>@string/settingmodule_months_june</item>
+        <item>@string/settingmodule_months_july</item>
+        <item>@string/settingmodule_months_august</item>
+        <item>@string/settingmodule_months_september</item>
+        <item>@string/settingmodule_months_october</item>
+        <item>@string/settingmodule_months_november</item>
+        <item>@string/settingmodule_months_december</item>
+
+
+    </string-array>
+
+    <string-array name="settingmodule_time_format">
+        <item>@string/settingmodule_fragment_set_time_title_am</item>
+        <item>@string/settingmodule_fragment_set_time_title_pm</item>
+    </string-array>
+
+    <string-array name="settingmodule_time_format_test">
+        <item>@string/settingmodule_fragment_set_time_title_none1</item>
+        <item>@string/settingmodule_fragment_set_time_title_none2</item>
+    </string-array>
+
+
+
+</resources>

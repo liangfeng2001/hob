@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Innstillinger</string>
+    <string name="settingmodule_setting_title_display">Display</string>
+    <string name="settingmodule_setting_title_language">Språk</string>
+    <string name="settingmodule_setting_title_sound">Lyd</string>
+    <string name="settingmodule_setting_title_security">Sikkerhet</string>
+    <string name="settingmodule_setting_title_conectivity">Tilkoblingsmuligheter</string>
+    <string name="settingmodule_setting_title_hood_options">Alternativer for avtrekksvifte</string>
+    <string name="settingmodule_setting_title_power_limit">Strømgrense</string>
+    <string name="settingmodule_setting_title_default_settings">Standardinnstillinger</string>
+    <string name="settingmodule_setting_title_date_and_time">Dato og klokkeslett</string>
+    <string name="settingmodule_setting_title_information">Informasjon</string>
+    <string name="settingmodule_setting_title_energy_settings">Energiinnstilling</string>
+    <string name="settingmodule_setting_title_test_cookware">Test av kokekar</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Lysstyrke</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Bakgrunn</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Lyd</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Lydstyrke</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Klikk på Lyd</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Ventilator tilkobling</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Automatisk modus</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Intens-modus</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Økonomimodus</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Skru på tilkoblingen på platetoppen som beskrevet i platetoppens manual.\nPass på at platetoppen og ventilatoren er koblet til hverandre.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Gjenopprett til standardinnstillinger.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Er du sikker på at du vil gå tilbake til fabrikkinnstillingene?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">NEI</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">JA</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Standardinnstillinger ble gjenopprettet.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Bruk strømgrense</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Låseskjerm</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN-kode</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Mønster</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Trykk i to sekunder</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Bekreft låseskjerm</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Angi låseskjerm</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Angi låseskjerm</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Bekreft låseskjerm</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Bluetooth enheter.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Gjør synlig for ikke parede enheter</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Navn</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Parede enheter</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Temperatursensor</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Smarttelefon/Nettbrett</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Angi dato</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Angi klokkeslett</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">Bruk 24-timersformat</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Alarminnstillinger</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Tast til ikoner</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Programvareversjon</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Prøvemodus</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Oppdateringer</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Logo</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Lås</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Lukk tidsur</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Informasjon</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Pausen</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Lukk</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Alternativer for avtrekksvifte</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Oppskrifter</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Effekt</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Tidsur</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Alarm</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Temperatursensor</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Innstillinger</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Temperatur</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Start en ny test</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Velg kokesonen</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Fyll kokekaret med omtrent 200 ml vann, og plasser det riktig i kokesonen som passer best til diameteren til bunnen av beholderen.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Kokekaret er kompatibelt med denne kokeplaten</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Kokekaret er ikke kompatibelt med denne kokeplaten</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Januar</string>
+    <string name="settingmodule_months_february">Februar</string>
+    <string name="settingmodule_months_march">Mars</string>
+    <string name="settingmodule_months_april">April</string>
+    <string name="settingmodule_months_may">Mai</string>
+    <string name="settingmodule_months_june">Juni</string>
+    <string name="settingmodule_months_july">Juli</string>
+    <string name="settingmodule_months_august">August</string>
+    <string name="settingmodule_months_september">September</string>
+    <string name="settingmodule_months_october">Oktober</string>
+    <string name="settingmodule_months_november">November</string>
+    <string name="settingmodule_months_december">Desember</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Volum</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Alarmens varighet</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Utsettelsens varighet</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Bruk rulleknappen for å stille inn alarmen (timer/minutter).\nDen er kun akustisk, og vil ikke stoppe noen matlagingsprosesser.\nNedtellingen vil bli vist nære timen.</string>
+    <string name="settingmodule_fragment_display_toast_content">Velg lysstyrken på skjermen.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Aktiver / deaktiver den generelle lyden og juster lydstyrken.\nAktiver / deaktiver kun klikkelyden.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Koble til enheter via Bluetooth.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Velg strømbegrensning.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Still inn nåværende dato og klokkeslett. Velg ønsket format.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Velg alarminnstillinger.</string>
+    <string name="settingmodule_fragment_language_toast_content">Velg språk.</string>
+    <string name="settingmodule_fragment_security_toast_content">Still inn låsemodus.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Velg en PIN-kode på fire sifre.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Gjenta PIN-koden du anga tidligere.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Velg et mønster ved å trekke streker mellom minst fire punkter.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Bekreft mønsteret.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Still inn avtrekksviften.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">Mønsteret er det samme som for låseskjermen.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">PIN-koden er den samme som for låseskjermen.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Gjenoppretter den opprinnelige konfigurasjonen.</string>
+    <string name="settingmodule_fragment_information_toast_content">Her har du litt nyttig informasjon om enheten din og hvordan den fungerer.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Her har du litt nyttig informasjon om enheten din og hvordan den fungerer.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">Du kan velge mellom en interaktiv opplæring og en demonstrasjonsvideo.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Vent til oppdateringen er fullført.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Still inn klokkeslett for dvalemodus og ventemodus for å forbedre enhetens effektivitet.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Fyll kokekaret med omtrent 200 ml vann, og plasser det riktig i kokesonen som passer best til diameteren til bunnen av beholderen.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Sjekk at kokekaret er riktig plassert på kokesonen.\nSjekk listen over egnede kokekar i håndboken.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Dette kokekaret gjør at kokeplaten fungerer optimalt under koking.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Følg instruksjonene for å fortsette med testen.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Valg av riktig kokekar gjør at kokeplaten fungerer optimalt og hindrer mulige feilfunksjoner.</string>
+    <string name="settingmodule_fragment_main_toast_content">Her kan du tilpasse enheten din.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Velg formatet til dvalemodusskjermbildet.\nDet vil vises når du ikke har samhandlet med enheten på en stund.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Opplæring</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Dvalemodus</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Aktiveringstid</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Totalt slått av</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Total tid slått av</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Dvalemodus-format</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Timeformat</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Digitalt</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Analogisk</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Dato</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Melding</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">AV</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Ingen ekstern kokesensor oppdaget. Dette vil virke inn på presisjonen på temperaturen.</string>
+    <string name="settingmodule_external_sensor_disconnected">Ingen ekstern kokesensor oppdaget.</string>
+</resources>

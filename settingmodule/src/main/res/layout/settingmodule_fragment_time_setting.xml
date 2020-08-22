@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_fragment_date_time_setting_title_set_time"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_date_and_time"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        >
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="955dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@id/tv_title"
+        >
+
+        <com.ekek.commonmodule.views.WheelViewEx
+            android:id="@+id/wv_test"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@null"
+            />
+
+        <com.ekek.commonmodule.views.WheelViewEx
+            android:id="@+id/wv_hour"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:background="@null"
+            />
+        <com.ekek.commonmodule.views.WheelViewEx
+            android:id="@+id/wv_minute"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="140dp"
+            android:background="@null"
+            />
+        <com.ekek.commonmodule.views.WheelViewEx
+            android:id="@+id/wv_time_format"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_marginLeft="310dp"
+            />
+        <com.ekek.commonmodule.views.WheelViewEx
+            android:id="@+id/wv_test3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:layout_marginLeft="310dp"
+            android:visibility="invisible"
+            />
+
+        <com.ekek.commonmodule.views.WheelViewEx
+            android:id="@+id/wv_test2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@null"
+            android:visibility="invisible"
+            />
+
+
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="299dp"
+        android:src="@mipmap/right_back"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=":"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_time_dot"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="545dp"
+        android:id="@+id/tv_dot_12"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text=":"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_time_dot"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="465dp"
+        android:id="@+id/tv_dot_24"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_fragment_date_time_setting_title_set_time"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="305dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/tv_set_time_text"
+        />
+
+</RelativeLayout>

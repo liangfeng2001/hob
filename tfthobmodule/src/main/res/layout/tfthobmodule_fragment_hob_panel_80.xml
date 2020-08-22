@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+
+    android:layout_marginTop="50dp"
+    android:layout_marginRight="160dp">
+
+    <com.ekek.viewmodule.hob.RectangleCookerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/rec_cooker"
+        />
+
+
+
+    <com.ekek.viewmodule.hob.CircleCookerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:viewmodule_cooker_poweron_fire_gear_without_timer_background="@mipmap/bg_big_circle_cooker_poweron_fire_gear_without_timer"
+        app:viewmodule_cooker_poweron_fire_gear_with_timer_background="@mipmap/bg_big_circle_cooker_poweron_fire_gear_with_timer"
+        app:viewmodule_cooker_poweroff_background="@mipmap/bg_big_circle_cooker_80_power_off"
+        app:viewmodule_cooker_poweroff_button="@mipmap/ic_big_cooker_poweroff"
+        app:viewmodule_cooker_poweron_without_pan="@mipmap/bg_big_circle_cooker_poweron_without_pan"
+        app:viewmodule_cooker_high_temp="@mipmap/bg_big_circle_cooker_high_temp"
+        app:viewmodule_cooker_poweron_temp_gear_word_with_timer_background="@mipmap/bg_big_circle_cooker_poweron_temp_gear_word_with_timer"
+        app:viewmodule_cooker_poweron_temp_gear_word_without_timer_background="@mipmap/bg_big_circle_cooker_poweron_temp_gear_word_without_timer"
+        app:viewmodule_cooker_poweron_temp_gear_picture_with_timer_background="@mipmap/bg_big_circle_cooker_poweron_temp_gear_picture_with_timer"
+        app:viewmodule_cooker_poweron_temp_gear_picture_without_timer_background="@mipmap/bg_big_circle_cooker_poweron_temp_gear_picture_without_timer"
+        app:viewmodule_cooker_keep_warm_tips_dark_background="@mipmap/bg_big_cooker_keep_warm_tips_dark"
+        app:viewmodule_cooker_keep_warm_tips_light_background="@mipmap/bg_big_cooker_keep_warm_tips_light"
+        app:viewmodule_cooker_prepare_to_cook_background="@mipmap/bg_big_circle_cooker_user_prepare"
+        app:viewmodule_cooker_ready_to_cook_background="@mipmap/bg_big_circle_cooker_ready_to_cook"
+        app:viewmodule_cooker_prepare_to_cook_with_picture_background="@mipmap/bg_big_circle_cooker_user_prepare_with_picture"
+        app:viewmodule_cooker_error_ocurr_background="@mipmap/bg_big_circle_cooker_error"
+        app:viewmodule_cooker_size="big"
+        android:id="@+id/ccv_c"
+        android:visibility="visible"
+        />
+
+    <com.ekek.viewmodule.hob.CircleCookerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:viewmodule_cooker_poweron_fire_gear_without_timer_background="@mipmap/bg_small_circle_cooker_poweron_fire_gear_without_timer"
+        app:viewmodule_cooker_poweron_fire_gear_with_timer_background="@mipmap/bg_small_circle_cooker_poweron_fire_gear_with_timer"
+        app:viewmodule_cooker_poweroff_background="@mipmap/bg_small_circle_cooker_80_power_off"
+        app:viewmodule_cooker_poweroff_button="@mipmap/ic_small_cooker_poweroff"
+        app:viewmodule_cooker_poweron_without_pan="@mipmap/bg_small_circle_cooker_poweron_without_pan"
+        app:viewmodule_cooker_high_temp="@mipmap/bg_small_circle_cooker_high_temp"
+        app:viewmodule_cooker_keep_warm_tips_dark_background="@mipmap/bg_small_cooker_keep_warm_tips_dark"
+        app:viewmodule_cooker_keep_warm_tips_light_background="@mipmap/bg_small_cooker_keep_warm_tips_light"
+        app:viewmodule_cooker_prepare_to_cook_background="@mipmap/bg_small_circle_cooker_user_prepare"
+        app:viewmodule_cooker_ready_to_cook_background="@mipmap/bg_small_circle_cooker_ready_to_cook"
+        app:viewmodule_cooker_prepare_to_cook_with_picture_background="@mipmap/bg_small_circle_cooker_user_prepare_with_picture"
+        app:viewmodule_cooker_error_ocurr_background="@mipmap/bg_small_circle_cooker_error"
+        app:viewmodule_cooker_size="small"
+        android:id="@+id/ccv_b"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="50dp"
+        android:src="@mipmap/bg_small_circle_cooker_80_power_off"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

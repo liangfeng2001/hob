@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/viewmodule_padding_tiny">
+
+            <com.ekek.viewmodule.common.RoundedImageView
+                android:id="@+id/iv_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@mipmap/food_recipe_flan_de"/>
+
+            <TextView
+                android:id="@+id/tv_recipe_name"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_recipe"
+                app:layout_constraintStart_toStartOf="@+id/iv_recipe"
+                android:layout_marginBottom="20dp"
+                android:paddingStart="@dimen/viewmodule_padding_normal"
+                android:paddingEnd="0dp"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:lineSpacingExtra="6dp"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/sv_recipes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/viewmodule_padding_xxlarge"
+            android:paddingEnd="@dimen/viewmodule_padding_xxlarge"
+            android:fadeScrollbars="false"
+            android:scrollbarStyle="outsideOverlay">
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

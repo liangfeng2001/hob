@@ -1,0 +1,222 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Cài đặt</string>
+    <string name="settingmodule_setting_title_display">Hiển thị</string>
+    <string name="settingmodule_setting_title_language">Ngôn ngữ</string>
+    <string name="settingmodule_setting_title_sound">Âm thanh</string>
+    <string name="settingmodule_setting_title_security">Bảo mật</string>
+    <string name="settingmodule_setting_title_conectivity">Khả năng kết nối</string>
+    <string name="settingmodule_setting_title_hood_options">Tùy chọn máy hút mùi</string>
+    <string name="settingmodule_setting_title_power_limit">Giới hạn công suất</string>
+    <string name="settingmodule_setting_title_default_settings">Cài đặt mặc định</string>
+    <string name="settingmodule_setting_title_date_and_time">Ngày và giờ</string>
+    <string name="settingmodule_setting_title_information">Thông tin</string>
+    <string name="settingmodule_setting_title_energy_settings">Cài đặt năng lượng</string>
+    <string name="settingmodule_setting_title_test_cookware">Kiểm tra nồi nấu</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Độ sáng</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Hình nền</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Âm thanh</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Cường độ</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Âm thanh nhấp</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Kết nối máy hút mùi</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Chế độ tự động</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Chế độ Intense</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Chế độ Eco</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Bật kết nối máy hút mùi theo hướng dẫn sử dụng máy hút mùi.\nXác nhận kết nối giữa bếp và máy hút mùi. </string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Khôi phục cài đặt mặc định.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Bạn có chắc muốn trở lại cài đặt gốc không?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">KHÔNG</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">CÓ</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Đã khôi phục cài đặt mặc định thành công.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Giới hạn công suất sử dụng</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Màn hình khóa</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Mẫu hình</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Nhấn 2 giây</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Xác nhận màn hình khóa</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Cài đặt màn hình khóa</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Cài đặt màn hình khóa</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Xác nhận màn hình khóa</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Thiết bị Bluetooth.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Hiển thị cho các thiết bị chưa ghép nối</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Tên</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Các thiết bị đã ghép nối</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Cảm biến nhiệt độ</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Điện thoại thông minh/Máy tính bảng</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Đặt ngày</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Đặt thời gian</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">Sử dụng định dạng 24 giờ</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Cài đặt cảnh báo</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Phím biểu tượng</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Phiên bản phần mềm</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Chế độ Demo</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Cập nhật</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Logo</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Khóa</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Bộ hẹn giờ đóng</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Thông tin</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Tạm dừng</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Đóng</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Tùy chọn máy hút mùi</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Công thức</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Công suất</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Bộ hẹn giờ</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Cảnh báo</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Cảm biến nhiệt độ</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Cài đặt</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Nhiệt độ</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Bắt đầu kiểm tra mới</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Chọn vùng nấu</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Đặt Nồi với khoảng 200 ml nước vào đúng vị trí, trong vùng nấu phù hợp nhất với đường kính của đáy nồi.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Nồi nấu của bạn tương thích với bếp</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Nồi nấu của bạn không tương thích với bếp</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Tháng 1</string>
+    <string name="settingmodule_months_february">Tháng 2</string>
+    <string name="settingmodule_months_march">Tháng 3</string>
+    <string name="settingmodule_months_april">Tháng 4</string>
+    <string name="settingmodule_months_may">Tháng 5</string>
+    <string name="settingmodule_months_june">Tháng 6</string>
+    <string name="settingmodule_months_july">Tháng 7</string>
+    <string name="settingmodule_months_august">Tháng 8</string>
+    <string name="settingmodule_months_september">Tháng 9</string>
+    <string name="settingmodule_months_october">Tháng 10</string>
+    <string name="settingmodule_months_november">Tháng 11</string>
+    <string name="settingmodule_months_december">Tháng 12</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Âm lượng</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Thời gian cảnh báo</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Thời gian tạm dừng</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Sử dụng thanh cuộn để đặt cảnh báo (giờ/phút).\nĐó chỉ là âm thanh và sẽ không dừng bất kỳ quy trình nấu nào.\nĐồng hồ đếm ngược sẽ được hiển thị gần giờ.</string>
+    <string name="settingmodule_fragment_display_toast_content">Chọn độ sáng màn hình.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Bật/Tắt âm thanh chung và điều chỉnh cường độ.\nChỉ bật/tắt âm thanh nhấp</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Kết nối thiết bị qua Bluetooth.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Chọn giới hạn công suất.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Đặt ngày và giờ hiện tại. Chọn định dạng mong muốn.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Chọn cài đặt cảnh báo.</string>
+    <string name="settingmodule_fragment_language_toast_content">Chọn ngôn ngữ.</string>
+    <string name="settingmodule_fragment_security_toast_content">Đặt chế độ khóa.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Chọn mã PIN bốn số.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Nhập lại mã PIN mà bạn đã đặt trước đó.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Chọn mẫu hình bằng cách kết nối với ít nhất bốn điểm.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Xác nhận mẫu hình.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Thiết lập hệ thống điều khiển máy hút mùi.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">Mẫu hình phải giống với màn hình khóa.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">Mã PIN phải giống với màn hình khóa.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Khôi phục cấu hình ban đầu.</string>
+    <string name="settingmodule_fragment_information_toast_content">Tại đây bạn có được những thông tin hữu ích về thiết bị của mình và biết cách nó hoạt động.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Tại đây bạn có được những thông tin hữu ích về thiết bị của mình và biết cách nó hoạt động.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">您可以在交互式教程和演示视频之间进行选择。</string>
+    <string name="settingmodule_fragment_updates_toast_content">等待更新过程完成。</string>
+    <string name="settingmodule_fragment_energy_toast_content">Đặt thời gian Chế độ Hibernation (Không hoạt động) và Chế độ Standby (Chờ) để nâng cao hiệu suất của thiết bị của bạn.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Đặt nồi với khoảng 200 ml nước vào đúng vị trí, trong vùng nấu phù hợp nhất với đường kính của đáy nồi.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Đảm bảo đặt nồi đúng vị trí trên vùng nấu.\nKiểm tra danh sách các loại nồi nấu phù hợp trong sách hướng dẫn này.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Loại nồi nấu này cho phép bạn nấu với hiệu suất tối ưu của bếp.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Làm theo các hướng dẫn để tiến hành kiểm tra.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Bằng cách chọn đúng loại nồi sẽ mang lại hiệu suất tối ưu cho bếp và tránh các trục trặc có thể xảy ra.</string>
+    <string name="settingmodule_fragment_main_toast_content">Bạn có thể tùy chỉnh thiết bị của mình tại đây.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Đặt định dạng của màn hình không hoạt động.\nNó sẽ xuất hiện sau một khoảng thời gian không tương tác với thiết bị.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">教程</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <!-- Have not been used yet -->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Chế độ không hoạt động</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Thời gian kích hoạt</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Tổng số lần tắt</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Tổng thời gian tắt</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Định dạng không hoạt động</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Định dạng giờ</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Kỹ thuật số</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Analogic</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Ngày</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Thông báo</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">Đóng</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Không phát hiện ra cảm biến nấu bên ngoài nào Điều này sẽ ảnh hưởng đến tính chính xác của nhiệt độ.</string>
+    <string name="settingmodule_external_sensor_disconnected">Không phát hiện ra cảm biến nấu bên ngoài nào.</string>
+</resources>

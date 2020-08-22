@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_fragment_information_setting_title_instruction_manual"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_information"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="50sp"
+        android:layout_margin="5dp"
+        android:id="@+id/tv_title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"
+        android:background="@mipmap/sample_instruction_manual"
+        ></LinearLayout>
+
+ <!--   <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:scaleType="centerInside"
+        android:src="@mipmap/sample_instruction_manual"
+        />-->
+</RelativeLayout>

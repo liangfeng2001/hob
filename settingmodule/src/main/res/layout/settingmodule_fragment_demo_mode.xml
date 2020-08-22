@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_fragment_information_setting_title_demo_mode"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_information"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:text="@string/settingmodule_fragment_demo_mode_title_tutorial"
+            android:id="@+id/tv_tutorial"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/viewmodule_setting_title_size"
+            android:text="@string/settingmodule_fragment_demo_mode_title_demo_video"
+            android:id="@+id/tv_demo_video"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

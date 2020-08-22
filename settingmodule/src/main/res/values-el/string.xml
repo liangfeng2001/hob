@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Ρυθμίσεις</string>
+    <string name="settingmodule_setting_title_display">Οθόνη</string>
+    <string name="settingmodule_setting_title_language">Γλώσσα</string>
+    <string name="settingmodule_setting_title_sound">Ήχος</string>
+    <string name="settingmodule_setting_title_security">Ασφάλεια</string>
+    <string name="settingmodule_setting_title_conectivity">Συνδεσιμότητα</string>
+    <string name="settingmodule_setting_title_hood_options">Επιλογές καλύμματος</string>
+    <string name="settingmodule_setting_title_power_limit">Όριο ισχύος</string>
+    <string name="settingmodule_setting_title_default_settings">Προεπιλεγμένες ρυθμίσεις</string>
+    <string name="settingmodule_setting_title_date_and_time">Ημερομηνία και ώρα</string>
+    <string name="settingmodule_setting_title_information">Πληροφορίες</string>
+    <string name="settingmodule_setting_title_energy_settings">Ρύθμιση ενέργειας</string>
+    <string name="settingmodule_setting_title_test_cookware">Δοκιμή μαγειρικού σκεύους</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Φωτεινότητα</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Ταπετσαρία</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Ήχος</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Ένταση</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Ήχος κλικ</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Συνδεσιμότητα καλύμματος</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Αυτόματη λειτουργία</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Έντονη λειτουργία</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Λειτουργία εξοικονόμησης ρεύματος</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Ενεργοποιήστε τη συνδεσιμότητα του καλύμματος σύμφωνα με το εγχειρίδιο οδηγιών καλύμματος.\nΒεβαιωθείτε ότι η εστία και το κάλυμμα είναι συνδεδεμένα.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Επαναφορά προεπιλεγμένων ρυθμίσεων.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Είστε βέβαιοι ότι θέλετε να επαναφέρετε τις εργοστασιακές ρυθμίσεις;</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">ΟΧΙ</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">ΝΑΙ</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Επιτυχής ανάκτηση προεπιλεγμένων ρυθμίσεων.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Χρήση ορίου ισχύος</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Κλείδωμα οθόνης</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Μοτίβο</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Πατήστε για 2 δευτερόλεπτα</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Επιβεβαίωση κλειδώματος οθόνης</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Ρύθμιση κλειδώματος οθόνης</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Ρύθμιση κλειδώματος οθόνης</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Επιβεβαίωση κλειδώματος οθόνης</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Συσκευές Bluetooth.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Ορατό σε μη συζευγμένες συσκευές</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Όνομα</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Συζευγμένες συσκευές</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Αισθητήρας θερμοκρασίας</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Smartphone/Tablet</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Ρύθμιση ημερομηνίας</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Ρύθμιση ώρας</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">Χρήση μορφής 24-ώρου</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Ρυθμίσεις ειδοποιήσεων</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Υπόμνημα εικονιδίων</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Έκδοση λογισμικού</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Λειτουργία παρουσίασης</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Ενημερώσεις</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Λογότυπο</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Κλείδωμα</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Χρονοδιακόπτης κλεισίματος</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Πληροφορίες</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Η παύση</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Κλείσιμο</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Επιλογές καλύμματος</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Συνταγές</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Ισχύς</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Χρονοδιακόπτης</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Ειδοποίηση</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Αισθητήρας θερμοκρασίας</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Ρυθμίσεις</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Θερμοκρασία</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Έναρξη νέας δοκιμής</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Επιλέξτε τη ζώνη μαγειρέματος</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Τοποθετήστε το σκεύος με περίπου 200 ml νερό, τοποθετημένο σωστά στη ζώνη μαγειρέματος που αντιστοιχεί καλύτερα στη διάμετρο της βάσης του δοχείου.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Το σκεύος μαγειρέματος είναι συμβατό με αυτή την εστία</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Το σκεύος μαγειρέματος δεν είναι συμβατό με αυτή την εστία</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Ιανουάριος</string>
+    <string name="settingmodule_months_february">Φεβρουάριος</string>
+    <string name="settingmodule_months_march">Μάρτιος</string>
+    <string name="settingmodule_months_april">Απρίλιος</string>
+    <string name="settingmodule_months_may">Μάιος</string>
+    <string name="settingmodule_months_june">Ιούνιος</string>
+    <string name="settingmodule_months_july">Ιούλιος</string>
+    <string name="settingmodule_months_august">Αύγουστος</string>
+    <string name="settingmodule_months_september">Σεπτέμβριος</string>
+    <string name="settingmodule_months_october">Οκτώβριος</string>
+    <string name="settingmodule_months_november">Νοέμβριος</string>
+    <string name="settingmodule_months_december">Δεκέμβριος</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Ένταση ήχου</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Διάρκεια ειδοποίησης</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Διάρκεια παύσης</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Χρησιμοποιήστε την κύλιση για τη ρύθμιση της ειδοποίησης (ώρες/λεπτά).\nΗ ειδοποίηση είναι μόνο ακουστική και δεν διακόπτει τη διαδικασία μαγειρέματος.\nΗ αντίστροφη μέτρηση εμφανίζεται κοντά στην ένδειξη ώρας.</string>
+    <string name="settingmodule_fragment_display_toast_content">Επιλέξτε τη φωτεινότητα της οθόνης.</string>
+    <string name="settingmodule_fragment_sound_toast_content">Ενεργοποιήστε / Απενεργοποιήστε τους γενικούς ήχους και προσαρμόστε την ένταση.\nΕνεργοποιήστε / Απενεργοποιήστε μόνο τον ήχο κλικ.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Σύνδεση συσκευών μέσω Bluetooth.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Επιλέξτε τον περιορισμό ισχύος.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Ρυθμίστε την τρέχουσα ημερομηνία και ώρα.\nΕπιλέξτε την επιθυμητή μορφή.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Επιλέξτε ρυθμίσεις συναγερμού.</string>
+    <string name="settingmodule_fragment_language_toast_content">Επιλέξτε τη γλώσσα.</string>
+    <string name="settingmodule_fragment_security_toast_content">Ρυθμίστε τη λειτουργία κλειδώματος.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Επιλέξτε έναν κωδικό PIN τεσσάρων ψηφίων.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Επαναλάβετε τον κωδικό PIN που ρυθμίσατε προηγουμένως.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Επιλέξτε ένα μοτίβο συνδέοντας τουλάχιστον τέσσερα σημεία.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Επιβεβαιώστε το μοτίβο.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Ρυθμίστε τον έλεγχο της κουκούλας.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">Το μοτίβο είναι το ίδιο με το κλείδωμα οθόνης.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">Ο κωδικός PIN είναι ο ίδιος με το κλείδωμα οθόνης.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Επαναφέρει την αρχική διαμόρφωση.</string>
+    <string name="settingmodule_fragment_information_toast_content">Εδώ διατίθενται χρήσιμες πληροφορίες για τη συσκευή σας και τον τρόπο λειτουργία της.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Εδώ διατίθενται χρήσιμες πληροφορίες για τη συσκευή σας και τον τρόπο λειτουργία της.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">Μπορείτε να επιλέξετε μεταξύ ενός διαδραστικού εκπαιδευτικού προγράμματος και ενός βίντεο παρουσίασης.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Περιμένετε μέχρι να ολοκληρωθεί η διαδικασία ενημέρωσης.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Ρυθμίστε το χρόνο για τη λειτουργία Αδράνειας (Hibernation) και τη λειτουργία Αναμονής (Standby) για να βελτιώσετε την απόδοση της συσκευής.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Τοποθετήστε το σκεύος με περίπου 200 ml νερό, τοποθετημένο σωστά στη ζώνη μαγειρέματος που αντιστοιχεί καλύτερα στη διάμετρο της βάσης του δοχείου.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Βεβαιωθείτε ότι το μαγειρικό σκεύος είναι σωστά τοποθετημένο στη ζώνη μαγειρέματος.\nΕλέγξτε τη λίστα κατάλληλων μαγειρικών σκευών στο εγχειρίδιο.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Αυτό το μαγειρικό σκεύος σας επιτρέπει να μαγειρεύετε με βέλτιστη απόδοση της εστίας.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Ακολουθήστε τις οδηγίες για να εκτελέσετε τη δοκιμή.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Η επιλογή σωστών μαγειρικών σκευών επιτρέπει βέλτιστη απόδοση της εστίας και αποτρέπει πιθανές δυσλειτουργίες.</string>
+    <string name="settingmodule_fragment_main_toast_content">Εδώ μπορείτε να προσαρμόσετε τη συσκευή σας.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Ρυθμίστε τη μορφή της οθόνης αδράνειας.\nΘα εμφανιστεί μετά από ένα διάστημα χωρίς αλληλεπίδραση με τη συσκευή.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Εκπαιδευτική παρουσίαση</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Λειτουργία Αδράνειας (Hibernation)</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Χρόνος ενεργοποίησης</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Συνολική απενεργοποίηση</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Χρόνος συνολικής απενεργοποίησης</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Μορφή αδράνειας</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Μορφή ωρών</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Ψηφιακό</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Αναλογικό</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Ημερομηνία</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Μήνυμα</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">ΑΝΕΝΕΡΓΟ</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Δεν ανιχνεύθηκε εξωτερικός αισθητήρας μαγειρέματος. Αυτό θα επηρεάσει την ακρίβεια της θερμοκρασίας.</string>
+    <string name="settingmodule_external_sensor_disconnected">Δεν ανιχνεύθηκε εξωτερικός αισθητήρας μαγειρέματος.</string>
+</resources>

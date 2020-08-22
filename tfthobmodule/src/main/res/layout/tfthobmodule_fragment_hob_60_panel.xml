@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    android:layout_marginLeft="100dp"
+    android:layout_marginRight="180dp"-->
+
+    <TextView
+        android:id="@+id/tv_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="@string/tfthobmodule_demo"
+        android:textSize="76dp"
+        android:textColor="@color/viewmodule_white"
+        android:layout_centerHorizontal="true"/>
+
+    <com.ekek.viewmodule.hob.Hob60BigCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        app:viewmodule_cooker_id="3"
+        android:id="@+id/hbcc_c"
+        android:visibility="visible" />
+
+    <com.ekek.viewmodule.hob.Hob60SmallCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:viewmodule_cooker_id="2"
+        android:id="@+id/hbcc_b"
+
+        />
+
+    <com.ekek.viewmodule.hob.Hob60SmallCircleCooker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        app:viewmodule_cooker_id="1"
+        android:id="@+id/hbcc_a"
+
+        />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:paddingLeft="30dp"
+        android:paddingBottom="30dp"
+        android:src="@mipmap/ic_hood"
+        android:id="@+id/ib_hood"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:paddingLeft="30dp"
+        android:paddingBottom="30dp"
+        android:src="@mipmap/icon_hob60_fan_mask"
+        android:id="@+id/ib_hood_mask"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        />
+
+
+
+
+
+
+</RelativeLayout>

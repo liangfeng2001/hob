@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_energy_settings"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_energy_settings"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:id="@+id/ll_activation_time"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_energy_settings_title_activation_time"
+                    android:id="@+id/title_activation_time"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/ll_activation_time_duration"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_activation_time_options_10_sec"
+                        android:id="@+id/tv_activation_time_options_10_sec"
+
+                        android:layout_marginRight="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_activation_time_options_30_sec"
+                        android:id="@+id/tv_activation_time_options_30_sec"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/settingmodule_fragment_energy_settings_activation_time_options_1_min"
+                        android:id="@+id/tv_activation_time_options_1_min"
+
+                        android:layout_marginRight="20dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_activation_time_options_5_min"
+                        android:id="@+id/tv_activation_time_options_5_min"
+                        android:layout_marginRight="20dp"
+
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_activation_time_options_15_min"
+                        android:id="@+id/tv_activation_time_options_15_min"
+                        android:layout_marginRight="20dp"
+
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_activation_time_options_30_min"
+                        android:id="@+id/tv_activation_time_options_30_min"
+                      android:paddingRight="10dp"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+          <!--  hibernation_mode-->
+            <FrameLayout
+                android:id="@+id/fl_hibernation_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <com.ekek.viewmodule.common.FocusedTextView
+                    android:layout_width="660dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="55sp"
+                    android:text="@string/settingmodule_fragment_energy_settings_title_hibernation_mode"
+                    android:id="@+id/title_hibernation_mode"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    />
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="30dp"
+                    >
+
+                    <com.ekek.viewmodule.common.NoTextSwitch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                        android:id="@+id/sw_hibernation_mode"
+                        android:switchMinWidth="93dp"
+                        android:layout_marginLeft="70dp"
+                        android:thumb="@android:color/transparent"
+                        android:track="@drawable/settingmodule_sound_switch_selector"
+
+                        />
+                </FrameLayout>
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_energy_settings_title_total_turn_off"
+                    android:id="@+id/title_total_turn_off"
+                    />
+
+                <com.ekek.viewmodule.common.NoTextSwitch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/sw_total_turn_off"
+                    android:switchMinWidth="93dp"
+                    android:layout_marginLeft="10dp"
+                    android:thumb="@android:color/transparent"
+                    android:track="@drawable/settingmodule_sound_switch_selector"
+                    />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:gravity="left"
+                android:id="@+id/ll_turn_off"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="55sp"
+                    android:text="@string/settingmodule_fragment_energy_settings_title_total_turn_off_time"
+                    android:id="@+id/title_total_turn_off_time"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_turn_off_duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min"
+                        android:id="@+id/tv_total_turn_off_time_options_30_min"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h"
+                        android:id="@+id/tv_total_turn_off_time_options_1_h"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h"
+                        android:id="@+id/tv_total_turn_off_time_options_6_h"
+                        android:layout_marginLeft="30dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h"
+                        android:id="@+id/tv_total_turn_off_time_options_12_h"
+                        android:layout_marginRight="10dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h"
+                        android:id="@+id/tv_total_turn_off_time_options_24_h"
+                        android:layout_marginRight="10dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:textSize="40sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:text="@string/settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h"
+                        android:id="@+id/tv_total_turn_off_time_options_72_h"
+                        android:layout_marginLeft="20dp"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/fl_hibernation_format">
+
+
+                <com.ekek.viewmodule.common.FocusedTextView
+                    android:layout_width="680dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="55sp"
+                    android:text="@string/settingmodule_fragment_energy_settings_title_hibernation_format"
+                    android:id="@+id/tv_hibernation_format"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/iv_hibernation_button"
+                    android:scaleType="centerInside"
+
+                    android:src="@mipmap/hibernation_button"/>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

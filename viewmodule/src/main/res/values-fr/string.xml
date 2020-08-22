@@ -1,0 +1,1267 @@
+<resources>
+    <string name="viewmodule_app_name">viewmodule</string>
+    <string name="viewmodule_warning_message_pwd_error">Password is incorrect.</string>
+    <string name="viewmodule_warning_message_pwd_length_error">Password\'s length is four.</string>
+
+    <string name="viewmodule_lib_name">PatternLockView</string>
+    <string name="viewmodule_message_pattern_dot_added">Dot added to pattern</string>
+    <string name="viewmodule_message_pattern_started">Pattern drawing started</string>
+    <string name="viewmodule_message_pattern_detected">Pattern drawing completed</string>
+    <string name="viewmodule_message_pattern_cleared">Pattern cleared</string>
+
+    <string name="viewmodule_cooking_back">Back</string>
+    <string name="viewmodule_select_alarm_duration">Select the alarm duration</string>
+    <string name="viewmodule_alarm_will_ring_at">The alarm will ring at  %1$s :  %2$s</string>
+    <string name="viewmodule_hood_panel_turbo">TURBO</string>
+    <string name="viewmodule_hood_panel_silent">SILENT</string>
+    <string name="viewmodule_hood_panel_max">MAX</string>
+    <string name="viewmodule_hood_panel_min">MIN</string>
+    <string name="viewmodule_hood_panel_1">1</string>
+    <string name="viewmodule_hood_panel_2">2</string>
+    <string name="viewmodule_hood_panel_3">3</string>
+    <string name="viewmodule_hood_panel_4">4</string>
+
+    <string name="viewmodule_c31_c33_c34_ok">OK</string>
+
+    <!--cookerview-->
+    <string name="viewmodule_cooker_view_ready_to_cook">Prêt à cuire</string>
+
+    <!--BaseCircleCookerView-->
+    <string name="viewmodule_base_circle_cooker_view_keep_warm">Maintenir au chaud</string>
+
+    <string name="viewmodule_recipe_name_empty"> </string>
+    <string name="viewmodule_recipe_note_empty"> </string>
+    <string name="viewmodule_recipe_note_title">REMARQUES</string>
+
+    <!-- recipe attributes titles -->
+    <string name="viewmodule_recipe_attr_difficulty">DIFFICULTÉ:</string>
+    <string name="viewmodule_recipe_attr_cooking_time">TEMPS DE CUISSON:</string>
+    <string name="viewmodule_recipe_attr_type">TYPE:</string>
+    <string name="viewmodule_recipe_attr_num_of_people">NOMBRE DE PERSONNES:</string>
+    <string name="viewmodule_recipe_attr_allergens">ALLERGIES:</string>
+    <string name="viewmodule_recipe_attr_ingredients">INGRÉDIENTS:</string>
+    <string name="viewmodule_recipe_attr_what_you_need">MATÉRIEL:</string>
+
+    <!-- recipe step general titles -->
+    <string name="viewmodule_recipe_step_group_name_empty"> </string>
+    <string name="viewmodule_recipe_step_name_general_1">ÉTAPE1:</string>
+    <string name="viewmodule_recipe_step_name_general_1_1">ÉTAPE1.1:</string>
+    <string name="viewmodule_recipe_step_name_general_1_2">ÉTAPE1.2:</string>
+    <string name="viewmodule_recipe_step_name_general_1_3">ÉTAPE1.3:</string>
+    <string name="viewmodule_recipe_step_name_general_1_4">ÉTAPE1.4:</string>
+    <string name="viewmodule_recipe_step_name_general_1_5">ÉTAPE1.5:</string>
+    <string name="viewmodule_recipe_step_name_general_1_6">ÉTAPE1.6:</string>
+    <string name="viewmodule_recipe_step_name_general_1_7">ÉTAPE1.7:</string>
+    <string name="viewmodule_recipe_step_name_general_1_8">ÉTAPE1.8:</string>
+    <string name="viewmodule_recipe_step_name_general_1_9">ÉTAPE1.9:</string>
+    <string name="viewmodule_recipe_step_name_general_2">ÉTAPE2:</string>
+    <string name="viewmodule_recipe_step_name_general_2_1">ÉTAPE2.1:</string>
+    <string name="viewmodule_recipe_step_name_general_2_2">ÉTAPE2.2:</string>
+    <string name="viewmodule_recipe_step_name_general_2_3">ÉTAPE2.3:</string>
+    <string name="viewmodule_recipe_step_name_general_2_4">ÉTAPE2.4:</string>
+    <string name="viewmodule_recipe_step_name_general_2_5">ÉTAPE2.5:</string>
+    <string name="viewmodule_recipe_step_name_general_2_6">ÉTAPE2.6:</string>
+    <string name="viewmodule_recipe_step_name_general_2_7">ÉTAPE2.7:</string>
+    <string name="viewmodule_recipe_step_name_general_2_8">ÉTAPE2.8:</string>
+    <string name="viewmodule_recipe_step_name_general_2_9">ÉTAPE2.9:</string>
+    <string name="viewmodule_recipe_step_name_general_3">ÉTAPE3:</string>
+    <string name="viewmodule_recipe_step_name_general_3_1">ÉTAPE3.1:</string>
+    <string name="viewmodule_recipe_step_name_general_3_2">ÉTAPE3.2:</string>
+    <string name="viewmodule_recipe_step_name_general_3_3">ÉTAPE3.3:</string>
+    <string name="viewmodule_recipe_step_name_general_3_4">ÉTAPE3.4:</string>
+    <string name="viewmodule_recipe_step_name_general_3_5">ÉTAPE3.5:</string>
+    <string name="viewmodule_recipe_step_name_general_3_6">ÉTAPE3.6:</string>
+    <string name="viewmodule_recipe_step_name_general_3_7">ÉTAPE3.7:</string>
+    <string name="viewmodule_recipe_step_name_general_3_8">ÉTAPE3.8:</string>
+    <string name="viewmodule_recipe_step_name_general_3_9">ÉTAPE3.9:</string>
+    <string name="viewmodule_recipe_step_name_general_4">ÉTAPE4:</string>
+    <string name="viewmodule_recipe_step_name_general_4_1">ÉTAPE4.1:</string>
+    <string name="viewmodule_recipe_step_name_general_4_2">ÉTAPE4.2:</string>
+    <string name="viewmodule_recipe_step_name_general_4_3">ÉTAPE4.3:</string>
+    <string name="viewmodule_recipe_step_name_general_4_4">ÉTAPE4.4:</string>
+    <string name="viewmodule_recipe_step_name_general_4_5">ÉTAPE4.5:</string>
+    <string name="viewmodule_recipe_step_name_general_4_6">ÉTAPE4.6:</string>
+    <string name="viewmodule_recipe_step_name_general_4_7">ÉTAPE4.7:</string>
+    <string name="viewmodule_recipe_step_name_general_4_8">ÉTAPE4.8:</string>
+    <string name="viewmodule_recipe_step_name_general_4_9">ÉTAPE4.9:</string>
+    <string name="viewmodule_recipe_step_name_general_5">ÉTAPE5:</string>
+    <string name="viewmodule_recipe_step_name_general_5_1">ÉTAPE5.1:</string>
+    <string name="viewmodule_recipe_step_name_general_5_2">ÉTAPE5.2:</string>
+    <string name="viewmodule_recipe_step_name_general_5_3">ÉTAPE5.3:</string>
+    <string name="viewmodule_recipe_step_name_general_5_4">ÉTAPE5.4:</string>
+    <string name="viewmodule_recipe_step_name_general_5_5">ÉTAPE5.5:</string>
+    <string name="viewmodule_recipe_step_name_general_5_6">ÉTAPE5.6:</string>
+    <string name="viewmodule_recipe_step_name_general_5_7">ÉTAPE5.7:</string>
+    <string name="viewmodule_recipe_step_name_general_5_8">ÉTAPE5.8:</string>
+    <string name="viewmodule_recipe_step_name_general_5_9">ÉTAPE5.9:</string>
+    <string name="viewmodule_recipe_step_name_general_6">ÉTAPE6:</string>
+    <string name="viewmodule_recipe_step_name_general_6_1">ÉTAPE6.1:</string>
+    <string name="viewmodule_recipe_step_name_general_6_2">ÉTAPE6.2:</string>
+    <string name="viewmodule_recipe_step_name_general_6_3">ÉTAPE6.3:</string>
+    <string name="viewmodule_recipe_step_name_general_6_4">ÉTAPE6.4:</string>
+    <string name="viewmodule_recipe_step_name_general_6_5">ÉTAPE6.5:</string>
+    <string name="viewmodule_recipe_step_name_general_6_6">ÉTAPE6.6:</string>
+    <string name="viewmodule_recipe_step_name_general_6_7">ÉTAPE6.7:</string>
+    <string name="viewmodule_recipe_step_name_general_6_8">ÉTAPE6.8:</string>
+    <string name="viewmodule_recipe_step_name_general_6_9">ÉTAPE6.9:</string>
+    <string name="viewmodule_recipe_step_name_general_7">ÉTAPE7:</string>
+    <string name="viewmodule_recipe_step_name_general_7_1">ÉTAPE7.1:</string>
+    <string name="viewmodule_recipe_step_name_general_7_2">ÉTAPE7.2:</string>
+    <string name="viewmodule_recipe_step_name_general_7_3">ÉTAPE7.3:</string>
+    <string name="viewmodule_recipe_step_name_general_7_4">ÉTAPE7.4:</string>
+    <string name="viewmodule_recipe_step_name_general_7_5">ÉTAPE7.5:</string>
+    <string name="viewmodule_recipe_step_name_general_7_6">ÉTAPE7.6:</string>
+    <string name="viewmodule_recipe_step_name_general_7_7">ÉTAPE7.7:</string>
+    <string name="viewmodule_recipe_step_name_general_7_8">ÉTAPE7.8:</string>
+    <string name="viewmodule_recipe_step_name_general_7_9">ÉTAPE7.9:</string>
+    <string name="viewmodule_recipe_step_name_general_8">ÉTAPE8:</string>
+    <string name="viewmodule_recipe_step_name_general_8_1">ÉTAPE8.1:</string>
+    <string name="viewmodule_recipe_step_name_general_8_2">ÉTAPE8.2:</string>
+    <string name="viewmodule_recipe_step_name_general_8_3">ÉTAPE8.3:</string>
+    <string name="viewmodule_recipe_step_name_general_8_4">ÉTAPE8.4:</string>
+    <string name="viewmodule_recipe_step_name_general_8_5">ÉTAPE8.5:</string>
+    <string name="viewmodule_recipe_step_name_general_8_6">ÉTAPE8.6:</string>
+    <string name="viewmodule_recipe_step_name_general_8_7">ÉTAPE8.7:</string>
+    <string name="viewmodule_recipe_step_name_general_8_8">ÉTAPE8.8:</string>
+    <string name="viewmodule_recipe_step_name_general_8_9">ÉTAPE8.9:</string>
+    <string name="viewmodule_recipe_step_name_general_9">ÉTAPE9:</string>
+    <string name="viewmodule_recipe_step_name_general_9_1">ÉTAPE9.1:</string>
+    <string name="viewmodule_recipe_step_name_general_9_2">ÉTAPE9.2:</string>
+    <string name="viewmodule_recipe_step_name_general_9_3">ÉTAPE9.3:</string>
+    <string name="viewmodule_recipe_step_name_general_9_4">ÉTAPE9.4:</string>
+    <string name="viewmodule_recipe_step_name_general_9_5">ÉTAPE9.5:</string>
+    <string name="viewmodule_recipe_step_name_general_9_6">ÉTAPE9.6:</string>
+    <string name="viewmodule_recipe_step_name_general_9_7">ÉTAPE9.7:</string>
+    <string name="viewmodule_recipe_step_name_general_9_8">ÉTAPE9.8:</string>
+    <string name="viewmodule_recipe_step_name_general_9_9">ÉTAPE9.9:</string>
+
+    <!-- recipe step action general titles -->
+    <string name="viewmodule_recipe_step_action_name_general_1">Étape de cuisson 1</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_1">Étape de cuisson 1.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_2">Étape de cuisson 1.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_3">Étape de cuisson 1.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_4">Étape de cuisson 1.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_5">Étape de cuisson 1.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_6">Étape de cuisson 1.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_7">Étape de cuisson 1.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_8">Étape de cuisson 1.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_1_9">Étape de cuisson 1.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_2">Étape de cuisson 2</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_1">Étape de cuisson 2.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_2">Étape de cuisson 2.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_3">Étape de cuisson 2.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_4">Étape de cuisson 2.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_5">Étape de cuisson 2.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_6">Étape de cuisson 2.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_7">Étape de cuisson 2.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_8">Étape de cuisson 2.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_2_9">Étape de cuisson 2.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_3">Étape de cuisson 3</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_1">Étape de cuisson 3.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_2">Étape de cuisson 3.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_3">Étape de cuisson 3.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_4">Étape de cuisson 3.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_5">Étape de cuisson 3.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_6">Étape de cuisson 3.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_7">Étape de cuisson 3.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_8">Étape de cuisson 3.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_3_9">Étape de cuisson 3.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_4">Étape de cuisson 4</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_1">Étape de cuisson 4.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_2">Étape de cuisson 4.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_3">Étape de cuisson 4.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_4">Étape de cuisson 4.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_5">Étape de cuisson 4.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_6">Étape de cuisson 4.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_7">Étape de cuisson 4.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_8">Étape de cuisson 4.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_4_9">Étape de cuisson 4.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_5">Étape de cuisson 5</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_1">Étape de cuisson 5.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_2">Étape de cuisson 5.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_3">Étape de cuisson 5.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_4">Étape de cuisson 5.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_5">Étape de cuisson 5.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_6">Étape de cuisson 5.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_7">Étape de cuisson 5.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_8">Étape de cuisson 5.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_5_9">Étape de cuisson 5.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_6">Étape de cuisson 6</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_1">Étape de cuisson 6.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_2">Étape de cuisson 6.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_3">Étape de cuisson 6.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_4">Étape de cuisson 6.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_5">Étape de cuisson 6.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_6">Étape de cuisson 6.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_7">Étape de cuisson 6.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_8">Étape de cuisson 6.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_6_9">Étape de cuisson 6.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_7">Étape de cuisson 7</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_1">Étape de cuisson 7.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_2">Étape de cuisson 7.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_3">Étape de cuisson 7.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_4">Étape de cuisson 7.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_5">Étape de cuisson 7.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_6">Étape de cuisson 7.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_7">Étape de cuisson 7.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_8">Étape de cuisson 7.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_7_9">Étape de cuisson 7.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_8">Étape de cuisson 8</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_1">Étape de cuisson 8.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_2">Étape de cuisson 8.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_3">Étape de cuisson 8.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_4">Étape de cuisson 8.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_5">Étape de cuisson 8.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_6">Étape de cuisson 8.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_7">Étape de cuisson 8.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_8">Étape de cuisson 8.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_8_9">Étape de cuisson 8.9</string>
+    <string name="viewmodule_recipe_step_action_name_general_9">Étape de cuisson 9</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_1">Étape de cuisson 9.1</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_2">Étape de cuisson 9.2</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_3">Étape de cuisson 9.3</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_4">Étape de cuisson 9.4</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_5">Étape de cuisson 9.5</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_6">Étape de cuisson 9.6</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_7">Étape de cuisson 9.7</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_8">Étape de cuisson 9.8</string>
+    <string name="viewmodule_recipe_step_action_name_general_9_9">Étape de cuisson 9.9</string>
+
+    <!-- recipe tostada -->
+    <string name="viewmodule_food_recipe_tostada">Tartine d’asperges\nà la crème aux\nœufs et au fromage</string>
+    <string name="viewmodule_recipe_tostada_title">Tartine d’asperges à la crème aux œufs et au fromage</string>
+    <string name="viewmodule_recipe_tostada_difficulty">Faible</string>
+    <string name="viewmodule_recipe_tostada_cooking_time">1h</string>
+    <string name="viewmodule_recipe_tostada_type">En bocal</string>
+    <string name="viewmodule_recipe_tostada_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_tostada_allergens">Œuf, lait, gluten, fruits à coque</string>
+    <string name="viewmodule_recipe_tostada_ingredients">
+        20 g d’huile de fruits à coque (ou huile contenant des fruits à coque hachés, des noisettes idéalement)&#060;br&#047;&#062;
+1 botte d’asperges&#060;br&#047;&#062;
+100 g de roquette &#060;br&#047;&#062;
+4 tranches de pain de mie toastées&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour la sauce à l’œuf :&#060;br&#047;&#062;
+3 œufs&#060;br&#047;&#062;
+20 g de crème fraîche 35 %&#060;br&#047;&#062;
+1 citron&#060;br&#047;&#062;
+Cerfeuil &#060;br&#047;&#062;
+Sel &#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour le fromage aux épices :&#060;br&#047;&#062;
+1 g de poivre noir&#060;br&#047;&#062;
+1 g de poivre blanc&#060;br&#047;&#062;
+1 g de clous de girofle&#060;br&#047;&#062;
+1 g de cardamome&#060;br&#047;&#062;
+1 g de poivre de Sichuan&#060;br&#047;&#062;
+1 g de poivre rose&#060;br&#047;&#062;
+10 g de cerfeuil &#060;br&#047;&#062;
+200 g de fromage crémeux (type Quark)
+    </string>
+    <string name="viewmodule_recipe_tostada_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Bol&#060;br&#047;&#062;
+Batteur à fouets
+    </string>
+
+    <string name="viewmodule_recipe_step_tostada_1">
+        Avec un pilon ou une moulinette, broyer les épices et les mélanger avec le fromage à tartiner et le cerfeuil haché. Mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_tostada_2">
+        Couper les asperges à l’endroit où la couleur commence à passer du blanc au vert. Mettre sous vide la partie verte et faire cuire dans de ’eau à 85 ºC pendant 20 min (si elles sont très grosses, il leur faudra un peu plus de temps). Si elles ne vont pas être consommées immédiatement, les laisser refroidir dans de l’eau glacée et les conserver au réfrigérateur.
+    </string>
+    <string name="viewmodule_recipe_step_tostada_3">
+        Pendant ce temps, élaborer la sauce aux œufs, en battant les œufs avec la crème fraîche, un peu de sel, du zeste de citron et quelques gouttes de jus de citron. Verser dans un bol et faire cuire au bain-marie à 85 ºC (s’il s’agit d’un bol en acier inoxydable) pendant 10 minutes sans cesser de mélanger. Après obtention d’une texture crémeuse, ajouter le cerfeuil haché, mélanger et sortir de l’eau.
+    </string>
+    <string name="viewmodule_recipe_step_tostada_4">
+        Étaler le fromage aux épices sur la tartine, disposer les asperges tièdes par-dessus et recouvrir de sauce aux œufs. Accompagner l’élaboration d’une salade de roquette fraîche et huile aux fruits à coque.
+    </string>
+
+    <!-- recipe huevos -->
+    <string name="viewmodule_food_recipe_huevos">Œuf à basse\ntempérature avec\npurée de pommes\nde terre et légumes</string>
+    <string name="viewmodule_recipe_huevos_title">Œuf à basse température avec purée de pommes de terre et légumes</string>
+    <string name="viewmodule_recipe_huevos_difficulty">Faible</string>
+    <string name="viewmodule_recipe_huevos_cooking_time">1h</string>
+    <string name="viewmodule_recipe_huevos_type">Œuf : dans le liquide // Légumes : sous vide</string>
+    <string name="viewmodule_recipe_huevos_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_huevos_allergens">Œuf, lait (purée de pommes de terre)</string>
+    <string name="viewmodule_recipe_huevos_ingredients">
+        4 œufs&#060;br&#047;&#062;
+500 g de purée de pommes de terre &#060;br&#047;&#062;
+45 g de sofregit aux légumes &#060;br&#047;&#062;
+4 courgettes baby&#060;br&#047;&#062;
+8 haricots verts&#060;br&#047;&#062;
+8 asperges vertes&#060;br&#047;&#062;
+4 carottes baby&#060;br&#047;&#062;
+1 panais&#060;br&#047;&#062;
+4 échalotes&#060;br&#047;&#062;
+Cerfeuil&#060;br&#047;&#062;
+Ciboulette&#060;br&#047;&#062;
+Huile d’olive&#060;br&#047;&#062;
+Sel
+    </string>
+    <string name="viewmodule_recipe_huevos_what_you_need">
+        Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_huevos_1">
+        Faire cuire les légumes sous vide à 85 ºC pendant le temps nécessaire à chacun d’eux
+    </string>
+    <string name="viewmodule_recipe_step_huevos_2">
+        Faire cuire dans de l’eau à une température contrôlée de 65 ºC pendant 30 minutes
+    </string>
+    <string name="viewmodule_recipe_step_huevos_3">
+        Faire chauffer la purée de pommes de terre au bain-marie et le sofregit dans une casserole.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_4">
+        Mettre en place la purée au fond de l’assiette, en lui donnant une forme de volcan.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_5">
+        Disposer l’œuf au milieu et mettre en place les légumes réchauffés pendant quelques secondes aux micro-ondes ou à la poêle.
+    </string>
+    <string name="viewmodule_recipe_step_huevos_6">
+        Enfin, ajouter un peu de sofregit mélangé avec de l’huile d’olive douce, la ciboulette hachée et des feuilles de cerfeuil, sel et poivre.
+    </string>
+
+    <!-- recipe salmon coliflor -->
+    <string name="viewmodule_food_recipe_salmon">Saumon sous vide\naccompagné de purée\nde chou-fleur crémeuse</string>
+    <string name="viewmodule_recipe_salmon_coliflor_title">Saumon sous vide accompagné de purée de chou-fleur crémeuse</string>
+    <string name="viewmodule_recipe_salmon_coliflor_difficulty">Faible</string>
+    <string name="viewmodule_recipe_salmon_coliflor_cooking_time">1h</string>
+    <string name="viewmodule_recipe_salmon_coliflor_type">En bocal sous vide</string>
+    <string name="viewmodule_recipe_salmon_coliflor_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_salmon_coliflor_allergens">Poisson</string>
+    <string name="viewmodule_recipe_salmon_coliflor_ingredients">
+        4 suprêmes de saumon&#060;br&#047;&#062;
+1 chou-fleur&#060;br&#047;&#062;
+100 g de quinoa&#060;br&#047;&#062;
+1 carotte&#060;br&#047;&#062;
+1 poireau&#060;br&#047;&#062;
+1 oignon rouge&#060;br&#047;&#062;
+Bouillon de légumes&#060;br&#047;&#062;
+½ l de saumure (100 g de sel par litre d’eau)&#060;br&#047;&#062;
+Romarin ou thym
+    </string>
+    <string name="viewmodule_recipe_salmon_coliflor_what_you_need">
+        Induction à régulation de température &#060;br&#047;&#062;
+Sachets de mise sous vide pour la cuisson&#060;br&#047;&#062;
+Appareil de mise sous vide&#060;br&#047;&#062;
+Manche à soupe
+    </string>
+
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_1">&#060;u&#062;1 Pour le saumon :&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_1_1">
+        Disposer les suprêmes de saumon dans la saumure froide pendant 15 minutes. Ensuite, les retirer et les sécher.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_1_2">
+        Mettre le saumon sous vide et le faire cuire dans de l’eau à 50 ºC pendant 15 minutes. Retirer du sachet et disposer sur une assiette chaude.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_2">&#060;u&#062;2 Pour la purée de chou-fleur :&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_2_1">
+        Laver le chou-fleur et le faire cuire dans de l’eau salée à 85 ºC pendant 45 minutes ou dans de l’eau bouillante pendant 15 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_2_2">
+        Retirer du feu et mixer à chaud en ajoutant l’eau ou la crème fraîche nécessaire pour obtenir une texture dense et lisse. Mettre de côté à chaud.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_3">&#060;u&#062;3 Pour le quinoa :&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_3_1">
+        Faire revenir les légumes coupés en brunoise fine pendant 5 minutes. Ajouter du poivre et du sel, puis mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_3_2">
+        Faire cuire le quinoa dans le bouillon de légumes bouillant entre 20 et 30 minutes. Pour faire cuire le quinoa dans un bocal en verre, le plonger dans de l’eau à 100 ºC pendant 30 minutes, laisser refroidir après la cuisson et réchauffer au moment de l’utiliser.
+    </string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_3_3">
+        Mélanger le quinoa bouilli avec les légumes cuits.
+    </string>
+    <string name="viewmodule_recipe_step_group_salmon_coliflor_4">&#060;u&#062;4 Terminer et servir :&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_salmon_coliflor_4_1">
+        Agrémenter le saumon avec la purée de chou-fleur et la préparation au quinoa, puis décorer avec des feuilles de thym ou de romarin.
+    </string>
+
+    <!-- recipe lubina con vinagreta -->
+    <string name="viewmodule_food_recipe_lubina">Bar à la\nvinaigrette\nde tomate</string>
+    <string name="viewmodule_recipe_lubina_title">Bar à la vinaigrette de tomate</string>
+    <string name="viewmodule_recipe_lubina_difficulty">Faible</string>
+    <string name="viewmodule_recipe_lubina_cooking_time">1h</string>
+    <string name="viewmodule_recipe_lubina_type">En bocal sous vide</string>
+    <string name="viewmodule_recipe_lubina_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_lubina_allergens">Poisson</string>
+    <string name="viewmodule_recipe_lubina_ingredients">
+        2 bars en filets (4 grands filets) &#060;br&#047;&#062;
+200 g de tomates mûres&#060;br&#047;&#062;
+2 cœurs de laitue&#060;br&#047;&#062;
+2 gousses d’ail&#060;br&#047;&#062;
+150 g d’huile d’olive vierge&#060;br&#047;&#062;
+20 g de vinaigre de Xérès&#060;br&#047;&#062;
+Sel et poivre&#060;br&#047;&#062;
+Feuilles de romarin&#060;br&#047;&#062;
+200 g de saumure (100 g de sel par litre d’eau)
+    </string>
+    <string name="viewmodule_recipe_lubina_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Sachets de mise sous vide pour la cuisson&#060;br&#047;&#062;
+Appareil de mise sous vide
+    </string>
+
+    <string name="viewmodule_recipe_step_group_lubina_1">&#060;u&#062;1 Congélation du bar&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_lubina_1_1">
+        Disposer les filets de bar pendant 10 minutes dans la saumure bien froide.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_1_2">
+        Sécher et mettre sous vide. Congeler en disposant les filets bien à plat dans le congélateur de sorte qu’ils se congèlent le plus rapidement possible.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_lubina_2">&#060;u&#062;2 Vinaigrette&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_lubina_2_1">
+        Séparer les feuilles des cœurs de laitue. Découper l’ail en lamelles.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_2_2">
+        Blanchir les tomates après y avoir fait une légère entaille en forme de croix sur le dessus. Laisser refroidir, peler, découper en quatre et retirer toute la partie aqueuse. Couper en dés le reste de la tomate.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_2_3">
+        Verser 50 g d’huile d’olive dans une poêle, faire dorer l’ail en lamelles pendant quelques minutes. Ajouter la tomate et faire cuire à feu vif pendant 3 minutes. Incorporer 100 g d’huile d’olive et 20 grammes de vinaigre de Xérès. Ajouter du sel et du poivre selon les besoins et mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_2_4">
+        Ajouter des feuilles de romarin.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_lubina_3">&#060;u&#062;3 Terminer et servir :&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_lubina_3_1">
+        Remplir une cocotte d’eau et introduire le poisson congelé lorsque l’eau atteint 60 ºC et laisser cuire pendant 8 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_3_2">
+        Dans une poêle, faire dorer légèrement les feuilles des cœurs de laitue et mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_3_3">
+        Facultatif : après la cuisson, ouvrir le sachet, faire revenir très rapidement le bar à la poêle des deux côtés, avec un filet d’huile. Pour servir le poisson sans la peau, après avoir retiré le morceau de la poêle, retirer la peau du bar en étirant délicatement. Cette étape est facultative.
+    </string>
+    <string name="viewmodule_recipe_step_lubina_3_4">
+        Disposer le poisson dans une assiette, assaisonner avec la vinaigrette de tomate et accompagner de feuilles de cœur de laitue et de romarin.
+    </string>
+
+    <!-- recipe Quinoa con verduras -->
+    <string name="viewmodule_food_recipe_quinoa">Quinoa aux\nlégumes et\nhuile de coco</string>
+    <string name="viewmodule_recipe_quinoa_title">Quinoa aux légumes et huile de coco</string>
+    <string name="viewmodule_recipe_quinoa_difficulty">Moyenne</string>
+    <string name="viewmodule_recipe_quinoa_cooking_time">30 min</string>
+    <string name="viewmodule_recipe_quinoa_type">En bocal sous vide</string>
+    <string name="viewmodule_recipe_quinoa_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_quinoa_allergens">---</string>
+    <string name="viewmodule_recipe_quinoa_ingredients">
+        40 g de quinoa&#060;br&#047;&#062;
+25 g de chou-fleur&#060;br&#047;&#062;
+25 g de brocoli&#060;br&#047;&#062;
+25 g de carottes&#060;br&#047;&#062;
+25 g de haricots verts&#060;br&#047;&#062;
+25 g d’oignons frais&#060;br&#047;&#062;
+240 g d’eau ou bouillon de légumes congelé&#060;br&#047;&#062;
+Huile d’olive vierge&#060;br&#047;&#062;
+Feuilles de pousses de Shiso pourpre&#060;br&#047;&#062;
+15 g d’huile de coco
+    </string>
+    <string name="viewmodule_recipe_quinoa_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Sachets de mise sous vide&#060;br&#047;&#062;
+Appareil de mise sous vide
+    </string>
+
+    <string name="viewmodule_recipe_step_group_quinoa_1">&#060;u&#062;1 Légumes:&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_quinoa_1_1">
+        Éplucher, laver et couper les légumes de différentes formes (julienne, jardinière, bouquets).
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_1_2">
+        Faire sauter rapidement avec de l’huile de coco et laisser refroidir.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_quinoa_2">&#060;u&#062;2 Quinoa:&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_quinoa_2_1">
+        Laver le quinoa 2 fois et le laisser tremper pendant 20 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_2">
+        Égoutter, sécher et griller à la poêle.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_3">
+        Mettre le quinoa sous vide, avec deux volumes de liquide (eau ou bouillon) pour un volume de quinoa et avec les légumes sautés.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_4">
+       Faire cuire dans l’eau à 100 ºC pendant 20 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_quinoa_2_5">
+        Pour servir, assaisonner avec quelques gouttes d’huile d’olive et décorer avec des feuilles de Shiso pourpre ou ingrédient du même type.
+    </string>
+
+    <!-- recipe Gelee frutos rojos -->
+    <string name="viewmodule_food_recipe_gelee">Gelée de fruits\nrouges au yaourt\n</string>
+    <string name="viewmodule_recipe_gelee_title">Gelée de fruits rouges au yaourt</string>
+    <string name="viewmodule_recipe_gelee_difficulty">Faible</string>
+    <string name="viewmodule_recipe_gelee_cooking_time">3h</string>
+    <string name="viewmodule_recipe_gelee_type">En bocal sous vide</string>
+    <string name="viewmodule_recipe_gelee_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_gelee_allergens">Lait, poisson</string>
+    <string name="viewmodule_recipe_gelee_ingredients">
+        250 g de fraises très mûres&#060;br&#047;&#062;
+125 g de sucre&#060;br&#047;&#062;
+40 framboises&#060;br&#047;&#062;
+40 mûres&#060;br&#047;&#062;
+30 g de prunelles&#060;br&#047;&#062;
+40 fraises des bois&#060;br&#047;&#062;
+20 g de groseilles&#060;br&#047;&#062;
+1 feuille de gélatine de 2 g&#060;br&#047;&#062;
+400 g de yaourt à la grecque&#060;br&#047;&#062;
+4 petites branches de menthe
+    </string>
+    <string name="viewmodule_recipe_gelee_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Sachets de mise sous vide pour la cuisson&#060;br&#047;&#062;
+Appareil de mise sous vide&#060;br&#047;&#062;
+Chinois
+    </string>
+
+    <string name="viewmodule_recipe_step_group_gelee_1">&#060;u&#062;1 Gelée de fruits rouges&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_gelee_1_1">
+        Hydrater la gélatine à l’eau froide.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_2">
+        Couper les fraises en deux et les mettre sous vide avec le sucre.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_3">
+        Faire cuire dans de l’eau à 65 ºC pendant 2 heures.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_4">
+        Une fois la cuisson terminée, filtrer le liquide chaud et mettre les fraises de côté.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_1_5">
+        Diluer la gélatine dans le jus obtenu.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_gelee_2">&#060;u&#062;2 Terminer et servir&#060;u&#047;&#062;</string>
+    <string name="viewmodule_recipe_step_gelee_2_1">
+        Introduire 4 fraises cuites au fond du verre et recouvrir de yaourt, recommencer au moins deux fois.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_2_2">
+        Sur le dessus, disposer les fruits rouges coupés en deux.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_2_3">
+        Ajouter la gélatine de fraise encore liquide et à température ambiante.
+    </string>
+    <string name="viewmodule_recipe_step_gelee_2_4">
+       Laisser reposer jusqu’à ce que la gélatine se solidifie et décorer avec les branches de menthe.
+    </string>
+    <string name="viewmodule_recipe_gelee_note">
+       Il est important que les fraises soient bien mûres (même si elles ont déjà moins bel aspect) pour qu’elles apportent tout leur sucre et leur arôme. Il vaut mieux conserver les fraises plus jolies pour la décoration avec les autres fruits rouges. Et il ne faut pas oublier que la gélatine de fraises doit être froide au moment de servir.
+    </string>
+
+    <!-- recipe Setas a la vinagreta  -->
+    <string name="viewmodule_food_recipe_setas">Champignons à\nla vinaigrette\n</string>
+    <string name="viewmodule_recipe_setas_title">Champignons à la vinaigrette</string>
+    <string name="viewmodule_recipe_setas_difficulty">Faible</string>
+    <string name="viewmodule_recipe_setas_cooking_time">1h</string>
+    <string name="viewmodule_recipe_setas_type">En bocal</string>
+    <string name="viewmodule_recipe_setas_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_setas_allergens">Sulfites</string>
+    <string name="viewmodule_recipe_setas_ingredients">
+        500 g de petits lactaires délicieux&#060;br&#047;&#062;
+200 g d’huile d’olive douce&#060;br&#047;&#062;
+50 g de vinaigre de Xérès ou du même type&#060;br&#047;&#062;
+Sel et poivre
+    </string>
+    <string name="viewmodule_recipe_setas_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Bocaux en verre
+    </string>
+
+    <string name="viewmodule_recipe_step_setas_1">
+        Nettoyer soigneusement les champignons avec un chiffon humide, en veillant à ce qu’ils ne perdent pas leur arôme.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_setas_2">
+        &#060;b&#062;ÉTAPE 2 - Option A:&#060;b&#047;&#062; &#060;br&#047;&#062;
+        &#060;u&#062;A- Pour consommation immédiate.&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_setas_2_1">
+        Blanchir les champignons un instant dans de l’eau bouillante, les égoutter et les disposer dans une casserole.
+    </string>
+    <string name="viewmodule_recipe_step_setas_2_2">
+        Recouvrir les champignons avec 3 volumes d’huile pour 1 volume de vinaigre, sel et poivre, puis les faire cuire à feu doux jusqu’à ce qu’ils soient bien confits.
+    </string>
+    <string name="viewmodule_recipe_step_setas_2_3">
+        Retirer du feu et laisser refroidir sans les retirer du liquide. Ils peuvent être servis comme garniture ou en plat principal, accompagnés d’une salade.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_setas_3">
+        &#060;b&#062;ÉTAPE 3 - Option B:&#060;b&#047;&#062; &#060;br&#047;&#062;
+        &#060;u&#062;B- Pour mise en conserve.&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_1">
+        Blanchir les champignons un instant, les égoutter et les laisser refroidir en les étalant sur un plateau.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_2">
+        Préparer un mélange de 100 g d’huile d’olive et 25 g de vinaigre de Xérès ou du même type, assaisonner avec du sel, du poivre et différentes épices selon les goûts.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_3">
+        Stériliser des bocaux en verre dans de l’eau bouillante, puis les remplir de champignons et verser le mélange d’huile et de vinaigre par-dessus.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_4">
+        Fermer les bocaux et les plonger dans de l’eau bouillante pendant 30 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_5">
+        Laisser refroidir dans l’eau.
+    </string>
+    <string name="viewmodule_recipe_step_setas_3_6">
+        Conserver à un endroit frais ou au réfrigérateur, pendant au moins 15 jours avant de les ouvrir.
+    </string>
+
+    <!-- recipe Alcachofa con jamón ibérico.  -->
+    <string name="viewmodule_food_recipe_alcachofas">Artichaut au\njambon ibérique\n</string>
+    <string name="viewmodule_recipe_alcachofa_title">Artichaut au jambon ibérique</string>
+    <string name="viewmodule_recipe_alcachofa_difficulty">Moyenne</string>
+    <string name="viewmodule_recipe_alcachofa_cooking_time">3h 30min</string>
+    <string name="viewmodule_recipe_alcachofa_type">En bocal</string>
+    <string name="viewmodule_recipe_alcachofa_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_alcachofa_allergens">---</string>
+    <string name="viewmodule_recipe_alcachofa_ingredients">
+        16 artichauts&#060;br&#047;&#062;
+80 g de jambon ibérique&#060;br&#047;&#062;
+100 g d’huile d’olive&#060;br&#047;&#062;
+50 g de farine&#060;br&#047;&#062;
+Sel et poivre
+    </string>
+    <string name="viewmodule_recipe_alcachofa_what_you_need">
+        Mixeur&#060;br&#047;&#062;
+Mandoline&#060;br&#047;&#062;
+Écumoire&#060;br&#047;&#062;
+Planche à découper&#060;br&#047;&#062;
+Couteaux&#060;br&#047;&#062;
+Casserole&#060;br&#047;&#062;
+Plateau&#060;br&#047;&#062;
+Essuie-tout&#060;br&#047;&#062;
+Sachets de mise sous vide&#060;br&#047;&#062;
+Machine de mise sous vide&#060;br&#047;&#062;
+Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_alcachofa_1">
+        Plonger les artichauts dans de l’eau glacée pour qu’ils soient bien froids, afin d’éviter qu’ils ne s’oxydent pendant la préparation.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_2">
+        Nettoyer et éplucher les artichauts jusqu’à en séparer le cœur.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_3">
+        Faire cuire les artichauts sous vide dans deux sachets : 6 unités dans l’un à 85 ºC pendant 90 min et 8 unités dans l’autre à 85 ºC pendant 2 heures. Laisser refroidir et mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_4">
+        Prendre le sachet de 6 artichauts et les découper en quatre, puis en huit.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_5">
+        Prendre le sachet de 8 artichauts et les passer au mixeur jusqu’à obtention d’une purée fine. Ensuite, assaisonner en ajoutant 20 g d’huile d’olive et une pincée de sel.
+    </string>
+    <string name="viewmodule_recipe_step_alcachofa_6">
+        Couper en lamelles 2 artichauts, les fariner et les frire dans de l’huile d’olive en abondance. Mettre de côté dans un récipient antihumidité.
+    </string>
+    <string name="viewmodule_recipe_alcachofa_note">
+        Répartir la purée d’artichaut sur une assiette.  Compléter en y ajoutant les 2 types d’artichauts.  Ajouter le jambon. Assaisonner avec de l’huile d’olive vierge et une pointe de poivre.
+    </string>
+
+    <!-- recipe Costillar de cerdo en dos cocciones  -->
+    <string name="viewmodule_food_recipe_coastillar">Travers de\nporc aux\ndeux cuissons</string>
+    <string name="viewmodule_recipe_coastillar_title">Travers de porc aux deux cuissons</string>
+    <string name="viewmodule_recipe_coastillar_difficulty">Moyenne</string>
+    <string name="viewmodule_recipe_coastillar_cooking_time">12h</string>
+    <string name="viewmodule_recipe_coastillar_type">Confit</string>
+    <string name="viewmodule_recipe_coastillar_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_coastillar_allergens">---</string>
+    <string name="viewmodule_recipe_coastillar_ingredients">
+        1 travers de porc&#060;br&#047;&#062;
+ Huile d’olive&#060;br&#047;&#062;
+3 gousses d’ail&#060;br&#047;&#062;
+Bouquet garni
+    </string>
+    <string name="viewmodule_recipe_coastillar_what_you_need">
+        Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_group_coastillar_1">
+        &#060;u&#062;Première cuisson :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_coastillar_1">
+        Confit dans l’huile d’olive, avec de l’ail et le bouquet garni. Cuire à feu doux à 80 degrés pendant des périodes de 6 à 8 heures (vérifier si la viande est tendre), retirer du feu et laisser refroidir.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_coastillar_2">
+        &#060;u&#062;Deuxième cuisson :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_coastillar_2">
+        Commencer par réchauffer la préparation à l’huile ou sous vide et terminer au four à 220 degrés après l’avoir badigeonné d’huile de cuisson. Il est également possible de terminer avec une cuisson à la braise de chêne vert pour apporter des notes fumées, du croustillant à l’extérieur et une saveur intense de la graisse à haute température.
+    </string>
+
+    <!-- recipe Papada de cerdo ibérico en doble cocción.  -->
+    <string name="viewmodule_food_recipe_parada">Gorge de porc\nibérique à\ndouble cuisson</string>
+    <string name="viewmodule_recipe_parada_title">Gorge de porc ibérique à double cuisson</string>
+    <string name="viewmodule_recipe_parada_difficulty">Faible</string>
+    <string name="viewmodule_recipe_parada_cooking_time">18h 30min</string>
+    <string name="viewmodule_recipe_parada_type">Vide/Plancha</string>
+    <string name="viewmodule_recipe_parada_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_parada_allergens">Sésame (gomasio)</string>
+    <string name="viewmodule_recipe_parada_ingredients">
+        1 gorge de porc (sans peau)&#060;br&#047;&#062;
+1 l de saumure (100 g de sel pour 1 l d’eau)&#060;br&#047;&#062;
+Huile d’olive douce&#060;br&#047;&#062;
+2 petsay (chou chinois)&#060;br&#047;&#062;
+40 g de gomasio&#060;br&#047;&#062;
+80 g de jus de viande réduit&#060;br&#047;&#062;
+Sel et poivre
+    </string>
+    <string name="viewmodule_recipe_parada_what_you_need">
+        Sachets de mise sous vide&#060;br&#047;&#062;
+Machine de mise sous vide&#060;br&#047;&#062;
+Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_group_parada_1">
+        &#060;u&#062;1 Élaboration :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_1">
+        Plonger la gorge dans la saumure pendant 1 heure. La sécher et la mettre sous vide.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_2">
+        La faire cuire dans de l’eau à 65 ºC pendant 18 heures. Ensuite, la laisser refroidir dans de l’eau glacée.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_3">
+        Couper les choux chinois, les mettre sous vide et les faire cuire dans de l’eau à 85 ºC pendant 20 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_4">
+        Découper la gorge en lamelles épaisses.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_5">
+        Faire revenir la gorge à la poêle à feu moyen-doux pour la faire dorer, éliminer l’excès de graisse et lui donner une texture croustillante.
+    </string>
+    <string name="viewmodule_recipe_step_parada_1_6">
+        Faire revenir le chou chinois à la poêle à feu moyen.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_parada_2">
+        &#060;u&#062;2 Pour servir :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_parada_2_1">
+        Disposer un peu de jus de viande chaud au fond de l’assiette et deux morceaux de gorge superposés. Ajouter un peu de sel, poivre et huile d’olive.
+    </string>
+    <string name="viewmodule_recipe_step_parada_2_2">
+        À côté de la gorge, placer le chou et un peu de gomasio par-dessus.
+    </string>
+
+    <!-- recipe Espárragos con mayonesa de cítricos. -->
+    <string name="viewmodule_food_recipe_esparragos">Asperges à la\nmayonnaise parfumée\naux agrumes</string>
+    <string name="viewmodule_recipe_esparragos_title">Asperges à la mayonnaise parfumée aux agrumes</string>
+    <string name="viewmodule_recipe_esparragos_difficulty">Faible</string>
+    <string name="viewmodule_recipe_esparragos_cooking_time">1h</string>
+    <string name="viewmodule_recipe_esparragos_type">En bocal</string>
+    <string name="viewmodule_recipe_esparragos_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_esparragos_allergens">Œuf (mayonnaise)</string>
+    <string name="viewmodule_recipe_esparragos_ingredients">
+        Pour les asperges&#060;br&#047;&#062;
+20 asperges blanches fraîches&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour la mayonnaise aux agrumes&#060;br&#047;&#062;
+300 g d’huile de tournesol&#060;br&#047;&#062;
+2 jaunes d’œuf&#060;br&#047;&#062;
+Sel&#060;br&#047;&#062;
+1 citron&#060;br&#047;&#062;
+1 mandarine et/ou orange et/ou pamplemousse&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour la décoration&#060;br&#047;&#062;
+Quartiers d’orange et/ou mandarine et/ou pamplemousse&#060;br&#047;&#062;
+Mélisse
+    </string>
+    <string name="viewmodule_recipe_esparragos_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Sachets de cuisson
+    </string>
+
+    <string name="viewmodule_recipe_step_group_esparragos_1">
+        &#060;u&#062;Pour la mayonnaise&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_1_1">
+        Faire réduire le jus des agrumes en le faisant cuire à feu très doux jusqu’à ce qu’il réduise à un quart de son volume (une fois refroidi, le jus doit avoir une texture légèrement dense). Laisser refroidir.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_1_2">
+        Ensuite, élaborer la mayonnaise avec les jaunes d’œuf et l’huile d’olive.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_1_3">
+        Incorporer 3/4 de la réduction du jus d’agrumes, mélanger avec le manche à soupe ou des fouets et saler.
+    </string>
+
+
+    <string name="viewmodule_recipe_step_group_esparragos_2">
+        &#060;u&#062;Pour les asperges&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_1">
+        Éplucher les asperges avec un épluche-légumes pour retirer toute la partie dure et fibreuse.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_2">
+        Mettre sous vide.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_3">
+        Faire cuire dans de l’eau à 85 ºC pendant 45 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_2_4">
+        Laisser refroidir dans de l’eau glacée et mettre de côté.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_esparragos_3">
+        &#060;u&#062;Pour terminer et servir&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_3_1">
+        Disposer les asperges sur une assiette et les napper de mayonnaise aux agrumes, flamber au chalumeau jusqu’à obtention d’un léger glaçage.
+    </string>
+    <string name="viewmodule_recipe_step_esparragos_3_2">
+        Décorer avec des quartiers de mandarine, de pamplemousse, des feuilles de mélisse et des pointes de réduction d’agrumes.
+    </string>
+
+    <!-- recipe Pechuga de pollo -->
+    <string name="viewmodule_food_recipe_pechuga">Escalope de poulet\naux abricots\net aux olives</string>
+    <string name="viewmodule_recipe_pechuga_title">Escalope de poulet aux abricots et aux olives</string>
+    <string name="viewmodule_recipe_pechuga_difficulty">Faible</string>
+    <string name="viewmodule_recipe_pechuga_cooking_time">1h</string>
+    <string name="viewmodule_recipe_pechuga_type">Vide</string>
+    <string name="viewmodule_recipe_pechuga_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_pechuga_allergens">---</string>
+    <string name="viewmodule_recipe_pechuga_ingredients">
+        Pour le poulet :&#060;br&#047;&#062;
+4 blancs de poulet avec la peau&#060;br&#047;&#062;
+1 l de saumure (100 g de sel pour 1 l d’eau)&#060;br&#047;&#062;
+Poivre de Sichuan&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour la sauce aux olives :&#060;br&#047;&#062;
+100 g d’olives noires&#060;br&#047;&#062;
+1 verre de vin vieux&#060;br&#047;&#062;
+0,75 l de bouillon de volaille &#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour la sauce aux abricots :&#060;br&#047;&#062;
+0,2 kg d’abricots mûrs
+    </string>
+    <string name="viewmodule_recipe_pechuga_what_you_need">
+        Chinois&#060;br&#047;&#062;
+Casserole&#060;br&#047;&#062;
+Manche à soupe&#060;br&#047;&#062;
+Sachets de mise sous vide&#060;br&#047;&#062;
+Machine de mise sous vide &#060;br&#047;&#062;
+Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_group_pechuga_1">
+        &#060;u&#062;1 Pour le poulet :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_1_1">
+        Introduire le poulet dans la saumure pendant 1 heure. Sécher et mettre sous vide avec un peu de poivre de Sichuan.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_1_2">
+        Faire cuire dans de l’eau à 65 ºC pendant 40 minutes. Ou à 120 degrés au four pendant 35 minutes. (chercher à obtenir 65 degrés à cœur dans les deux cas)
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_1_3">
+        Ouvrir le sachet et faire revenir l’escalope avec un peu d’huile (2 minutes environ du côté de la peau à feu doux et 30 secondes du côté de la chair).
+    </string>
+
+
+    <string name="viewmodule_recipe_step_group_pechuga_2">
+        &#060;u&#062;2 Pour la sauce aux olives :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_1">
+        Faire bouillir le vin vieux et le bouillon de volaille.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_2">
+        Laisser réduire jusqu’à en obtenir 1/4 du volume. Passer au chinois.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_3">
+        Ajouter les olives noires dénoyautées, mixer et passer au chinois.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_2_4">
+        En cas de besoin, texturiser avec du xantana (proportion : 3 g/l) et saler.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_pechuga_3">
+        &#060;u&#062;3 Pour la purée d’abricots :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_3_1">
+        Éplucher les abricots et les dénoyauter.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_3_2">
+        Mettre sous vide et faire cuire à 85 ºC pendant 20 minutes. Ou à 120 degrés au four pendant 60 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_3_3">
+        Mixer.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_pechuga_4">
+        &#060;u&#062;4 Pour terminer :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_pechuga_4_1">
+        Disposer la purée d’abricots, intercaler le poulet découpé en lamelles épaisses et terminer avec la sauce aux olives noires.
+    </string>
+
+    <!-- recipe Sopa de tomillo -->
+    <string name="viewmodule_food_recipe_sopa_de">Soupe au thym\net à l’œuf à\nbasse température</string>
+    <string name="viewmodule_recipe_sopade_title">Soupe au thym et à l’œuf à basse température</string>
+    <string name="viewmodule_recipe_sopade_difficulty">Faible</string>
+    <string name="viewmodule_recipe_sopade_cooking_time">1h</string>
+    <string name="viewmodule_recipe_sopade_type">Dans du liquide</string>
+    <string name="viewmodule_recipe_sopade_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_sopade_allergens">Œuf, gluten</string>
+    <string name="viewmodule_recipe_sopade_ingredients">
+        1 bouquet de thym&#060;br&#047;&#062;
+100 g d’huile d’olive&#060;br&#047;&#062;
+1 litre d’eau/bouillon de poule&#060;br&#047;&#062;
+8 tranches de pain sec fin&#060;br&#047;&#062;
+2 gousses d’ail&#060;br&#047;&#062;
+4 petits œufs de poule&#060;br&#047;&#062;
+Biscottes fines&#060;br&#047;&#062;
+Sel et poivre
+    </string>
+    <string name="viewmodule_recipe_sopade_what_you_need">
+        Casserole&#060;br&#047;&#062;
+Ustensiles en bois&#060;br&#047;&#062;
+Couteaux
+    </string>
+
+    <string name="viewmodule_recipe_step_sopade_1">
+        Faire revenir légèrement les 2 gousses d’ail dans une casserole.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_2">
+        Incorporer le thym attaché pour éviter qu’il ne se disperse. Ajouter l’eau/le bouillon et faire cuire 10 minutes à feu doux. Ensuite, retirer le thym et l’ail.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_3">
+        Incorporer le pain sec et laisser cuire entre 6 et 8 minutes. Ensuite, le mixer ou le passer au batteur.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_4">
+        Verser la soupe dans une assiette et ajouter un œuf cuit à basse température (à 65º entre 20 et 40 minutes en fonction de la taille ainsi que du résultat recherché, car à température plus élevée le jaune sera plus cuit)
+    </string>
+    <string name="viewmodule_recipe_step_sopade_5">
+        Assaisonner avec un peu de sel, de poivre et de fleurs de thym.
+    </string>
+    <string name="viewmodule_recipe_step_sopade_6">
+        Décorer avec de l’huile d’olive et une biscotte fine.
+    </string>
+
+    <!-- recipe Solomillo al whisky -->
+    <string name="viewmodule_food_recipe_solomillo">Faux-filet\nau whisky\n</string>
+    <string name="viewmodule_recipe_solomillo_title">Faux-filet au whisky</string>
+    <string name="viewmodule_recipe_solomillo_difficulty">Faible</string>
+    <string name="viewmodule_recipe_solomillo_cooking_time">45min</string>
+    <string name="viewmodule_recipe_solomillo_type">Vide</string>
+    <string name="viewmodule_recipe_solomillo_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_solomillo_allergens">Fruits à coque</string>
+    <string name="viewmodule_recipe_solomillo_ingredients">
+        Pour le faux-filet :&#060;br&#047;&#062;
+0,8 kg de faux-filet de bœuf nettoyé&#060;br&#047;&#062;
+3 cuillères à soupe de whisky &#060;br&#047;&#062;
+Poivre de Sichuan&#060;br&#047;&#062;
+1 l de saumure (100 g de sel pour 1 l d’eau)&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour la garniture : &#060;br&#047;&#062;
+Poireau&#060;br&#047;&#062;
+Carottes&#060;br&#047;&#062;
+Courgette&#060;br&#047;&#062;
+Asperges vertes&#060;br&#047;&#062;
+Échalote&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour l’huile aux pignons :&#060;br&#047;&#062;
+100 g d’huile d’olive&#060;br&#047;&#062;
+50 g de pignons&#060;br&#047;&#062;
+Sel&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour terminer :&#060;br&#047;&#062;
+100 g de jus de bœuf
+    </string>
+    <string name="viewmodule_recipe_solomillo_what_you_need">
+        Poêle&#060;br&#047;&#062;
+Sachets de mise sous vide&#060;br&#047;&#062;
+Machine de mise sous vide &#060;br&#047;&#062;
+Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_1">
+        &#060;u&#062;1 Pour le faux-filet :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_1_1">
+        Introduire le faux-filet dans la saumure pendant 15 minutes. Sécher.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_1_2">
+        Mettre sous vide avec le whisky préalablement congelé en petits cubes (pour pouvoir conditionner convenablement)
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_1_3">
+        Faire cuire dans de l’eau à 65 ºC pendant 15 minutes ou à 55 ºC pendant 20 minutes. Ou à 70 degrés au four pendant 20 minutes.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_2">
+        &#060;u&#062;2 Pour la garniture :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_2_1">
+        Découper et blanchir les légumes, ou bien les faire cuire sous vide ou dans de l’eau bouillante.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_3">
+        &#060;u&#062;3 Pour l’huile aux pignons :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_3_1">
+        Faire dorer les pignons coupés en deux dans l’huile d’olive à feu très doux.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_3_2">
+        Une fois grillés et froids, ajouter le reste d’huile, du sel et du poivre.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_solomillo_4">
+        &#060;u&#062;4 Pour terminer :&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_1">
+        Sortir le faux-filet du sachet et le faire revenir rapidement à la poêle à feu vif, très peu de temps pour éviter de le dessécher.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_2">
+        Déglacer* la poêle avec le reste de jus du sachet (*Déglacer : ajouter du vin ou un liquide du même type dans une poêle ou sur la plaque du four pour extraire la graisse ou le jus obtenu à la fin de la cuisson). Incorporer le jus de bœuf et faire cuire 1 minute.  Retirer du feu et filtrer, en cas de besoin.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_3">
+        Faire sauter les légumes.
+    </string>
+    <string name="viewmodule_recipe_step_solomillo_4_4">
+        Disposer le faux-filet dans une assiette avec les légumes, ajouter la sauce et assaisonner à l’huile de pignons.
+    </string>
+    <string name="viewmodule_recipe_solomillo_note">
+        Le niveau de cuisson peut être adapté selon les goûts. Pour consommer un faux-filet plutôt bleu, le temps de cuisson peut être réduit à 12 minutes à 65 ºC. À l’inverse, pour qu’il soit plus cuit, il est possible de prolonger la cuisson jusqu’à 18 minutes.
+    </string>
+
+    <!-- recipe Bacalao con espinacas -->
+    <string name="viewmodule_food_recipe_bacalao">Morue aux épinards,\nraisins secs,\npignons et\nfromage Idiazábal</string>
+    <string name="viewmodule_recipe_bacalao_title">Morue aux épinards, raisins secs, pignons et fromage Idiazábal</string>
+    <string name="viewmodule_recipe_bacalao_difficulty">Faible</string>
+    <string name="viewmodule_recipe_bacalao_cooking_time">1h</string>
+    <string name="viewmodule_recipe_bacalao_type">Confit dans l’huile</string>
+    <string name="viewmodule_recipe_bacalao_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_bacalao_allergens">Fruits à coque, lait</string>
+    <string name="viewmodule_recipe_bacalao_ingredients">
+        600 g de morue&#060;br&#047;&#062;
+200 g d’huile d’olive&#060;br&#047;&#062;
+400 g d’épinards frais&#060;br&#047;&#062;
+60 g de raisins secs&#060;br&#047;&#062;
+20 g de pignons&#060;br&#047;&#062;
+25 g de fromage Idiazábal&#060;br&#047;&#062;
+25 g de crème fraîche liquide&#060;br&#047;&#062;
+50 g de Pedro Ximenez&#060;br&#047;&#062;
+Ciboulette fraîche
+    </string>
+
+    <string name="viewmodule_recipe_step_bacalao_1">
+        Faire réduire le Pedro Ximenez à feu doux pour en obtenir une réduction (attention : lorsqu’il est chaud, il est difficile de déterminer sa densité. Il faut donc laisser refroidir et vérifier pour éviter qu’il ne soit trop cuit ou ne brûle).
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_2">
+        Faire fondre le fromage avec la crème à feu doux et mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_3">
+        Hacher la ciboulette et mélanger avec quelques gouttes d’huile d’olive vierge.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_4">
+        Faire chauffer l’huile à 50 degrés et y introduire la morue. Faire cuire pendant 15 minutes à cette température en veillant à ce qu’elle reste constante. Ou à 70 degrés au four pendant 15 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_5">
+        Faire revenir les pignons et les raisins secs dans une poêle. Intégrer les feuilles d’épinards et faire revenir quelques secondes.
+    </string>
+    <string name="viewmodule_recipe_step_bacalao_6">
+        Placer des épinards au centre de l’assiette. Incorporer un morceau de morue confite et compléter en ajoutant de la sauce au fromage, la réduction de Pedro Ximenez et quelques gouttes d’huile d’olive.
+    </string>
+
+    <!-- recipe Enctrecotte en dos cocciones con verduras -->
+    <string name="viewmodule_food_recipe_entrecotte">Entrecôte aux\nlégumes à deux\ncuissons</string>
+    <string name="viewmodule_recipe_entrecotte_title">Entrecôte aux légumes à deux cuissons</string>
+    <string name="viewmodule_recipe_entrecotte_difficulty">Faible</string>
+    <string name="viewmodule_recipe_entrecotte_cooking_time">2h</string>
+    <string name="viewmodule_recipe_entrecotte_type">En bocal sous vide</string>
+    <string name="viewmodule_recipe_entrecotte_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_entrecotte_allergens">Lait</string>
+    <string name="viewmodule_recipe_entrecotte_ingredients">
+        4 entrecôtes de 400 g&#060;br&#047;&#062;
+1 l de saumure (1 l d’eau pour 100 g de sel)&#060;br&#047;&#062;
+4 carottes tendres&#060;br&#047;&#062;
+50 g de beurre&#060;br&#047;&#062;
+30 g d’huile de tournesol&#060;br&#047;&#062;
+4 branches de romarin et 4 de thym&#060;br&#047;&#062;
+4 gousses d’ail&#060;br&#047;&#062;
+Épinards
+    </string>
+    <string name="viewmodule_recipe_entrecotte_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Sachets de mise sous vide pour la cuisson&#060;br&#047;&#062;
+Appareil de mise sous vide
+    </string>
+
+    <string name="viewmodule_recipe_step_entrecotte_1">
+         Plonger l’entrecôte pendant 1 heure dans la saumure.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_2">
+         Laver les carottes et les pommes de terre, puis les mettre sous vide. Les faire cuire à 85 ºC pendant 30 minutes. Ou à 160 degrés au four pendant 40 minutes. Laisser refroidir et mettre de côté.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_3">
+        Après l’avoir laissé le temps nécessaire dans la saumure, sécher l’entrecôte et la faire revenir rapidement à la poêle avec de l’huile d’olive.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_4">
+        Après l’avoir fait revenir, laisser refroidir et mettre sous vide avec une branche de romarin, une de thym et une gousse d’ail.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_5">
+        Faire cuire l’entrecôte dans de l’eau à 55 ºC pendant 1 heure. Ou à 65 degrés au four pendant 60 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_6">
+        Une fois la cuisson terminée, la retirer du sachet et la faire revenir dans une poêle chaude avec le beurre et 15 grammes d’huile de tournesol.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_7">
+        Faire sauter légèrement les carottes et les pommes de terre (après les avoir préchauffées dans de l’eau à 85 ºC et les avoir découpées en morceaux réguliers) avec un peu de beurre et 15 grammes d’huile de tournesol.
+    </string>
+    <string name="viewmodule_recipe_step_entrecotte_8">
+        Saler et poivrer l’entrecôte, les carottes ainsi que les pommes de terre, puis servir.
+    </string>
+
+    <!-- recipe Merluza con vinagreta de ajos tiernos -->
+    <string name="viewmodule_food_recipe_merluza">Colin à la\nvinaigrette à\nl’ail tendre</string>
+    <string name="viewmodule_recipe_merluza_title">Colin à la vinaigrette à l’ail tendre</string>
+    <string name="viewmodule_recipe_merluza_difficulty">Faible</string>
+    <string name="viewmodule_recipe_merluza_cooking_time">40min</string>
+    <string name="viewmodule_recipe_merluza_type">Vide</string>
+    <string name="viewmodule_recipe_merluza_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_merluza_allergens">Sulfites</string>
+    <string name="viewmodule_recipe_merluza_ingredients">
+        4 suprêmes de colin de 125 grammes&#060;br&#047;&#062;
+2 pommes de terre&#060;br&#047;&#062;
+2 oignons&#060;br&#047;&#062;
+200 g d’huile de tournesol&#060;br&#047;&#062;
+200 g d’huile d’olive&#060;br&#047;&#062;
+6 gousses d’ail&#060;br&#047;&#062;
+Romarin frais&#060;br&#047;&#062;
+25 g de vinaigre de vin rouge de Modène&#060;br&#047;&#062;
+Sel&#060;br&#047;&#062;
+Oignons frais tendres
+    </string>
+
+    <string name="viewmodule_recipe_step_merluza_1">
+        Faire cuire lentement l’oignon coupé en julienne dans une casserole à feu doux, jusqu’à ce qu’elles soient complètement cuites et prennent un aspect caramélisé.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_2">
+        Élaborer la vinaigrette au romarin en faisant cuire les gousses d’ail coupées en lamelles dans une poêle avec l’huile d’olive et incorporer le romarin quand elles commencent à être dorées. Retirer du feu et introduire le vinaigre lorsque l’huile est revenue à température ambiante, ajuster en sel et poivre.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_3">
+        Éplucher et couper les pommes de terre en lamelles, confire au four ou sur la plaque à feu doux jusqu’à ce qu’elles ramollissent.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_4">
+        Faire revenir dans une poêle à feu vif le suprême de colin préalablement salé et poivré, de sorte qu’il ne cuise qu’à l’extérieur, puis disposer sur la plaque du four avec une cuillère à soupe de vinaigrette. Laisser cuire entre 12 et 16 minutes à 65 degrés. Ou à 90 degrés au four pendant 20 minutes. Vérifier la cuisson en appuyant sur le morceau de colin : il doit être légèrement ferme (ou bien avec un thermomètre en veillant à atteindre entre 50 et 55 degrés à cœur).
+    </string>
+    <string name="viewmodule_recipe_step_merluza_5">
+        Faire chauffer les lamelles de pomme de terre et l’oignon confit.
+    </string>
+    <string name="viewmodule_recipe_step_merluza_6">
+        Disposer sur l’assiette en garniture et incorporer le morceau de colin, assaisonner avec la vinaigrette à l’ail et au romarin, puis décorer avec des lamelles d’oignons frais tendres et du romarin frais.
+    </string>
+
+    <!-- recipe Flan de xocolate -->
+    <string name="viewmodule_food_recipe_flan_de">Crème au chocolat\navec praliné de\nnoisettes et\nmacadamia</string>
+    <string name="viewmodule_recipe_flande_title">Crème au chocolat avec praliné de noisettes et macadamia</string>
+    <string name="viewmodule_recipe_flande_difficulty">Faible</string>
+    <string name="viewmodule_recipe_flande_cooking_time">2h</string>
+    <string name="viewmodule_recipe_flande_type">En bocal</string>
+    <string name="viewmodule_recipe_flande_num_of_people">6 personnes</string>
+    <string name="viewmodule_recipe_flande_allergens">Lait, œuf, fruits à coque</string>
+    <string name="viewmodule_recipe_flande_ingredients">
+        275 g de lait&#060;br&#047;&#062;
+325 g de crème fraîche&#060;br&#047;&#062;
+130 g de jaune d’œuf&#060;br&#047;&#062;
+40 g de sucre&#060;br&#047;&#062;
+50 g de nappage au chocolat&#060;br&#047;&#062;
+Praliné de noisettes&#060;br&#047;&#062;
+Noix de macadamia&#060;br&#047;&#062;
+20 g de chocolat moulu sur pierre
+    </string>
+    <string name="viewmodule_recipe_flande_what_you_need">
+        Induction à régulation de température&#060;br&#047;&#062;
+Manche à soupe&#060;br&#047;&#062;
+Fouets&#060;br&#047;&#062;
+Bocaux en verre&#060;br&#047;&#062;
+Chinois&#060;br&#047;&#062;
+Râpe
+    </string>
+
+    <string name="viewmodule_recipe_step_flande_1">
+         Incorporer le lait et la crème fraîche dans la casserole, et faire chauffer jusqu’à une température de 85 ºC. Mettre de côté, y ajouter le chocolat et mixer avec un batteur électrique. Laisser refroidir un peu.
+    </string>
+    <string name="viewmodule_recipe_step_flande_2">
+         Dans un bol, mélanger le sucre et les jaunes d’œuf.
+    </string>
+    <string name="viewmodule_recipe_step_flande_3">
+        Filtrer le mélange au chocolat sur les jaunes d’œuf et mélanger. Laisser reposer jusqu’à ce que la mousse disparaisse du mélange.
+    </string>
+    <string name="viewmodule_recipe_step_flande_4">
+        Remplir le mélange dans les bocaux en verre jusqu’en haut, les fermer et faire cuire pendant 60 minutes à 85ºC. Ou à 100 degrés au four pendant 60 minutes.
+    </string>
+    <string name="viewmodule_recipe_step_flande_5">
+        Ensuite, laisser revenir à température ambiante puis, au bout de quelques minutes, refroidir à l’eau glacée.
+    </string>
+    <string name="viewmodule_recipe_step_flande_6">
+        Une fois le mélange solidifié, ajouter un peu de praliné de noisettes par-dessus, râper les noix de macadamia et le chocolat moulu sur pierre.
+    </string>
+
+    <!-- recipe Panceta ciabatta -->
+    <string name="viewmodule_food_recipe_panceta">Lard\nciabatta\n</string>
+    <string name="viewmodule_recipe_panceta_title">Lard ciabatta</string>
+    <string name="viewmodule_recipe_panceta_difficulty">Faible</string>
+    <string name="viewmodule_recipe_panceta_cooking_time">3h</string>
+    <string name="viewmodule_recipe_panceta_type">Plongé dans le liquide</string>
+    <string name="viewmodule_recipe_panceta_num_of_people">4 personnes</string>
+    <string name="viewmodule_recipe_panceta_allergens">Gluten et soja</string>
+    <string name="viewmodule_recipe_panceta_ingredients">
+        Pour le lard&#060;br&#047;&#062;
+400 g de lard avec la peau &#060;br&#047;&#062;
+400 g d’eau&#060;br&#047;&#062;
+125 g de sauce soja&#060;br&#047;&#062;
+75 g de poireau&#060;br&#047;&#062;
+75 g d’oignon&#060;br&#047;&#062;
+1/2 branche de cannelle&#060;br&#047;&#062;
+5 g de poivre&#060;br&#047;&#062;
+25 g de sucre roux&#060;br&#047;&#062;
+        &#060;br&#047;&#062;
+Pour le sandwich&#060;br&#047;&#062;
+1/4 de concombre&#060;br&#047;&#062;
+1/2 oignon&#060;br&#047;&#062;
+Sel&#060;br&#047;&#062;
+4 pains type ciabatta
+    </string>
+    <string name="viewmodule_recipe_panceta_what_you_need">
+        Induction à régulation de température
+    </string>
+
+    <string name="viewmodule_recipe_step_group_panceta_1">
+        &#060;u&#062;1 Lard&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_1">
+        Dans une casserole, introduire l’oignon et le poireau coupés en mirepoix (dés de grande taille et irréguliers).
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_2">
+        Ajouter l’eau, le lard entier, la sauce soja et les épices.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_3">
+        Faire cuire à 90 ºC pendant 3 h, avec un couvercle pour ne pas perdre d’humidité. Ou à 120ºC au four pendant 4h.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_4">
+        Une fois la cuisson terminée, séparer la viande des légumes et filtrer.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_1_5">
+        Faire réduire le jus obtenu jusqu’à obtention d’une sauce dense et filtrer à nouveau.
+    </string>
+
+    <string name="viewmodule_recipe_step_group_panceta_2">
+        &#060;u&#062;2 Sandwich&#060;u&#047;&#062;
+    </string>
+    <string name="viewmodule_recipe_step_panceta_2_1">
+        Couper le concombre en demi-rondelles et l’oignon en julienne, mélanger et saler.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_2_2">
+        Découper le lard en rondelles de 1/2 cm d’épaisseur et le faire chauffer avec la sauce réduite.
+    </string>
+    <string name="viewmodule_recipe_step_panceta_2_3">
+        Monter le sandwich en plaçant sur le pain une couche de légumes crus et le lard par-dessus. Pour terminer, ajouter un peu plus de sauce.
+    </string>
+
+</resources>

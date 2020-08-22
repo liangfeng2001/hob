@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="intromodule_spaceBetweenViewAndEdge">35dp</dimen>
+
+    <dimen name="intromodule_digital_time">202sp</dimen>
+    <dimen name="intromodule_date">54sp</dimen>
+
+    <dimen name="intromodule_logo_vertical_offset">10dp</dimen>
+
+    <dimen name="intromodule_high_temp_padding_bottom">20dp</dimen>
+    <dimen name="intromodule_high_temp_padding_end">30dp</dimen>
+</resources>

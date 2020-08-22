@@ -1,0 +1,1860 @@
+package com.ekek.viewmodule.hob;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.BitmapShader;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.Point;
+import android.graphics.PointF;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.Shader;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Parcelable;
+import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.SoundEffectConstants;
+import android.view.View;
+import android.view.ViewConfiguration;
+
+import com.ekek.commonmodule.GlobalVars;
+import com.ekek.commonmodule.utils.DisplayUtil;
+import com.ekek.commonmodule.utils.LogUtil;
+import com.ekek.commonmodule.utils.Marquee;
+import com.ekek.viewmodule.R;
+import com.ekek.viewmodule.contract.HobCircleCookerContract;
+import com.ekek.viewmodule.utils.ViewUtils;
+
+public abstract class BaseCircleCookerView extends View {
+ /*   private static final int HOB_VIEW_WORK_MODE_POWER_OFF = 0;//
+    private static final int HOB_VIEW_WORK_MODE_FIRE_GEAR_WITHOUT_TIMER = 100;//
+    private static final int HOB_VIEW_WORK_MODE_FIRE_GEAR_WITH_TIMER = 200;//
+    private static final int HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITHOUT_TIMER = 300;//
+    private static final int HOB_VIEW_WORK_MODE_TEMP_GEAR_WITHOUT_TIMER = 400;//
+    private static final int HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER = 500;//
+    private static final int HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER = 600;//
+    private static final int HOB_VIEW_WORK_MODE_ABNORMAL_NO_PAN = 700;//
+    private static final int HOB_VIEW_WORK_MODE_ABNORMAL_HIGH_TEMP = 701;//
+    private static final int HOB_VIEW_WORK_MODE_ABNORMAL_ERROR_OCURR = 702;//
+    private static final int HOB_VIEW_WORK_MODE_UPATE_TIMER = 800;*/
+
+    protected static final int HOB_VIEW_WORK_MODE_POWER_OFF = 0;//
+    protected static final int HOB_VIEW_WORK_MODE_FIRE_GEAR_WITHOUT_TIMER = 100;//
+    protected static final int HOB_VIEW_WORK_MODE_FIRE_GEAR_WITH_TIMER = 200;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITHOUT_TIMER = 300;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_GEAR_WITHOUT_TIMER = 400;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER = 500;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER_AND_RECIPES_FIRST = 501;//先显示菜谱图片，再显示温度定时
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER_AND_RECIPES_SECOND = 502;//先显示温度定时，再显示菜谱图片
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER = 600;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_FIRST = 601;//先显示菜谱图片，再显示温度定时
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_SECOND = 602;//先显示温度定时，再显示菜谱图片
+    protected static final int HOB_VIEW_WORK_MODE_ABNORMAL_NO_PAN = 700;//
+    protected static final int HOB_VIEW_WORK_MODE_ABNORMAL_HIGH_TEMP = 701;//
+    protected static final int HOB_VIEW_WORK_MODE_ABNORMAL_ERROR_OCURR = 702;//
+    protected static final int HOB_VIEW_WORK_MODE_UPATE_TIMER = 800;
+    protected static final int HOB_VIEW_WORK_MODE_PAUSE = 900;//
+    protected static final int HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR = 1000;//
+    protected static final int HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR_WITH_INDICATOR = 1001;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_SENSOR_READY = 1002;//
+    protected static final int HOB_VIEW_WORK_MODE_TEMP_WORK_FINISH_WAIT_USER_CONFIRM= 1003;
+
+    private static final int TEMP_WORK_FINISH_PROGRESS_LIGHT = 0;
+    private static final int TEMP_WORK_FINISH_PROGRESS_DARK = 1;
+    private static final int TEMP_WORK_RECIPES_PROGRESS_PICTURE = 1;
+    private static final int TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE = 0;
+
+    private static final long TIME_FLASH_KEEP_WARM = 1000 * 1;//10s
+    private static final int HANDLER_FLASH_KEEP_WARM_TIPS = 1;//
+    private static final int HANDLER_FLASH_RECIPES = 2;
+    private static final int HANDLER_BLINK = 3;
+    private static final int HANDLER_BLINK_EX = 4;
+
+    private static final long TIME_SHOW_RECIPES_PICTURE = 1000 * 1; // 10
+    private static final long TIME_SHOW_RECIPES_TEMP_VALUE = 1000 * 2; //30
+
+    private static final int DISTANCE_TO_POWEROFF = 25;
+
+    private static final int POWER_OFF_REGION_OFFSET = 40;
+
+    private static final int TEMP_WITH_TIMER_WORK_PROGRESS_WORK = 0;
+    private static final int TEMP_WITH_TIMER_WORK_PROGRESS_WAIT_CONFIRM_SETTING_DATA = 1;
+    private static final int TEMP_WITH_TIMER_WORK_PROGRESS_WAIT_CONFIRM_START_COOK = 2;
+    private int currentTempTimerWorkProgress = TEMP_WITH_TIMER_WORK_PROGRESS_WAIT_CONFIRM_SETTING_DATA;
+
+    protected int cookerID;
+    protected int workMode = HOB_VIEW_WORK_MODE_POWER_OFF;
+    protected int lastWorkMode = workMode;
+    private RectF mViewRect;
+    private float touchDownX;
+    private float touchDownY;
+    private Typeface fireGearTypeface,tempGearTypeface;
+    private Typeface tfHelvetica57Condensed;
+    private Paint mPaint;
+    private Paint picPaint;
+    private Paint mAlphaPaint;
+    private Paint mArcPaint;//温度圆弧
+    private int alpha = 100;
+    float light = 1.0f;
+    //private float mArcWidth = 7;
+    private int[] mGradientColors = {getResources().getColor(R.color.viewmodule_colorCircleProgress), getResources().getColor(R.color.viewmodule_colorCircleProgress), getResources().getColor(R.color.viewmodule_colorCircleProgress)};
+    private Paint.FontMetrics fontMetrics;
+    //圆心坐标，半径
+    private Point mCenterPoint;
+    private float mRadius;
+    private float mStartAngle, mSweepAngle;
+    private RectF mRectF;
+    private int tempWorkFinishProgress = TEMP_WORK_FINISH_PROGRESS_LIGHT;
+    protected int tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_PICTURE;
+    protected HobCircleCookerContract.OnHobCircleCookerListener mListener;
+
+    private static final int BLINK_OPTIONS_ONE = 0;
+    private static final int BLINK_OPTIONS_TWO = 1;
+    private static final long BLINK_TIME_FOR_READY_TO_COOK = 2000;
+    private static final long BLINK_TIME_FOR_RECIPE_IMAGE = 5000;
+    private static final long BLINK_TIME_FOR_RECIPE_VALUE = 10000;
+    private static final int BLINK_FLAG_HAVE_NOT_BLINK = 0;
+    private static final int BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE = 1;
+    private static final int BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_TWO = 2;
+    private int blinkFlag = BLINK_FLAG_HAVE_NOT_BLINK;//false
+    private int currentBlinkOptions = BLINK_OPTIONS_ONE;
+    private int blinkCounter;
+    private int arrow = 0;
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case HANDLER_FLASH_KEEP_WARM_TIPS:
+                    invalidate();
+                    //handler.sendEmptyMessageDelayed(HANDLER_FLASH_KEEP_WARM_TIPS,TIME_FLASH_KEEP_WARM);
+                    break;
+                case HANDLER_FLASH_RECIPES:
+                    if (tempWorkRecipesProgress ==TEMP_WORK_RECIPES_PROGRESS_PICTURE) {
+                        tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE;
+
+                    }else if(tempWorkRecipesProgress ==TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE){
+                    tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_PICTURE;
+                    }
+                 //   LogUtil.d("the flash is ="+tempWorkRecipesProgress ) ;
+                    invalidate();
+                    break;
+                case HANDLER_BLINK:
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {
+                        currentBlinkOptions = BLINK_OPTIONS_TWO;
+                    }else if (currentBlinkOptions == BLINK_OPTIONS_TWO) {
+                        currentBlinkOptions = BLINK_OPTIONS_ONE;
+                    }
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_TWO;
+                    invalidate();
+                    break;
+                case HANDLER_BLINK_EX:
+                    blinkCounter++;
+                    if (blinkCounter >= msg.arg1) {
+                        if (currentBlinkOptions == BLINK_OPTIONS_ONE) {
+                            currentBlinkOptions = BLINK_OPTIONS_TWO;
+                        }else {
+                            currentBlinkOptions = BLINK_OPTIONS_ONE;
+                        }
+
+                        blinkCounter = 0;
+                    }
+
+                    invalidate();
+                    break;
+            }
+        }
+    };
+
+
+    public BaseCircleCookerView(Context context) {
+        this(context,null);
+
+    }
+
+    @Nullable
+    @Override
+    public Parcelable onSaveInstanceState() {
+        LogUtil.e("Enter:: onSaveInstanceState");
+        //return super.onSaveInstanceState();
+        Bundle bundle = new Bundle();
+        Parcelable superData = super.onSaveInstanceState();
+        bundle.putParcelable("super_data", superData);
+        bundle.putInt("workMode",workMode);
+
+        return bundle;
+
+    }
+
+    @Override
+    public void onRestoreInstanceState(Parcelable state) {
+        LogUtil.e("Enter:: onRestoreInstanceState");
+        //super.onRestoreInstanceState(state);
+        Bundle bundle = (Bundle) state;
+        Parcelable superData = bundle.getParcelable("super_data");
+        workMode = bundle.getInt("workMode");
+        super.onRestoreInstanceState(superData);
+
+    }
+
+
+    public BaseCircleCookerView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.viewmodule_HobCircleCookerView);
+        cookerID = a.getInteger(R.styleable.viewmodule_HobCircleCookerView_viewmodule_cooker_id,-1);
+        a.recycle();
+        init();
+        setSaveEnabled(true);
+
+    }
+
+    private void init() {
+        mViewRect = new RectF();
+        fireGearTypeface = GlobalVars.getInstance().getDefaultFontBold();
+        tempGearTypeface = GlobalVars.getInstance().getDefaultFontBold();
+        tfHelvetica57Condensed = GlobalVars.getInstance().getDefaultFontRegular();
+
+
+        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mPaint.setColor(ContextCompat.getColor(getContext(),R.color.viewmodule_gear_white));
+        mPaint.setTextAlign(Paint.Align.CENTER);
+        mPaint.setStyle(Paint.Style.FILL);
+
+
+        picPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+        mArcPaint = new Paint();
+        mArcPaint.setAntiAlias(true);
+        mArcPaint.setColor(mGradientColors[0]);
+        // 设置画笔的样式，为FILL，FILL_OR_STROKE，或STROKE
+        mArcPaint.setStyle(Paint.Style.STROKE);
+        // 设置画笔粗细
+        mArcPaint.setStrokeWidth(getRealTempProgressArcWidth());
+        // 当画笔样式为STROKE或FILL_OR_STROKE时，设置笔刷的图形样式，如圆形样式
+        // Cap.ROUND,或方形样式 Cap.SQUARE
+        mArcPaint.setStrokeCap(Paint.Cap.ROUND);
+
+        mRectF = new RectF();
+        mCenterPoint = new Point();
+
+        mAlphaPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mAlphaPaint.setAntiAlias(true);
+    }
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+
+        int width = 0;
+        int height = 0;
+
+        switch (widthMode) {
+            case MeasureSpec.EXACTLY:
+                width = widthSize;
+                break;
+            case MeasureSpec.AT_MOST:
+                width = Math.min(getSuggestedMinimumWidth(),widthSize);
+                break;
+            case MeasureSpec.UNSPECIFIED:
+                width = getSuggestedMinimumWidth();
+        }
+        switch (heightMode) {
+            case MeasureSpec.EXACTLY:
+                height = heightSize;
+                break;
+            case MeasureSpec.AT_MOST:
+                height = Math.min(getSuggestedMinimumHeight(),heightSize);
+                break;
+            case MeasureSpec.UNSPECIFIED:
+                height = getSuggestedMinimumWidth();
+        }
+        setMeasuredDimension(width,height);
+    }
+
+    @Override
+    protected int getSuggestedMinimumHeight() {
+        return getCookerViewHeight();
+    }
+
+    @Override
+    protected int getSuggestedMinimumWidth() {
+        return getCookerViewWidth();
+    }
+
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+       /* mViewRect.set(0, 0, getWidth(), getHeight());
+        Paint paint = new Paint();
+        if (cookerID == 0) {
+            paint.setColor(Color.RED);
+        }else if (cookerID == 1) {
+            paint.setColor(Color.BLUE);
+        }else {
+            paint.setColor(Color.RED);
+        }
+        canvas.drawRect(mViewRect,paint);*/
+
+        //LogUtil.d("lastMode-->" + lastWorkMode + "---current Mode--->" + workMode);
+        if (lastWorkMode != workMode) {
+            lastWorkMode = workMode;
+            if (handler.hasMessages(HANDLER_BLINK)) handler.removeMessages(HANDLER_BLINK);
+            if (handler.hasMessages(HANDLER_BLINK_EX)) handler.removeMessages(HANDLER_BLINK_EX);
+            blinkFlag = BLINK_FLAG_HAVE_NOT_BLINK;
+            blinkCounter = 0;
+            currentBlinkOptions = BLINK_OPTIONS_ONE;
+            mPaint.setAlpha(255);
+        }
+
+        drawView(canvas);
+    }
+
+    private Marquee keepWarmMarquee;
+    private String keepWarmText;
+    private boolean keepWarmTextChanged = true;
+    private boolean keepWarmTextMarqueeNeeded = false;
+
+    private Marquee readyToCookMarquee;
+    private String readyToCookText;
+    private boolean readyToCookTextChanged = true;
+    private boolean readyToCookTextMarqueeNeeded = false;
+
+    private Marquee tempIndicatorMarquee;
+    private String tempIndicatorText;
+    private boolean tempIndicatorTextChanged = true;
+    private boolean tempIndicatorTextMarqueeNeeded = false;
+
+    public synchronized void setKeepWarmText(String keepWarmText) {
+        this.keepWarmText = keepWarmText;
+        keepWarmTextChanged = true;
+    }
+
+    public synchronized void setReadyToCookText(String readyToCookText) {
+        this.readyToCookText = readyToCookText;
+        readyToCookTextChanged = true;
+    }
+
+    public synchronized void refreshTempIndicatorText() {
+        tempIndicatorText = getTempIndicatorString();
+        tempIndicatorTextChanged = true;
+    }
+
+    private void drawView(Canvas canvas) {
+//        LogUtil.d("Enter:: drawView-------------->" + workMode);
+        PointF p;
+        float top,bottom;
+        int baseLineY;
+        String timerStr;
+        switch (workMode) {
+            case HOB_VIEW_WORK_MODE_POWER_OFF:  // 关机
+            case HOB_VIEW_WORK_MODE_PAUSE:  // 暂停
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                //canvas.drawBitmap(getPowerOffBgBitmap(),(getCookerViewWidth()/2 - getPowerOffBgBitmap().getWidth()/2),(getCookerViewHeight()/2 - getPowerOffBgBitmap().getHeight()/2),null);
+                canvas.drawBitmap(getPowerOffBgBitmap(),0,(getCookerViewHeight()/2 - getPowerOffBgBitmap().getHeight()/2),null);
+
+                break;
+            case HOB_VIEW_WORK_MODE_ABNORMAL_NO_PAN: // 无锅
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                canvas.drawBitmap(getPowerOnWithoutPanBitmap(),0,(getCookerViewHeight()/2 - getPowerOnWithoutPanBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getPowerOnWithoutPanBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+                LogUtil.d("no pan blink ~~~~~~~~~~");
+                break;
+            case HOB_VIEW_WORK_MODE_FIRE_GEAR_WITHOUT_TIMER:  // 火力 + 无 定时
+                canvas.drawBitmap(getPowerOnFireGearWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getPowerOnFireGearWithoutTimerBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getPowerOnFireGearWithoutTimerBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTypeface(fireGearTypeface);
+                mPaint.setTextSize(getFireGearWithoutTimerFontSize());
+                mViewRect.set(20, getCookerViewHeight() / 2 - getPowerOnFireGearWithoutTimerBitmap().getHeight() / 2, getPowerOnFireGearWithoutTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getPowerOnFireGearWithoutTimerBitmap().getHeight() * 0.2));
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 6;//基线中间点的y轴计算公式
+                canvas.drawText(getFireGearValue(),mViewRect.centerX(),baseLineY, mPaint);
+
+                break;
+            case HOB_VIEW_WORK_MODE_FIRE_GEAR_WITH_TIMER:  // 火力 + 定时
+                canvas.drawBitmap(getPowerOnFireGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getPowerOnFireGearWithTimerBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getPowerOnFireGearWithTimerBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTypeface(fireGearTypeface);
+                mPaint.setTextSize(getFireGearWithTimerFontSize());
+                mViewRect.set(30, getCookerViewHeight() / 2 - getPowerOnFireGearWithTimerBitmap().getHeight() / 2, getPowerOnFireGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 6;//基线中间点的y轴计算公式
+                canvas.drawText(getFireGearValue(),mViewRect.centerX(),baseLineY, mPaint);
+
+                timerStr = getTimerValue();
+                if (timerStr != null && timerStr.trim().length() > 4) {
+                    mPaint.setTextSize(getTimerFontSizeSmall());
+                } else {
+                    mPaint.setTextSize(getTimerFontSize());
+                }
+
+                mViewRect.set(getPowerOnFireGearWithTimerBitmap().getWidth() / 7,  getCookerViewHeight() / 2, getPowerOnFireGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getPowerOnFireGearWithTimerBitmap().getHeight() * 0.4));
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+                LogUtil.d("ekek the centerX is ="+mViewRect.centerX());
+                break;
+            case HOB_VIEW_WORK_MODE_ABNORMAL_HIGH_TEMP: // 高温
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                canvas.drawBitmap(getHighTempBitmap(),0,(getCookerViewHeight()/2 - getHighTempBitmap().getHeight()/2),null);
+
+                break;
+            case HOB_VIEW_WORK_MODE_ABNORMAL_ERROR_OCURR: // 错误代码
+                canvas.drawBitmap(getErrorBitmap(),0,(getCookerViewHeight()/2 - getErrorBitmap().getHeight()/2),null);
+                LogUtil.d("ekek the getCookerViewHeight()/2 is = "+(getCookerViewHeight()/2)+"; getErrorBitmap().getHeight()/2 is = "+( getErrorBitmap().getHeight()/2));
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTextSize(getErrorFontSize());
+                mPaint.setTypeface(fireGearTypeface);
+                mViewRect.set(0 , getCookerViewHeight() / 2 - getErrorBitmap().getHeight() / 2 , getErrorBitmap().getWidth(), getCookerViewHeight() / 2 + getErrorBitmap().getHeight() / 2);
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(getErrorMessage(),mViewRect.centerX(),baseLineY, mPaint);
+                LogUtil.d("the  ekek error message is ="+getErrorMessage());
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITHOUT_TIMER: // 温度 + 无 定时
+                canvas.drawBitmap(getTempGearWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithoutTimerBitmap().getHeight()/2),null);
+
+                p = getPowerOffButtonLocation(getTempGearWithoutTimerBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTypeface(tempGearTypeface);
+                mPaint.setTextSize(getTempGearWithoutTimerFontSize());
+                mViewRect.set(20, getCookerViewHeight() / 2 - getTempGearWithoutTimerBitmap().getHeight() / 2, getTempGearWithoutTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithoutTimerBitmap().getHeight() * 0.3));
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER:  // 温度+ 定时
+                canvas.drawBitmap(getTempGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithTimerBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getTempGearWithTimerBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTypeface(fireGearTypeface);
+                mPaint.setTextSize(getTempGearWithTimerFontSize());
+                mViewRect.set(20, (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4), getTempGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+
+                timerStr = getTimerValue();
+                if (timerStr != null && timerStr.trim().length() > 4) {
+                    mPaint.setTextSize(getTimerFontSizeSmall());
+                } else {
+                    mPaint.setTextSize(getTimerFontSize());
+                }
+
+                //mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 7,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                mViewRect.set(getCookerViewHeight() / 7,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+                LogUtil.d("ekek the centerX is ="+mViewRect.centerX());
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITHOUT_TIMER:  // 无温度 + paly 键
+
+             /*   canvas.drawBitmap(getTempGearIndicatorWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithoutTimerBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getTempGearIndicatorWithoutTimerBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);*/
+                if (blinkFlag == BLINK_FLAG_HAVE_NOT_BLINK) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    currentBlinkOptions = BLINK_OPTIONS_ONE;
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+
+                    canvas.drawBitmap(getTempGearIndicatorWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithoutTimerBitmap().getHeight()/2),null);
+                    p = getPowerOffButtonLocation(getTempGearIndicatorWithoutTimerBitmap().getWidth());
+                    canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                    drawTempIndicator(canvas, getTempIndicatorBitmap(), getTempGearIndicatorWithoutTimerBitmap(), 0.3f);
+
+                    handler.sendEmptyMessageDelayed(HANDLER_BLINK,BLINK_TIME_FOR_READY_TO_COOK);
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE) {
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {//ready to cook
+
+                        canvas.drawBitmap(getTempGearIndicatorWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithoutTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearIndicatorWithoutTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        drawTempIndicator(canvas, getTempIndicatorBitmap(), getTempGearIndicatorWithoutTimerBitmap(), 0.3f);
+                    }else {//value
+
+                        canvas.drawBitmap(getTempGearWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithoutTimerBitmap().getHeight()/2),null);
+
+                        p = getPowerOffButtonLocation(getTempGearWithoutTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(tempGearTypeface);
+                        mPaint.setTextSize(getTempGearWithoutTimerFontSize());
+                        mViewRect.set(0, getCookerViewHeight() / 2 - getTempGearWithoutTimerBitmap().getHeight() / 2, getTempGearWithoutTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithoutTimerBitmap().getHeight() * 0.3));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+                    }
+
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_TWO) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {
+
+                        canvas.drawBitmap(getTempGearIndicatorWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithoutTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearIndicatorWithoutTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        drawTempIndicator(canvas, getTempIndicatorBitmap(), getTempGearIndicatorWithoutTimerBitmap(), 0.3f);
+                        handler.sendEmptyMessageDelayed(HANDLER_BLINK,BLINK_TIME_FOR_READY_TO_COOK);
+                    }else {//value
+
+                        canvas.drawBitmap(getTempGearWithoutTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithoutTimerBitmap().getHeight()/2),null);
+
+                        p = getPowerOffButtonLocation(getTempGearWithoutTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(tempGearTypeface);
+                        mPaint.setTextSize(getTempGearWithoutTimerFontSize());
+                        mViewRect.set(0, getCookerViewHeight() / 2 - getTempGearWithoutTimerBitmap().getHeight() / 2, getTempGearWithoutTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithoutTimerBitmap().getHeight() * 0.3));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+
+                        handler.sendEmptyMessageDelayed(HANDLER_BLINK,BLINK_TIME_FOR_READY_TO_COOK);
+                    }
+
+
+
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                }
+
+
+
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER:  // 火力图标 + 定时
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                if (blinkFlag == BLINK_FLAG_HAVE_NOT_BLINK) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    currentBlinkOptions = BLINK_OPTIONS_ONE;
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+
+                    canvas.drawBitmap(getTempGearIndicatorWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithTimerBitmap().getHeight()/2),null);
+                    p = getPowerOffButtonLocation(getTempGearIndicatorWithTimerBitmap().getWidth());
+                    canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                    drawTempIndicator(canvas, getTempIndicatorBitmapWithTimer(), getTempGearIndicatorWithTimerBitmap(), 0.4f);
+
+                    mPaint.setTypeface(fireGearTypeface);
+
+                    timerStr = getTimerValue();
+                    if (timerStr != null && timerStr.trim().length() > 4) {
+                        mPaint.setTextSize(getTimerWithIndicatorTimerFontSizeSmall());
+                    } else {
+                        mPaint.setTextSize(getTimerWithIndicatorTimerFontSize());
+                    }
+
+                    mPaint.setTextAlign(Paint.Align.CENTER);
+                    mViewRect.set(
+                            getTempGearWithTimerBitmap().getWidth() / 6,
+                            getCookerViewHeight() / 2,
+                            getTempGearWithTimerBitmap().getWidth(),
+                            (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                    fontMetrics = mPaint.getFontMetrics();
+                    top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                    bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                    baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                    canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+
+                    handler.sendEmptyMessageDelayed(HANDLER_BLINK,BLINK_TIME_FOR_READY_TO_COOK);
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE) {
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {
+
+                        canvas.drawBitmap(getTempGearIndicatorWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearIndicatorWithTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        drawTempIndicator(canvas, getTempIndicatorBitmapWithTimer(), getTempGearIndicatorWithTimerBitmap(), 0.4f);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        timerStr = getTimerValue();
+                        if (timerStr != null && timerStr.trim().length() > 4) {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSizeSmall());
+                        } else {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSize());
+                        }
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 6,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+
+                    }else {//value
+                        canvas.drawBitmap(getTempGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithTimerBitmap().getHeight()/2),null);
+
+                        //canvas.drawBitmap(getTempGearIndicatorWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearIndicatorWithTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        mPaint.setTextSize(getTempGearWithTimerFontSize());
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 18, (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4), getTempGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        timerStr = getTimerValue();
+                        if (timerStr != null && timerStr.trim().length() > 4) {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSizeSmall());
+                        } else {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSize());
+                        }
+                        mViewRect.set(
+                                getTempGearWithTimerBitmap().getWidth() / 6,
+                                getCookerViewHeight() / 2,
+                                getTempGearWithTimerBitmap().getWidth(),
+                                (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+                    }
+
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_TWO) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {
+
+                        canvas.drawBitmap(getTempGearIndicatorWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearIndicatorWithTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        drawTempIndicator(canvas, getTempIndicatorBitmapWithTimer(), getTempGearIndicatorWithTimerBitmap(), 0.4f);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        timerStr = getTimerValue();
+                        if (timerStr != null && timerStr.trim().length() > 4) {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSizeSmall());
+                        } else {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSize());
+                        }
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 6,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+                        handler.sendEmptyMessageDelayed(HANDLER_BLINK,BLINK_TIME_FOR_READY_TO_COOK);
+                    }else {//value
+
+
+                        canvas.drawBitmap(getTempGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithTimerBitmap().getHeight()/2),null);
+
+                        //canvas.drawBitmap(getTempGearIndicatorWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearIndicatorWithTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearIndicatorWithTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        mPaint.setTextSize(getTempGearWithTimerFontSize());
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 18, (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4), getTempGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+                        mPaint.setTypeface(fireGearTypeface);
+                        timerStr = getTimerValue();
+                        if (timerStr != null && timerStr.trim().length() > 4) {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSizeSmall());
+                        } else {
+                            mPaint.setTextSize(getTimerWithIndicatorTimerFontSize());
+                        }
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 6,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+
+                        handler.sendEmptyMessageDelayed(HANDLER_BLINK,BLINK_TIME_FOR_READY_TO_COOK);
+                    }
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR:  // 精确控温： 温度 + play 键
+                canvas.drawBitmap(getTempPrepareSensorBitmap(),0,(getCookerViewHeight()/2 - getTempPrepareSensorBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getTempPrepareSensorBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTypeface(fireGearTypeface);
+                //mPaint.setTextSize(getTempGearWithTimerFontSize());
+                mPaint.setTextSize(getTempPreheatSettingValueFontSize());//140
+                mPaint.setFakeBoldText(true);
+                mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 20, (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4), getTempGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);//º
+
+
+                mPaint.setTypeface(tfHelvetica57Condensed);
+                mPaint.setTextSize(getTempPreheatRealValueFontSize());
+                mPaint.setFakeBoldText(false);
+                mViewRect.set(
+                        getTempGearWithTimerBitmap().getWidth() / 20,
+                        (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4),
+                        getTempGearWithTimerBitmap().getWidth(),
+                        (float) (getCookerViewHeight() * getRealTempTextGap()));//1.23
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                canvas.drawText(getRealTempValue() + "º",mViewRect.centerX(),baseLineY, mPaint);//º
+
+
+                mCenterPoint.x = (int) (getTempPrepareSensorBitmap().getWidth() * 0.503);
+                mCenterPoint.y = (int) (getCookerViewHeight() / 2 + getCookerViewHeight() * getRealTempArcGap());//0.16
+                mRectF.left = mCenterPoint.x - getRealTempProgressRadius() - getRealTempProgressArcWidth() / 2;
+                mRectF.top = mCenterPoint.y - getRealTempProgressRadius() - getRealTempProgressArcWidth() / 2;
+                mRectF.right = mCenterPoint.x + getRealTempProgressRadius() + getRealTempProgressArcWidth() / 2;
+                mRectF.bottom = mCenterPoint.y + getRealTempProgressRadius() + getRealTempProgressArcWidth() / 2;
+
+                canvas.drawArc(mRectF, -90, getSweepAngle(), false, mArcPaint);
+
+
+
+                break;
+            case HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR_WITH_INDICATOR: //  无温度 + 无定时
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                canvas.drawBitmap(getTempIndicatorPrepareSensorBitmap(),0,(getCookerViewHeight()/2 - getTempIndicatorPrepareSensorBitmap().getHeight()/2),null);
+                p = getPowerOffButtonLocation(getTempIndicatorPrepareSensorBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                drawTempIndicator(canvas, getTempIndicatorBitmapWithTimer(), getTempIndicatorPrepareSensorBitmap(), 0.4f);
+
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_SENSOR_READY:  // 蓝牙配对后，ready to cook
+                LogUtil.d("blinkFlag---->" + blinkFlag);
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                if (readyToCookText == null) {
+                    readyToCookText = getContext().getResources().getString(R.string.viewmodule_cooker_view_ready_to_cook);
+                    readyToCookTextChanged = true;
+                }
+
+                if (readyToCookTextChanged) {
+                    Rect rect = getStringRect(readyToCookText);
+                    if (rect.width() > getInnerTextMaxWidthBig()) {
+                        readyToCookTextMarqueeNeeded = true;
+                        baseLineY = getReadyToCookY();
+                        readyToCookMarquee = new Marquee(
+                                readyToCookText,
+                                new RectF(
+                                        mViewRect.centerX() - getInnerTextMaxWidthBig() / 2,
+                                        mViewRect.top,
+                                        mViewRect.centerX() + getInnerTextMaxWidthBig() / 2,
+                                        mViewRect.bottom
+                                ),
+                                new PointF(
+                                        mViewRect.centerX() - getInnerTextMaxWidthBig() / 2,
+                                        baseLineY
+                                ),
+                                4
+                        );
+                    } else {
+                        readyToCookTextMarqueeNeeded = false;
+                    }
+                    readyToCookTextChanged = false;
+                }
+
+                Message msg = new Message();
+                msg.what = HANDLER_BLINK_EX;
+                if (blinkFlag == BLINK_FLAG_HAVE_NOT_BLINK) {
+                    handler.removeMessages(HANDLER_BLINK_EX);
+                    currentBlinkOptions = BLINK_OPTIONS_ONE;
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                    blinkCounter = 0;
+                    arrow = 0;
+                    alpha = 255;
+                    mAlphaPaint.setAlpha(alpha);
+                    canvas.drawBitmap(getTempSensorReadyBitmap(),0,(getCookerViewHeight()/2 - getTempSensorReadyBitmap().getHeight()/2), mAlphaPaint);
+                    p = getPowerOffButtonLocation(getTempSensorReadyBitmap().getWidth());
+                    canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                    mPaint.setTypeface(tempGearTypeface);
+                    mPaint.setTextSize(getReadyToCookFontSize());
+                    mPaint.setAlpha(alpha);
+                    baseLineY = getReadyToCookY();
+                    if (!readyToCookTextMarqueeNeeded) {
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        canvas.drawText(readyToCookText, mViewRect.centerX(), baseLineY, mPaint);
+                    } else {
+                        mPaint.setTextAlign(Paint.Align.LEFT);
+                        readyToCookMarquee.marquee(canvas, mPaint);
+                    }
+
+                    msg.arg1 = 67;
+                    msg.arg2 = blinkFlag;
+                    handler.sendMessageDelayed(msg, 30);
+
+                } else {
+                    handler.removeMessages(HANDLER_BLINK_EX);
+                    if (arrow == 0) {
+                        alpha = alpha - 10;
+                        if (alpha < 110) {
+                            alpha = 110;
+                            arrow = 1;
+                        }
+                    }else {
+                        alpha = alpha + 10;
+                        if (alpha > 255) {
+                            alpha = 255;
+                            arrow = 0;
+                        }
+                    }
+
+                    mAlphaPaint.setAlpha(alpha);
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {
+                        //ready to cook
+                        canvas.drawBitmap(getTempSensorReadyBitmap(),0,(getCookerViewHeight()/2 - getTempSensorReadyBitmap().getHeight()/2),mAlphaPaint);
+                        p = getPowerOffButtonLocation(getTempSensorReadyBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTypeface(tempGearTypeface);
+                        mPaint.setTextSize(getReadyToCookFontSize());
+                        mPaint.setAlpha(alpha);
+                        baseLineY = getReadyToCookY();
+                        if (!readyToCookTextMarqueeNeeded) {
+                            mPaint.setTextAlign(Paint.Align.CENTER);
+                            canvas.drawText(readyToCookText, mViewRect.centerX(), baseLineY, mPaint);
+                        } else {
+                            mPaint.setTextAlign(Paint.Align.LEFT);
+                            readyToCookMarquee.marquee(canvas, mPaint);
+                        }
+
+                    }else {
+                        //value
+                        if (readyToCookTextMarqueeNeeded) {
+                            readyToCookMarquee.reset(-24);
+                        }
+                        canvas.drawBitmap(getTempSensorReadyValueBitmap(),0,(getCookerViewHeight()/2 - getTempSensorReadyValueBitmap().getHeight()/2),mAlphaPaint);
+                        p = getPowerOffButtonLocation(getTempSensorReadyValueBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        mPaint.setTextSize(getTempPreheatSettingValueFontSize());//140
+                        mPaint.setFakeBoldText(true);
+                        mPaint.setAlpha(alpha);
+                        mViewRect.set(getTempSensorReadyValueBitmap().getWidth() / 20, (float) (getCookerViewHeight() / 2 - getTempSensorReadyValueBitmap().getHeight() * 0.4), getTempSensorReadyValueBitmap().getWidth(), getCookerViewHeight() / 2);
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);//º
+                    }
+
+                    msg.arg1 = 67;
+                    msg.arg2 = blinkFlag;
+                    handler.sendMessageDelayed(msg, 30);
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_WORK_FINISH_WAIT_USER_CONFIRM:  // +10 min    keep warm
+              /*  if (tempWorkFinishProgress == TEMP_WORK_FINISH_PROGRESS_LIGHT) {
+                    canvas.drawBitmap(getTempWorkFinishLightBitmap(),0,(getCookerViewHeight()/2 - getTempSensorReadyBitmap().getHeight()/2),null);
+                    tempWorkFinishProgress = TEMP_WORK_FINISH_PROGRESS_DARK;
+
+                }else {
+                    canvas.drawBitmap(getTempWorkFinishDarkBitmap(),0,(getCookerViewHeight()/2 - getTempSensorReadyBitmap().getHeight()/2),null);
+                    tempWorkFinishProgress = TEMP_WORK_FINISH_PROGRESS_LIGHT;
+                }*/
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                if (blinkFlag == BLINK_FLAG_HAVE_NOT_BLINK) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                    arrow = 0;
+                    light = 1.0f;
+                    alpha = 255;
+                    mAlphaPaint.setAlpha(alpha);
+                    canvas.drawBitmap(getTempWorkFinishLightBitmap(),0,(getCookerViewHeight()/2 - getTempWorkFinishLightBitmap().getHeight()/2),mAlphaPaint);
+                    handler.sendEmptyMessageDelayed(HANDLER_BLINK,30);
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE) {
+
+                    canvas.drawBitmap(getTempWorkFinishLightBitmap(),0,(getCookerViewHeight()/2 - getTempWorkFinishLightBitmap().getHeight()/2),mAlphaPaint);
+
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_TWO) {
+                    handler.removeMessages(HANDLER_BLINK);
+
+                    if (arrow == 0) {
+                        alpha = alpha - 10;
+                        if (alpha < 110) {
+                            alpha = 110;
+                            arrow = 1;
+                        }
+                    }else {
+                        alpha = alpha + 10;
+                        if (alpha > 255) {
+                            alpha = 255;
+                            arrow = 0;
+                        }
+                    }
+
+                    mAlphaPaint.setAlpha(alpha);
+                    canvas.drawBitmap(getTempWorkFinishLightBitmap(),0,(getCookerViewHeight()/2 - getTempWorkFinishLightBitmap().getHeight()/2),mAlphaPaint);
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                    handler.sendEmptyMessageDelayed(HANDLER_BLINK,30);
+                }
+
+                p = getPowerOffButtonLocation(getTempWorkFinishLightBitmap().getWidth());
+                canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                mPaint.setTypeface(tempGearTypeface);
+                mPaint.setAlpha(alpha);
+                mPaint.setTextSize(getKeepWarmAndAddTenMinuteFontSize());
+                //mViewRect.set(0, (float) (getCookerViewHeight() / 2 - getTempWorkFinishLightBitmap().getHeight() * 0.4), getTempWorkFinishLightBitmap().getWidth(), getCookerViewHeight()/ 2);
+                mViewRect.set(0, (float) (getCookerViewHeight() / 2), getTempWorkFinishLightBitmap().getWidth(), getCookerViewHeight()/ 2);
+
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                canvas.drawText("+10min",mViewRect.centerX(),baseLineY, mPaint);
+
+                //remove keep warm
+          /*      mViewRect.set(0, (float) (getTempWorkFinishLightBitmap().getHeight() *0.4), getTempWorkFinishLightBitmap().getWidth(), getCookerViewHeight());
+                fontMetrics = mPaint.getFontMetrics();
+                top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+
+                if (keepWarmText == null) {
+                    keepWarmText = getContext().getResources().getString(R.string.viewmodule_base_circle_cooker_view_keep_warm);
+                    keepWarmTextChanged = true;
+                }
+
+                if (keepWarmTextChanged) {
+                    Rect rect = getStringRect(keepWarmText);
+                    if (rect.width() > getInnerTextMaxWidth()) {
+                        keepWarmTextMarqueeNeeded = true;
+                        keepWarmMarquee = new Marquee(
+                                keepWarmText,
+                                new RectF(
+                                        mViewRect.centerX() - getInnerTextMaxWidth() / 2,
+                                        mViewRect.top,
+                                        mViewRect.centerX() + getInnerTextMaxWidth() / 2,
+                                        mViewRect.bottom
+                                ),
+                                new PointF(
+                                        mViewRect.centerX() - getInnerTextMaxWidth() / 2,
+                                        baseLineY
+                                ),
+                                1);
+                    } else {
+                        keepWarmTextMarqueeNeeded = false;
+                    }
+                    keepWarmTextChanged = false;
+                }
+
+                if (!keepWarmTextMarqueeNeeded) {
+                    mPaint.setTextAlign(Paint.Align.CENTER);
+                    canvas.drawText(keepWarmText, mViewRect.centerX(), baseLineY, mPaint);
+                } else {
+                    mPaint.setTextAlign(Paint.Align.LEFT);
+                    keepWarmMarquee.marquee(canvas, mPaint);
+                }*/
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_FIRST:  // 温度+定时　　＋　图片  601
+
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                if (blinkFlag == BLINK_FLAG_HAVE_NOT_BLINK) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    currentBlinkOptions = BLINK_OPTIONS_ONE;
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                    canvas.drawBitmap(getRecipesBgBitmap(),0,(getCookerViewHeight()/2 - getRecipesBgBitmap().getHeight()/2),null);
+                    p = getPowerOffButtonLocation(getRecipesBgBitmap().getWidth());
+                    canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                    canvas.drawBitmap(
+                            getRecipesPicBitmap(),
+                            (getRecipesBgBitmap().getWidth() / 2 - getRecipesPicBitmap().getWidth()/2),
+                            (getCookerViewHeight()/2 - getRecipesPicBitmap().getHeight()/2),
+                            null);
+
+
+                    handler.sendEmptyMessageDelayed(HANDLER_BLINK,5000);
+
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE) {
+
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {//recipes
+                        canvas.drawBitmap(getRecipesBgBitmap(),0,(getCookerViewHeight()/2 - getRecipesBgBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getRecipesBgBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        canvas.drawBitmap(getRecipesPicBitmap(),(getRecipesBgBitmap().getWidth() / 2 - getRecipesPicBitmap().getWidth()/2),(getCookerViewHeight()/2 - getRecipesPicBitmap().getHeight()/2),null);
+
+                    }else {//value
+
+                        canvas.drawBitmap(getTempGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearWithTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        mPaint.setTextSize(getTempGearWithTimerFontSize());
+                        mViewRect.set(
+                                getTempGearWithTimerBitmap().getWidth() / 20,
+                                (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4),
+                                getTempGearWithTimerBitmap().getWidth(),
+                                getCookerViewHeight() / 2);
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+                        timerStr = getTimerValue();
+                        if (timerStr != null && timerStr.trim().length() > 4) {
+                            mPaint.setTextSize(getTimerFontSizeSmall());
+                        } else {
+                            mPaint.setTextSize(getTimerFontSize());
+                        }
+
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 7,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+                    }
+
+                }else if(blinkFlag == BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_TWO) {
+                    handler.removeMessages(HANDLER_BLINK);
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {//ready to cook
+                        canvas.drawBitmap(getRecipesBgBitmap(),0,(getCookerViewHeight()/2 - getRecipesBgBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getRecipesBgBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        canvas.drawBitmap(getRecipesPicBitmap(),(getRecipesBgBitmap().getWidth() / 2 - getRecipesPicBitmap().getWidth()/2),(getCookerViewHeight()/2 - getRecipesPicBitmap().getHeight()/2),null);
+
+                        handler.sendEmptyMessageDelayed(HANDLER_BLINK,5000);
+                    }else {//value
+
+                        canvas.drawBitmap(getTempGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithTimerBitmap().getHeight()/2),null);
+                        p = getPowerOffButtonLocation(getTempGearWithTimerBitmap().getWidth());
+                        canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                        mPaint.setTextAlign(Paint.Align.CENTER);
+                        mPaint.setTypeface(fireGearTypeface);
+                        mPaint.setTextSize(getTempGearWithTimerFontSize());
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 20, (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4), getTempGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(getTempGearValue().length() <= 2?(" " + getTempGearValue()  + "º"): " " + getTempGearValue() + "º",mViewRect.centerX(),baseLineY, mPaint);
+
+                        timerStr = getTimerValue();
+                        if (timerStr != null && timerStr.trim().length() > 4) {
+                            mPaint.setTextSize(getTimerFontSizeSmall());
+                        } else {
+                            mPaint.setTextSize(getTimerFontSize());
+                        }
+
+                        mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 7,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                        fontMetrics = mPaint.getFontMetrics();
+                        top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                        bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                        baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                        canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+
+                        handler.sendEmptyMessageDelayed(HANDLER_BLINK,10000);
+                    }
+                    blinkFlag = BLINK_FLAG_HAVE_BLINK_AUTO_BLINK_ONE;
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_SECOND:  // 602
+                mPaint.setTextAlign(Paint.Align.CENTER);
+                if (handler.hasMessages(HANDLER_FLASH_RECIPES)) {
+                    handler.removeMessages(HANDLER_FLASH_RECIPES);
+                }
+                if (tempWorkRecipesProgress ==TEMP_WORK_RECIPES_PROGRESS_PICTURE) {
+
+                    canvas.drawBitmap(getRecipesBgBitmap(),0,(getCookerViewHeight()/2 - getRecipesBgBitmap().getHeight()/2),null);
+                    p = getPowerOffButtonLocation(getRecipesBgBitmap().getWidth());
+                    canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                    BitmapShader bitmapShader = new BitmapShader(getRecipesPicBitmap(), Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+
+                    int size = Math.min(getRecipesBgBitmap().getWidth(), getRecipesBgBitmap().getHeight());
+                    int mRadius = (int) (size * 0.45);
+
+                    //float mScale = (mRadius * 2.0f) / Math.min(getRecipesPicBitmap().getHeight(), getRecipesPicBitmap().getWidth());
+
+                    float mScale = 1.5f;
+
+                    Matrix matrix = new Matrix();
+                    matrix.setScale(mScale, mScale);
+                    bitmapShader.setLocalMatrix(matrix);
+                    picPaint.setShader(bitmapShader);
+                    canvas.drawCircle(getRecipesBgBitmap().getWidth() / 2, getCookerViewHeight() / 2, mRadius, picPaint);
+                    if (!handler.hasMessages(HANDLER_FLASH_RECIPES)) {
+                        LogUtil.d("samhung-------1---------handler flash recipes------602---------");
+                        handler.sendEmptyMessageDelayed(HANDLER_FLASH_RECIPES,TIME_SHOW_RECIPES_PICTURE);
+                    }
+
+                }else if (tempWorkRecipesProgress == TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE){
+
+                    canvas.drawBitmap(getTempGearWithTimerBitmap(),0,(getCookerViewHeight()/2 - getTempGearWithTimerBitmap().getHeight()/2),null);
+                    p = getPowerOffButtonLocation(getTempGearWithTimerBitmap().getWidth());
+                    canvas.drawBitmap(getPowerOffButtonBitmap(),p.x,p.y,null);
+
+                    mPaint.setTextAlign(Paint.Align.CENTER);
+                    mPaint.setTypeface(fireGearTypeface);
+                    mPaint.setTextSize(getTempGearWithTimerFontSize());
+                    mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 20, (float) (getCookerViewHeight() / 2 - getTempGearWithTimerBitmap().getHeight() * 0.4), getTempGearWithTimerBitmap().getWidth(), getCookerViewHeight() / 2);
+                    fontMetrics = mPaint.getFontMetrics();
+                    top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                    bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                    baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                    canvas.drawText(getTempGearValue(),mViewRect.centerX(),baseLineY, mPaint);
+
+                    timerStr = getTimerValue();
+                    if (timerStr != null && timerStr.trim().length() > 4) {
+                        mPaint.setTextSize(getTimerFontSizeSmall());
+                    } else {
+                        mPaint.setTextSize(getTimerFontSize());
+                    }
+
+                    mViewRect.set(getTempGearWithTimerBitmap().getWidth() / 7,  getCookerViewHeight() / 2, getTempGearWithTimerBitmap().getWidth(), (float) (getCookerViewHeight() / 2 + getTempGearWithTimerBitmap().getHeight() * 0.4));
+                    fontMetrics = mPaint.getFontMetrics();
+                    top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+                    bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+                    baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+                    canvas.drawText(timerStr,mViewRect.centerX(),baseLineY, mPaint);
+                    if (!handler.hasMessages(HANDLER_FLASH_RECIPES)) {
+
+                        handler.sendEmptyMessageDelayed(HANDLER_FLASH_RECIPES,TIME_SHOW_RECIPES_TEMP_VALUE);
+                        LogUtil.d("samhung-------2---------handler flash recipes------602---------");
+                    }
+
+                }
+
+                LogUtil.d("the change 602 blink~~~~");
+
+                break;
+        }
+    }
+
+    private void drawTempIndicator(Canvas canvas, Bitmap bitmap, Bitmap background, float ratio) {
+        float bmTop = (float) (getCookerViewHeight() / 2 - background.getHeight() * ratio);
+        canvas.drawBitmap(
+                bitmap,
+                background.getWidth() / 2 - bitmap.getWidth() / 2,
+                bmTop,
+                null);
+
+        String newText = getTempIndicatorString();
+        if (!newText.equals(tempIndicatorText)) {
+            tempIndicatorText = newText;
+            tempIndicatorTextChanged = true;
+        }
+
+        mPaint.setTypeface(tfHelvetica57Condensed);
+        mPaint.setTextSize(getTempIndicatorStringFontSize());
+        mViewRect.set(
+                0,
+                bmTop + bitmap.getHeight(),
+                getTempGearWithoutTimerBitmap().getWidth(),
+                bmTop + bitmap.getHeight() + getStringRect(tempIndicatorText).height() + 2 * getTempIndicatorStringPadding());
+        fontMetrics = mPaint.getFontMetrics();
+        float top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+        float bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+        int baseLineY = (int) (mViewRect.centerY() - top / 2 - bottom / 2);//基线中间点的y轴计算公式
+
+        if (tempIndicatorTextChanged) {
+            Rect rect = getStringRect(tempIndicatorText);
+            if (rect.width() > getInnerTextMaxWidth()) {
+                tempIndicatorTextMarqueeNeeded = true;
+                tempIndicatorMarquee = new Marquee(
+                        tempIndicatorText,
+                        new RectF(
+                                mViewRect.centerX() - getInnerTextMaxWidth() / 2.0f,
+                                mViewRect.top,
+                                mViewRect.centerX() + getInnerTextMaxWidth() / 2.0f,
+                                mViewRect.bottom
+                        ),
+                        new PointF(
+                                mViewRect.centerX() - getInnerTextMaxWidth() / 2.0f,
+                                baseLineY
+                        ),
+                        1);
+            } else {
+                tempIndicatorTextMarqueeNeeded = false;
+            }
+            tempIndicatorTextChanged = false;
+        }
+
+        if (!tempIndicatorTextMarqueeNeeded) {
+            mPaint.setTextAlign(Paint.Align.CENTER);
+            canvas.drawText(tempIndicatorText,mViewRect.centerX(),baseLineY, mPaint);
+        } else {
+            mPaint.setTextAlign(Paint.Align.LEFT);
+            tempIndicatorMarquee.marquee(canvas, mPaint);
+        }
+    }
+
+    private void drawFireGearText(Canvas canvas,int fontSize,int width) {
+
+    }
+
+
+    private PointF getPowerOffButtonLocation(int width) {
+        float d;
+        PointF p = new PointF();
+        d = width / 2 + getPowerOffButtonBitmap().getWidth() / 2 + 25;
+        d = (float) (d / Math.sqrt(2));
+        p.y = getCookerViewHeight() / 2 - d - getPowerOffButtonBitmap().getWidth() / 2;
+        p.x = d + width / 2 - getPowerOffButtonBitmap().getHeight() / 2;
+        return p;
+
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                touchDownX = event.getX();
+                touchDownY = event.getY();
+                //LogUtil.d("--------ACTION_DOWN----------------");
+                return true;
+
+            case MotionEvent.ACTION_MOVE:
+                //LogUtil.d("--------ACTION_MOVE----------------");
+                if (Math.abs(touchDownX - event.getX()) >= ViewConfiguration.get(getContext()).getScaledTouchSlop()||Math.abs(touchDownY - event.getY()) >= ViewConfiguration.get(getContext()).getScaledTouchSlop()) {
+                    return false;
+                } else {
+                    return true;
+                }
+
+            case MotionEvent.ACTION_UP:
+                //LogUtil.d("--------ACTION_up----------------");
+                if (ViewUtils.isShade(this)) {
+                    return false;
+                } else if (Math.abs(event.getX() - touchDownX) > DisplayUtil.dp2px(getContext(),38) ||
+                        Math.abs(event.getY() - touchDownY) > DisplayUtil.dp2px(getContext(),38)
+                        ) {
+                    return false;
+                }else {
+                    processClickEvent(event);
+                    return true;
+                }
+        }
+        return super.onTouchEvent(event);
+    }
+
+    private void processClickEvent(MotionEvent event) {
+        float touchUpX = event.getX();
+        float touchUpY = event.getY();
+        int bitmapWidth;
+        float x1,y1;
+        switch (workMode) {
+            case HOB_VIEW_WORK_MODE_POWER_OFF:
+                x1 = getPowerOffBgBitmap().getWidth() / 2;
+                y1 = getCookerViewHeight() / 2;
+                if (!isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power on
+                    playSoundEffect(SoundEffectConstants.CLICK);
+                    mListener.onCookerPowerOn();
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_ABNORMAL_NO_PAN:
+                bitmapWidth = getPowerOnWithoutPanBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycle();
+                        mListener.onCookerPowerOff();
+                    }
+
+                }else {
+                    playSoundEffect(SoundEffectConstants.CLICK);
+                    mListener.onSetGear();
+                    LogUtil.d("liang set gear~~~~~~~~~~~~");
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_FIRE_GEAR_WITHOUT_TIMER:
+                bitmapWidth = getPowerOnFireGearWithoutTimerBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycle();
+                        mListener.onCookerPowerOff();
+                    }
+
+                }else {
+                    y1 = y1 * 1.2f;
+                    if (touchUpY < y1) {
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetGear();
+                    }else {
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetTimer();
+                    }
+                }
+                break;
+                case HOB_VIEW_WORK_MODE_FIRE_GEAR_WITH_TIMER:
+                    bitmapWidth = getPowerOnFireGearWithoutTimerBitmap().getWidth();
+                    x1 = bitmapWidth / 2.0f;
+                    y1 = getCookerViewHeight() / 2.0f;
+                    if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                        if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                            LogUtil.d("------------power off------------");
+                            playSoundEffect(SoundEffectConstants.CLICK);
+                            recycle();
+                            mListener.onCookerPowerOff();
+                        }
+
+                    }else {
+                        y1 = y1;
+                        if (touchUpY < y1) {
+                            LogUtil.d("---------touch up----------");
+                            playSoundEffect(SoundEffectConstants.CLICK);
+                            mListener.onSetGear();
+                        }else {
+                            LogUtil.d("---------touch down----------");
+                            playSoundEffect(SoundEffectConstants.CLICK);
+                            mListener.onSetTimer();
+                        }
+                    }
+                    break;
+            case HOB_VIEW_WORK_MODE_ABNORMAL_HIGH_TEMP:
+                x1 = getPowerOffBgBitmap().getWidth() / 2;
+                y1 = getCookerViewHeight() / 2;
+                if (!isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power on
+                    LogUtil.d("------------power on------------");
+                    playSoundEffect(SoundEffectConstants.CLICK);
+                    mListener.onCookerPowerOn();
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_ABNORMAL_ERROR_OCURR:
+
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITHOUT_TIMER:
+                bitmapWidth = getTempGearWithoutTimerBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("-------------power off----------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycle();
+                        mListener.onCookerPowerOff();
+                    }
+
+                }else {
+                    y1 = y1 * 1.2f;
+                    if (touchUpY < y1) {
+                        LogUtil.d("-------------up----------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetGear();
+                    }else {
+                        LogUtil.d("-------------down----------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetTimer();
+                    }
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER:
+                bitmapWidth = getTempGearWithTimerBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycle();
+                        mListener.onCookerPowerOff();
+                    }
+
+                }else {
+                    y1 = y1;
+                    if (touchUpY < y1) {
+                        LogUtil.d("---------touch up----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetGear();
+                    }else {
+                        LogUtil.d("---------touch down----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetTimer();
+                    }
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITHOUT_TIMER:
+                bitmapWidth = getTempGearIndicatorWithoutTimerBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("-------------power off----------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                    }
+
+                }else {
+                    y1 = y1 * 1.2f;
+                    if (touchUpY < y1) {
+                        LogUtil.d("-------------up----------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycleIndicatorBitmap();
+                        mListener.onSetGear();
+                    }else {
+                        LogUtil.d("-------------down----------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetTimer();
+                    }
+                }
+
+
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER:
+                bitmapWidth = getTempGearIndicatorWithTimerBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                    }
+
+                }else {
+                    y1 = y1;
+                    if (touchUpY < y1) {
+                        LogUtil.d("---------touch up----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycleIndicatorBitmap();
+                        mListener.onSetGear();
+                    }else {
+                        LogUtil.d("---------touch down----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetTimer();
+                    }
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR:
+                bitmapWidth = getTempGearIndicatorWithTimerBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                    }
+
+                }else {
+                    y1 = y1;
+                    if (touchUpY < y1) {
+                        LogUtil.d("---------touch up----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetGear();
+                    }else {
+                        LogUtil.d("---------touch down----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onSetGear();
+                    }
+                }
+
+                break;
+            case HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR_WITH_INDICATOR:
+                bitmapWidth = getTempIndicatorPrepareSensorBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                    }
+
+                }else {
+                    y1 = y1;
+                    if (touchUpY < y1) {
+                        LogUtil.d("---------touch up----------");
+                        //mListener.onSetGear();
+                    }else {
+                        LogUtil.d("---------touch down----------");
+                        //mListener.onSetTimer();
+                    }
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_SENSOR_READY:
+                bitmapWidth = getTempSensorReadyBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                    }
+
+                }else {
+                    y1 = y1;
+                    if (touchUpY < y1) {
+                        LogUtil.d("---------touch up----------");
+                        //mListener.onSetGear();
+                    }else {
+                        LogUtil.d("---------touch down----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onReadyToCook();
+                    }
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_WORK_FINISH_WAIT_USER_CONFIRM:
+                bitmapWidth = getTempSensorReadyBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                    }
+
+                }else {
+                  /*  //keep warm , add 10 minutes
+                    if (touchUpY < y1) {
+                        LogUtil.d("---------touch up----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        mListener.onRequestAddTenMinute();
+                    }else {
+                        LogUtil.d("---------touch down----------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        recycleIndicatorBitmap();
+                        mListener.onRequestKeepWarm();
+                    }*/
+
+                    playSoundEffect(SoundEffectConstants.CLICK);
+                    mListener.onRequestAddTenMinute();
+                }
+
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_FIRST: // 温度+定时　　＋　图片  601
+                bitmapWidth = getTempSensorReadyBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                        recycleRecipesBitmap();
+                        tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_PICTURE;
+                    }
+
+                }else {
+                    LogUtil.d("Enter:: recipes mode");
+                    if (tempWorkRecipesProgress == TEMP_WORK_RECIPES_PROGRESS_PICTURE) {//正在显示图片时，点击图片，显示温度时间
+                        if (handler.hasMessages(HANDLER_FLASH_RECIPES)) {
+                            handler.removeMessages(HANDLER_FLASH_RECIPES);
+                        }
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE;
+                        invalidate();
+                    }
+
+
+                    if (currentBlinkOptions == BLINK_OPTIONS_ONE) {//recipes
+
+                    }else {//value
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        if (touchUpY < y1) {
+                            LogUtil.d("---------touch up----------");
+                            mListener.onSetGear();
+                        }else {
+                            LogUtil.d("---------touch down----------");
+                            mListener.onSetTimer();
+                        }
+
+                    }
+
+                }
+                break;
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_SECOND:   // 602
+                bitmapWidth = getTempSensorReadyBitmap().getWidth();
+                x1 = bitmapWidth / 2.0f;
+                y1 = getCookerViewHeight() / 2.0f;
+                if (isOutOfCircle(getPowerOffBgBitmap().getWidth() / 2, x1,y1,touchUpX,touchUpY)) {//power off
+
+                    if (mayClickPowerOffButton(touchUpX, touchUpY, bitmapWidth)) {
+                        LogUtil.d("------------power off------------");
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        doPowerOff();
+                        recycleRecipesBitmap();
+                        tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE;
+                    }
+
+                }else {
+                    if (tempWorkRecipesProgress == TEMP_WORK_RECIPES_PROGRESS_PICTURE) {//正在显示图片时，点击图片，显示温度时间
+                        if (handler.hasMessages(HANDLER_FLASH_RECIPES)) {
+                            handler.removeMessages(HANDLER_FLASH_RECIPES);
+                        }
+                        playSoundEffect(SoundEffectConstants.CLICK);
+                        tempWorkRecipesProgress = TEMP_WORK_RECIPES_PROGRESS_TEMP_VALUE;
+                        invalidate();
+                    }
+
+                }
+                break;
+        }
+
+
+
+    }
+
+    protected String getWorkModeString(int value) {
+        switch (value) {
+            case HOB_VIEW_WORK_MODE_POWER_OFF:
+                return "HOB_VIEW_WORK_MODE_POWER_OFF";
+            case HOB_VIEW_WORK_MODE_FIRE_GEAR_WITHOUT_TIMER:
+                return "HOB_VIEW_WORK_MODE_FIRE_GEAR_WITHOUT_TIMER";
+            case HOB_VIEW_WORK_MODE_FIRE_GEAR_WITH_TIMER:
+                return "HOB_VIEW_WORK_MODE_FIRE_GEAR_WITH_TIMER";
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITHOUT_TIMER:
+                return "HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITHOUT_TIMER";
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITHOUT_TIMER:
+                return "HOB_VIEW_WORK_MODE_TEMP_GEAR_WITHOUT_TIMER";
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER:
+                return "HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER";
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER_AND_RECIPES_FIRST:
+                return "HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER_AND_RECIPES_FIRST";
+            case HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER_AND_RECIPES_SECOND:
+                return "HOB_VIEW_WORK_MODE_TEMP_INDICATOR_GEAR_WITH_TIMER_AND_RECIPES_SECOND";
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER:
+                return "HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER";
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_FIRST:
+                return "HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_FIRST";
+            case HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_SECOND:
+                return "HOB_VIEW_WORK_MODE_TEMP_GEAR_WITH_TIMER_AND_RECIPES_SECOND";
+            case HOB_VIEW_WORK_MODE_ABNORMAL_NO_PAN:
+                return "HOB_VIEW_WORK_MODE_ABNORMAL_NO_PAN";
+            case HOB_VIEW_WORK_MODE_ABNORMAL_HIGH_TEMP:
+                return "HOB_VIEW_WORK_MODE_ABNORMAL_HIGH_TEMP";
+            case HOB_VIEW_WORK_MODE_ABNORMAL_ERROR_OCURR:
+                return "HOB_VIEW_WORK_MODE_ABNORMAL_ERROR_OCURR";
+            case HOB_VIEW_WORK_MODE_UPATE_TIMER:
+                return "HOB_VIEW_WORK_MODE_UPATE_TIMER";
+            case HOB_VIEW_WORK_MODE_PAUSE:
+                return "HOB_VIEW_WORK_MODE_PAUSE";
+            case HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR:
+                return "HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR";
+            case HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR_WITH_INDICATOR:
+                return "HOB_VIEW_WORK_MODE_PREPARE_TEMP_SENSOR_WITH_INDICATOR";
+            case HOB_VIEW_WORK_MODE_TEMP_SENSOR_READY:
+                return "HOB_VIEW_WORK_MODE_TEMP_SENSOR_READY";
+            case HOB_VIEW_WORK_MODE_TEMP_WORK_FINISH_WAIT_USER_CONFIRM:
+                return "HOB_VIEW_WORK_MODE_TEMP_WORK_FINISH_WAIT_USER_CONFIRM";
+            default:
+                return "UNKNOWN " + value;
+        }
+    }
+
+    private void doPowerOff() {
+        recycle();
+        mListener.onCookerPowerOff();
+    }
+
+    private double calDistance(float x1 ,float y1 , float x2 , float y2) {
+        double x = Math.abs(x1 - x2);
+        double y = Math.abs(y1 - y2);
+        return Math.sqrt(x * x + y * y);
+    }
+
+    private boolean isOutOfCircle(int radius , float x1 ,float y1 , float x2 , float y2) {
+        return calDistance(x1,y1,x2,y2) > radius;
+    }
+
+    private Rect getStringRect(String strText) {
+        Rect rect = new Rect();
+        mPaint.getTextBounds(strText, 0, strText.length(), rect);
+        return rect;
+    }
+
+    private int getReadyToCookY() {
+        mViewRect.set(
+                0,
+                (float) (getCookerViewHeight() / 2 - getTempSensorReadyBitmap().getHeight() * 0.4),
+                getTempSensorReadyBitmap().getWidth(),
+                getCookerViewHeight()/ 2);
+        fontMetrics = mPaint.getFontMetrics();
+        float top = fontMetrics.top;//为基线到字体上边框的距离,即上图中的top
+        float bottom = fontMetrics.bottom;//为基线到字体下边框的距离,即上图中的bottom
+        int baseLineY = (int) (mViewRect.centerY() - top/2 - bottom/2) + 0;//基线中间点的y轴计算公式
+        return baseLineY;
+    }
+
+    private boolean mayClickPowerOffButton(
+            float touchX,
+            float touchY,
+            int width) {
+        int h = getPowerOffButtonBitmap().getHeight();
+        PointF pointF = getPowerOffButtonLocation(width);
+        return touchX > pointF.x - POWER_OFF_REGION_OFFSET && touchY < pointF.y + h + POWER_OFF_REGION_OFFSET;
+    }
+
+
+
+
+    /****************************************Interface*************************************************/
+
+    /******************************get display bitmap***********************************************/
+    protected abstract Bitmap getPowerOffBgBitmap();//get power off background bitmap
+    protected abstract Bitmap getPowerOnWithoutPanBitmap();//get power off without pan bitmap
+    protected abstract Bitmap getPowerOffButtonBitmap();//get power off button bitmap
+    protected abstract Bitmap getPowerOnFireGearWithoutTimerBitmap();//get power on fire gear without timer bitmap
+    protected abstract Bitmap getPowerOnFireGearWithTimerBitmap();//get power on fire gear with timer bitmap
+    protected abstract Bitmap getHighTempBitmap();//get high temp bitmap
+    protected abstract Bitmap getErrorBitmap();//get error bitmap
+    protected abstract Bitmap getTempGearWithoutTimerBitmap();//get error bitmap
+    protected abstract Bitmap getTempGearWithTimerBitmap();//get temp gear with timer bitmap
+    protected abstract Bitmap getTempGearIndicatorWithoutTimerBitmap();//get temp gear indicator without timer bitmap
+    protected abstract Bitmap getTempGearIndicatorWithTimerBitmap();//get temp gear indicator without timer bitmap
+    protected abstract Bitmap getTempIndicatorBitmap();//get temp indicator bitmap
+    protected abstract Bitmap getTempIndicatorBitmapWithTimer();//get temp indicator with timer bitmap
+    protected abstract Bitmap getTempPrepareSensorBitmap();//get temp prepare temp bitmap
+    protected abstract Bitmap getTempIndicatorPrepareSensorBitmap();//get temp indicator prepare temp bitmap
+    protected abstract Bitmap getTempSensorReadyBitmap();//get temp sensor ready bitmap
+    protected abstract Bitmap getTempSensorReadyValueBitmap();//get temp sensor ready value bitmap
+    protected abstract Bitmap getTempWorkFinishLightBitmap();//get temp work finish and wait user confirm bitmap
+    protected abstract Bitmap getTempWorkFinishDarkBitmap();//get temp work finish and wait user confirm bitmap
+    protected abstract Bitmap getRecipesPicBitmap();//get recipes picture bitmap
+    protected abstract Bitmap getRecipesBgBitmap();//get recipes picture bitmap
+
+
+
+
+
+    /*******************************get display font size****************************************************************/
+    protected abstract int getFireGearWithoutTimerFontSize();
+    protected abstract int getFireGearWithTimerFontSize();
+    protected abstract int getTimerFontSize();
+    protected abstract int getTimerFontSizeSmall();
+    protected abstract int getTimerWithIndicatorTimerFontSize();
+    protected abstract int getTimerWithIndicatorTimerFontSizeSmall();
+    protected abstract int getErrorFontSize();
+    protected abstract int getTempGearWithoutTimerFontSize();
+    protected abstract int getTempGearWithTimerFontSize();
+    protected abstract int getKeepWarmAndAddTenMinuteFontSize();
+    protected abstract int getReadyToCookFontSize();
+    protected abstract int getTempPreheatSettingValueFontSize();//温控模式，预热状态的设置温度值
+    protected abstract int getTempPreheatRealValueFontSize();//温控模式，预热状态的真实温度值
+    protected abstract int getTempIndicatorStringFontSize();
+    protected abstract int getTempIndicatorStringPadding();
+
+
+
+    /***********************get display value****************************************/
+    protected abstract String getFireGearValue();
+    protected abstract String getTempGearValue();
+    protected abstract String getTimerValue();
+    protected abstract String getErrorMessage();
+    protected abstract String getRealTempValue();//真实温度值
+    protected abstract String getTempIndicatorString();
+    protected abstract int getSweepAngle();//真实温度圆弧度数
+    protected abstract float getRealTempArcGap();
+    protected abstract float getRealTempTextGap();
+
+
+
+    /*******************************get display size****************************************************/
+    protected abstract int getCookerViewWidth();
+    protected abstract int getCookerViewHeight();
+    protected abstract int getRealTempProgressArcWidth();
+    protected abstract int getRealTempProgressRadius();
+    protected abstract int getInnerTextMaxWidth();
+    protected abstract int getInnerTextMaxWidthBig();
+
+
+
+    /*************************************recycle*************************************************************/
+    protected abstract void recycle();
+    protected abstract void recycleIndicatorBitmap();
+    protected abstract void recycleRecipesBitmap();
+
+
+    /****************************************user interface**********************************************************/
+    protected abstract void upateUI(int workMode,int fireValue,int tempValue,int realTempValue,int hourValue,int minuteValue,int tempIndicatorID,int recipesID,int recipesShowOrder,String errorMessage);
+}

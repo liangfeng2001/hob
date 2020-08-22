@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_information"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_information"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title" />
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/viewmodule_setting_title_distance"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/viewmodule_padding_xxxlarge">
+
+            <!-- instruction manual -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settingmodule_fragment_information_setting_title_instruction_manual"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:typeface="serif"
+                android:textStyle="normal"
+                android:textColor="@color/settingmodule_textview_setting_selector"
+                android:id="@+id/tv_instruction_manual"
+                android:visibility="gone"
+                />
+
+            <!-- key to icons -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/settingmodule_fragment_information_setting_title_key_to_icons"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:typeface="serif"
+                android:textStyle="normal"
+                android:textColor="@color/settingmodule_textview_setting_selector"
+                android:id="@+id/tv_key_to_icons"
+                />
+
+            <!-- software version -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                >
+                <com.ekek.viewmodule.common.FocusedTextView
+                    android:layout_width="650dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/tv_software_version"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_information_setting_title_software_version"
+                    android:id="@+id/title_software_version"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/viewmodule_padding_small"
+                    android:layout_marginEnd="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/tv_software_version"
+                    android:textColor="@android:color/darker_gray"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textSize="@dimen/viewmodule_setting_content_size"
+                    />
+
+            </RelativeLayout>
+
+            <!-- demo mode -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:text="@string/settingmodule_fragment_information_setting_title_demo_mode"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:typeface="serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/settingmodule_textview_setting_selector"
+                    android:id="@+id/tv_demo_mode"
+                    />
+
+                <com.ekek.viewmodule.common.NoTextSwitch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/sw_demo"
+                    android:switchMinWidth="93dp"
+                    android:thumb="@android:color/transparent"
+                    android:track="@drawable/settingmodule_sound_switch_selector"
+                    />
+
+            </FrameLayout>
+
+            <!-- updates -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="@string/settingmodule_fragment_information_setting_title_updates"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:typeface="serif"
+                android:textStyle="normal"
+                android:textColor="@color/settingmodule_textview_setting_selector"
+                android:id="@+id/tv_updates"
+                android:visibility="gone"
+                />
+
+            <!-- logo switch -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_information_setting_title_logo"
+                    android:id="@+id/title_logo"
+                    />
+
+                <com.ekek.viewmodule.common.NoTextSwitch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/sw_logo"
+                    android:switchMinWidth="93dp"
+                    android:thumb="@android:color/transparent"
+                    android:track="@drawable/settingmodule_sound_switch_selector"
+                    />
+
+            </FrameLayout>
+
+            <!-- debug mode -->
+            <FrameLayout
+                android:id="@+id/fl_debug_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_information_setting_title_debug_mode"
+                    android:id="@+id/tv_debug_mode"
+                    />
+
+                <com.ekek.viewmodule.common.NoTextSwitch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/sw_debug_mode"
+                    android:switchMinWidth="93dp"
+                    android:thumb="@android:color/transparent"
+                    android:track="@drawable/settingmodule_sound_switch_selector"
+                    />
+
+            </FrameLayout>
+
+            <!-- model info -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/rl_model_info"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/tv_model"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_information_setting_title_model"
+                    android:id="@+id/tv_model_title"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/viewmodule_padding_small"
+                    android:layout_marginEnd="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/tv_model"
+                    android:textColor="@android:color/darker_gray"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textSize="@dimen/viewmodule_setting_content_size"
+                    />
+
+            </RelativeLayout>
+
+            <!-- system version -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/rl_system_version"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/tv_system_version"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:textSize="@dimen/viewmodule_setting_title_size"
+                    android:text="@string/settingmodule_fragment_information_setting_title_system_version"
+                    android:id="@+id/tv_system_version_title"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/viewmodule_padding_small"
+                    android:layout_marginEnd="@dimen/viewmodule_setting_switch_distance"
+                    android:id="@+id/tv_system_version"
+                    android:textColor="@android:color/darker_gray"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textSize="@dimen/viewmodule_setting_content_size"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<resources>
+    <string name="settingmodule_app_name">settingmodule</string>
+    <string name="settingmodule_timer_symbol">:</string>
+    <string name="settingmodule_setting_title_settings">Asetukset</string>
+    <string name="settingmodule_setting_title_display">Näyttö</string>
+    <string name="settingmodule_setting_title_language">Kieli</string>
+    <string name="settingmodule_setting_title_sound">Ääni</string>
+    <string name="settingmodule_setting_title_security">Turvallisuus</string>
+    <string name="settingmodule_setting_title_conectivity">Yhdistettävyys</string>
+    <string name="settingmodule_setting_title_hood_options">Liesituulettimen vaihtoehdot</string>
+    <string name="settingmodule_setting_title_power_limit">Tehoraja</string>
+    <string name="settingmodule_setting_title_default_settings">Oletusasetukset</string>
+    <string name="settingmodule_setting_title_date_and_time">Päivämäärä ja aika</string>
+    <string name="settingmodule_setting_title_information">Tiedot</string>
+    <string name="settingmodule_setting_title_energy_settings">Energia-asetus</string>
+    <string name="settingmodule_setting_title_test_cookware">Testaa keittoastia</string>
+
+    <!--fragment display-->
+    <string name="settingmodule_fragment_setting_display_title_brightness">Kirkkaus</string>
+    <string name="settingmodule_fragment_setting_display_title_wallpaper">Taustakuva</string>
+
+    <!--fragment sound-->
+    <string name="settingmodule_fragment_setting_sound_title_sound">Ääni</string>
+    <string name="settingmodule_fragment_setting_sound_title_intensity">Voimakkuus</string>
+    <string name="settingmodule_fragment_setting_sound_title_sound_mode">Sound Mode</string>
+    <string name="settingmodule_fragment_setting_sound_mode_mode_one">Mode 1</string>
+    <string name="settingmodule_fragment_setting_sound_title_click_sound">Painikeäänet</string>
+
+    <!--fragment language setting-->
+    <string name="settingmodule_fragment_setting_language_warning_message_unavailable">This Language is currently unavailable</string>
+
+    <!--fragment hood options-->
+    <string name="settingmodule_fragment_setting_hood_options_title_hood_level">Hood Level</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_manual">Manual</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_automatic">Automatic</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_low">Low</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_medium">Medium</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_high">High</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_stablish_connection">Liesituulettimen liitäntä</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_auto_mode">Automaattinen tila</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_intense">Tehotila</string>
+    <string name="settingmodule_fragment_setting_hood_options_title_mode_ecologic">Eco-tila</string>
+    <string name="settingmodule_fragment_setting_hood_options_content_dialog">Varmista liesituulettimen kytkentä tuulettimen käyttöohjeiden mukaan.\nVarmista, että liesituuletin ja keittotaso on kytketty toisiinsa.</string>
+
+    <!--fragment default config setting-->
+    <string name="settingmodule_fragment_setting_default_config_btn_restore">Palauta oletusasetukset.</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_question">Haluatko varmasti palauttaa tehdasasetukset?</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_no">EI</string>
+    <string name="settingmodule_fragment_setting_default_config_message_restore_yes">KYLLÄ</string>
+    <string name="settingmodule_fragment_setting_default_config_message_setting_successful">Oletusasetusten tallennus onnistui.</string>
+
+    <!--power limit-->
+    <string name="settingmodule_fragment_power_limit_title_use_power_limit">Käytä tehorajaa</string>
+    <string name="settingmodule_fragment_power_limit_title_2800">2800W-12A</string>
+    <string name="settingmodule_fragment_power_limit_title_3300">3300W-14A</string>
+    <string name="settingmodule_fragment_power_limit_title_4500">4500W-20A</string>
+    <string name="settingmodule_fragment_power_limit_title_5700">5700W-25A</string>
+
+    <!--fragment security-->
+    <string name="settingmodule_fragment_setting_security_title_screen_lock">Lukitusnäyttö</string>
+    <string name="settingmodule_fragment_setting_security_title_pin">PIN</string>
+    <string name="settingmodule_fragment_setting_security_title_pattern">Kuvio</string>
+    <string name="settingmodule_fragment_setting_security_title_press_2_seconds">Paina kaksi sekuntia</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_choose_your_pin">Choose your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_your_pin">Confirm your PIN</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_confirm_lock_screen">Vahvista lukitusnäyttö</string>
+    <string name="settingmodule_fragment_setting_security_modify_pin_title_set_lock_screen">Aseta lukitusnäyttö</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_set_lock_screen">Aseta lukitusnäyttö</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_confirm_lock_screen">Vahvista lukitusnäyttö</string>
+    <string name="settingmodule_fragment_setting_security_modify_pattern_title_choose_your_pattern">Choose your Pattern</string>
+
+    <!--fragment connectivity-->
+    <string name="settingmodule_fragment_connectivity_setting_title_bluetooth">Bluetooth-laitteet.</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_make_visible">Tee näkyväksi parittamattomille laitteille</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_name">Nimi</string>
+    <string name="settingmodule_fragment_connectivity_setting_title_paried_devices">Paritetut laitteet</string>
+    <string name="settingmodule_fragment_connectivity_setting_temperature_sensor">Lämpötila-anturi</string>
+    <string name="settingmodule_fragment_connectivity_setting_smart_phone">Älypuhelin/tabletti</string>
+    <!--fragment date and time setting-->
+    <string name="settingmodule_fragment_date_time_setting_title_set_date">Aseta päivämäärä</string>
+    <string name="settingmodule_fragment_date_time_setting_title_set_time">Aseta aika</string>
+    <string name="settingmodule_fragment_date_time_setting_title_24_format">Käytä 24-tunnin muotoa</string>
+    <string name="settingmodule_fragment_date_time_setting_title_alarm_settings">Hälytysasetukset</string>
+
+    <!--fragment information setting-->
+    <string name="settingmodule_fragment_information_setting_title_instruction_manual">Instruction Manual</string>
+    <string name="settingmodule_fragment_information_setting_title_key_to_icons">Painike kuvakkeisiin</string>
+    <string name="settingmodule_fragment_information_setting_title_model">Model</string>
+    <string name="settingmodule_fragment_information_setting_title_software_version">Ohjelmistoversio</string>
+    <string name="settingmodule_fragment_information_setting_title_system_version">System Version</string>
+    <string name="settingmodule_fragment_information_setting_title_demo_mode">Demotila</string>
+    <string name="settingmodule_fragment_information_setting_title_updates">Päivitykset</string>
+    <string name="settingmodule_fragment_information_setting_title_logo">Logo</string>
+    <string name="settingmodule_fragment_information_setting_title_debug_mode">Debug Mode</string>
+
+    <!-- key to icons-->
+    <string name="settingmodule_fragment_information_key_to_icon_lock">Lukitse</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close_timer">Sulje ajastin</string>
+    <string name="settingmodule_fragment_information_key_to_icon_information">Tiedot</string>
+    <string name="settingmodule_fragment_information_key_to_icon_pause">Keskeytä</string>
+    <string name="settingmodule_fragment_information_key_to_icon_close">Sulje</string>
+    <string name="settingmodule_fragment_information_key_to_icon_hood_options">Liesituulettimen vaihtoehdot</string>
+    <string name="settingmodule_fragment_information_key_to_icon_recipes">Reseptit</string>
+    <string name="settingmodule_fragment_information_key_to_icon_power">Teho</string>
+    <string name="settingmodule_fragment_information_key_to_icon_timer">Ajastin</string>
+    <string name="settingmodule_fragment_information_key_to_icon_alarm">Hälytys</string>
+    <string name="settingmodule_fragment_information_key_to_icon_tem_sensor">Lämpötila-anturi</string>
+    <string name="settingmodule_fragment_information_key_to_icon_settings">Asetukset</string>
+    <string name="settingmodule_fragment_information_key_to_icon_temperature">Lämpötila</string>
+
+
+    <!--fragment test cookware-->
+    <string name="settingmodule_fragment_test_cookware_title_start_new_test">Aloita uusi testi</string>
+    <string name="settingmodule_fragment_test_cookware_title_select_the_cooking_zone">Valitse keittoalue</string>
+    <string name="settingmodule_fragment_test_cookware_conten_place_the_cookware">Laita keittoastiaan noin 200 ml vettä ja aseta se keittoalueelle, joka vastaa parhaiten keittoastian pohjan halkaisijaa.</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_compatible">Keittoastiasi on yhteensopiva tämän keittotason kanssa</string>
+    <string name="settingmodule_fragment_test_cookware_result_is_not_compatible">Keittoastiasi ei ole yhteensopiva tämän keittotason kanssa</string>
+    <!--months-->
+    <string name="settingmodule_months_january">Tammikuu</string>
+    <string name="settingmodule_months_february">Helmikuu</string>
+    <string name="settingmodule_months_march">Maaliskuu</string>
+    <string name="settingmodule_months_april">Huhtikuu</string>
+    <string name="settingmodule_months_may">Toukokuu</string>
+    <string name="settingmodule_months_june">Kesäkuu</string>
+    <string name="settingmodule_months_july">Heinäkuu</string>
+    <string name="settingmodule_months_august">Elokuu</string>
+    <string name="settingmodule_months_september">Syyskuu</string>
+    <string name="settingmodule_months_october">Lokakuu</string>
+    <string name="settingmodule_months_november">Marraskuu</string>
+    <string name="settingmodule_months_december">Joulukuu</string>
+
+    <!--set time-->
+    <string name="settingmodule_fragment_set_time_title_am">AM</string>
+    <string name="settingmodule_fragment_set_time_title_pm">PM</string>
+    <string name="settingmodule_fragment_set_time_title_none1"></string>
+    <string name="settingmodule_fragment_set_time_title_none2"></string>
+
+    <!--alarm setting fragment-->
+    <string name="settingmodule_fragment_alarm_setting_title_volume">Äänenvoimakkuus</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration">Hälytyksen kesto</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration">Viivytä kestoa</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_30">30sec</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_3">3min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_4">4min</string>
+    <string name="settingmodule_fragment_alarm_setting_alarm_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_1">1min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_2">2min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_5">5min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_10">10min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_15">15min</string>
+    <string name="settingmodule_fragment_alarm_setting_postpone_duration_options_20">20min</string>
+
+    <string name="settingmodule_fragment_alarm_clock_setting_toast_content">Aseta vierityspalkilla hälytys (tunnit/minuutit).\nSe on vain äänellinen eikä keskeytä ruoanlaittoa.\nLaskuri näkyy tuntien lähellä.</string>
+    <string name="settingmodule_fragment_display_toast_content">Valitse näytön kirkkaus</string>
+    <string name="settingmodule_fragment_sound_toast_content">Ota käyttöön/poiskäytöstä yleinen ääni ja säädä voimakkuutta.\nOta käyttöön/poiskäytöstä vain painikeäänet.</string>
+    <string name="settingmodule_fragment_connectivity_toast_content">Yhdistä laitteet Bluethoothilla.</string>
+    <string name="settingmodule_fragment_power_limit_toast_content">Valitse virranrajoitus.</string>
+    <string name="settingmodule_fragment_date_time_toast_content">Aseta päivämäärä ja aika. Valitse haluttu muoto.</string>
+    <string name="settingmodule_fragment_alarm_toast_content">Valitse hälytysasetukset.</string>
+    <string name="settingmodule_fragment_language_toast_content">Valitse kieli.</string>
+    <string name="settingmodule_fragment_security_toast_content">Aseta lukitustila.</string>
+    <string name="settingmodule_fragment_security_pin_set_toast_content">Valitse nelinumeroinen PIN-koodi.</string>
+    <string name="settingmodule_fragment_security_pin_confirm_toast_content">Toista aiemmin asetettu PIN-koodi.</string>
+    <string name="settingmodule_fragment_security_pattern_set_toast_content">Valitse kuvio yhdistämällä vähintään neljä pistettä.</string>
+    <string name="settingmodule_fragment_security_pattern_confirm_toast_content">Vahvista kuvio.</string>
+    <string name="settingmodule_fragment_hood_options_toast_content">Aseta liesituulettimen säädöt.</string>
+    <string name="settingmodule_fragment_default_config_pattern_toast_content">Kuvio on sama kuin lukitusnäytön.</string>
+    <string name="settingmodule_fragment_default_config_pin_toast_content">PIN-koodi on sama kuin lukitusnäytön.</string>
+    <string name="settingmodule_fragment_default_config_else_toast_content">Palauta alkuperäinen kokoonpano.</string>
+    <string name="settingmodule_fragment_information_toast_content">Täällä on hyödyllisiä tietoja laitteestasi ja miten sitä käytetään.</string>
+    <string name="settingmodule_fragment_instruction_manual_toast_content">Täällä on hyödyllisiä tietoja laitteestasi ja miten sitä käytetään.</string>
+    <string name="settingmodule_fragment_demo_mode_toast_content">Voit valita interaktiivisen opetusohjelman tai demovideon.</string>
+    <string name="settingmodule_fragment_updates_toast_content">Odota, kunnes päivitys on valmis.</string>
+    <string name="settingmodule_fragment_energy_toast_content">Aseta horrostilan ja valmiustilan aika parantaaksesi laitteesi tehokkuutta.</string>
+    <string name="settingmodule_fragment_test_cookware_select_toast_content">Laita keittoastiaan noin 200 ml vettä ja aseta se keittoalueelle, joka vastaa parhaiten keittoastian pohjan halkaisijaa.</string>
+    <string name="settingmodule_fragment_test_cookware_not_compatible_toast_content">Varmista, että keittoastia on asetettu keittoalueen päälle.\nTarkista oppaasta sopivien keittoastioiden lista.</string>
+    <string name="settingmodule_fragment_test_cookware_is_compatible_toast_content">Tällä keittoastialla saat parhaan mahdollisen suorituskyvyn keittotasosta.</string>
+    <string name="settingmodule_fragment_test_cookware_place_toast_content">Noudata ohjeita testin tekemiseen.</string>
+    <string name="settingmodule_fragment_test_cookware_else_toast_content">Valitsemalla oikean keittoastian keittotaso toimii parhaimmalla mahdollisella tavalla ja vältät mahdolliset toimintaviat.</string>
+    <string name="settingmodule_fragment_main_toast_content">Täällä voit muokata laitettasi.</string>
+    <string name="settingmodule_fragment_hibernation_format_toast_content">Aseta horrostilanäytön muoto.\nNäyttö ilmestyy asetetun ajan jälkeen, kun se ei ole ollut vuorovaikutuksessa laitteen kanssa.</string>
+
+    <!--fragment demo mode -->
+    <string name="settingmodule_fragment_demo_mode_title_tutorial">Opetusohjelma</string>
+    <string name="settingmodule_fragment_demo_mode_title_demo_video">Demo Video</string>
+
+    <!--fragment update setting-->
+    <string name="settingmodule_fragment_update_setting_title_no_update_available">No Updates Avaliable</string>
+
+    <!--fragment energy settings-->
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_mode">Horrostila</string>
+    <string name="settingmodule_fragment_energy_settings_title_activation_time">Käynnistysaika</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off">Kokonaisvaltainen sammutus</string>
+    <string name="settingmodule_fragment_energy_settings_title_total_turn_off_time">Kokonaisvaltaisen sammutuksen aika</string>
+    <string name="settingmodule_fragment_energy_settings_title_hibernation_format">Horrosmuoto</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_10_sec">10sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_sec">30sec</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_1_min">1min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_5_min">5min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_15_min">15min</string>
+    <string name="settingmodule_fragment_energy_settings_activation_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_30_min">30min</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_1_h">1h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_6_h">6h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_12_h">12h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_24_h">24h</string>
+    <string name="settingmodule_fragment_energy_settings_total_turn_off_time_options_72_h">72h</string>
+
+    <!--fragment hibernation format-->
+    <string name="settingmodule_fragment_hibernation_format_title_hour_format">Tuntimuoto</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_digital">Digitaalinen</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_analogic">Analoginen</string>
+    <string name="settingmodule_fragment_hibernation_format_title_hour_date">Päivämäärä</string>
+    <string name="settingmodule_fragment_hibernation_format_title_message">Viesti</string>
+    <string name="settingmodule_fragment_hibernation_format_title_off">POISPÄÄLTÄ</string>
+
+    <string name="settingmodule_no_external_sensor_detected">Ulkoista ruuanlaittoanturia ei tunnistettu. Tämä vaikuttaa lämpötilan tarkkuuteen.</string>
+    <string name="settingmodule_external_sensor_disconnected">Ulkoista ruuanlaittoanturia ei tunnistettu.</string>
+</resources>

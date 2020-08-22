@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/settingmodule_setting_title_power_limit"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@mipmap/ic_power_limit"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="@dimen/viewmodule_setting_title_title_size"
+        android:paddingTop="0dp"
+        android:id="@+id/tv_title"
+        />
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/viewmodule_setting_title_distance"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ekek.viewmodule.common.FocusedTextView
+                android:layout_width="700dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:textSize="@dimen/viewmodule_setting_title_size"
+                android:text="@string/settingmodule_fragment_power_limit_title_use_power_limit"
+                android:id="@+id/title_use_power_limit"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                />
+
+            <com.ekek.viewmodule.common.NoTextSwitch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/viewmodule_setting_switch_distance"
+                android:id="@+id/sw_power_limit"
+                android:switchMinWidth="93dp"
+                android:thumb="@android:color/transparent"
+                android:track="@drawable/settingmodule_sound_switch_selector"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:id="@+id/ll_power"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_power_limit_title_2800"
+                android:id="@+id/tv_2800"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_power_limit_title_3300"
+                android:id="@+id/tv_3300"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/darker_gray"
+                android:text="@string/settingmodule_fragment_power_limit_title_4500"
+                android:id="@+id/tv_4500"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="@dimen/viewmodule_setting_content_size"
+                android:textColor="@android:color/white"
+                android:text="@string/settingmodule_fragment_power_limit_title_5700"
+                android:id="@+id/tv_5700"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

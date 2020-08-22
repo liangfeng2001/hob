@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/viewmodule_padding_tiny"
+    android:paddingBottom="@dimen/viewmodule_padding_tiny">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:gravity="center|left"
+        >
+        <com.ekek.viewmodule.common.FocusedTextView
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tfthobmodule_cooking_table_name_text_size"
+            android:textColor="@android:color/white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/tv_name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tfthobmodule_cooking_table_weight_text_size"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/tv_weight"
+            />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@mipmap/ic_start_cook"
+        android:id="@+id/ib_start_cook"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/viewmodule_padding_xxlarge"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/ib_start_cook"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/ll_cook_data_container">
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -92,7 +92,7 @@ public abstract class BaseSeperateRectangleCookerView extends View {
 
     private static final float CLICK_HEIGHT_RATIO = 0.7f;
     private static final float CLICK_WIDTH_RATIO = 0.9f;//0.85f
-    private static final int BOTTOM_COOKER_MARTO_BOTTOM=61;
+    private static final int BOTTOM_COOKER_MARTO_BOTTOM=60;
 
     private static final int TEMP_WITH_TIMER_WORK_PROGRESS_WORK = 0;
     private static final int TEMP_WITH_TIMER_WORK_PROGRESS_WAIT_CONFIRM_SETTING_DATA = 1;
